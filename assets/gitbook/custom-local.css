@@ -3,3 +3,51 @@
  * Its purpose is for users of the theme to be able to add css rules from a blank file
  *   these get simply added to the ones already active in the layout.
  */
+
+/* Commentary callouts (Alan D. Strange, Ordained Servant) */
+details.commentary {
+    margin: 0.75em 0 1.5em 0;
+    border-left: 3px solid #8b6914;
+    background-color: #fdf8ee;
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+}
+
+details.commentary summary {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-style: italic;
+    color: #6b4f10;
+    font-size: 0.88em;
+    user-select: none;
+    list-style: none;
+}
+
+details.commentary summary::before {
+    content: '▶ ';
+    font-style: normal;
+    font-size: 0.75em;
+}
+
+details.commentary[open] summary::before {
+    content: '▼ ';
+}
+
+details.commentary[open] summary {
+    border-bottom: 1px solid #e8d9b0;
+}
+
+details.commentary .commentary-body {
+    padding: 0.75em 1.25em 1em 1.25em;
+    font-size: 0.9em;
+    line-height: 1.65;
+    color: #3a2e0e;
+}
+
+details.commentary .commentary-body p {
+    margin: 0 0 0.75em 0;
+}
+
+details.commentary .commentary-body p:last-child {
+    margin-bottom: 0;
+}
