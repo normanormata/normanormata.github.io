@@ -4,11 +4,38 @@
  *   these get simply added to the ones already active in the layout.
  */
 
+/* Commentary callout theme tokens — set on .book so they cascade to all descendants */
+.book {
+    --commentary-border:    #8b6914;
+    --commentary-bg:        #fdf8ee;
+    --commentary-summary:   #6b4f10;
+    --commentary-separator: #e8d9b0;
+    --commentary-text:      #3a2e0e;
+}
+
+/* Sepia (color-theme-1) */
+.book.color-theme-1 {
+    --commentary-border:    #8b5e1a;
+    --commentary-bg:        #ede3c4;
+    --commentary-summary:   #6b3c10;
+    --commentary-separator: #c9b87a;
+    --commentary-text:      #704214;
+}
+
+/* Night (color-theme-2) */
+.book.color-theme-2 {
+    --commentary-border:    #a08040;
+    --commentary-bg:        #242738;
+    --commentary-summary:   #c9a84c;
+    --commentary-separator: #373b50;
+    --commentary-text:      #bdcadb;
+}
+
 /* Commentary callouts (Alan D. Strange, Ordained Servant) */
 details.commentary {
     margin: 0.75em 0 1.5em 0;
-    border-left: 3px solid #8b6914;
-    background-color: #fdf8ee;
+    border-left: 3px solid var(--commentary-border);
+    background-color: var(--commentary-bg);
     border-radius: 0 4px 4px 0;
     overflow: hidden;
 }
@@ -17,7 +44,7 @@ details.commentary summary {
     padding: 0.5em 1em;
     cursor: pointer;
     font-style: italic;
-    color: #6b4f10;
+    color: var(--commentary-summary);
     font-size: 0.88em;
     user-select: none;
     list-style: none;
@@ -34,14 +61,14 @@ details.commentary[open] summary::before {
 }
 
 details.commentary[open] summary {
-    border-bottom: 1px solid #e8d9b0;
+    border-bottom: 1px solid var(--commentary-separator);
 }
 
 details.commentary .commentary-body {
     padding: 0.75em 1.25em 1em 1.25em;
     font-size: 0.9em;
     line-height: 1.65;
-    color: #3a2e0e;
+    color: var(--commentary-text);
 }
 
 details.commentary .commentary-body p {
@@ -50,40 +77,4 @@ details.commentary .commentary-body p {
 
 details.commentary .commentary-body p:last-child {
     margin-bottom: 0;
-}
-
-/* Sepia theme (color-theme-1) */
-.book.color-theme-1 details.commentary {
-    border-left-color: #8b5e1a;
-    background-color: #ede3c4;
-}
-
-.book.color-theme-1 details.commentary summary {
-    color: #6b3c10;
-}
-
-.book.color-theme-1 details.commentary[open] summary {
-    border-bottom-color: #c9b87a;
-}
-
-.book.color-theme-1 details.commentary .commentary-body {
-    color: #704214;
-}
-
-/* Night theme (color-theme-2) */
-.book.color-theme-2 details.commentary {
-    border-left-color: #a08040;
-    background-color: #242738;
-}
-
-.book.color-theme-2 details.commentary summary {
-    color: #c9a84c;
-}
-
-.book.color-theme-2 details.commentary[open] summary {
-    border-bottom-color: #373b50;
-}
-
-.book.color-theme-2 details.commentary .commentary-body {
-    color: #bdcadb;
 }
