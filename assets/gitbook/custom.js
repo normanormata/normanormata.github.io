@@ -35,7 +35,15 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             position: 'right',
             onClick: function(e) {
                 e.preventDefault();
-                navigator.clipboard.writeText(location.href);
+                navigator.clipboard.writeText(location.href).then(function() {
+                    var toast = $('<div id="copy-toast">Link copied!</div>');
+                    $('body').append(toast);
+                    setTimeout(function() { toast.addClass('show'); }, 10);
+                    setTimeout(function() {
+                        toast.removeClass('show');
+                        setTimeout(function() { toast.remove(); }, 300);
+                    }, 2000);
+                });
             }
         });
     });

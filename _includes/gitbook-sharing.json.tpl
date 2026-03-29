@@ -3,7 +3,8 @@
 
                 "google": false,
 
-                "github": false,
+                "github": true,
+                "github_link": "https://github.com/normanormata/normanormata.github.io",
 
                 "telegram": false,
                 "telegram_link": "https://t.me",

@@ -78,3 +78,25 @@ details.commentary .commentary-body p {
 details.commentary .commentary-body p:last-child {
     margin-bottom: 0;
 }
+
+/* Copy link toast notification */
+#copy-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(1rem);
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 0.5em 1.25em;
+    border-radius: 4px;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+#copy-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
