@@ -152,6 +152,35 @@ details.scripture-proofs .proofs-body p:last-child {
     margin-bottom: 0;
 }
 
+/* Section number anchor links (WCF: links down to scripture proof callout) */
+a.section-num {
+    font-size: 0.75em;
+    vertical-align: super;
+    text-decoration: none;
+    color: var(--proofs-summary);
+    opacity: 0.7;
+    margin-right: 0.25em;
+}
+
+a.section-num:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Back-link inside scripture proof summary (↑ returns to section) */
+a.proof-backlink {
+    font-size: 0.85em;
+    text-decoration: none;
+    color: var(--proofs-summary);
+    opacity: 0.6;
+    margin-left: 0.4em;
+    font-style: normal;
+}
+
+a.proof-backlink:hover {
+    opacity: 1;
+}
+
 /* Copy link toast notification */
 #copy-toast {
     position: fixed;
