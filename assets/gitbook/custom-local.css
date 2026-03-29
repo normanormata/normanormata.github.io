@@ -51,3 +51,39 @@ details.commentary .commentary-body p {
 details.commentary .commentary-body p:last-child {
     margin-bottom: 0;
 }
+
+/* Sepia theme (color-theme-1) */
+.book.color-theme-1 details.commentary {
+    border-left-color: #8b5e1a;
+    background-color: #ede3c4;
+}
+
+.book.color-theme-1 details.commentary summary {
+    color: #6b3c10;
+}
+
+.book.color-theme-1 details.commentary[open] summary {
+    border-bottom-color: #c9b87a;
+}
+
+.book.color-theme-1 details.commentary .commentary-body {
+    color: #704214;
+}
+
+/* Night theme (color-theme-2) */
+.book.color-theme-2 details.commentary {
+    border-left-color: #a08040;
+    background-color: #242738;
+}
+
+.book.color-theme-2 details.commentary summary {
+    color: #c9a84c;
+}
+
+.book.color-theme-2 details.commentary[open] summary {
+    border-bottom-color: #373b50;
+}
+
+.book.color-theme-2 details.commentary .commentary-body {
+    color: #bdcadb;
+}
