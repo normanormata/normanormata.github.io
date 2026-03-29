@@ -3,8 +3,7 @@
 
                 "google": false,
 
-                "github": true,
-                "github_link": "https://github.com/normanormata/normanormata.github.io",
+                "github": false,
 
                 "telegram": false,
                 "telegram_link": "https://t.me",
@@ -17,5 +16,5 @@
 
                 "weibo": false,
 
-                "all": ["github"]
+                "all": []
             },

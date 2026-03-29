@@ -27,3 +27,17 @@ if (document.readyState === "loading") {
     bind_footnote_links();
 }
 
+require(['gitbook', 'jquery'], function(gitbook, $) {
+    gitbook.events.bind('start', function() {
+        gitbook.toolbar.createButton({
+            icon: 'fa fa-clipboard',
+            label: 'Copy link',
+            position: 'right',
+            onClick: function(e) {
+                e.preventDefault();
+                navigator.clipboard.writeText(location.href);
+            }
+        });
+    });
+});
+
