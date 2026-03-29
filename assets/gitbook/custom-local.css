@@ -79,6 +79,79 @@ details.commentary .commentary-body p:last-child {
     margin-bottom: 0;
 }
 
+/* Scripture proof theme tokens */
+.book {
+    --proofs-border:    #2a6496;
+    --proofs-bg:        #f0f5fb;
+    --proofs-summary:   #1a4a72;
+    --proofs-separator: #b8d0e8;
+    --proofs-text:      #1a2a3a;
+}
+
+.book.color-theme-1 {
+    --proofs-border:    #5a7a3a;
+    --proofs-bg:        #eaf0e4;
+    --proofs-summary:   #3a5a1a;
+    --proofs-separator: #b8ccaa;
+    --proofs-text:      #2a3a1a;
+}
+
+.book.color-theme-2 {
+    --proofs-border:    #4a90c4;
+    --proofs-bg:        #1e2a38;
+    --proofs-summary:   #7ab8e0;
+    --proofs-separator: #2e3e50;
+    --proofs-text:      #bdcadb;
+}
+
+/* Scripture proof callouts */
+details.scripture-proofs {
+    margin: 0.4em 0 1em 0;
+    border-left: 3px solid var(--proofs-border);
+    background-color: var(--proofs-bg);
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+}
+
+details.scripture-proofs summary {
+    padding: 0.35em 1em;
+    cursor: pointer;
+    font-style: italic;
+    color: var(--proofs-summary);
+    font-size: 0.82em;
+    user-select: none;
+    list-style: none;
+}
+
+details.scripture-proofs summary::before {
+    content: '▶ ';
+    font-style: normal;
+    font-size: 0.75em;
+}
+
+details.scripture-proofs[open] summary::before {
+    content: '▼ ';
+}
+
+details.scripture-proofs[open] summary {
+    border-bottom: 1px solid var(--proofs-separator);
+}
+
+details.scripture-proofs .proofs-body {
+    padding: 0.6em 1.25em 0.75em 1.25em;
+    font-size: 0.85em;
+    line-height: 1.6;
+    color: var(--proofs-text);
+}
+
+details.scripture-proofs .proofs-body p {
+    margin: 0 0 0.4em 0;
+}
+
+details.scripture-proofs .proofs-body p:last-child {
+    margin-bottom: 0;
+}
+
 /* Copy link toast notification */
 #copy-toast {
     position: fixed;
