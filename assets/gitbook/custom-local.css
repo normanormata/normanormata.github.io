@@ -201,6 +201,50 @@ sup.proof-marker:hover {
     margin-right: 0.3em;
 }
 
+/* ── Version Toggle (Constitutional vs 2025 MESV) ── */
+
+/* Constitutional text (.v-const) is visible by default, modern (.v-modern) hidden */
+.v-modern { display: none; }
+
+/* When modern version is active, swap visibility */
+.show-modern .v-const { display: none; }
+.show-modern .v-modern { display: inline; }
+
+/* Highlight-changes mode: background on changed modern words */
+.show-modern.highlight-changes .v-modern {
+    background-color: rgba(46, 160, 67, 0.18);
+    border-radius: 2px;
+    padding: 0 1px;
+    outline: 1px solid rgba(46, 160, 67, 0.3);
+    outline-offset: 0;
+}
+
+/* Sepia theme highlight */
+.book.color-theme-1 .show-modern.highlight-changes .v-modern {
+    background-color: rgba(90, 130, 50, 0.22);
+    outline-color: rgba(90, 130, 50, 0.35);
+}
+
+/* Night theme highlight */
+.book.color-theme-2 .show-modern.highlight-changes .v-modern {
+    background-color: rgba(80, 200, 120, 0.2);
+    outline-color: rgba(80, 200, 120, 0.35);
+}
+
+/* Version indicator banner below page title */
+#mesv-version-indicator {
+    display: none;
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--proofs-summary);
+    padding: 0.25em 0 0.75em 0;
+    border-bottom: 1px solid var(--proofs-separator);
+    margin-bottom: 1em;
+}
+.show-modern #mesv-version-indicator {
+    display: block;
+}
+
 /* Copy link toast notification */
 #copy-toast {
     position: fixed;
