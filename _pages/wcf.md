@@ -18,34 +18,34 @@ layout: post
 
 <p><span id="wcf-1-2"></span>2. Under the name of Holy Scripture, or the Word of God written, are now contained all the books of the Old and New <span class="v-const">Testaments,</span><span class="v-modern">Testament,</span> which are these:</p>
 
-<span class="v-const">|</span> Of the Old <span class="v-const">Testament:| | |
-| --- | --- | --- | 
-|</span><span class="v-modern">Testament:</span> Genesis <span class="v-const">|II</span><span class="v-modern">II</span> Chronicles	<span class="v-const"><span class="v-const">|</span></span> Daniel <span class="v-const">| 
-|</span> Exodus <span class="v-const">|</span> Ezra <span class="v-const">|</span> Hosea <span class="v-const">|
-|</span> Leviticus <span class="v-const">|</span> Nehemiah <span class="v-const">|</span> Joel <span class="v-const">|
-|</span> Numbers	<span class="v-const">|</span> Esther <span class="v-const">|</span> Amos
-<span class="v-const">|</span> Deuteronomy <span class="v-const">|</span> Job <span class="v-const">|</span> Obadiah <span class="v-const">|
-|</span> Joshua <span class="v-const">|</span> Psalms <span class="v-const">|</span> Jonah <span class="v-const">|
-|</span> Judges <span class="v-const">|</span> Proverbs <span class="v-const">|</span> Micah <span class="v-const">|
-|</span> Ruth <span class="v-const">|</span> Ecclesiastes <span class="v-const">|</span> Nahum <span class="v-const">|
-|</span> I Samuel <span class="v-const"><span class="v-const">|</span></span> The Song of Songs <span class="v-const">|</span> Habakkuk
-<span class="v-const">|</span> II Samuel | Isaiah <span class="v-const">|</span> Zephaniah <span class="v-const">|
-|</span> I Kings <span class="v-const"><span class="v-const">|</span></span> Jeremiah <span class="v-const">|</span> Haggai <span class="v-const">|
-|II</span><span class="v-modern">II</span> Kings | Lamentations <span class="v-const">|</span> Zechariah <span class="v-const">|
-|</span> I Chronicles | Ezekiel <span class="v-const">|</span> Malachi <span class="v-const">|
-
-|</span> Of the New <span class="v-const">Testament:| | |
+| Of the Old Testament: | | |
 | --- | --- | --- |
-|</span><span class="v-modern">Testament: The Gospels Galatians The Epistle according to Ephesians of James</span> Matthew <span class="v-const">|</span> Philippians <span class="v-const">|</span><span class="v-modern">The first and Mark Colossians second Epistles Luke Thessalonians</span> I <span class="v-modern">of</span> Peter <span class="v-const">|
-   | Mark | Colossians |</span><span class="v-modern">John Thessalonians</span> II <span class="v-const">Peter |
-| Luke |</span><span class="v-modern">The first, second, The Acts of the to Timothy</span> I <span class="v-const">Thessalonians |</span><span class="v-modern">and third Epistles Apostles to Timothy II of John Paul's Epistles to Titus The Epistle to the Romans to Philemon of Jude Corinthians</span> I <span class="v-modern">The Epistle to The Revelation Corinthians II the Hebrews of</span> John <span class="v-const">|
-| John | II Thessalonians | II John |
-| Acts | I Timothy | III John |
-| Romans | II Timothy | Jude |
-| I Corinthians | Titus | Revelation |
-| II Corinthians | Philemon | |  
+| Genesis | II Chronicles | Daniel |
+| Exodus | Ezra | Hosea |
+| Leviticus | Nehemiah | Joel |
+| Numbers | Esther | Amos |
+| Deuteronomy | Job | Obadiah |
+| Joshua | Psalms | Jonah |
+| Judges | Proverbs | Micah |
+| Ruth | Ecclesiastes | Nahum |
+| I Samuel | The Song of Songs | Habakkuk |
+| II Samuel | Isaiah | Zephaniah |
+| I Kings | Jeremiah | Haggai |
+| II Kings | Lamentations | Zechariah |
+| I Chronicles | Ezekiel | Malachi |
+
+| Of the New Testament: | | |
+| --- | --- | --- |
+| Matthew | Philippians | The Epistle of James |
+| Mark | Colossians | The first Epistle of Peter |
+| Luke | The first Epistle to Timothy | The second Epistle of Peter |
+| John | The second Epistle to Timothy | The Epistle to the Hebrews |
+| Acts | The third Epistle to Timothy | The Epistle of John |
+| Romans | The Epistle to Titus | The second Epistle of John |
+| I Corinthians | The Epistle to Philemon | The third Epistle of John |
+| II Corinthians | The Epistle of Jude | The Revelation of John |
 | Galatians | Hebrews | |
-|Ephesians | James | |</span>
+| Ephesians | James | |
 
 All <span class="v-const">which</span><span class="v-modern">of these</span> are given by inspiration of God to be the rule of faith and life.<sup class="proof-marker">g</sup>
 
