@@ -43,9 +43,6 @@ markdown_ext:             markdown,mkdown,mkdn,mkd,md
 # Permalinks
 permalink:                /:categories/:year-:month-:day-:title:output_ext
 
-# Disqus comments
-# disqushandler:            sighingnow
-
 exclude:
   - _drafts
 
@@ -72,7 +69,6 @@ page_width: 900px
 
 destination:      ./_site
 incremental:      false
-regenerate:       true
 
 plugins:
   - jekyll-feed

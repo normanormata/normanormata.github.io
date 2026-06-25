@@ -76,7 +76,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     }
 
     function showToast(msg) {
-        var toast = $('<div id="copy-toast">' + msg + '</div>');
+        var toast = $('<div id="copy-toast" role="status" aria-live="polite"></div>').text(msg);
         $('body').append(toast);
         setTimeout(function() { toast.addClass('show'); }, 10);
         setTimeout(function() {
@@ -102,6 +102,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 e.preventDefault();
                 navigator.clipboard.writeText(location.href).then(function() {
                     showToast('Link copied!');
+                }).catch(function() {
+                    showToast('Could not copy link');
                 });
             }
         });
