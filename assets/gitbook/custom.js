@@ -85,9 +85,23 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }, 2000);
     }
 
+    // ── Re-tag Bible references after GitBook AJAX page navigation ──────────
+    // GitBook swaps page content in via XMLHttpRequest without a full reload,
+    // so RefTagger (which auto-runs only once on first load) never re-scans
+    // the new content. Re-invoke refTagger.tag() on every page change.
+    function retagReferences() {
+        if (window.refTagger && typeof window.refTagger.tag === 'function') {
+            window.refTagger.tag();
+        }
+    }
+
     // ── Page load: restore state ───────────────────────────────────────────
     gitbook.events.bind('page.change', function() {
         applyVersionState();
+        // RefTagger.js may still be loading on the very first page.change;
+        // a short retry covers that race without blocking later navigations.
+        retagReferences();
+        setTimeout(retagReferences, 600);
     });
 
     // ── Toolbar Buttons ────────────────────────────────────────────────────
