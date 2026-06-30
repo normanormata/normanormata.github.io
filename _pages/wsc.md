@@ -18,7 +18,7 @@ Answer: Man's chief end is to glorify God,<sup class="proof-marker">a</sup> and 
 
 
 <span id="wsc-q2"></span>
-### Question 2: What rule <span class="v-const">hath</span><span class="v-modern">has</span> God given to direct us how we may glorify and enjoy him?  
+### Question 2: What rule hath God given to direct us how we may glorify and enjoy him?  
 Answer: The Word of God, which is contained in the Scriptures of the Old and New Testaments,<sup class="proof-marker">c</sup> is the only rule to direct us how we may glorify and enjoy him.<sup class="proof-marker">d</sup>
 
 <details class="scripture-proofs" id="wsc-q2-proofs">
@@ -87,7 +87,7 @@ Answer: The decrees of God are, his eternal purpose, according to the counsel of
 
 
 <span id="wsc-q8"></span>
-### Question 8: How <span class="v-const">doth</span><span class="v-modern">does</span> God execute his decrees?  
+### Question 8: How doth God execute his decrees?  
 Answer: God <span class="v-const">executeth</span><span class="v-modern">executes</span> his decrees in the works of creation and providence.<sup class="proof-marker">y</sup>
 
 <details class="scripture-proofs" id="wsc-q8-proofs">
@@ -133,7 +133,7 @@ Answer: God's works of providence are, his most holy,<sup class="proof-marker">f
 
 
 <span id="wsc-q12"></span>
-### Question 12: What special act of providence did God exercise towards man in the <span class="v-const">estate wherein</span><span class="v-modern">state in which</span> he was created?  
+### Question 12: What special act of providence did God exercise towards man in the estate wherein he was created?  
 Answer: When God had created man, he entered into a covenant of life with him, upon condition of perfect obedience; forbidding him to eat of the tree of the knowledge of good and evil, upon pain of death.<sup class="proof-marker">m</sup>
 
 <details class="scripture-proofs" id="wsc-q12-proofs">
@@ -145,7 +145,7 @@ Answer: When God had created man, he entered into a covenant of life with him, u
 
 
 <span id="wsc-q13"></span>
-### Question 13: Did our first parents continue in the <span class="v-const">estate wherein</span><span class="v-modern">state in which</span> they were created?  
+### Question 13: Did our first parents continue in the estate wherein they were created?  
 Answer: Our first parents, being left to the freedom of their own will, fell from the <span class="v-const">estate wherein</span><span class="v-modern">state in which</span> they were created, by sinning against God.<sup class="proof-marker">n</sup>
 
 <details class="scripture-proofs" id="wsc-q13-proofs">
@@ -168,7 +168,7 @@ Answer: Sin is any <span class="v-const">want</span><span class="v-modern">lack<
 
 
 <span id="wsc-q15"></span>
-### Question 15: What was the sin <span class="v-const">whereby</span><span class="v-modern">by which</span> our first parents fell from the <span class="v-const">estate wherein</span><span class="v-modern">state in which</span> they were created?  
+### Question 15: What was the sin whereby our first parents fell from the estate wherein they were created?  
 Answer: The sin <span class="v-const">whereby</span><span class="v-modern">by which</span> our first parents fell from the <span class="v-const">estate wherein</span><span class="v-modern">state in which</span> they were created, was their eating the forbidden fruit.<sup class="proof-marker">p</sup>
 
 <details class="scripture-proofs" id="wsc-q15-proofs">
@@ -180,7 +180,7 @@ Answer: The sin <span class="v-const">whereby</span><span class="v-modern">by wh
 
 
 <span id="wsc-q16"></span>
-### Question 16: Did all <span class="v-const">mankind</span><span class="v-modern">humanity</span> fall in Adam's first <span class="v-const">transgression.?</span><span class="v-modern">transgression?</span>  
+### Question 16: Did all mankind fall in Adam's first transgression.?  
 Answer: The covenant being made with Adam,<sup class="proof-marker">q</sup> not only for himself, but for his posterity; all <span class="v-const">mankind,</span><span class="v-modern">humanity,</span> descending from him by ordinary generation, sinned in him, and fell with him, in his first transgression.<sup class="proof-marker">r</sup>
 
 <details class="scripture-proofs" id="wsc-q16-proofs">
@@ -192,7 +192,7 @@ Answer: The covenant being made with Adam,<sup class="proof-marker">q</sup> not 
 
 
 <span id="wsc-q17"></span>
-### Question 17: Into what <span class="v-const">estate</span><span class="v-modern">state</span> did the fall bring <span class="v-const">mankind?</span><span class="v-modern">humanity?</span>  
+### Question 17: Into what estate did the fall bring mankind?  
 Answer: The fall brought <span class="v-const">mankind</span><span class="v-modern">humanity</span> into <span class="v-const">an estate</span><span class="v-modern">a state</span> of sin and misery.<sup class="proof-marker">s</sup>
 
 <details class="scripture-proofs" id="wsc-q17-proofs">
@@ -203,7 +203,7 @@ Answer: The fall brought <span class="v-const">mankind</span><span class="v-mode
 
 
 <span id="wsc-q18"></span>
-### Question 18: <span class="v-const">Wherein consists</span><span class="v-modern">What is</span> the sinfulness of that <span class="v-const">estate whereinto</span><span class="v-modern">state into which</span> man fell?  
+### Question 18: Wherein consists the sinfulness of that estate whereinto man fell?  
 Answer: The sinfulness of that <span class="v-const">estate whereinto</span><span class="v-modern">state into which</span> man fell, consists in the guilt of Adam's first sin,<sup class="proof-marker">t</sup> the <span class="v-const">want</span><span class="v-modern">lack</span> of original righteousness,<sup class="proof-marker">u</sup> and the corruption of his whole nature,<sup class="proof-marker">w</sup> which is commonly called original sin; together with all actual transgressions <span class="v-const">which</span><span class="v-modern">that</span> proceed from it.<sup class="proof-marker">x</sup>
 
 <details class="scripture-proofs" id="wsc-q18-proofs">
@@ -214,7 +214,7 @@ Answer: The sinfulness of that <span class="v-const">estate whereinto</span><spa
 
 
 <span id="wsc-q19"></span>
-### Question 19: What is the misery of that <span class="v-const">estate whereinto</span><span class="v-modern">state into which</span> man fell?  
+### Question 19: What is the misery of that estate whereinto man fell?  
 Answer: All <span class="v-const">mankind</span><span class="v-modern">humanity</span> by their fall lost communion with God,<sup class="proof-marker">y</sup> are under his wrath and curse,<sup class="proof-marker">a</sup> and so made liable to all the miseries of this life,<sup class="proof-marker">b</sup> to death itself, and to the pains of hell forever.<sup class="proof-marker">d</sup>
 
 <details class="scripture-proofs" id="wsc-q19-proofs">
@@ -225,7 +225,7 @@ Answer: All <span class="v-const">mankind</span><span class="v-modern">humanity<
 
 
 <span id="wsc-q20"></span>
-### Question 20: Did God leave all <span class="v-const">mankind</span><span class="v-modern">humanity</span> to perish in the <span class="v-const">estate</span><span class="v-modern">state</span> of sin and misery?  
+### Question 20: Did God leave all mankind to perish in the estate of sin and misery?  
 Answer: <span class="v-const">God, having</span><span class="v-modern">Having elected some to everlasting life,</span> out of his mere good pleasure, from all eternity, elected some to everlasting life,<sup class="proof-marker">e</sup> did enter into a covenant of grace to deliver them out of the <span class="v-const">estate</span><span class="v-modern">state</span> of sin and misery, and to bring them into <span class="v-const">an estate</span><span class="v-modern">a state</span> of salvation by a Redeemer.<sup class="proof-marker">f</sup>
 
 <details class="scripture-proofs" id="wsc-q20-proofs">
@@ -259,7 +259,7 @@ Answer: Christ, the Son of God, became man, by taking to himself a true body, an
 
 
 <span id="wsc-q23"></span>
-### Question 23: What offices <span class="v-const">doth</span><span class="v-modern">does</span> Christ execute as our <span class="v-const">Redeemer.?</span><span class="v-modern">Redeemer?</span>  
+### Question 23: What offices doth Christ execute as our Redeemer.?  
 Answer: Christ, as our Redeemer, <span class="v-const">executeth</span><span class="v-modern">executes</span> the offices of a prophet,<sup class="proof-marker">o</sup> of a priest,<sup class="proof-marker">p</sup> and of a king,<sup class="proof-marker">q</sup> both in his <span class="v-const">estate</span><span class="v-modern">state</span> of humiliation and exaltation.
 
 <details class="scripture-proofs" id="wsc-q23-proofs">
@@ -270,7 +270,7 @@ Answer: Christ, as our Redeemer, <span class="v-const">executeth</span><span cla
 
 
 <span id="wsc-q24"></span>
-### Question 24: How <span class="v-const">doth</span><span class="v-modern">does</span> Christ execute the office of a prophet?  
+### Question 24: How doth Christ execute the office of a prophet?  
 Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a prophet, in revealing to us, by his Word and Spirit,<sup class="proof-marker">s</sup> the will of God for our salvation.<sup class="proof-marker">t</sup>
 
 <details class="scripture-proofs" id="wsc-q24-proofs">
@@ -281,7 +281,7 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 
 
 <span id="wsc-q25"></span>
-### Question 25: How <span class="v-const">doth</span><span class="v-modern">does</span> Christ execute the office of a priest?  
+### Question 25: How doth Christ execute the office of a priest?  
 Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a priest, in his once offering <span class="v-modern">himself</span> up <span class="v-const">of himself</span><span class="v-modern">as</span> a sacrifice to satisfy divine justice,<sup class="proof-marker">u</sup> and reconcile us to God,<sup class="proof-marker">w</sup> and in making continual intercession for us.<sup class="proof-marker">x</sup>
 
 <details class="scripture-proofs" id="wsc-q25-proofs">
@@ -292,7 +292,7 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 
 
 <span id="wsc-q26"></span>
-### Question 26: How <span class="v-const">doth</span><span class="v-modern">does</span> Christ execute the office of a king?  
+### Question 26: How doth Christ execute the office of a king?  
 Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a king, in subduing us to himself, in ruling and defending us,<sup class="proof-marker">y</sup> and in restraining and conquering all his and our enemies.<sup class="proof-marker">z</sup>
 
 <details class="scripture-proofs" id="wsc-q26-proofs">
@@ -304,7 +304,7 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 
 
 <span id="wsc-q27"></span>
-### Question 27: <span class="v-const">Wherein did</span><span class="v-modern">What was</span> Christ's <span class="v-const">humiliation consist?</span><span class="v-modern">state of humiliation?</span>  
+### Question 27: Wherein did Christ's humiliation consist?  
 Answer: Christ's humiliation consisted in his being born, and that in a low condition,<sup class="proof-marker">a</sup> made under the law,<sup class="proof-marker">b</sup> undergoing the miseries of this life, the wrath of God,<sup class="proof-marker">d</sup> and the cursed death of the cross;<sup class="proof-marker">e</sup> in being buried, and continuing under the power of death for a time.<sup class="proof-marker">f</sup>
 
 <details class="scripture-proofs" id="wsc-q27-proofs">
@@ -315,7 +315,7 @@ Answer: Christ's humiliation consisted in his being born, and that in a low cond
 
 
 <span id="wsc-q28"></span>
-### Question 28: <span class="v-const">Wherein consisteth</span><span class="v-modern">What is</span> Christ's <span class="v-modern">state of</span> exaltation?  
+### Question 28: Wherein consisteth Christ's exaltation?  
 Answer: Christ's exaltation <span class="v-const">consisteth</span><span class="v-modern">consists</span> in his rising <span class="v-const">again</span> from the dead on the third day,<sup class="proof-marker">g</sup> in ascending <span class="v-const">up</span> into heaven,<sup class="proof-marker">h</sup> in sitting at the right hand of God the Father,<sup class="proof-marker">i</sup> and in coming to judge the world at the last day.
 
 <details class="scripture-proofs" id="wsc-q28-proofs">
@@ -338,7 +338,7 @@ Answer: We are made partakers of the redemption purchased by Christ, by the effe
 
 
 <span id="wsc-q30"></span>
-### Question 30: How <span class="v-const">doth</span><span class="v-modern">does</span> the Spirit apply to us the redemption purchased by Christ?  
+### Question 30: How doth the Spirit apply to us the redemption purchased by Christ?  
 Answer: The Spirit <span class="v-const">applieth</span><span class="v-modern">applies</span> to us the redemption purchased by Christ, by working faith in us,<sup class="proof-marker">m</sup> and <span class="v-const">thereby</span><span class="v-modern">by this</span> uniting us to Christ in our effectual calling.<sup class="proof-marker">n</sup>
 
 <details class="scripture-proofs" id="wsc-q30-proofs">
@@ -361,7 +361,7 @@ Answer: Effectual calling is the work of God's Spirit, <span class="v-const">whe
 
 
 <span id="wsc-q32"></span>
-### Question 32: What benefits do <span class="v-const">they that</span><span class="v-modern">those who</span> are effectually called partake of in this life?  
+### Question 32: What benefits do they that are effectually called partake of in this life?  
 Answer: <span class="v-const">They that</span><span class="v-modern">Those who</span> are effectually called <span class="v-const">do</span><span class="v-modern">partake</span> in this life <span class="v-const">partake</span> of justification, adoption, and sanctification, and the several benefits <span class="v-const">which</span><span class="v-modern">that</span> in this life <span class="v-const">do</span> either accompany or flow from them.<sup class="proof-marker">s</sup>
 
 <details class="scripture-proofs" id="wsc-q32-proofs">
@@ -407,7 +407,7 @@ Answer: Sanctification is the work of God's free grace,<sup class="proof-marker"
 
 
 <span id="wsc-q36"></span>
-### Question 36: What are the benefits <span class="v-const">which</span><span class="v-modern">that</span> in this life <span class="v-const">do</span> accompany or flow from justification, adoption, and sanctification?  
+### Question 36: What are the benefits which in this life do accompany or flow from justification, adoption, and sanctification?  
 Answer: The benefits <span class="v-const">which</span><span class="v-modern">that</span> in this life <span class="v-const">do</span> accompany or flow from justification, adoption, and sanctification, are, assurance of God's love, peace of conscience,<sup class="proof-marker">f</sup> joy in the Holy <span class="v-const">Ghost,</span><span class="v-modern">Spirit,</span><sup class="proof-marker">g</sup> increase of grace,<sup class="proof-marker">h</sup> and perseverance <span class="v-const">therein</span><span class="v-modern">in it</span> to the end.<sup class="proof-marker">i</sup>
 
 <details class="scripture-proofs" id="wsc-q36-proofs">
@@ -441,7 +441,7 @@ Answer: At the resurrection, believers, being raised up in glory,<sup class="pro
 
 
 <span id="wsc-q39"></span>
-### Question 39: What is the duty <span class="v-const">which</span><span class="v-modern">that</span> God <span class="v-const">requireth</span><span class="v-modern">requires</span> of man?  
+### Question 39: What is the duty which God requireth of man?  
 Answer: The duty <span class="v-const">which</span><span class="v-modern">that</span> God <span class="v-const">requireth</span><span class="v-modern">requires</span> of man, is obedience to his revealed will.<sup class="proof-marker">s</sup>
 
 <details class="scripture-proofs" id="wsc-q39-proofs">
@@ -465,7 +465,7 @@ Answer: The rule <span class="v-const">which</span><span class="v-modern">that</
 
 
 <span id="wsc-q41"></span>
-### Question 41: <span class="v-const">Wherein</span><span class="v-modern">Where</span> is the moral law <span class="v-const">summarily comprehended?</span><span class="v-modern">summarized?</span>  
+### Question 41: Wherein is the moral law summarily comprehended?  
 Answer: The moral law is <span class="v-const">summarily comprehended</span><span class="v-modern">summarized</span> in the <span class="v-const">ten commandments.</span><span class="v-modern">Ten Commandments.</span><sup class="proof-marker">u</sup>
 
 <details class="scripture-proofs" id="wsc-q41-proofs">
@@ -500,7 +500,7 @@ Answer: The preface to the <span class="v-const">ten commandments</span><span cl
 
 
 <span id="wsc-q44"></span>
-### Question 44: What <span class="v-const">doth</span><span class="v-modern">does</span> the preface to the <span class="v-const">ten commandments</span><span class="v-modern">Ten Commandments</span> teach us?  
+### Question 44: What doth the preface to the ten commandments teach us?  
 Answer: The preface to the <span class="v-const">ten commandments teacheth us,</span><span class="v-modern">Ten Commandments teaches us</span> that because God is the Lord, and our God, and Redeemer, therefore we are bound to keep all his commandments.<sup class="proof-marker">y</sup>
 
 <details class="scripture-proofs" id="wsc-q44-proofs">
@@ -674,7 +674,7 @@ Answer: The fourth commandment <span class="v-const">requireth the</span><span c
 
 
 <span id="wsc-q59"></span>
-### Question 59: Which day of the seven <span class="v-const">hath</span><span class="v-modern">has</span> God appointed to be the weekly <span class="v-const">sabbath?</span><span class="v-modern">Sabbath?</span>  
+### Question 59: Which day of the seven hath God appointed to be the weekly sabbath?  
 Answer: From the beginning of the world to the resurrection of Christ, God appointed the seventh day of the week to be the weekly sabbath;<sup class="proof-marker">z</sup> and the first day of the week ever since, to continue to the end of the world, which is the Christian sabbath.<sup class="proof-marker">a</sup>
 
 <details class="scripture-proofs" id="wsc-q59-proofs">
@@ -943,7 +943,7 @@ Answer: The tenth commandment <span class="v-const">forbiddeth</span><span class
 
 
 <span id="wsc-q82"></span>
-### Question 82: Is any man able <span class="v-const">perfectly</span> to keep the commandments of <span class="v-const">God?</span><span class="v-modern">God perfectly?</span>  
+### Question 82: Is any man able perfectly to keep the commandments of God?  
 Answer: No mere <span class="v-const">men,</span><span class="v-modern">man</span> since the fall, is able in this life <span class="v-const">perfectly</span> to keep the commandments of <span class="v-const">God,</span><span class="v-modern">God perfectly,</span> but <span class="v-const">doth</span> daily <span class="v-const">break</span><span class="v-modern">breaks</span> them in thought, word, and deed.<sup class="proof-marker">f</sup>
 
 <details class="scripture-proofs" id="wsc-q82-proofs">
@@ -967,7 +967,7 @@ Answer: Some sins in themselves, and by reason of several aggravations, are more
 
 
 <span id="wsc-q84"></span>
-### Question 84: What <span class="v-const">doth</span><span class="v-modern">does</span> every sin deserve?  
+### Question 84: What doth every sin deserve?  
 Answer: Every sin <span class="v-const">deserveth</span><span class="v-modern">deserves</span> God's wrath and curse, both in this life, and that which is to come.<sup class="proof-marker">h</sup>
 
 <details class="scripture-proofs" id="wsc-q84-proofs">
@@ -978,7 +978,7 @@ Answer: Every sin <span class="v-const">deserveth</span><span class="v-modern">d
 
 
 <span id="wsc-q85"></span>
-### Question 85: What <span class="v-const">doth</span><span class="v-modern">does</span> God require of us, that we may escape his wrath and curse, due to us for sin?  
+### Question 85: What doth God require of us, that we may escape his wrath and curse, due to us for sin?  
 Answer: To escape the wrath and curse of God, due to us for sin, God <span class="v-const">requireth</span><span class="v-modern">requires</span> of us faith in Jesus <span class="v-const">Christ,</span><span class="v-modern">Christ and</span> repentance unto life,<sup class="proof-marker">i</sup> with the diligent use of all the outward means <span class="v-const">whereby</span><span class="v-modern">by which</span> Christ <span class="v-const">communicateth</span><span class="v-modern">communicates</span> to us the benefits of redemption.
 
 <details class="scripture-proofs" id="wsc-q85-proofs">
@@ -1012,7 +1012,7 @@ Answer: Repentance unto life is a saving grace,<sup class="proof-marker">n</sup>
 
 
 <span id="wsc-q88"></span>
-### Question 88: What are the outward and ordinary means <span class="v-const">whereby</span><span class="v-modern">by which</span> Christ <span class="v-const">communicateth</span><span class="v-modern">communicates</span> to us the benefits of redemption?  
+### Question 88: What are the outward and ordinary means whereby Christ communicateth to us the benefits of redemption?  
 Answer: The outward and ordinary means <span class="v-const">whereby</span><span class="v-modern">by which</span> Christ <span class="v-const">communicateth</span><span class="v-modern">communicates</span> to us the benefits of redemption are, his ordinances, especially the <span class="v-const">Word,</span><span class="v-modern">word,</span> sacraments, and prayer; all <span class="v-modern">of</span> which are made effectual to the elect for salvation.<sup class="proof-marker">r</sup>
 
 <details class="scripture-proofs" id="wsc-q88-proofs">
@@ -1139,7 +1139,7 @@ Answer: Prayer is an offering up of our desires <span class="v-const">unto</span
 
 
 <span id="wsc-q99"></span>
-### Question 99: What rule <span class="v-const">hath</span><span class="v-modern">has</span> God given for our direction in prayer?  
+### Question 99: What rule hath God given for our direction in prayer?  
 Answer: The whole Word of God is of use to direct us in prayer;<sup class="proof-marker">o</sup> but the special rule of direction is that form of prayer which Christ taught his disciples, commonly called the Lord's Prayer.
 
 <details class="scripture-proofs" id="wsc-q99-proofs">
@@ -1150,7 +1150,7 @@ Answer: The whole Word of God is of use to direct us in prayer;<sup class="proof
 
 
 <span id="wsc-q100"></span>
-### Question 100: What <span class="v-const">doth</span><span class="v-modern">does</span> the preface of the Lord's Prayer teach us?  
+### Question 100: What doth the preface of the Lord's Prayer teach us?  
 Answer: The preface of the Lord's Prayer, which is, Our Father <span class="v-const">which art</span> in heaven, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to draw near to God with all holy reverence and confidence,<sup class="proof-marker">r</sup> as children to a father,<sup class="proof-marker">s</sup> able and ready to help us;<sup class="proof-marker">t</sup> and that we should pray with and for others.<sup class="proof-marker">u</sup>
 
 <details class="scripture-proofs" id="wsc-q100-proofs">
@@ -1230,7 +1230,7 @@ Answer: In the sixth petition, which is, And lead us not into temptation, but de
 
 
 <span id="wsc-q107"></span>
-### Question 107: What <span class="v-const">doth</span><span class="v-modern">does</span> the conclusion of the Lord's Prayer teach us?  
+### Question 107: What doth the conclusion of the Lord's Prayer teach us?  
 Answer: The conclusion of the Lord's Prayer, which is, For <span class="v-const">thine</span><span class="v-modern">yours</span> is the <span class="v-const">kingdom,</span><span class="v-modern">kingdom</span> and the <span class="v-const">power,</span><span class="v-modern">power</span> and the glory, forever. Amen, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to take our encouragement in prayer from God only, and in our prayers to praise him, ascribing kingdom, power, and glory to him;<sup class="proof-marker">l</sup> and, in testimony of our desire, and assurance to be heard, we say, Amen.<sup class="proof-marker">m</sup>
 
 <details class="scripture-proofs" id="wsc-q107-proofs">
