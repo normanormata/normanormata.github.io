@@ -79,11 +79,9 @@ require([
                 $link[0].setAttribute('data-need-reload', 1);
             }
 
-            var content = item.body.trim();
-            if (content.length > MAX_DESCRIPTION_SIZE) {
-                content = content + '...';
-            }
-            var $content = $('<p>').html(content);
+            // item.body is already a trimmed, ellipsis-bounded snippet with the
+            // keyword wrapped in a highlight span (built in query()).
+            var $content = $('<p>').html(item.body);
 
             $link.appendTo($title);
             $title.appendTo($li);
@@ -105,10 +103,30 @@ require([
             index = -1;
         for (var page in INDEX_DATA) {
             if ((index = INDEX_DATA[page].body.toLowerCase().indexOf(keyword.toLowerCase())) !== -1) {
+                var fullBody = INDEX_DATA[page].body;
+                var start = Math.max(0, index - 50);
+                var end = Math.min(fullBody.length, start + MAX_DESCRIPTION_SIZE);
+                var snippet = fullBody.substring(start, end);
+                // Trim a partial word at the start and prefix an ellipsis.
+                if (start > 0) {
+                    var firstSpace = snippet.indexOf(' ');
+                    if (firstSpace > -1 && firstSpace < 30) {
+                        snippet = snippet.slice(firstSpace + 1);
+                    }
+                    snippet = '…' + snippet;
+                }
+                // Trim a partial word at the end and append an ellipsis.
+                if (end < fullBody.length) {
+                    var lastSpace = snippet.lastIndexOf(' ');
+                    if (lastSpace > snippet.length - 30) {
+                        snippet = snippet.slice(0, lastSpace);
+                    }
+                    snippet = snippet + '…';
+                }
                 results.push({
                     url: page,
                     title: INDEX_DATA[page].title,
-                    body: INDEX_DATA[page].body.substr(Math.max(0, index - 50), MAX_DESCRIPTION_SIZE).replace(new RegExp('(' + escapeReg(keyword) + ')', 'gi'), '<span class="search-highlight-keyword">$1</span>')
+                    body: snippet.replace(new RegExp('(' + escapeReg(keyword) + ')', 'gi'), '<span class="search-highlight-keyword">$1</span>')
                 });
             }
         }
@@ -144,6 +162,10 @@ require([
             $.getJSON(url).then(function(data) {
                 INDEX_DATA = data;
                 handleUpdate();
+            }).fail(function() {
+                if (window.console) {
+                    console.error('Search index failed to load: ' + url);
+                }
             });
         }
 
@@ -180,6 +202,10 @@ require([
                 $.getJSON(url).then(function(data) {
                     INDEX_DATA = data;
                     handleUpdate();
+                }).fail(function() {
+                    if (window.console) {
+                        console.error('Search index failed to load: ' + url);
+                    }
                 });
             }
         });

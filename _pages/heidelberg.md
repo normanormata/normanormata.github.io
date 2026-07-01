@@ -20,7 +20,7 @@ Answer: First, how great my sins and misery are;[1] second, how I am delivered f
 [1] Rom. 3:9, 10; I John 1:10. [2] John 17:3; Acts 4:12; 10:43. [3] Matt. 5:16; Rom. 6:13; Eph. 5:8-10; I Pet. 2:9, 10.
 
 
-## 3.Question: From where do you know your sins and misery?
+## 3. Question: From where do you know your sins and misery?
 
 Answer: From the law of God.[1]
 

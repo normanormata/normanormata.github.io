@@ -29,9 +29,20 @@ if (document.readyState === "loading") {
 
 require(['gitbook', 'jquery'], function(gitbook, $) {
 
+    // ── Safe localStorage access ───────────────────────────────────────────
+    // Safari private mode and storage-blocked contexts throw on access; an
+    // uncaught error here would abort the whole callback and disable every
+    // toolbar button, so read/write defensively.
+    function lsGet(key) {
+        try { return localStorage.getItem(key); } catch (e) { return null; }
+    }
+    function lsSet(key, val) {
+        try { localStorage.setItem(key, val); } catch (e) { /* ignore */ }
+    }
+
     // ── State ──────────────────────────────────────────────────────────────
-    var showModern = localStorage.getItem('mesv-version') === 'modern';
-    var highlightOn = localStorage.getItem('mesv-highlight') === 'on';
+    var showModern = lsGet('mesv-version') === 'modern';
+    var highlightOn = lsGet('mesv-highlight') === 'on';
 
     // ── Helpers ────────────────────────────────────────────────────────────
     function isStandardsPage() {
@@ -91,7 +102,11 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     // the new content. Re-invoke refTagger.tag() on every page change.
     function retagReferences() {
         if (window.refTagger && typeof window.refTagger.tag === 'function') {
-            window.refTagger.tag();
+            try {
+                window.refTagger.tag();
+            } catch (e) {
+                // A RefTagger internal error must not break page.change handling.
+            }
         }
     }
 
@@ -151,8 +166,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 }
                 showModern = !showModern;
                 if (!showModern) highlightOn = false;
-                localStorage.setItem('mesv-version', showModern ? 'modern' : 'constitutional');
-                localStorage.setItem('mesv-highlight', highlightOn ? 'on' : 'off');
+                lsSet('mesv-version', showModern ? 'modern' : 'constitutional');
+                lsSet('mesv-highlight', highlightOn ? 'on' : 'off');
                 applyVersionState();
                 showToast(showModern
                     ? 'Showing: 2025 Modern English Study Version'
@@ -173,7 +188,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                     return;
                 }
                 highlightOn = !highlightOn;
-                localStorage.setItem('mesv-highlight', highlightOn ? 'on' : 'off');
+                lsSet('mesv-highlight', highlightOn ? 'on' : 'off');
                 getContainer().toggleClass('highlight-changes', highlightOn);
                 showToast(highlightOn ? 'Highlighting changes from constitutional text' : 'Highlights off');
             }
