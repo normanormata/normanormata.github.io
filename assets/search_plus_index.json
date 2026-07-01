@@ -74,8 +74,10 @@ layout: null
 {%- comment -%}
   Build a flat list of JSON "key": {...} entry strings, then join with commas.
   Documents that carry <span id="..."></span> section anchors (WCF/WSC/WLC) are
-  split into one entry per section so search returns every matching section with
-  a deep link; all other documents become a single whole-page entry.
+  split into one entry per section with a deep link. Documents without those
+  anchors but with heading tags (Heidelberg, Belgic, Canons, church order) are
+  split on their kramdown auto-id headings instead. Short documents with no
+  headings (creeds) become a single whole-page entry.
 {%- endcomment -%}
 {%- assign entries = "" | split: "" -%}
 {%- for document in index -%}
@@ -106,6 +108,42 @@ layout: null
         {%- assign sectitle = doctitle | append: ' — ' | append: seclabel -%}
         {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "keywords": "", "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}}{%- endcapture -%}
         {%- assign entries = entries | push: entry -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- elsif document.content contains '<h' -%}
+    {%- comment -%} Split on heading tags; use kramdown auto-ids for deep links. {%- endcomment -%}
+    {%- assign chunks = document.content | split: '<h' -%}
+    {%- for chunk in chunks -%}
+      {%- if forloop.first -%}
+        {%- assign preamble = chunk | strip_html | normalize_whitespace | strip -%}
+        {%- if preamble != "" -%}
+          {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": "", "url": {{ document.url | relative_url | jsonify }}, "body": {{ preamble | jsonify }}}{%- endcapture -%}
+          {%- assign entries = entries | push: entry -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign lvl = chunk | slice: 0, 1 -%}
+        {%- comment -%} Only real headings (h1-h6); skips <hr>, <header>, etc. {%- endcomment -%}
+        {%- if lvl == '1' or lvl == '2' or lvl == '3' or lvl == '4' or lvl == '5' or lvl == '6' -%}
+          {%- comment -%} Re-add the '<h' the split removed so strip_html can drop the opening tag (and its id slug) instead of leaking it as text. {%- endcomment -%}
+          {%- assign body = chunk | prepend: '<h' | strip_html | normalize_whitespace | strip -%}
+          {%- if body != "" -%}
+            {%- assign headertag = chunk | split: '>' | first -%}
+            {%- if headertag contains 'id="' -%}
+              {%- assign secid = headertag | split: 'id="' | last | split: '"' | first -%}
+              {%- assign securl = document.url | append: '#' | append: secid -%}
+            {%- else -%}
+              {%- assign securl = document.url | append: '#h' | append: forloop.index -%}
+            {%- endif -%}
+            {%- assign htext = chunk | split: '</h' | first | split: '>' | last | strip_html | normalize_whitespace | strip -%}
+            {%- if htext != "" -%}
+              {%- assign sectitle = doctitle | append: ' — ' | append: htext -%}
+            {%- else -%}
+              {%- assign sectitle = doctitle -%}
+            {%- endif -%}
+            {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "keywords": "", "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}}{%- endcapture -%}
+            {%- assign entries = entries | push: entry -%}
+          {%- endif -%}
+        {%- endif -%}
       {%- endif -%}
     {%- endfor -%}
   {%- else -%}
