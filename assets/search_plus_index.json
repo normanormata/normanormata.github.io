@@ -71,16 +71,50 @@ layout: null
     {%- endunless -%}
   {%- endfor -%}
 {%- endfor -%}
-{
+{%- comment -%}
+  Build a flat list of JSON "key": {...} entry strings, then join with commas.
+  Documents that carry <span id="..."></span> section anchors (WCF/WSC/WLC) are
+  split into one entry per section so search returns every matching section with
+  a deep link; all other documents become a single whole-page entry.
+{%- endcomment -%}
+{%- assign entries = "" | split: "" -%}
 {%- for document in index -%}
-  {%- assign tags = document.tags | uniq -%}
-  {%- assign categories = document.categories | uniq -%}
-  {%- assign taxonomies = tags | concat: categories | uniq -%}
-  {{ document.url | relative_url | jsonify }}: {
-    "title": {{ document.title | smartify | strip_html | normalize_whitespace | jsonify }},
-    "keywords": {{ taxonomies | join: " " | normalize_whitespace | jsonify }},
-    "url": {{ document.url | relative_url | jsonify }},
-    "body": {{ document.content | strip_html | normalize_whitespace | jsonify }}
-  }{%- unless forloop.last -%},{%- endunless -%}
+  {%- assign doctitle = document.title | smartify | strip_html | normalize_whitespace -%}
+  {%- if document.content contains '<span id="' -%}
+    {%- assign chunks = document.content | split: '<span id="' -%}
+    {%- for chunk in chunks -%}
+      {%- if forloop.first -%}
+        {%- assign preamble = chunk | strip_html | normalize_whitespace | strip -%}
+        {%- if preamble != "" -%}
+          {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": "", "url": {{ document.url | relative_url | jsonify }}, "body": {{ preamble | jsonify }}}{%- endcapture -%}
+          {%- assign entries = entries | push: entry -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign secid = chunk | split: '"' | first -%}
+        {%- assign marker = secid | append: '"></span>' -%}
+        {%- assign body = chunk | remove_first: marker | strip_html | normalize_whitespace | strip -%}
+        {%- assign securl = document.url | append: '#' | append: secid -%}
+        {%- assign idparts = secid | split: '-' -%}
+        {%- if idparts[0] == 'wcf' -%}
+          {%- assign seclabel = 'Chapter ' | append: idparts[1] | append: '.' | append: idparts[2] -%}
+        {%- elsif idparts[0] == 'wsc' or idparts[0] == 'wlc' -%}
+          {%- assign qnum = idparts[1] | remove: 'q' -%}
+          {%- assign seclabel = 'Question ' | append: qnum -%}
+        {%- else -%}
+          {%- assign seclabel = secid -%}
+        {%- endif -%}
+        {%- assign sectitle = doctitle | append: ' — ' | append: seclabel -%}
+        {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "keywords": "", "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}}{%- endcapture -%}
+        {%- assign entries = entries | push: entry -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign tags = document.tags | uniq -%}
+    {%- assign categories = document.categories | uniq -%}
+    {%- assign taxonomies = tags | concat: categories | uniq -%}
+    {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": {{ taxonomies | join: " " | normalize_whitespace | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "body": {{ document.content | strip_html | normalize_whitespace | jsonify }}}{%- endcapture -%}
+    {%- assign entries = entries | push: entry -%}
+  {%- endif -%}
 {%- endfor -%}
-}
+{%- assign json_out = entries | join: "," | prepend: "{" | append: "}" -%}
+{{ json_out }}
