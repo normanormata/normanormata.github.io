@@ -4,45 +4,40 @@ title: Creeds & Confessions of the Church
 permalink: /
 ---
 
-Searchable creeds, confessions, and catechisms of the church.
+<p class="home-lead">Searchable creeds, confessions, and catechisms of the church.</p>
 
-# The Ecumenical Creeds
-[The Apostles Creed](https://normanormata.github.io/pages/apostles-creed/)<br>
-[The Athanasian Creed](https://normanormata.github.io/pages/athanasian-creed/)<br>
-[The Nicene Creed](https://normanormata.github.io/pages/nicene-creed/)<br>
+<div class="home-group">
+<h2 class="home-group-title">The Ecumenical Creeds</h2>
+<div class="home-cards">
+<a class="home-card" href="/pages/apostles-creed/"><span class="home-card-title">The Apostles Creed</span><span class="home-card-desc">The earliest ecumenical summary of the apostolic faith.</span></a>
+<a class="home-card" href="/pages/athanasian-creed/"><span class="home-card-title">The Athanasian Creed</span><span class="home-card-desc">A fifth-century creed confessing the Trinity and the Incarnation.</span></a>
+<a class="home-card" href="/pages/nicene-creed/"><span class="home-card-title">The Nicene Creed</span><span class="home-card-desc">The creed of Nicaea (325) and Constantinople (381) on the triune God.</span></a>
+</div>
+</div>
 
-# The Westminster Standards
-[The Westminster Confession of Faith](https://normanormata.github.io/pages/wcf/)
-<br>
-[The Westminster Larger Catechism](https://normanormata.github.io/pages/wlc/)
-<br>
-[The Westminster Shorter Catechism](https://normanormata.github.io/pages/wsc/)
+<div class="home-group">
+<h2 class="home-group-title">The Westminster Standards</h2>
+<div class="home-cards">
+<a class="home-card" href="/pages/wcf/"><span class="home-card-title">The Westminster Confession of Faith</span><span class="home-card-desc">The 1646 confession of the Westminster Assembly.</span></a>
+<a class="home-card" href="/pages/wlc/"><span class="home-card-title">The Westminster Larger Catechism</span><span class="home-card-desc">The Assembly's fuller catechism for teaching and preaching.</span></a>
+<a class="home-card" href="/pages/wsc/"><span class="home-card-title">The Westminster Shorter Catechism</span><span class="home-card-desc">The Assembly's concise catechism for instruction.</span></a>
+</div>
+</div>
 
-# The Three Forms of Unity
-[The Belgic Confession](https://normanormata.github.io/pages/belgic/)
-<br>
-[The Canons of Dort](https://normanormata.github.io/pages/canons-of-dort/)
-<br>
-[The Heidelberg Catechism](https://normanormata.github.io/pages/heidelberg/)
+<div class="home-group">
+<h2 class="home-group-title">The Three Forms of Unity</h2>
+<div class="home-cards">
+<a class="home-card" href="/pages/belgic/"><span class="home-card-title">The Belgic Confession</span><span class="home-card-desc">A 1561 Reformed confession from the Low Countries.</span></a>
+<a class="home-card" href="/pages/canons-of-dort/"><span class="home-card-title">The Canons of Dort</span><span class="home-card-desc">The 1619 synod's reply to the Arminian Remonstrance.</span></a>
+<a class="home-card" href="/pages/heidelberg/"><span class="home-card-title">The Heidelberg Catechism</span><span class="home-card-desc">A warm, pastoral catechism of 1563 in 129 questions.</span></a>
+</div>
+</div>
 
-# The OPC Book of Church Order 
-[The Form of Government](https://normanormata.github.io/pages/fg/)
-<br>
-[The Book of Discipline](https://normanormata.github.io/pages/bd/)
-<br>
-[The Directory for the Public Worship of God](https://normanormata.github.io/pages/dpw/)
-
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
-[7]: https://analytics.google.com/analytics/web/
-[8]: https://www.cnzz.com/
-[9]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
-[10]: https://github.com/sighingnow/jekyll-gitbook/blob/master/gitbook/custom.css
-[11]: https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas
-[12]: https://rubygems.org/gems/jekyll-remote-theme
-[13]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-[14]: https://github.com/sighingnow/jekyll-gitbook/blob/master/_config.yml
+<div class="home-group">
+<h2 class="home-group-title">The OPC Book of Church Order</h2>
+<div class="home-cards">
+<a class="home-card" href="/pages/fg/"><span class="home-card-title">The Form of Government</span><span class="home-card-desc">The OPC's constitution for church order and office.</span></a>
+<a class="home-card" href="/pages/bd/"><span class="home-card-title">The Book of Discipline</span><span class="home-card-desc">The OPC's procedures for church discipline.</span></a>
+<a class="home-card" href="/pages/dpw/"><span class="home-card-title">The Directory for the Public Worship of God</span><span class="home-card-desc">The OPC's directory for corporate worship.</span></a>
+</div>
+</div>

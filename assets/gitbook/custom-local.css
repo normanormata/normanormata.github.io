@@ -318,3 +318,86 @@ sup.proof-marker:hover {
     /* Avoid orphaned headings */
     h1, h2, h3 { break-after: avoid; }
 }
+
+/* ── Homepage grouped cards ─────────────────────────────────────────────── */
+.book {
+    --card-bg:        #f7f9fb;
+    --card-border:    #2a6496;
+    --card-title:     #17324c;
+    --card-desc:      #48586a;
+    --card-separator: #d8e2ec;
+}
+.book.color-theme-1 {
+    --card-bg:        #ede3c4;
+    --card-border:    #8b5e1a;
+    --card-title:     #5a3c10;
+    --card-desc:      #6b5230;
+    --card-separator: #c9b87a;
+}
+.book.color-theme-2 {
+    --card-bg:        #242738;
+    --card-border:    #4a90c4;
+    --card-title:     #d3e2f1;
+    --card-desc:      #9aa8ba;
+    --card-separator: #373b50;
+}
+
+.markdown-section .home-lead {
+    font-size: 1.1em;
+    color: var(--card-desc);
+    margin: 0.25em 0 1.75em 0;
+}
+
+.home-group {
+    margin: 0 0 2em 0;
+}
+
+.markdown-section .home-group-title {
+    font-size: 1.15em;
+    margin: 0 0 0.75em 0;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--card-separator);
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.85em;
+}
+
+.markdown-section .home-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em 1em;
+    background: var(--card-bg);
+    border: 1px solid var(--card-separator);
+    border-left: 3px solid var(--card-border);
+    border-radius: 0 5px 5px 0;
+    text-decoration: none;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.markdown-section .home-card:hover,
+.markdown-section .home-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+    outline: 2px solid var(--card-border);
+    outline-offset: 2px;
+}
+
+.home-card-title {
+    font-weight: 600;
+    color: var(--card-title);
+    margin-bottom: 0.3em;
+}
+
+.home-card-desc {
+    font-size: 0.85em;
+    color: var(--card-desc);
+    line-height: 1.45;
+}
+
+@media (max-width: 600px) {
+    .home-cards { grid-template-columns: 1fr; }
+}
