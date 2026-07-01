@@ -58,13 +58,24 @@ require([
 
             var $title = $('<h3>');
 
+            // Build the href so the ?h= highlight query sits BEFORE any
+            // #section-anchor (index entries are now per-section and their
+            // url may include a fragment, e.g. /pages/wcf/#wcf-1-1).
+            var hParam = '?h=' + encodeURIComponent(res.query);
+            var hashPos = item.url.indexOf('#');
+            var href = hashPos === -1
+                ? item.url + hParam
+                : item.url.slice(0, hashPos) + hParam + item.url.slice(hashPos);
+
             var $link = $('<a>', {
-                'href': item.url + '?h=' + encodeURIComponent(res.query),
+                'href': href,
                 'text': item.title,
                 'data-is-search': 1
             });
 
-            if ($link[0].href.split('?')[0] === location.href.split('?')[0]) {
+            // Reload when the target is the page we're already on (so the
+            // highlight re-runs), comparing paths only — ignore query/hash.
+            if ($link[0].pathname === location.pathname) {
                 $link[0].setAttribute('data-need-reload', 1);
             }
 
@@ -202,6 +213,16 @@ require([
         });
 
         setTimeout(function() {
+            // Prefer the section anchor from the deep link, so the user lands
+            // on the exact matched section; fall back to the first highlight.
+            if (location.hash && location.hash.length > 1) {
+                var target = document.getElementById(
+                    decodeURIComponent(location.hash.slice(1)));
+                if (target) {
+                    target.scrollIntoView();
+                    return;
+                }
+            }
             var mark = $('mark[data-markjs="true"]');
             if (mark.length) {
                 mark[0].scrollIntoView();
