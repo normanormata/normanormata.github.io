@@ -95,6 +95,22 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }
     }
 
+    // ── Re-tag when a Scripture Proofs callout is expanded ─────────────────
+    // Every scripture reference lives inside a collapsed <details> callout.
+    // RefTagger only tags *rendered* text (via innerText), so references
+    // hidden in a closed <details> are never seen on the initial scan. When a
+    // callout opens, its references become visible for the first time, so
+    // re-run RefTagger to tag them. The 'toggle' event does not bubble, so we
+    // listen in the capture phase at the document level; this one listener
+    // also covers callouts inserted later by GitBook's AJAX navigation.
+    document.addEventListener('toggle', function(e) {
+        var el = e.target;
+        if (el && el.tagName === 'DETAILS' && el.open &&
+            el.classList.contains('scripture-proofs')) {
+            retagReferences();
+        }
+    }, true);
+
     // ── Page load: restore state ───────────────────────────────────────────
     gitbook.events.bind('page.change', function() {
         applyVersionState();
