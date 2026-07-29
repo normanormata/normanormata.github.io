@@ -6,7 +6,12 @@
     <title>{{ site.title | escape }}</title>
 {%- endif -%}
 
-<meta name="description" content="{{site.description}}">
+{%- comment -%}
+  jekyll-seo-tag emits description, canonical, Open Graph, Twitter Card and JSON-LD.
+  title=false keeps the "Page · Site" <title> built above rather than letting the
+  plugin own it. Per-page copy comes from the `description` front matter field.
+{%- endcomment -%}
+{% seo title=false %}
 
 {%- if site.gitbook_version -%}
     <meta name="generator" content="Jekyll (using style of GitBook {{ site.gitbook_version | escape }})">
@@ -31,7 +36,11 @@
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/custom-local.css">
 
 <meta name="HandheldFriendly" content="true"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+{%- comment -%}
+  Do not re-add user-scalable=no. This site exists to be read, much of it dense
+  17th-century prose on a phone; blocking pinch-zoom fails WCAG 2.1 SC 1.4.4.
+{%- endcomment -%}
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{site.baseurl}}/assets/gitbook/images/apple-touch-icon-precomposed-152.png">

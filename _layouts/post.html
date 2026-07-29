@@ -4,14 +4,34 @@
 
         {%- include head.html -%}
 
-        {% if page.previous %}
-            <link rel="prev" href="{{site.baseurl}}{{page.previous.url}}" />
+        {%- comment -%}
+          page.previous / page.next follow collection order, which on GitHub
+          Pages' Jekyll 3.10 is date-then-path — so "next" from the Apostles'
+          Creed used to land on the Book of Discipline. Walk the nav_order
+          sequence instead, matching the sidebar.
+        {%- endcomment -%}
+        {%- assign ordered_docs = site.pages | sort: "nav_order" -%}
+        {%- assign here = 0 -%}
+        {%- for doc in ordered_docs -%}
+            {%- if doc.url == page.url -%}{%- assign here = forloop.index0 -%}{%- endif -%}
+        {%- endfor -%}
+        {%- assign prev_index = here | minus: 1 -%}
+        {%- assign next_index = here | plus: 1 -%}
+        {%- if here > 0 -%}
+            {%- assign prev_doc = ordered_docs[prev_index] -%}
+        {%- endif -%}
+        {%- if next_index < ordered_docs.size -%}
+            {%- assign next_doc = ordered_docs[next_index] -%}
+        {%- endif -%}
+
+        {% if prev_doc %}
+            <link rel="prev" href="{{site.baseurl}}{{prev_doc.url}}" />
         {% else %}
             <link rel="prev" href="{{site.baseurl}}/" />
         {% endif %}
 
-        {% if page.next %}
-            <link rel="next" href="{{site.baseurl}}{{page.next.url}}" />
+        {% if next_doc %}
+            <link rel="next" href="{{site.baseurl}}{{next_doc.url}}" />
         {% endif %}
     </head>
     <body>
@@ -35,19 +55,19 @@
                 <div class="body-inner">
                     {%- include body.html -%}
 
-                    {% if page.previous %}
-                        <a href="{{site.baseurl}}{{page.previous.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{page.previous.title}}">
-                            <i class="fa fa-angle-left"></i>
+                    {% if prev_doc %}
+                        <a href="{{site.baseurl}}{{prev_doc.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{prev_doc.title | escape}}">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </a>
                     {% else %}
-                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title}}">
-                            <i class="fa fa-angle-left"></i>
+                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title | escape}}">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </a>
                     {% endif %}
 
-                    {% if page.next %}
-                        <a href="{{site.baseurl}}{{page.next.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{page.next.title}}">
-                            <i class="fa fa-angle-right"></i>
+                    {% if next_doc %}
+                        <a href="{{site.baseurl}}{{next_doc.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{next_doc.title | escape}}">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
                     {% endif %}
                 </div>

@@ -30,6 +30,27 @@
         <div id="book-search-input-link" role="search">
             <a href="{{site.baseurl}}/assets/search.html">Click to Search</a>
         </div>
+
+        {%- comment -%}
+          Sidebar order comes from each document's `nav_order`, sorted explicitly
+          here. It cannot come from collection order: GitHub Pages builds with
+          Jekyll 3.10, which has no ordering mechanism for collections and falls
+          back to date-then-path — which is why the live sidebar used to open with
+          the Confession and then run alphabetically (Apostles', Athanasian, Book
+          of Discipline, Belgic…). Jekyll 4 does support an `order:` list in
+          _config.yml, so relying on that would look correct locally and stay
+          broken in production.
+
+          A group heading is printed each time `category` changes, so nav_order
+          must keep documents of the same category contiguous. Headings come from
+          site.nav_group_titles; an unrecognised category falls back to "Other"
+          rather than silently dropping the document.
+
+          Note `site.pages` here is the _pages *collection*, not Jekyll's built-in
+          page list: Jekyll::Drops::SiteDrop#[] resolves collection labels ahead of
+          its own `pages` delegate. Renaming the collection would change this.
+        {%- endcomment -%}
+
         <ul class="summary">
             {% if page.url == "/index.html" or page.url == "/" %}
             <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}">
@@ -39,81 +60,56 @@
                 <a href="{{site.baseurl}}/" onclick="pageScrollToTop(this)">
                     {{ site.title | escape }}
                 </a>
-                {% if site.toc.enabled %}
-                    {% if site.toc.enabled_index %}
-                        {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
-                    {% endif %}
+                {% if site.toc.enabled and site.toc.enabled_index %}
+                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                 {% endif %}
             </li>
 
             <li class="divider"></li>
 
-            {% if site.ordered_collections %}
-                {% for label in site.ordered_collections %}
-                    {% assign collection = site.collections | where: "label", label | first %}
-                    <!-- <p>{{ collection.label }}</p> -->
-                    {% if collection.output %}
-                        {% if collection.label == "posts" %}
-                            {% assign reversed_posts = site[collection.label] | reverse %}
-                        {% else %}
-                            {% assign reversed_posts = site[collection.label] %}
-                        {% endif %}
+            {%- assign ordered_docs = site.pages | sort: "nav_order" -%}
+            {%- assign current_group = "" -%}
+            {%- for doc in ordered_docs -%}
+                {%- assign cat = doc.category | default: "other" -%}
+                {%- if cat != current_group -%}
+                    {%- assign current_group = cat -%}
+                    <li class="header">{{ site.nav_group_titles[cat] | default: "Other" | escape }}</li>
+                {%- endif -%}
 
-                        {% for post in reversed_posts %}
-                            {% if page.url == post.url %}
-                            <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
-                            {% else %}
-                            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
-                            {% endif %}
-                                <a href="{{site.baseurl}}{{post.url}}" onclick="pageScrollToTop(this)">
-                                    {{ post.title | escape }}
-                                </a>
-                                {% if site.toc.enabled %}
-                                    {% if page.url == post.url %}
-                                        {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
-                                    {% endif %}
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-
-                        {% if reversed_posts.size > 0 %}
-                            <li class="divider"></li>
-                        {% endif %}
+                {% if page.url == doc.url %}
+                <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}{{doc.url}}">
+                {% else %}
+                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{doc.url}}">
+                {% endif %}
+                    <a href="{{site.baseurl}}{{doc.url}}" onclick="pageScrollToTop(this)">
+                        {{ doc.title | escape }}
+                    </a>
+                    {% if site.toc.enabled and page.url == doc.url %}
+                        {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
                     {% endif %}
-                {% endfor %}
-            {% else %}
-                {% for collection in site.collections %}
-                    <!-- <p>{{ collection.label }}</p> -->
-                    {% if collection.output %}
-                        {% if collection.label == "posts" %}
-                            {% assign reversed_posts = site[collection.label] | reverse %}
-                        {% else %}
-                            {% assign reversed_posts = site[collection.label] %}
-                        {% endif %}
+                </li>
+            {%- endfor -%}
 
-                        {% for post in reversed_posts %}
-                            {% if page.url == post.url %}
-                            <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
-                            {% else %}
-                            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
-                            {% endif %}
-                                <a href="{{site.baseurl}}{{post.url}}" onclick="pageScrollToTop(this)">
-                                    {{ post.title | escape }}
-                                </a>
-                                {% if site.toc.enabled %}
-                                    {% if page.url == post.url %}
-                                        {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
-                                    {% endif %}
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-
-                        {% if reversed_posts.size > 0 %}
-                            <li class="divider"></li>
-                        {% endif %}
+            {%- if site.posts.size > 0 -%}
+                <li class="divider"></li>
+                {%- assign reversed_posts = site.posts | reverse -%}
+                {%- for post in reversed_posts -%}
+                    {% if page.url == post.url %}
+                    <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                    {% else %}
+                    <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                     {% endif %}
-                {% endfor %}
-            {% endif %}
+                        <a href="{{site.baseurl}}{{post.url}}" onclick="pageScrollToTop(this)">
+                            {{ post.title | escape }}
+                        </a>
+                        {% if site.toc.enabled and page.url == post.url %}
+                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                        {% endif %}
+                    </li>
+                {%- endfor -%}
+            {%- endif -%}
+
+            <li class="divider"></li>
         </ul>
     </nav>
 </div>

@@ -31,15 +31,21 @@
     </div>
 </div>
 
-<!-- introduce mathjax support -->
-{% include mathjax.html %}
+{%- comment -%}
+  Per-page MathJax: opt in with `mathjax: true` in front matter. There is no math
+  anywhere on this site, and loading it unconditionally cost every reader a
+  MathJax fetch from jsDelivr on every page.
+{%- endcomment -%}
+{% if page.mathjax %}
+    {% include mathjax.html %}
+{% endif %}
 
 <!-- introduce per-page mermaid support -->
 {% if page.mermaid %}
     {% include mermaid.html %}
 {% endif %}
 
-<!-- introduce mathjax support -->
+<!-- work around Chrome not honouring the URL fragment on first paint -->
 {% include fixes-chrome-anchors.html %}
 
 <!-- introduce reftagger support -->
