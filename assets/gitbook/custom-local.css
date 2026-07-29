@@ -152,36 +152,8 @@ details.scripture-proofs .proofs-body p:last-child {
     margin-bottom: 0;
 }
 
-/* Section number anchor links (WCF: links down to scripture proof callout) */
-a.section-num {
-    font-size: 0.75em;
-    vertical-align: super;
-    text-decoration: none;
-    color: var(--proofs-summary);
-    opacity: 0.85;
-    margin-right: 0.25em;
-}
-
-a.section-num:hover {
-    opacity: 1;
-    text-decoration: underline;
-}
-
-/* Back-link inside scripture proof summary (↑ returns to section) */
-a.proof-backlink {
-    font-size: 0.85em;
-    text-decoration: none;
-    color: var(--proofs-summary);
-    opacity: 0.85;
-    margin-left: 0.4em;
-    font-style: normal;
-}
-
-a.proof-backlink:hover {
-    opacity: 1;
-}
-
-/* Lettered proof markers in section/answer text */
+/* Lettered proof markers in section/answer text.
+   user-select: none keeps the letters out of copied confessional text. */
 sup.proof-marker {
     font-size: 0.7em;
     font-weight: bold;
@@ -193,6 +165,43 @@ sup.proof-marker {
 
 sup.proof-marker:hover {
     opacity: 1;
+}
+
+/* The marker is a link to its Scripture Proofs callout. Inherit the marker's
+   colour rather than taking the generic link blue, which at 0.7em on a
+   superscript letter reads as noise rather than as a citation. */
+sup.proof-marker a,
+sup.proof-marker a:hover,
+sup.proof-marker a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+sup.proof-marker a:hover {
+    text-decoration: underline;
+}
+
+/* Keyboard users need to see where they are; the hover underline alone is not
+   enough on a single superscript character. */
+sup.proof-marker a:focus-visible {
+    outline: 2px solid var(--proofs-border);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Briefly mark the callout a proof marker just jumped to, so the destination is
+   obvious when the page barely scrolls. */
+details.scripture-proofs.proof-target {
+    animation: proof-target-flash 1.6s ease-out;
+}
+
+@keyframes proof-target-flash {
+    from { background-color: var(--proofs-separator); }
+    to   { background-color: var(--proofs-bg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    details.scripture-proofs.proof-target { animation: none; }
 }
 
 /* Letter labels inside proof callouts */

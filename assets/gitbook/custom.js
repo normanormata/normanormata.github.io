@@ -126,6 +126,41 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }
     }, true);
 
+    // ── Open a Scripture Proofs callout when a proof marker links to it ─────
+    // Every lettered marker in the text is an anchor pointing at its section's
+    // callout. Browsers expand a closed <details> only when the fragment target
+    // is *inside* it — here the target is the <details> itself, so nothing would
+    // happen. Open it explicitly, then flash it so the destination is visible
+    // even when the page scrolls very little.
+    function revealProofs(id) {
+        if (!id) return false;
+        var el = document.getElementById(id);
+        if (!el || el.tagName !== 'DETAILS' ||
+            !el.classList.contains('scripture-proofs')) {
+            return false;
+        }
+        el.open = true;                      // fires 'toggle' -> re-tags references
+        el.classList.remove('proof-target');
+        void el.offsetWidth;                 // restart the flash if re-clicked
+        el.classList.add('proof-target');
+        return true;
+    }
+
+    // Delegated so it also covers content GitBook swaps in via AJAX.
+    document.addEventListener('click', function(e) {
+        var a = e.target && e.target.closest
+            ? e.target.closest('sup.proof-marker > a[href^="#"]')
+            : null;
+        if (!a) return;
+        revealProofs(a.getAttribute('href').slice(1));
+        // Let the browser handle scrolling and the history entry.
+    });
+
+    // Deep links straight to a callout (shared or reloaded) must open it too.
+    window.addEventListener('hashchange', function() {
+        revealProofs(location.hash.slice(1));
+    });
+
     // ── Page load: restore state ───────────────────────────────────────────
     gitbook.events.bind('page.change', function() {
         applyVersionState();
@@ -133,6 +168,9 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         // a short retry covers that race without blocking later navigations.
         retagReferences();
         setTimeout(retagReferences, 600);
+        // Landing directly on a callout URL: no hashchange fires for the
+        // fragment the page loaded with, so handle it here.
+        revealProofs(location.hash.slice(1));
     });
 
     // ── Toolbar Buttons ────────────────────────────────────────────────────
