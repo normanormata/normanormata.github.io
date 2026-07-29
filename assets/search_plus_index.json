@@ -79,11 +79,50 @@ layout: null
   split on their kramdown auto-id headings instead. Short documents with no
   headings (creeds) become a single whole-page entry.
 {%- endcomment -%}
+{%- comment -%}
+  In the Westminster Standards each wording difference is marked up as adjacent
+  <span class="v-const">…</span><span class="v-modern">…</span> siblings, only one
+  of which is ever visible. strip_html would concatenate both, so the indexed body
+  came out as "leave men unexcusable;without excuse; yet are theythey are not" —
+  nonsense snippets, and phrase search across any differing word silently failed.
+
+  So: drop the modern variants and index the constitutional text, which is the
+  authoritative one. (Consequence: a phrase unique to the MESV is not findable.
+  Indexing both would mean two entries per section and roughly double a ~950 KB
+  index, which is not worth it for a study-only rendering.)
+
+  Lettered proof markers go too — <sup class="proof-marker">b</sup> otherwise
+  glues a stray letter onto the preceding word ("salvation.b").
+
+  Both strips assume the marked-up spans contain plain text and never nest.
+  script/check-variant-markup.py enforces that; do not remove it.
+{%- endcomment -%}
 {%- assign entries = "" | split: "" -%}
 {%- for document in index -%}
   {%- assign doctitle = document.title | smartify | strip_html | normalize_whitespace -%}
-  {%- if document.content contains '<span id="' -%}
-    {%- assign chunks = document.content | split: '<span id="' -%}
+
+  {%- assign doc_parts = document.content | split: '<span class="v-modern">' -%}
+  {%- assign doc_acc = "" | split: "" -%}
+  {%- assign doc_acc = doc_acc | push: doc_parts.first -%}
+  {%- for doc_part in doc_parts offset: 1 -%}
+    {%- assign cut = doc_part | split: '</span>' | first | append: '</span>' -%}
+    {%- assign kept = doc_part | remove_first: cut -%}
+    {%- assign doc_acc = doc_acc | push: kept -%}
+  {%- endfor -%}
+  {%- assign doccontent = doc_acc | join: "" -%}
+
+  {%- assign doc_parts = doccontent | split: '<sup class="proof-marker">' -%}
+  {%- assign doc_acc = "" | split: "" -%}
+  {%- assign doc_acc = doc_acc | push: doc_parts.first -%}
+  {%- for doc_part in doc_parts offset: 1 -%}
+    {%- assign cut = doc_part | split: '</sup>' | first | append: '</sup>' -%}
+    {%- assign kept = doc_part | remove_first: cut -%}
+    {%- assign doc_acc = doc_acc | push: kept -%}
+  {%- endfor -%}
+  {%- assign doccontent = doc_acc | join: "" -%}
+
+  {%- if doccontent contains '<span id="' -%}
+    {%- assign chunks = doccontent | split: '<span id="' -%}
     {%- for chunk in chunks -%}
       {%- if forloop.first -%}
         {%- assign preamble = chunk | strip_html | normalize_whitespace | strip -%}
@@ -110,9 +149,9 @@ layout: null
         {%- assign entries = entries | push: entry -%}
       {%- endif -%}
     {%- endfor -%}
-  {%- elsif document.content contains '<h' -%}
+  {%- elsif doccontent contains '<h' -%}
     {%- comment -%} Split on heading tags; use kramdown auto-ids for deep links. {%- endcomment -%}
-    {%- assign chunks = document.content | split: '<h' -%}
+    {%- assign chunks = doccontent | split: '<h' -%}
     {%- for chunk in chunks -%}
       {%- if forloop.first -%}
         {%- assign preamble = chunk | strip_html | normalize_whitespace | strip -%}
@@ -150,7 +189,7 @@ layout: null
     {%- assign tags = document.tags | uniq -%}
     {%- assign categories = document.categories | uniq -%}
     {%- assign taxonomies = tags | concat: categories | uniq -%}
-    {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": {{ taxonomies | join: " " | normalize_whitespace | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "body": {{ document.content | strip_html | normalize_whitespace | jsonify }}}{%- endcapture -%}
+    {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": {{ taxonomies | join: " " | normalize_whitespace | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "body": {{ doccontent | strip_html | normalize_whitespace | jsonify }}}{%- endcapture -%}
     {%- assign entries = entries | push: entry -%}
   {%- endif -%}
 {%- endfor -%}
