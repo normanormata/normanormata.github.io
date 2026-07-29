@@ -1,3 +1,6 @@
 _site/
 _draft/
 .jekyll-cache/
+
+# Intermediate output of script/extract-opc-proofs.py
+build/

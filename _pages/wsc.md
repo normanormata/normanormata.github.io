@@ -15,7 +15,8 @@ Answer: Man's chief end is to glorify God,<sup class="proof-marker"><a href="#ws
 <details class="scripture-proofs" id="wsc-q1-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> Ps. 86:9; Isa. 60:21; Rom. 11:36; 1 Cor. 6:20; 1 Cor. 10:31; Rev. 4:11, <strong>b.</strong> Ps. 16:5-11; Ps. 144:15; Isa. 12:2; Luke 2:10; Phil. 4:4; Rev. 21:3-4</p></div>
+<p><strong>a.</strong> Ps. 86:9; Isa. 60:21; Rom. 11:36; 1 Cor. 6:20; 1 Cor. 10:31; Rev. 4:11, <strong>b.</strong> Ps. 16:5-11; Ps. 144:15; Isa. 12:2; Luke 2:10; Phil. 4:4; Rev. 21:3-4</p>
+</div>
 </details>
 
 
@@ -26,7 +27,8 @@ Answer: The Word of God, which is contained in the Scriptures of the Old and New
 <details class="scripture-proofs" id="wsc-q2-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>c.</strong> Matt. 19:4-5; Gen. 2:24; Luke 24:27, 44; 1 Cor. 2:13; 1 Cor. 14:37; 2 Pet. 1:20-21; 2 Pet. 3:2, 15-16, <strong>d.</strong> Deut. 4:2; Ps. 19:7-11; Isa. 8:20; John 15:11; John 20:30-31; Acts 17:11; 2 Tim. 3:15-17</p></div>
+<p><strong>c.</strong> Matt. 19:4-5; Gen. 2:24; Luke 24:27, 44; 1 Cor. 2:13; 1 Cor. 14:37; 2 Pet. 1:20-21; 2 Pet. 3:2, 15-16, <strong>d.</strong> Deut. 4:2; Ps. 19:7-11; Isa. 8:20; John 15:11; John 20:30-31; Acts 17:11; 2 Tim. 3:15-17; 1 John 1:4</p>
+</div>
 </details>
 
 
@@ -37,19 +39,20 @@ Answer: The Scriptures principally teach, what man is to believe concerning God,
 <details class="scripture-proofs" id="wsc-q3-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 1:1; John 5:39; John 20:31; Romans 10:17; 2 Timothy 3:15; Deuteronomy 10:12-13; Joshua 1:8; Psalm 119:105; Micah 6:8; 2 Timothy 3:16-17</p>
+<p><strong>e.</strong> Gen. 1:1; John 5:39; John 20:31; Rom. 10:17; 2 Tim. 3:15, <strong>f.</strong> Deut. 10:12-13; Josh. 1:8; Ps. 119:105; Mic. 6:8; 2 Tim. 3:16-17</p>
 </div>
 </details>
 
 
 <span id="wsc-q4"></span>
 ### Question 4: What is God?  
-Answer: God is a Spirit,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof g, question 4">g</a></sup> infinite,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof h, question 4">h</a></sup> eternal,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof i, question 4">i</a></sup> and unchangeable, in his being, wisdom,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof m, question 4">m</a></sup> power,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof n, question 4">n</a></sup> holiness,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof o, question 4">o</a></sup> justice,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof p, question 4">p</a></sup> goodness,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof q, question 4">q</a></sup> and truth.<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof r, question 4">r</a></sup>
+Answer: God is a Spirit,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof g, question 4">g</a></sup> infinite,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof h, question 4">h</a></sup> eternal,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof i, question 4">i</a></sup> and unchangeable,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof k, question 4">k</a></sup> in his being,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof l, question 4">l</a></sup> wisdom,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof m, question 4">m</a></sup> power,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof n, question 4">n</a></sup> holiness,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof o, question 4">o</a></sup> justice,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof p, question 4">p</a></sup> goodness,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof q, question 4">q</a></sup> and truth.<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof r, question 4">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q4-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>e.</strong> Gen. 1:1; John 5:39; John 20:31; Rom. 10:17; 2 Tim. 3:15, <strong>f.</strong> Deut. 10:12-13; Josh. 1:8; Ps. 119:105; Mic. 6:8; 2 Tim. 3:16-17, <strong>g.</strong> Deut. 4:15-19; Luke 24:39; John 1:18; John 4:24; Acts 17:29, <strong>h.</strong> 1 Kings 8:27; Ps. 139:7-10; Ps. 145:3; Ps. 147:5; Jer. 23:24; Rom. 11:33-36, <strong>i.</strong> Deut. 33:27; Ps. 90:2; Ps. 102:12, 24-27; Rev. 1:4, 8; Ps. 33:11; Mal. 3:6; Heb. 1:12; Heb. 6:17; Heb. 13:8, <strong>l.</strong> Ps. 115:2-3; 1 Tim. 1:17, <strong>m.</strong> Ps. 104:24; Rom. 11:33-34; Heb. 4:13; 1 John 3:20, <strong>n.</strong> Gen. 17:1; Ps. 62:11; Jer. 32:17; Matt. 19:26; Rev. 1:8, <strong>o.</strong> Hab. 1:13; 1 Pet. 1:15-16; 1 John 3:3, 5; Rev. 15:4, <strong>p.</strong> Gen. 18:25; Deut. 32:4; Ps. 96:13; Rom. 3:5, 26, <strong>q.</strong> Ps. 103:5; Ps. 107:8; Matt. 19:17</p></div>
+<p><strong>g.</strong> Deut. 4:15-19; Luke 24:39; John 1:18; John 4:24; Acts 17:29, <strong>h.</strong> 1 Kings 8:27; Ps. 139:7-10; Ps. 145:3; Ps. 147:5; Jer. 23:24; Rom. 11:33-36, <strong>i.</strong> Deut. 33:27; Ps. 90:2; Ps. 102:12, 24-27; Rev. 1:4, 8, <strong>k.</strong> Ps. 33:11; Mal. 3:6; Heb. 1:12; Heb. 6:17; Heb. 13:8; James 1:17, <strong>l.</strong> Ex. 3:14; Ps. 115:2-3; 1 Tim. 1:17; 1 Tim. 6:15-16, <strong>m.</strong> Ps. 104:24; Rom. 11:33-34; Heb. 4:13; 1 John 3:20, <strong>n.</strong> Gen. 17:1; Ps. 62:11; Jer. 32:17; Matt. 19:26; Rev. 1:8, <strong>o.</strong> Hab. 1:13; 1 Pet. 1:15-16; 1 John 3:3, 5; Rev. 15:4, <strong>p.</strong> Gen. 18:25; Ex. 34:6-7; Deut. 32:4; Ps. 96:13; Rom. 3:5, 26, <strong>q.</strong> Ps. 103:5; Ps. 107:8; Matt. 19:17; Rom. 2:4, <strong>r.</strong> Ex. 34:6; Deut. 32:4; Ps. 86:15; Ps. 117:2; Heb. 6:18</p>
+</div>
 </details>
 
 
@@ -60,7 +63,7 @@ Answer: There is <span class="v-const">but one only,</span><span class="v-modern
 <details class="scripture-proofs" id="wsc-q5-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Deuteronomy 6:4; Isaiah 44:6; Isaiah 45:21-22; 1 Corinthians 8:4-6; Jeremiah 10:10; John 17:3; 1 Thessalonians 1:9; 1 John 5:20</p>
+<p><strong>s.</strong> Deut. 6:4; Isa. 44:6; Isa. 45:21-22; 1 Cor. 8:4-6, <strong>t.</strong> Jer. 10:10; John 17:3; 1 Thess. 1:9; 1 John 5:20</p>
 </div>
 </details>
 
@@ -72,7 +75,8 @@ Answer: There are three persons in the <span class="v-const">Godhead:</span><spa
 <details class="scripture-proofs" id="wsc-q6-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>r.</strong> Deut. 32:4; Ps. 86:15; Ps. 117:2; Heb. 6:18, <strong>s.</strong> Deut. 6:4; Isa. 44:6; Isa. 45:21-22; 1 Cor. 8:4-6, <strong>t.</strong> Jer. 10:10; John 17:3; 1 Thess. 1:9; 1 John 5:20, <strong>u.</strong> Matt. 3:16-17; Matt. 28:19</p></div>
+<p><strong>u.</strong> Matt. 3:16-17; Matt. 28:19; 2 Cor. 13:14; 1 Pet. 1:2, <strong>w.</strong> Ps. 45:6; John 1:1; John 17:5; Acts 5:3-4; Rom. 9:5; Col. 2:9; Jude 24</p>
+</div>
 </details>
 
 
@@ -83,7 +87,7 @@ Answer: The decrees of God are, his eternal purpose, according to the counsel of
 <details class="scripture-proofs" id="wsc-q7-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 33:11; Isaiah 14:24; Acts 2:23; Ephesians 1:11-12</p>
+<p><strong>x.</strong> Ps. 33:11; Isa. 14:24; Acts 2:23; Eph. 1:11-12</p>
 </div>
 </details>
 
@@ -95,7 +99,8 @@ Answer: God <span class="v-const">executeth</span><span class="v-modern">execute
 <details class="scripture-proofs" id="wsc-q8-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>w.</strong> Ps. 45:6; John 1:1; John 17:5; Acts 5:3-4; Rom. 9:5; Col. 2:9, <strong>x.</strong> Ps. 33:11; Isa. 14:24; Acts 2:23; Eph. 1:11-12, <strong>y.</strong> Ps. 148:8; Isa. 40:26; Dan. 4:35; Acts 4:24-28</p></div>
+<p><strong>y.</strong> Ps. 148:8; Isa. 40:26; Dan. 4:35; Acts 4:24-28; Rev. 4:11</p>
+</div>
 </details>
 
 
@@ -106,7 +111,7 @@ Answer: The work of creation is, God's making all things of nothing, by the word
 <details class="scripture-proofs" id="wsc-q9-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 1:1; Psalm 33:6, 9; Hebrews 11:3; Genesis 1:31</p>
+<p><strong>z.</strong> Gen. 1:1; Ps. 33:6, 9; Heb. 11:3, <strong>a.</strong> Gen. 1:31</p>
 </div>
 </details>
 
@@ -118,19 +123,20 @@ Answer: God created man male and female, <span class="v-const">afte</span><span 
 <details class="scripture-proofs" id="wsc-q10-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 1:27; Colossians 3:10; Ephesians 4:24; Genesis 1:28; Psalm 8</p>
+<p><strong>b.</strong> Gen. 1:27, <strong>c.</strong> Col. 3:10, <strong>d.</strong> Eph. 4:24, <strong>e.</strong> Gen. 1:28; Ps. 8</p>
 </div>
 </details>
 
 
 <span id="wsc-q11"></span>
 ### Question 11: What are God's works of providence.?  
-Answer: God's works of providence are, his most holy,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof f, question 11">f</a></sup> wise,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof g, question 11">g</a></sup> and powerful preserving and governing all his creatures, and all their actions.
+Answer: God's works of providence are, his most holy,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof f, question 11">f</a></sup> wise,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof g, question 11">g</a></sup> and powerful<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof h, question 11">h</a></sup> preserving<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof i, question 11">i</a></sup> and governing<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof k, question 11">k</a></sup> all his creatures, and all their actions.<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof l, question 11">l</a></sup>
 
 <details class="scripture-proofs" id="wsc-q11-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> Gen. 1:31, <strong>b.</strong> Gen. 1:27, <strong>c.</strong> Col. 3:10, <strong>d.</strong> Eph. 4:24, <strong>e.</strong> Gen. 1:28, <strong>f.</strong> Ps. 145:17, <strong>g.</strong> Ps. 104:24, <strong>h.</strong> Heb. 1:3, <strong>i.</strong> Neh. 9:6, <strong>z.</strong> Gen. 1:1; Ps. 33:6, 9; Heb. 11:3</p></div>
+<p><strong>f.</strong> Ps. 145:17, <strong>g.</strong> Ps. 104:24, <strong>h.</strong> Heb. 1:3, <strong>i.</strong> Neh. 9:6, <strong>k.</strong> Eph. 1:19-22, <strong>l.</strong> Ps. 36:6; Prov. 16:33; Matt. 10:30</p>
+</div>
 </details>
 
 
@@ -141,7 +147,7 @@ Answer: When God had created man, he entered into a covenant of life with him, u
 <details class="scripture-proofs" id="wsc-q12-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 2:16-17; James 2:10</p>
+<p><strong>m.</strong> Gen. 2:16-17; James 2:10</p>
 </div>
 </details>
 
@@ -153,7 +159,7 @@ Answer: Our first parents, being left to the freedom of their own will, fell fro
 <details class="scripture-proofs" id="wsc-q13-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 3:6-8, 13; 2 Corinthians 11:3</p>
+<p><strong>n.</strong> Gen. 3:6-8, 13; 2 Cor. 11:3</p>
 </div>
 </details>
 
@@ -165,7 +171,8 @@ Answer: Sin is any <span class="v-const">want</span><span class="v-modern">lack<
 <details class="scripture-proofs" id="wsc-q14-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>l.</strong> Ps. 36:6; Prov. 16:33; Matt. 10:30, <strong>m.</strong> Gen. 2:16-17, <strong>n.</strong> Gen. 3:6-8, 13; 2 Cor. 11:3, <strong>o.</strong> Lev. 5:17</p></div>
+<p><strong>o.</strong> Lev. 5:17; James 4:17; 1 John 3:4</p>
+</div>
 </details>
 
 
@@ -176,7 +183,7 @@ Answer: The sin <span class="v-const">whereby</span><span class="v-modern">by wh
 <details class="scripture-proofs" id="wsc-q15-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 3:6</p>
+<p><strong>p.</strong> Gen. 3:6</p>
 </div>
 </details>
 
@@ -188,7 +195,7 @@ Answer: The covenant being made with Adam,<sup class="proof-marker"><a href="#ws
 <details class="scripture-proofs" id="wsc-q16-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 2:16-17; James 2:10; Romans 5:12-21</p>
+<p><strong>q.</strong> Gen. 2:16-17; James 2:10, <strong>r.</strong> Rom. 5:12-21; 1 Cor. 15:22</p>
 </div>
 </details>
 
@@ -200,7 +207,8 @@ Answer: The fall brought <span class="v-const">mankind</span><span class="v-mode
 <details class="scripture-proofs" id="wsc-q17-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>p.</strong> Gen. 3:6, <strong>q.</strong> Gen. 2:16-17, <strong>r.</strong> Rom. 5:12-21; 1 Cor. 15:22, <strong>s.</strong> Gen. 3:16-19, 23</p></div>
+<p><strong>s.</strong> Gen. 3:16-19, 23; Rom. 3:16; Rom. 5:12; Eph. 2:1</p>
+</div>
 </details>
 
 
@@ -211,18 +219,20 @@ Answer: The sinfulness of that <span class="v-const">estate whereinto</span><spa
 <details class="scripture-proofs" id="wsc-q18-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>t.</strong> Rom. 5:12, 19, <strong>u.</strong> Rom. 3:10; Col. 3:10; Eph. 4:24, <strong>w.</strong> Ps. 51:5; John 3:6; Rom. 3:18; Rom. 8:7-8; Eph. 2:3, <strong>x.</strong> Gen. 6:5; Ps. 53:1-3; Matt. 15:19; Rom. 3:10-18, 23</p></div>
+<p><strong>t.</strong> Rom. 5:12, 19, <strong>u.</strong> Rom. 3:10; Col. 3:10; Eph. 4:24, <strong>w.</strong> Ps. 51:5; John 3:6; Rom. 3:18; Rom. 8:7-8; Eph. 2:3, <strong>x.</strong> Gen. 6:5; Ps. 53:1-3; Matt. 15:19; Rom. 3:10-18, 23; Gal. 5:19-21; James 1:14-15</p>
+</div>
 </details>
 
 
 <span id="wsc-q19"></span>
 ### Question 19: What is the misery of that estate whereinto man fell?  
-Answer: All <span class="v-const">mankind</span><span class="v-modern">humanity</span> by their fall lost communion with God,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof y, question 19">y</a></sup> are under his wrath and curse,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof a, question 19">a</a></sup> and so made liable to all the miseries of this life,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof b, question 19">b</a></sup> to death itself, and to the pains of hell forever.<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof d, question 19">d</a></sup>
+Answer: All <span class="v-const">mankind</span><span class="v-modern">humanity</span> by their fall lost communion with God,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof y, question 19">y</a></sup> are under his wrath<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof z, question 19">z</a></sup> and curse,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof a, question 19">a</a></sup> and so made liable to all the miseries of this life,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof b, question 19">b</a></sup> to death<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof c, question 19">c</a></sup> itself, and to the pains of hell forever.<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof d, question 19">d</a></sup>
 
 <details class="scripture-proofs" id="wsc-q19-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> Gal. 3:10; Rev. 22:3, <strong>b.</strong> Gen. 3:16-19, <strong>y.</strong> Gen. 3:8, 24; John 8:34, 42, 44; Eph. 2:12; Eph. 4:18, <strong>z.</strong> John 3:36; Rom. 1:18; Eph. 2:3; Eph. 5:6</p></div>
+<p><strong>y.</strong> Gen. 3:8, 24; John 8:34, 42, 44; Eph. 2:12; Eph. 4:18, <strong>z.</strong> John 3:36; Rom. 1:18; Eph. 2:3; Eph. 5:6, <strong>a.</strong> Gal. 3:10; Rev. 22:3, <strong>b.</strong> Gen. 3:16-19; Job 5:7; Eccl. 2:22-23; Rom. 8:18-23, <strong>c.</strong> Ezek. 18:4; Rom. 5:12; Rom. 6:23, <strong>d.</strong> Matt. 25:41, 46; 2 Thess. 1:9; Rev. 14:9-11</p>
+</div>
 </details>
 
 
@@ -233,18 +243,20 @@ Answer: <span class="v-const">God, having</span><span class="v-modern">Having el
 <details class="scripture-proofs" id="wsc-q20-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>c.</strong> Ezek. 18:4; Rom. 5:12; Rom. 6:23, <strong>d.</strong> Matt. 25:41, 46; 2 Thess. 1:9; Rev. 14:9-11, <strong>e.</strong> Acts 13:48; Eph. 1:4-5; 2 Thess. 2:13-14</p></div>
+<p><strong>e.</strong> Acts 13:48; Eph. 1:4-5; 2 Thess. 2:13-14, <strong>f.</strong> Gen. 3:15; Gen. 17:7; Ex. 19:5-6; Jer. 31:31-34; Matt. 20:28; 1 Cor. 11:25; Heb. 9:15</p>
+</div>
 </details>
 
 
 <span id="wsc-q21"></span>
 ### Question 21: Who is the Redeemer of God's elect?  
-Answer: The only Redeemer of God's elect is the Lord Jesus Christ,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof g, question 21">g</a></sup> who, being the eternal Son of God,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof h, question 21">h</a></sup> became man,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof i, question 21">i</a></sup> and so was, and <span class="v-const">continueth</span><span class="v-modern">continues</span> to be, God and man in two distinct natures, and one person, forever.
+Answer: The only Redeemer of God's elect is the Lord Jesus Christ,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof g, question 21">g</a></sup> who, being the eternal Son of God,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof h, question 21">h</a></sup> became man,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof i, question 21">i</a></sup> and so was, and <span class="v-const">continueth</span><span class="v-modern">continues</span> to be, God and man in two distinct natures, and one person, forever.<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof k, question 21">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q21-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>f.</strong> Gen. 3:15; Gen. 17:7; Jer. 31:31-34; Matt. 20:28; 1 Cor. 11:25; Heb. 9:15, <strong>g.</strong> John 14:6; Acts 4:12; 1 Tim. 2:5-6, <strong>h.</strong> Ps. 2:7; Matt. 3:17; Matt. 17:5; John 1:18, <strong>i.</strong> Isa. 9:6</p></div>
+<p><strong>g.</strong> John 14:6; Acts 4:12; 1 Tim. 2:5-6, <strong>h.</strong> Ps. 2:7; Matt. 3:17; Matt. 17:5; John 1:18, <strong>i.</strong> Isa. 9:6; Matt. 1:23; John 1:14; Gal. 4:4, <strong>k.</strong> Acts 1:11; Heb. 7:24-25</p>
+</div>
 </details>
 
 
@@ -255,7 +267,7 @@ Answer: Christ, the Son of God, became man, by taking to himself a true body, an
 <details class="scripture-proofs" id="wsc-q22-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Philippians 2:7; Hebrews 2:14, 17; Luke 1:27, 31, 35; 2 Corinthians 5:21; Hebrews 4:15; Hebrews 7:26; 1 John 3:5</p>
+<p><strong>l.</strong> Phil. 2:7; Heb. 2:14, 17, <strong>m.</strong> Luke 1:27, 31, 35, <strong>n.</strong> 2 Cor. 5:21; Heb. 4:15; Heb. 7:26; 1 John 3:5</p>
 </div>
 </details>
 
@@ -267,18 +279,20 @@ Answer: Christ, as our Redeemer, <span class="v-const">executeth</span><span cla
 <details class="scripture-proofs" id="wsc-q23-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>l.</strong> Phil. 2:7; Heb. 2:14, 17, <strong>m.</strong> Luke 1:27, 31, 35, <strong>n.</strong> 2 Cor. 5:21; Heb. 4:15; Heb. 7:26; 1 John 3:5, <strong>o.</strong> Deut. 18:18; Acts 2:33</p></div>
+<p><strong>o.</strong> Deut. 18:18; Acts 2:33; Acts 3:22-23; Heb. 1:1-2, <strong>p.</strong> Heb. 4:14-15; Heb. 5:5-6, <strong>q.</strong> Isa. 9:6-7; Luke 1:32-33; John 18:37; 1 Cor. 15:25</p>
+</div>
 </details>
 
 
 <span id="wsc-q24"></span>
 ### Question 24: How doth Christ execute the office of a prophet?  
-Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a prophet, in revealing to us, by his Word and Spirit,<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof s, question 24">s</a></sup> the will of God for our salvation.<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof t, question 24">t</a></sup>
+Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a prophet, in revealing to us, by his Word<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof r, question 24">r</a></sup> and Spirit,<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof s, question 24">s</a></sup> the will of God for our salvation.<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof t, question 24">t</a></sup>
 
 <details class="scripture-proofs" id="wsc-q24-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>p.</strong> Heb. 4:14-15; Heb. 5:5-6, <strong>q.</strong> Isa. 9:6-7; Luke 1:32-33; John 18:37; 1 Cor. 15:25, <strong>r.</strong> Luke 4:18-19, 21; Acts 1:1-2; Heb. 2:3, <strong>s.</strong> John 15:26-27</p></div>
+<p><strong>r.</strong> Luke 4:18-19, 21; Acts 1:1-2; Heb. 2:3, <strong>s.</strong> John 15:26-27; Acts 1:8; 1 Pet. 1:11, <strong>t.</strong> John 4:41-42; John 20:30-31</p>
+</div>
 </details>
 
 
@@ -289,7 +303,8 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 <details class="scripture-proofs" id="wsc-q25-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>t.</strong> John 4:41-42; John 20:30-31, <strong>u.</strong> Acts 8:32-35; Heb. 9:26-28; Heb. 10:12, <strong>w.</strong> Rom. 5:10-11; 2 Cor. 5:18; Col. 1:21-22</p></div>
+<p><strong>u.</strong> Isa. 53; Acts 8:32-35; Heb. 9:26-28; Heb. 10:12, <strong>w.</strong> Rom. 5:10-11; 2 Cor. 5:18; Col. 1:21-22, <strong>x.</strong> Rom. 8:34; Heb. 7:25; Heb. 9:24</p>
+</div>
 </details>
 
 
@@ -300,30 +315,32 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 <details class="scripture-proofs" id="wsc-q26-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 110:3; Matthew 28:18-20; John 17:2; Colossians 1:13; Psalm 2:6-9; Psalm 110:1-2; Matthew 12:28; 1 Corinthians 15:24-26; Colossians 2:15</p>
+<p><strong>y.</strong> Ps. 110:3; Matt. 28:18-20; John 17:2; Col. 1:13, <strong>z.</strong> Ps. 2:6-9; Ps. 110:1-2; Matt. 12:28; 1 Cor. 15:24-26; Col. 2:15</p>
 </div>
 </details>
 
 
 <span id="wsc-q27"></span>
 ### Question 27: Wherein did Christ's humiliation consist?  
-Answer: Christ's humiliation consisted in his being born, and that in a low condition,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof a, question 27">a</a></sup> made under the law,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof b, question 27">b</a></sup> undergoing the miseries of this life, the wrath of God,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof d, question 27">d</a></sup> and the cursed death of the cross;<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof e, question 27">e</a></sup> in being buried, and continuing under the power of death for a time.<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof f, question 27">f</a></sup>
+Answer: Christ's humiliation consisted in his being born, and that in a low condition,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof a, question 27">a</a></sup> made under the law,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof b, question 27">b</a></sup> undergoing the miseries of this life,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof c, question 27">c</a></sup> the wrath of God,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof d, question 27">d</a></sup> and the cursed death of the cross;<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof e, question 27">e</a></sup> in being buried, and continuing under the power of death for a time.<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof f, question 27">f</a></sup>
 
 <details class="scripture-proofs" id="wsc-q27-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> Luke 2:7; 2 Cor. 8:9; Gal. 4:4, <strong>x.</strong> Rom. 8:34; Heb. 7:25; Heb. 9:24, <strong>y.</strong> Ps. 110:3; Matt. 28:18-20; John 17:2; Col. 1:13, <strong>z.</strong> Ps. 2:6-9; Ps. 110:1-2; Matt. 12:28; 1 Cor. 15:24-26; Col. 2:15</p></div>
+<p><strong>a.</strong> Luke 2:7; 2 Cor. 8:9; Gal. 4:4, <strong>b.</strong> Gal. 4:4, <strong>c.</strong> Isa. 53:3; Luke 9:58; John 4:6; John 11:35; Heb. 2:18, <strong>d.</strong> Ps. 22:1; Matt. 27:46; Isa. 53:10; 1 John 2:2, <strong>e.</strong> Gal. 3:13; Phil. 2:8, <strong>f.</strong> Matt. 12:40</p>
+</div>
 </details>
 
 
 <span id="wsc-q28"></span>
 ### Question 28: Wherein consisteth Christ's exaltation?  
-Answer: Christ's exaltation <span class="v-const">consisteth</span><span class="v-modern">consists</span> in his rising <span class="v-const">again</span> from the dead on the third day,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof g, question 28">g</a></sup> in ascending <span class="v-const">up</span> into heaven,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof h, question 28">h</a></sup> in sitting at the right hand of God the Father,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof i, question 28">i</a></sup> and in coming to judge the world at the last day.
+Answer: Christ's exaltation <span class="v-const">consisteth</span><span class="v-modern">consists</span> in his rising <span class="v-const">again</span> from the dead on the third day,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof g, question 28">g</a></sup> in ascending <span class="v-const">up</span> into heaven,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof h, question 28">h</a></sup> in sitting at the right hand of God the Father,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof i, question 28">i</a></sup> and in coming to judge the world at the last day.<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof k, question 28">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q28-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>b.</strong> Gal. 4:4, <strong>c.</strong> Isa. 53:3; Luke 9:58; John 4:6; John 11:35; Heb. 2:18, <strong>d.</strong> Ps. 22:1; Matt. 27:46; Isa. 53:10; 1 John 2:2, <strong>e.</strong> Gal. 3:13; Phil. 2:8, <strong>f.</strong> Matt. 12:40; 1 Cor. 15:3-4, <strong>g.</strong> 1 Cor. 15:4, <strong>h.</strong> Ps. 68:18; Acts 1:11; Eph. 4:8, <strong>i.</strong> Ps. 110:1; Acts 2:33-34</p></div>
+<p><strong>g.</strong> 1 Cor. 15:4, <strong>h.</strong> Ps. 68:18; Acts 1:11; Eph. 4:8, <strong>i.</strong> Ps. 110:1; Acts 2:33-34; Heb. 1:3, <strong>k.</strong> Matt. 16:27; Acts 17:31</p>
+</div>
 </details>
 
 
@@ -334,7 +351,7 @@ Answer: We are made partakers of the redemption purchased by Christ, by the effe
 <details class="scripture-proofs" id="wsc-q29-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Titus 3:4-7</p>
+<p><strong>l.</strong> Titus 3:4-7</p>
 </div>
 </details>
 
@@ -346,7 +363,7 @@ Answer: The Spirit <span class="v-const">applieth</span><span class="v-modern">a
 <details class="scripture-proofs" id="wsc-q30-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Romans 10:17; 1 Corinthians 2:12-16; Ephesians 2:8; Philippians 1:29; John 15:5; 1 Corinthians 1:9; Ephesians 3:17</p>
+<p><strong>m.</strong> Rom. 10:17; 1 Cor. 2:12-16; Eph. 2:8; Phil. 1:29, <strong>n.</strong> John 15:5; 1 Cor. 1:9; Eph. 3:17</p>
 </div>
 </details>
 
@@ -358,7 +375,8 @@ Answer: Effectual calling is the work of God's Spirit, <span class="v-const">whe
 <details class="scripture-proofs" id="wsc-q31-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>m.</strong> Rom. 10:17; 1 Cor. 2:12-16; Eph. 2:8; Phil. 1:29, <strong>n.</strong> John 15:5; 1 Cor. 1:9; Eph. 3:17</p></div>
+<p><strong>o.</strong> Acts 26:18; 1 Cor. 2:10, 12; 2 Cor. 4:6; Eph. 1:17-18, <strong>p.</strong> Deut. 30:6; Ezek. 36:26-27; John 3:5; Titus 3:5, <strong>q.</strong> John 6:44-45; Acts 16:14, <strong>r.</strong> Isa. 45:22; Matt. 11:28-30; Rev. 22:17</p>
+</div>
 </details>
 
 
@@ -369,7 +387,8 @@ Answer: <span class="v-const">They that</span><span class="v-modern">Those who</
 <details class="scripture-proofs" id="wsc-q32-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>o.</strong> Acts 26:18; 1 Cor. 2:10, 12; 2 Cor. 4:6; Eph. 1:17-18, <strong>p.</strong> Deut. 30:6; Ezek. 36:26-27; John 3:5, <strong>q.</strong> John 6:44-45; Acts 16:14, <strong>r.</strong> Isa. 45:22; Matt. 11:28-30; Rev. 22:17, <strong>s.</strong> Rom. 8:30</p></div>
+<p><strong>s.</strong> Rom. 8:30; 1 Cor. 1:30; 1 Cor. 6:11; Eph. 1:5</p>
+</div>
 </details>
 
 
@@ -380,7 +399,7 @@ Answer: Justification is an act of God's free grace,<sup class="proof-marker"><a
 <details class="scripture-proofs" id="wsc-q33-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Romans 3:24; Romans 4:6-8; 2 Corinthians 5:19; 2 Corinthians 5:21; Romans 4:6, 11; Romans 5:19; Galatians 2:16; Philippians 3:9</p>
+<p><strong>t.</strong> Rom. 3:24, <strong>u.</strong> Rom. 4:6-8; 2 Cor. 5:19, <strong>w.</strong> 2 Cor. 5:21, <strong>x.</strong> Rom. 4:6, 11; Rom. 5:19, <strong>y.</strong> Gal. 2:16; Phil. 3:9</p>
 </div>
 </details>
 
@@ -392,7 +411,8 @@ Answer: Adoption is an act of God's free grace,<sup class="proof-marker"><a href
 <details class="scripture-proofs" id="wsc-q34-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> John 1:12; Rom. 8:17, <strong>t.</strong> Rom. 3:24, <strong>u.</strong> Rom. 4:6-8; 2 Cor. 5:19, <strong>w.</strong> 2 Cor. 5:21, <strong>x.</strong> Rom. 4:6, 11; Rom. 5:19, <strong>y.</strong> Gal. 2:16; Phil. 3:9, <strong>z.</strong> 1 John 3:1</p></div>
+<p><strong>z.</strong> 1 John 3:1, <strong>a.</strong> John 1:12; Rom. 8:17</p>
+</div>
 </details>
 
 
@@ -403,42 +423,44 @@ Answer: Sanctification is the work of God's free grace,<sup class="proof-marker"
 <details class="scripture-proofs" id="wsc-q35-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Ezekiel 36:27; Philippians 2:13; 2 Thessalonians 2:13; 2 Corinthians 5:17; Ephesians 4:23-24; 1 Thessalonians 5:23; Ezekiel 36:25-27; Romans 6:4, 6, 12-14; 2 Corinthians 7:1; 1 Peter 2:24</p>
+<p><strong>b.</strong> Ezek. 36:27; Phil. 2:13; 2 Thess. 2:13, <strong>c.</strong> 2 Cor. 5:17; Eph. 4:23-24; 1 Thess. 5:23, <strong>d.</strong> Ezek. 36:25-27; Rom. 6:4, 6, 12-14; 2 Cor. 7:1; 1 Pet. 2:24</p>
 </div>
 </details>
 
 
 <span id="wsc-q36"></span>
 ### Question 36: What are the benefits which in this life do accompany or flow from justification, adoption, and sanctification?  
-Answer: The benefits <span class="v-const">which</span><span class="v-modern">that</span> in this life <span class="v-const">do</span> accompany or flow from justification, adoption, and sanctification, are, assurance of God's love, peace of conscience,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof f, question 36">f</a></sup> joy in the Holy <span class="v-const">Ghost,</span><span class="v-modern">Spirit,</span><sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof g, question 36">g</a></sup> increase of grace,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof h, question 36">h</a></sup> and perseverance <span class="v-const">therein</span><span class="v-modern">in it</span> to the end.<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof i, question 36">i</a></sup>
+Answer: The benefits <span class="v-const">which</span><span class="v-modern">that</span> in this life <span class="v-const">do</span> accompany or flow from justification, adoption, and sanctification, are, assurance of God's love,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof e, question 36">e</a></sup> peace of conscience,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof f, question 36">f</a></sup> joy in the Holy <span class="v-const">Ghost,</span><span class="v-modern">Spirit,</span><sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof g, question 36">g</a></sup> increase of grace,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof h, question 36">h</a></sup> and perseverance <span class="v-const">therein</span><span class="v-modern">in it</span> to the end.<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof i, question 36">i</a></sup>
 
 <details class="scripture-proofs" id="wsc-q36-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>b.</strong> Ezek. 36:27; Phil. 2:13; 2 Thess. 2:13, <strong>c.</strong> 2 Cor. 5:17; Eph. 4:23-24; 1 Thess. 5:23, <strong>d.</strong> Ezek. 36:25-27; Rom. 6:4, 6, 12-14; 2 Cor. 7:1; 1 Pet. 2:24, <strong>e.</strong> Rom. 5:5, <strong>f.</strong> Rom. 5:1, <strong>g.</strong> Rom. 14:17</p></div>
+<p><strong>e.</strong> Rom. 5:5, <strong>f.</strong> Rom. 5:1, <strong>g.</strong> Rom. 14:17, <strong>h.</strong> 2 Pet. 3:18, <strong>i.</strong> Phil. 1:6; 1 Pet. 1:5</p>
+</div>
 </details>
 
 
 <span id="wsc-q37"></span>
 ### Question 37: What benefits do believers receive from Christ at death?  
-Answer: The souls of believers are at their death made perfect in holiness, and <span class="v-const">do</span> immediately pass into glory;<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof l, question 37">l</a></sup> and their bodies, being still united <span class="v-const">in</span><span class="v-modern">to</span> Christ, <span class="v-const">do</span> rest in their graves, till the resurrection.<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof n, question 37">n</a></sup>
+Answer: The souls of believers are at their death made perfect in holiness,<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof k, question 37">k</a></sup> and <span class="v-const">do</span> immediately pass into glory;<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof l, question 37">l</a></sup> and their bodies, being still united <span class="v-const">in</span><span class="v-modern">to</span> Christ,<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof m, question 37">m</a></sup> <span class="v-const">do</span> rest in their graves, till the resurrection.<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof n, question 37">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q37-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Hebrews 12:23; Luke 23:43; 2 Corinthians 5:6, 8; Philippians 1:23; 1 Thessalonians 4:14; Daniel 12:2; John 5:28-29; Acts 24:15</p>
+<p><strong>k.</strong> Heb. 12:23, <strong>l.</strong> Luke 23:43; 2 Cor. 5:6, 8; Phil. 1:23, <strong>m.</strong> 1 Thess. 4:14, <strong>n.</strong> Dan. 12:2; John 5:28-29; Acts 24:15</p>
 </div>
 </details>
 
 
 <span id="wsc-q38"></span>
 ### Question 38: What benefits do believers receive from Christ at the resurrection?  
-Answer: At the resurrection, believers, being raised up in glory,<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof o, question 38">o</a></sup> shall be openly acknowledged and acquitted in the day of judgment,<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof p, question 38">p</a></sup> and made perfectly blessed in the full enjoying of God to all eternity.<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof r, question 38">r</a></sup>
+Answer: At the resurrection, believers, being raised up in glory,<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof o, question 38">o</a></sup> shall be openly acknowledged and acquitted in the day of judgment,<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof p, question 38">p</a></sup> and made perfectly blessed in the full enjoying of God<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof q, question 38">q</a></sup> to all eternity.<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof r, question 38">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q38-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>h.</strong> 2 Pet. 3:18, <strong>i.</strong> Phil. 1:6; 1 Pet. 1:5; Heb. 12:23, <strong>l.</strong> Luke 23:43; 2 Cor. 5:6, 8; Phil. 1:23, <strong>m.</strong> 1 Thess. 4:14, <strong>n.</strong> Dan. 12:2; John 5:28-29; Acts 24:15, <strong>o.</strong> 1 Cor. 15:42-43, <strong>p.</strong> Matt. 25:33-34, 46, <strong>q.</strong> Rom. 8:29</p></div>
+<p><strong>o.</strong> 1 Cor. 15:42-43, <strong>p.</strong> Matt. 25:33-34, 46, <strong>q.</strong> Rom. 8:29; 1 John 3:2, <strong>r.</strong> Ps. 16:11; 1 Thess. 4:17</p>
+</div>
 </details>
 
 
@@ -449,7 +471,7 @@ Answer: The duty <span class="v-const">which</span><span class="v-modern">that</
 <details class="scripture-proofs" id="wsc-q39-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Deuteronomy 29:29; Micah 6:8; 1 John 5:2-3</p>
+<p><strong>s.</strong> Deut. 29:29; Mic. 6:8; 1 John 5:2-3</p>
 </div>
 </details>
 
@@ -461,7 +483,7 @@ Answer: The rule <span class="v-const">which</span><span class="v-modern">that</
 <details class="scripture-proofs" id="wsc-q40-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Romans 2:14-15</p>
+<p><strong>t.</strong> Rom. 2:14-15; Rom. 10:5</p>
 </div>
 </details>
 
@@ -473,7 +495,7 @@ Answer: The moral law is <span class="v-const">summarily comprehended</span><spa
 <details class="scripture-proofs" id="wsc-q41-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Deuteronomy 4:13; Matthew 19:17-19</p>
+<p><strong>u.</strong> Deut. 4:13; Matt. 19:17-19</p>
 </div>
 </details>
 
@@ -485,7 +507,8 @@ Answer: The sum of the ten commandments is, to love the Lord our God with all ou
 <details class="scripture-proofs" id="wsc-q42-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>r.</strong> Ps. 16:11; 1 Thess. 4:17, <strong>s.</strong> Deut. 29:29; Mic. 6:8; 1 John 5:2-3, <strong>t.</strong> Rom. 2:14-15; Rom. 10:5, <strong>u.</strong> Deut. 4:13; Matt. 19:17-19, <strong>w.</strong> Matt. 22:37-40</p></div>
+<p><strong>w.</strong> Matt. 22:37-40</p>
+</div>
 </details>
 
 
@@ -496,7 +519,7 @@ Answer: The preface to the <span class="v-const">ten commandments</span><span cl
 <details class="scripture-proofs" id="wsc-q43-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:2; Deuteronomy 5:6</p>
+<p><strong>x.</strong> Ex. 20:2; Deut. 5:6</p>
 </div>
 </details>
 
@@ -508,7 +531,7 @@ Answer: The preface to the <span class="v-const">ten commandments teacheth us,</
 <details class="scripture-proofs" id="wsc-q44-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Luke 1:74-75; 1 Peter 1:14-19</p>
+<p><strong>y.</strong> Luke 1:74-75; 1 Pet. 1:14-19</p>
 </div>
 </details>
 
@@ -520,7 +543,7 @@ Answer: The first commandment is, <span class="v-const">Thou shalt</span><span c
 <details class="scripture-proofs" id="wsc-q45-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:3; Deuteronomy 5:7</p>
+<p><strong>z.</strong> Ex. 20:3; Deut. 5:7</p>
 </div>
 </details>
 
@@ -532,7 +555,8 @@ Answer: The first commandment <span class="v-const">requireth</span><span class=
 <details class="scripture-proofs" id="wsc-q46-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> 1 Chron. 28:9; Isa. 45:20-25, <strong>x.</strong> Deut. 5:6, <strong>y.</strong> Luke 1:74-75; 1 Pet. 1:14-19, <strong>z.</strong> Deut. 5:7</p></div>
+<p><strong>a.</strong> 1 Chron. 28:9; Isa. 45:20-25; Matt. 4:10</p>
+</div>
 </details>
 
 
@@ -543,7 +567,7 @@ Answer: The first commandment <span class="v-const">forbiddeth the</span><span c
 <details class="scripture-proofs" id="wsc-q47-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 14:1; Romans 1:20-21; Psalm 81:10-11; Ezekiel 8:16-18; Romans 1:25</p>
+<p><strong>b.</strong> Ps. 14:1, <strong>c.</strong> Rom. 1:20-21, <strong>d.</strong> Ps. 81:10-11, <strong>e.</strong> Ezek. 8:16-18; Rom. 1:25</p>
 </div>
 </details>
 
@@ -555,7 +579,8 @@ Answer: These <span class="v-const">words</span><span class="v-modern">words,</s
 <details class="scripture-proofs" id="wsc-q48-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>b.</strong> Ps. 14:1, <strong>c.</strong> Rom. 1:20-21, <strong>d.</strong> Ps. 81:10-11, <strong>e.</strong> Ezek. 8:16-18; Rom. 1:25, <strong>f.</strong> Deut. 30:17-18; Ps. 44:20-21; Ezek. 8:12</p></div>
+<p><strong>f.</strong> Deut. 30:17-18; Ps. 44:20-21; Ezek. 8:12</p>
+</div>
 </details>
 
 
@@ -566,7 +591,7 @@ Answer: The second commandment is, <span class="v-const">Thou shalt</span><span 
 <details class="scripture-proofs" id="wsc-q49-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:4-6; Deuteronomy 5:8-10</p>
+<p><strong>g.</strong> Ex. 20:4-6; Deut. 5:8-10</p>
 </div>
 </details>
 
@@ -578,19 +603,20 @@ Answer: The second commandment <span class="v-const">requireth the</span><span c
 <details class="scripture-proofs" id="wsc-q50-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Deuteronomy 12:32; Matthew 28:20</p>
+<p><strong>h.</strong> Deut. 12:32; Matt. 28:20</p>
 </div>
 </details>
 
 
 <span id="wsc-q51"></span>
 ### Question 51: What is forbidden in the second commandment?  
-Answer: The second commandment <span class="v-const">forbiddeth the</span><span class="v-modern">forbids</span> worshiping <span class="v-const">of</span> God by images,<sup class="proof-marker"><a href="#wsc-q51-proofs" aria-label="Scripture proof i, question 51">i</a></sup> or any other way not appointed in his Word.
+Answer: The second commandment <span class="v-const">forbiddeth the</span><span class="v-modern">forbids</span> worshiping <span class="v-const">of</span> God by images,<sup class="proof-marker"><a href="#wsc-q51-proofs" aria-label="Scripture proof i, question 51">i</a></sup> or any other way not appointed in his Word.<sup class="proof-marker"><a href="#wsc-q51-proofs" aria-label="Scripture proof k, question 51">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q51-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>g.</strong> Deut. 5:8-10, <strong>h.</strong> Deut. 12:32; Matt. 28:20, <strong>i.</strong> Deut. 4:15-19; Rom. 1:22-23; Lev. 10:1-2</p></div>
+<p><strong>i.</strong> Deut. 4:15-19; Rom. 1:22-23, <strong>k.</strong> Lev. 10:1-2; Jer. 19:4-5; Col. 2:18-23</p>
+</div>
 </details>
 
 
@@ -601,7 +627,7 @@ Answer: The reasons annexed to the second commandment are, God's sovereignty ove
 <details class="scripture-proofs" id="wsc-q52-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 95:2-3, 6-7; Psalm 96:9-10; Exodus 19:5; Psalm 45:11; Isaiah 54:5; Exodus 34:14; 1 Corinthians 10:22</p>
+<p><strong>l.</strong> Ps. 95:2-3, 6-7; Ps. 96:9-10, <strong>m.</strong> Ex. 19:5; Ps. 45:11; Isa. 54:5, <strong>n.</strong> Ex. 34:14; 1 Cor. 10:22</p>
 </div>
 </details>
 
@@ -613,7 +639,7 @@ Answer: The third commandment is, <span class="v-const">Thou shalt</span><span c
 <details class="scripture-proofs" id="wsc-q53-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:7; Deuteronomy 5:11</p>
+<p><strong>o.</strong> Ex. 20:7; Deut. 5:11</p>
 </div>
 </details>
 
@@ -625,7 +651,8 @@ Answer: The third commandment <span class="v-const">requireth</span><span class=
 <details class="scripture-proofs" id="wsc-q54-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>l.</strong> Ps. 95:2-3, 6-7; Ps. 96:9-10, <strong>m.</strong> Ps. 45:11; Isa. 54:5, <strong>n.</strong> 1 Cor. 10:22, <strong>o.</strong> Deut. 5:11</p></div>
+<p><strong>p.</strong> Deut. 10:20; Ps. 29:2; Matt. 6:9, <strong>q.</strong> 1 Chron. 29:10-13; Rev. 15:3-4, <strong>r.</strong> Acts 2:42; 1 Cor. 11:27-28, <strong>s.</strong> Ps. 138:2; Rev. 22:18-19, <strong>t.</strong> Ps. 107:21-22; Rev. 4:11</p>
+</div>
 </details>
 
 
@@ -636,7 +663,8 @@ Answer: The third commandment <span class="v-const">forbiddeth</span><span class
 <details class="scripture-proofs" id="wsc-q55-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>p.</strong> Deut. 10:20; Ps. 29:2; Matt. 6:9, <strong>q.</strong> 1 Chron. 29:10-13; Rev. 15:3-4, <strong>r.</strong> Acts 2:42; 1 Cor. 11:27-28, <strong>s.</strong> Ps. 138:2; Rev. 22:18-19, <strong>t.</strong> Ps. 107:21-22; Rev. 4:11, <strong>u.</strong> Lev. 19:12; Matt. 5:33-37</p></div>
+<p><strong>u.</strong> Lev. 19:12; Matt. 5:33-37; James 5:12</p>
+</div>
 </details>
 
 
@@ -647,7 +675,7 @@ Answer: The reason annexed to the third commandment is, that however the breaker
 <details class="scripture-proofs" id="wsc-q56-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Deuteronomy 28:58-59; 1 Samuel 3:13; 1 Samuel 4:11</p>
+<p><strong>w.</strong> Deut. 28:58-59; 1 Sam. 3:13; 1 Sam. 4:11</p>
 </div>
 </details>
 
@@ -659,7 +687,7 @@ Answer: The fourth commandment is, Remember the <span class="v-const">sabbath da
 <details class="scripture-proofs" id="wsc-q57-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:8-11; Deuteronomy 5:12-15</p>
+<p><strong>x.</strong> Ex. 20:8-11; Deut. 5:12-15</p>
 </div>
 </details>
 
@@ -671,7 +699,8 @@ Answer: The fourth commandment <span class="v-const">requireth the</span><span c
 <details class="scripture-proofs" id="wsc-q58-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>w.</strong> Deut. 28:58-59; 1 Sam. 3:13; 1 Sam. 4:11, <strong>x.</strong> Deut. 5:12-15</p></div>
+<p><strong>y.</strong> Ex. 31:13, 16-17</p>
+</div>
 </details>
 
 
@@ -682,7 +711,7 @@ Answer: From the beginning of the world to the resurrection of Christ, God appoi
 <details class="scripture-proofs" id="wsc-q59-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 2:2-3; Exodus 20:11; Mark 2:27-28; Acts 20:7; 1 Corinthians 16:2; Revelation 1:10</p>
+<p><strong>z.</strong> Gen. 2:2-3; Ex. 20:11, <strong>a.</strong> Mark 2:27-28; Acts 20:7; 1 Cor. 16:2; Rev. 1:10</p>
 </div>
 </details>
 
@@ -694,7 +723,8 @@ Answer: The <span class="v-const">sabbath</span><span class="v-modern">Sabbath</
 <details class="scripture-proofs" id="wsc-q60-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> Mark 2:27-28; Acts 20:7; 1 Cor. 16:2; Rev. 1:10, <strong>b.</strong> Neh. 13:15-22; Isa. 58:13-14, <strong>z.</strong> Gen. 2:2-3</p></div>
+<p><strong>b.</strong> Ex. 20:10; Neh. 13:15-22; Isa. 58:13-14, <strong>c.</strong> Ex. 20:8; Lev. 23:3; Luke 4:16; Acts 20:7, <strong>d.</strong> Matt. 12:1-13</p>
+</div>
 </details>
 
 
@@ -705,7 +735,8 @@ Answer: The fourth commandment <span class="v-const">forbiddeth</span><span clas
 <details class="scripture-proofs" id="wsc-q61-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>c.</strong> Lev. 23:3; Luke 4:16; Acts 20:7, <strong>d.</strong> Matt. 12:1-13, <strong>e.</strong> Neh. 13:15-22; Isa. 58:13-14; Amos 8:4-6</p></div>
+<p><strong>e.</strong> Neh. 13:15-22; Isa. 58:13-14; Amos 8:4-6</p>
+</div>
 </details>
 
 
@@ -716,7 +747,7 @@ Answer: The reasons annexed to the fourth commandment are, God's allowing us six
 <details class="scripture-proofs" id="wsc-q62-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:9; Exodus 31:15; Leviticus 23:3; Genesis 2:2-3; Exodus 20:11; Exodus 31:17</p>
+<p><strong>f.</strong> Ex. 20:9; Ex. 31:15; Lev. 23:3, <strong>g.</strong> Gen. 2:2-3; Ex. 20:11; Ex. 31:17</p>
 </div>
 </details>
 
@@ -728,7 +759,7 @@ Answer: The fifth commandment is, Honor <span class="v-const">thy</span><span cl
 <details class="scripture-proofs" id="wsc-q63-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:12; Deuteronomy 5:16</p>
+<p><strong>h.</strong> Ex. 20:12; Deut. 5:16</p>
 </div>
 </details>
 
@@ -740,18 +771,19 @@ Answer: The fifth commandment <span class="v-const">requireth the</span><span cl
 <details class="scripture-proofs" id="wsc-q64-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>f.</strong> Lev. 23:3, <strong>g.</strong> Gen. 2:2-3, <strong>h.</strong> Deut. 5:16, <strong>i.</strong> Rom. 13:1, 7; Eph. 5:21-22, 24; Eph. 6:1, 4-5, 9; 1 Pet. 2:17</p></div>
+<p><strong>i.</strong> Rom. 13:1, 7; Eph. 5:21-22, 24; Eph. 6:1, 4-5, 9; 1 Pet. 2:17</p>
+</div>
 </details>
 
 
 <span id="wsc-q65"></span>
 ### Question 65: What is forbidden in the fifth commandment?  
-Answer: The fifth commandment <span class="v-const">forbiddeth the neglecting of,</span><span class="v-modern">forbids neglecting,</span> or doing anything against, the honor and duty <span class="v-const">which belongeth</span><span class="v-modern">that belongs</span> to everyone in their several places and relations.
+Answer: The fifth commandment <span class="v-const">forbiddeth the neglecting of,</span><span class="v-modern">forbids neglecting,</span> or doing anything against, the honor and duty <span class="v-const">which belongeth</span><span class="v-modern">that belongs</span> to everyone in their several places and relations.<sup class="proof-marker"><a href="#wsc-q65-proofs" aria-label="Scripture proof k, question 65">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q65-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Matthew 15:4-6; Romans 13:8</p>
+<p><strong>k.</strong> Matt. 15:4-6; Rom. 13:8</p>
 </div>
 </details>
 
@@ -763,7 +795,7 @@ Answer: The reason annexed to the fifth commandment <span class="v-const">is,</s
 <details class="scripture-proofs" id="wsc-q66-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:12; Deuteronomy 5:16; Ephesians 6:2-3</p>
+<p><strong>l.</strong> Ex. 20:12; Deut. 5:16; Eph. 6:2-3</p>
 </div>
 </details>
 
@@ -775,7 +807,7 @@ Answer: The sixth commandment is, <span class="v-const">Thou shalt</span><span c
 <details class="scripture-proofs" id="wsc-q67-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:13; Deuteronomy 5:17</p>
+<p><strong>m.</strong> Ex. 20:13; Deut. 5:17</p>
 </div>
 </details>
 
@@ -787,7 +819,7 @@ Answer: The sixth commandment <span class="v-const">requireth</span><span class=
 <details class="scripture-proofs" id="wsc-q68-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Ephesians 5:28-29</p>
+<p><strong>n.</strong> Eph. 5:28-29</p>
 </div>
 </details>
 
@@ -799,7 +831,8 @@ Answer: The sixth commandment <span class="v-const">forbiddeth the</span><span c
 <details class="scripture-proofs" id="wsc-q69-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>l.</strong> Deut. 5:16; Eph. 6:2-3, <strong>m.</strong> Deut. 5:17, <strong>n.</strong> Eph. 5:28-29, <strong>o.</strong> Gen. 9:6; Matt. 5:22; 1 John 3:15</p></div>
+<p><strong>o.</strong> Gen. 9:6; Matt. 5:22; 1 John 3:15</p>
+</div>
 </details>
 
 
@@ -810,7 +843,7 @@ Answer: The seventh commandment is, <span class="v-const">Thou shalt</span><span
 <details class="scripture-proofs" id="wsc-q70-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:14; Deuteronomy 5:18</p>
+<p><strong>p.</strong> Ex. 20:14; Deut. 5:18</p>
 </div>
 </details>
 
@@ -822,7 +855,7 @@ Answer: The seventh commandment <span class="v-const">requireth</span><span clas
 <details class="scripture-proofs" id="wsc-q71-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>1 Corinthians 7:2-3, 5; 1 Thessalonians 4:3-5</p>
+<p><strong>q.</strong> 1 Cor. 7:2-3, 5; 1 Thess. 4:3-5</p>
 </div>
 </details>
 
@@ -834,7 +867,7 @@ Answer: The seventh commandment <span class="v-const">forbiddeth</span><span cla
 <details class="scripture-proofs" id="wsc-q72-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Matthew 5:28; Ephesians 5:3-4</p>
+<p><strong>r.</strong> Matt. 5:28; Eph. 5:3-4</p>
 </div>
 </details>
 
@@ -846,7 +879,7 @@ Answer: The eighth commandment is, <span class="v-const">Thou shalt</span><span 
 <details class="scripture-proofs" id="wsc-q73-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:15; Deuteronomy 5:19</p>
+<p><strong>s.</strong> Ex. 20:15; Deut. 5:19</p>
 </div>
 </details>
 
@@ -858,7 +891,7 @@ Answer: The eighth commandment <span class="v-const">requireth</span><span class
 <details class="scripture-proofs" id="wsc-q74-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Leviticus 25:35; Ephesians 4:28b; Philippians 2:4</p>
+<p><strong>t.</strong> Lev. 25:35; Eph. 4:28; Phil. 2:4</p>
 </div>
 </details>
 
@@ -870,7 +903,8 @@ Answer: The eighth commandment <span class="v-const">forbiddeth whatsoever doth,
 <details class="scripture-proofs" id="wsc-q75-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>p.</strong> Deut. 5:18, <strong>q.</strong> 1 Cor. 7:2-3, 5; 1 Thess. 4:3-5, <strong>r.</strong> Matt. 5:28; Eph. 5:3-4, <strong>s.</strong> Deut. 5:19, <strong>t.</strong> Lev. 25:35; Eph. 4:28b; Phil. 2:4, <strong>u.</strong> Prov. 28:19f</p></div>
+<p><strong>u.</strong> Prov. 28:19; Eph. 4:28; 2 Thess. 3:10; 1 Tim. 5:8</p>
+</div>
 </details>
 
 
@@ -881,7 +915,7 @@ Answer: The ninth commandment is, <span class="v-const">Thou shalt</span><span c
 <details class="scripture-proofs" id="wsc-q76-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Exodus 20:16; Deuteronomy 5:20</p>
+<p><strong>w.</strong> Ex. 20:16; Deut. 5:20</p>
 </div>
 </details>
 
@@ -893,7 +927,7 @@ Answer: The ninth commandment <span class="v-const">requireth the</span><span cl
 <details class="scripture-proofs" id="wsc-q77-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Zechariah 8:16; Acts 25:10; 3 John 12; Proverbs 14:5, 25</p>
+<p><strong>x.</strong> Zech. 8:16; Acts 25:10; 3 John 12, <strong>y.</strong> Prov. 14:5, 25</p>
 </div>
 </details>
 
@@ -905,7 +939,7 @@ Answer: The ninth commandment <span class="v-const">forbiddeth whatsoever</span>
 <details class="scripture-proofs" id="wsc-q78-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Leviticus 19:16; Psalm 15:3; Proverbs 6:16-19</p>
+<p><strong>z.</strong> Lev. 19:16; Ps. 15:3; Prov. 6:16-19; Luke 3:14</p>
 </div>
 </details>
 
@@ -917,7 +951,8 @@ Answer: The tenth commandment is, <span class="v-const">Thou shalt</span><span c
 <details class="scripture-proofs" id="wsc-q79-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>w.</strong> Deut. 5:20, <strong>x.</strong> Zech. 8:16; Acts 25:10, <strong>y.</strong> Prov. 14:5, 25, <strong>z.</strong> Lev. 19:16; Ps. 15:3; Prov. 6:16-19; Luke 3:14</p></div>
+<p><strong>a.</strong> Ex. 20:17; Deut. 5:21</p>
+</div>
 </details>
 
 
@@ -928,7 +963,7 @@ Answer: The tenth commandment <span class="v-const">requireth</span><span class=
 <details class="scripture-proofs" id="wsc-q80-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 34:1; Philippians 4:11; 1 Timothy 6:6; Hebrews 13:5; Luke 15:6, 9, 11-32; Romans 12:15; Philippians 2:4</p>
+<p><strong>b.</strong> Ps. 34:1; Phil. 4:11; 1 Tim. 6:6; Heb. 13:5, <strong>c.</strong> Luke 15:6, 9, 11-32; Rom. 12:15; Phil. 2:4</p>
 </div>
 </details>
 
@@ -940,7 +975,8 @@ Answer: The tenth commandment <span class="v-const">forbiddeth</span><span class
 <details class="scripture-proofs" id="wsc-q81-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> Deut. 5:21, <strong>b.</strong> Ps. 34:1; Phil. 4:11; 1 Tim. 6:6; Heb. 13:5, <strong>c.</strong> Luke 15:6, 9, 11-32; Rom. 12:15; Phil. 2:4, <strong>d.</strong> 1 Cor. 10:10, <strong>e.</strong> Gal. 5:26</p></div>
+<p><strong>d.</strong> 1 Cor. 10:10; James 3:14-16, <strong>e.</strong> Gal. 5:26; Col. 3:5</p>
+</div>
 </details>
 
 
@@ -951,7 +987,7 @@ Answer: No mere <span class="v-const">men,</span><span class="v-modern">man</spa
 <details class="scripture-proofs" id="wsc-q82-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Genesis 8:21; Romans 3:9 ff., 23</p>
+<p><strong>f.</strong> Gen. 8:21; Rom. 3:9</p>
 </div>
 </details>
 
@@ -963,7 +999,7 @@ Answer: Some sins in themselves, and by reason of several aggravations, are more
 <details class="scripture-proofs" id="wsc-q83-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Ezekiel 8:6, 13, 15; Matthew 11:20-24; John 19:11</p>
+<p><strong>g.</strong> Ezek. 8:6, 13, 15; Matt. 11:20-24; John 19:11</p>
 </div>
 </details>
 
@@ -975,18 +1011,19 @@ Answer: Every sin <span class="v-const">deserveth</span><span class="v-modern">d
 <details class="scripture-proofs" id="wsc-q84-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>f.</strong> Gen. 8:21; Rom. 3:9f, <strong>g.</strong> Ezek. 8:6, 13, 15; Matt. 11:20-24; John 19:11, <strong>h.</strong> Matt. 25:41; Gal. 3:10; Eph. 5:6</p></div>
+<p><strong>h.</strong> Matt. 25:41; Gal. 3:10; Eph. 5:6; James 2:10</p>
+</div>
 </details>
 
 
 <span id="wsc-q85"></span>
 ### Question 85: What doth God require of us, that we may escape his wrath and curse, due to us for sin?  
-Answer: To escape the wrath and curse of God, due to us for sin, God <span class="v-const">requireth</span><span class="v-modern">requires</span> of us faith in Jesus <span class="v-const">Christ,</span><span class="v-modern">Christ and</span> repentance unto life,<sup class="proof-marker"><a href="#wsc-q85-proofs" aria-label="Scripture proof i, question 85">i</a></sup> with the diligent use of all the outward means <span class="v-const">whereby</span><span class="v-modern">by which</span> Christ <span class="v-const">communicateth</span><span class="v-modern">communicates</span> to us the benefits of redemption.
+Answer: To escape the wrath and curse of God, due to us for sin, God <span class="v-const">requireth</span><span class="v-modern">requires</span> of us faith in Jesus <span class="v-const">Christ,</span><span class="v-modern">Christ and</span> repentance unto life,<sup class="proof-marker"><a href="#wsc-q85-proofs" aria-label="Scripture proof i, question 85">i</a></sup> with the diligent use of all the outward means <span class="v-const">whereby</span><span class="v-modern">by which</span> Christ <span class="v-const">communicateth</span><span class="v-modern">communicates</span> to us the benefits of redemption.<sup class="proof-marker"><a href="#wsc-q85-proofs" aria-label="Scripture proof k, question 85">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q85-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Mark 1:15; Acts 20:21; Acts 2:38; 1 Corinthians 11:24-25; Colossians 3:16</p>
+<p><strong>i.</strong> Mark 1:15; Acts 20:21, <strong>k.</strong> Acts 2:38; 1 Cor. 11:24-25; Col. 3:16</p>
 </div>
 </details>
 
@@ -998,7 +1035,8 @@ Answer: Faith in Jesus Christ is a saving grace,<sup class="proof-marker"><a hre
 <details class="scripture-proofs" id="wsc-q86-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>i.</strong> Mark 1:15; Acts 20:21; Acts 2:38; 1 Cor. 11:24-25; Col. 3:16, <strong>l.</strong> Eph. 2:8-9; Rom. 4:16, <strong>m.</strong> John 20:30-31; Gal. 2:15-16; Phil. 3:3-11</p></div>
+<p><strong>l.</strong> Eph. 2:8-9; Rom. 4:16, <strong>m.</strong> John 20:30-31; Gal. 2:15-16; Phil. 3:3-11</p>
+</div>
 </details>
 
 
@@ -1009,7 +1047,8 @@ Answer: Repentance unto life is a saving grace,<sup class="proof-marker"><a href
 <details class="scripture-proofs" id="wsc-q87-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>n.</strong> Acts 11:18; 2 Tim. 2:25, <strong>o.</strong> Ps. 51:1-4; Joel 2:13; Luke 15:7, 10; Acts 2:37, <strong>p.</strong> Jer. 31:18-19; Luke 1:16-17; 1 Thess. 1:9, <strong>q.</strong> 2 Chron. 7:14; Ps. 119:57-64; Matt. 3:8; 2 Cor. 7:10</p></div>
+<p><strong>n.</strong> Acts 11:18; 2 Tim. 2:25, <strong>o.</strong> Ps. 51:1-4; Joel 2:13; Luke 15:7, 10; Acts 2:37, <strong>p.</strong> Jer. 31:18-19; Luke 1:16-17; 1 Thess. 1:9, <strong>q.</strong> 2 Chron. 7:14; Ps. 119:57-64; Matt. 3:8; 2 Cor. 7:10</p>
+</div>
 </details>
 
 
@@ -1020,7 +1059,7 @@ Answer: The outward and ordinary means <span class="v-const">whereby</span><span
 <details class="scripture-proofs" id="wsc-q88-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Matthew 28:18-20; Acts 2:41-42</p>
+<p><strong>r.</strong> Matt. 28:18-20; Acts 2:41-42</p>
 </div>
 </details>
 
@@ -1032,7 +1071,7 @@ Answer: The Spirit of God <span class="v-const">maketh</span><span class="v-mode
 <details class="scripture-proofs" id="wsc-q89-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Nehemiah 8:8-9; Acts 20:32; Romans 10:14-17; 2 Timothy 3:15-17</p>
+<p><strong>s.</strong> Neh. 8:8-9; Acts 20:32; Rom. 10:14-17; 2 Tim. 3:15-17</p>
 </div>
 </details>
 
@@ -1044,7 +1083,8 @@ Answer: That the Word may become effectual to salvation, we must attend <span cl
 <details class="scripture-proofs" id="wsc-q90-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>r.</strong> Matt. 28:18-20; Acts 2:41-42, <strong>s.</strong> Neh. 8:8-9; Acts 20:32; Rom. 10:14-17; 2 Tim. 3:15-17</p></div>
+<p><strong>t.</strong> Deut. 6:16; Ps. 119:18; 1 Pet. 2:1-2, <strong>u.</strong> Ps. 119:11; 2 Thess. 2:10; Heb. 4:2; James 1:22</p>
+</div>
 </details>
 
 
@@ -1055,7 +1095,7 @@ Answer: The sacraments become effectual means of salvation, not from any virtue 
 <details class="scripture-proofs" id="wsc-q91-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>1 Corinthians 3:7; Cf. 1 Corinthians 1:12-17</p>
+<p><strong>w.</strong> 1 Cor. 3:7; 1 Cor. 1:12-17</p>
 </div>
 </details>
 
@@ -1067,18 +1107,19 @@ Answer: A sacrament is a holy ordinance instituted by Christ;<sup class="proof-m
 <details class="scripture-proofs" id="wsc-q92-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>t.</strong> Deut. 6:16f; Ps. 119:18; 1 Pet. 2:1-2, <strong>u.</strong> Ps. 119:11; 2 Thess. 2:10; Heb. 4:2, <strong>w.</strong> 1 Cor. 3:7; 1 Cor. 1:12-17, <strong>x.</strong> Matt. 28:19; Matt. 26:26-28; Mark 14:22-25</p></div>
+<p><strong>x.</strong> Matt. 28:19; Matt. 26:26-28; Mark 14:22-25; Luke 22:19-20; 1 Cor. 1:22-26, <strong>y.</strong> Gal. 3:27; 1 Cor. 10:16-17</p>
+</div>
 </details>
 
 
 <span id="wsc-q93"></span>
 ### Question 93: Which are the sacraments of the New Testament?  
-Answer: The sacraments of the New Testament are, Baptism,<sup class="proof-marker"><a href="#wsc-q93-proofs" aria-label="Scripture proof z, question 93">z</a></sup> and the Lord's Supper.
+Answer: The sacraments of the New Testament are, Baptism,<sup class="proof-marker"><a href="#wsc-q93-proofs" aria-label="Scripture proof z, question 93">z</a></sup> and the Lord's Supper.<sup class="proof-marker"><a href="#wsc-q93-proofs" aria-label="Scripture proof a, question 93">a</a></sup>
 
 <details class="scripture-proofs" id="wsc-q93-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Matthew 28:19; 1 Corinthians 11:23-26</p>
+<p><strong>z.</strong> Matt. 28:19, <strong>a.</strong> 1 Cor. 11:23-26</p>
 </div>
 </details>
 
@@ -1090,7 +1131,8 @@ Answer: Baptism is a sacrament, <span class="v-const">wherein</span><span class=
 <details class="scripture-proofs" id="wsc-q94-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> 1 Cor. 11:23-26, <strong>b.</strong> Matt. 28:19, <strong>c.</strong> Acts 2:38-42, <strong>y.</strong> Gal. 3:27; 1 Cor. 10:16-17, <strong>z.</strong> Matt. 28:19</p></div>
+<p><strong>b.</strong> Matt. 28:19, <strong>c.</strong> Acts 2:38-42; Acts 22:16; Rom. 6:3-4; Gal. 3:26-27; 1 Pet. 3:21</p>
+</div>
 </details>
 
 
@@ -1101,7 +1143,8 @@ Answer: Baptism is not to be administered to any that are out of the visible chu
 <details class="scripture-proofs" id="wsc-q95-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>d.</strong> Acts 2:41; Acts 8:12, 36, 38; Acts 18:8, <strong>e.</strong> Gen. 17:7, 9-11; Acts 2:38-39; Acts 16:32-33; Col. 2:11-12</p></div>
+<p><strong>d.</strong> Acts 2:41; Acts 8:12, 36, 38; Acts 18:8, <strong>e.</strong> Gen. 17:7, 9-11; Acts 2:38-39; Acts 16:32-33; Col. 2:11-12</p>
+</div>
 </details>
 
 
@@ -1112,7 +1155,7 @@ Answer: The Lord's Supper is a sacrament, <span class="v-const">wherein,</span><
 <details class="scripture-proofs" id="wsc-q96-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Luke 22:19-20; 1 Corinthians 11:23-26; 1 Corinthians 10:16-17</p>
+<p><strong>f.</strong> Luke 22:19-20; 1 Cor. 11:23-26, <strong>g.</strong> 1 Cor. 10:16-17</p>
 </div>
 </details>
 
@@ -1124,41 +1167,43 @@ Answer: It is required of <span class="v-const">them that</span><span class="v-m
 <details class="scripture-proofs" id="wsc-q97-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>1 Corinthians 11:27-32</p>
+<p><strong>h.</strong> 1 Cor. 11:27-32</p>
 </div>
 </details>
 
 
 <span id="wsc-q98"></span>
 ### Question 98: What is prayer?  
-Answer: Prayer is an offering up of our desires <span class="v-const">unto</span><span class="v-modern">to</span> God,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof i, question 98">i</a></sup> for things agreeable to his will, in the name of Christ,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof l, question 98">l</a></sup> with confession of our sins,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof m, question 98">m</a></sup> and thankful acknowledgment of his mercies.<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof n, question 98">n</a></sup>
+Answer: Prayer is an offering up of our desires <span class="v-const">unto</span><span class="v-modern">to</span> God,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof i, question 98">i</a></sup> for things agreeable to his will,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof k, question 98">k</a></sup> in the name of Christ,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof l, question 98">l</a></sup> with confession of our sins,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof m, question 98">m</a></sup> and thankful acknowledgment of his mercies.<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof n, question 98">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q98-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>f.</strong> Luke 22:19-20; 1 Cor. 11:23-26, <strong>g.</strong> 1 Cor. 10:16-17, <strong>h.</strong> 1 Cor. 11:27-32, <strong>i.</strong> Ps. 10:17; Ps. 62:8; Matt. 7:7-8</p></div>
+<p><strong>i.</strong> Ps. 10:17; Ps. 62:8; Matt. 7:7-8, <strong>k.</strong> 1 John 5:14, <strong>l.</strong> John 16:23-24, <strong>m.</strong> Ps. 32:5-6; Dan. 9:4-19; 1 John 1:9, <strong>n.</strong> Ps. 103:1-5; Ps. 136; Phil. 4:6</p>
+</div>
 </details>
 
 
 <span id="wsc-q99"></span>
 ### Question 99: What rule hath God given for our direction in prayer?  
-Answer: The whole Word of God is of use to direct us in prayer;<sup class="proof-marker"><a href="#wsc-q99-proofs" aria-label="Scripture proof o, question 99">o</a></sup> but the special rule of direction is that form of prayer which Christ taught his disciples, commonly called the Lord's Prayer.
+Answer: The whole Word of God is of use to direct us in prayer;<sup class="proof-marker"><a href="#wsc-q99-proofs" aria-label="Scripture proof o, question 99">o</a></sup> but the special rule of direction is that form of prayer which Christ taught his disciples, commonly called the Lord's Prayer.<sup class="proof-marker"><a href="#wsc-q99-proofs" aria-label="Scripture proof p, question 99">p</a></sup>
 
 <details class="scripture-proofs" id="wsc-q99-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>l.</strong> John 16:23-24, <strong>m.</strong> Ps. 32:5-6; Dan. 9:4-19; 1 John 1:9, <strong>n.</strong> Ps. 103:1-5; Phil. 4:6, <strong>o.</strong> 1 John 5:14</p></div>
+<p><strong>o.</strong> 1 John 5:14, <strong>p.</strong> Matt. 6:9-13</p>
+</div>
 </details>
 
 
 <span id="wsc-q100"></span>
 ### Question 100: What doth the preface of the Lord's Prayer teach us?  
-Answer: The preface of the Lord's Prayer, which is, Our Father <span class="v-const">which art</span> in heaven, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to draw near to God with all holy reverence and confidence,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof r, question 100">r</a></sup> as children to a father,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof s, question 100">s</a></sup> able and ready to help us;<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof t, question 100">t</a></sup> and that we should pray with and for others.<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof u, question 100">u</a></sup>
+Answer: The preface of the Lord's Prayer, which is, Our Father <span class="v-const">which art</span> in heaven, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to draw near to God with all holy reverence<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof q, question 100">q</a></sup> and confidence,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof r, question 100">r</a></sup> as children to a father,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof s, question 100">s</a></sup> able and ready to help us;<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof t, question 100">t</a></sup> and that we should pray with and for others.<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof u, question 100">u</a></sup>
 
 <details class="scripture-proofs" id="wsc-q100-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 95:6; Ephesians 3:12; Matthew 7:9-11; Cf. Luke 11:11-13; Romans 8:15; Ephesians 3:20; Ephesians 6:18; 1 Timothy 2:1-2</p>
+<p><strong>q.</strong> Ps. 95:6, <strong>r.</strong> Eph. 3:12, <strong>s.</strong> Matt. 7:9-11; Luke 11:11-13; Rom. 8:15, <strong>t.</strong> Eph. 3:20, <strong>u.</strong> Eph. 6:18; 1 Tim. 2:1-2</p>
 </div>
 </details>
 
@@ -1170,7 +1215,8 @@ Answer: In the first petition, which is, Hallowed be <span class="v-const">thy</
 <details class="scripture-proofs" id="wsc-q101-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>p.</strong> Matt. 6:9-13, <strong>q.</strong> Ps. 95:6, <strong>r.</strong> Eph. 3:12, <strong>s.</strong> Matt. 7:9-11; Luke 11:11-13; Rom. 8:15, <strong>t.</strong> Eph. 3:20, <strong>u.</strong> Eph. 6:18; 1 Tim. 2:1-2, <strong>w.</strong> Ps. 67:1-3; Ps. 99:3; Ps. 100:3-4</p></div>
+<p><strong>w.</strong> Ps. 67:1-3; Ps. 99:3; Ps. 100:3-4, <strong>x.</strong> Rom. 11:33-36; Rev. 4:11</p>
+</div>
 </details>
 
 
@@ -1181,7 +1227,8 @@ Answer: In the second petition, which is, <span class="v-const">Thy</span><span 
 <details class="scripture-proofs" id="wsc-q102-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>a.</strong> Ps. 119:5; Luke 22:32; 2 Thess. 3:1-5, <strong>b.</strong> Rev. 22:20, <strong>x.</strong> Rom. 11:33-36; Rev. 4:11, <strong>y.</strong> Matt. 12:25-28; Rom. 16:20; 1 John 3:8, <strong>z.</strong> Ps. 72:8-11; Matt. 24:14; 1 Cor. 15:24-25</p></div>
+<p><strong>y.</strong> Matt. 12:25-28; Rom. 16:20; 1 John 3:8, <strong>z.</strong> Ps. 72:8-11; Matt. 24:14; 1 Cor. 15:24-25, <strong>a.</strong> Ps. 119:5; Luke 22:32; 2 Thess. 3:1-5, <strong>b.</strong> Rev. 22:20</p>
+</div>
 </details>
 
 
@@ -1192,7 +1239,7 @@ Answer: In the third petition, which is, <span class="v-const">Thy</span><span c
 <details class="scripture-proofs" id="wsc-q103-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 19:14; Psalm 119; 1 Thessalonians 5:23; Hebrews 13:20-21; Psalm 103:20-21; Hebrews 1:14</p>
+<p><strong>c.</strong> Ps. 19:14; Ps. 119; 1 Thess. 5:23; Heb. 13:20-21, <strong>d.</strong> Ps. 103:20-21; Heb. 1:14</p>
 </div>
 </details>
 
@@ -1204,7 +1251,8 @@ Answer: In the fourth petition, which is, Give us this day our daily bread, we p
 <details class="scripture-proofs" id="wsc-q104-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>c.</strong> Ps. 19:14; 1 Thess. 5:23; Heb. 13:20-21, <strong>d.</strong> Ps. 103:20-21; Heb. 1:14, <strong>e.</strong> Prov. 30:8-9; Matt. 6:31-34; Phil. 4:11, 19; 1 Tim. 6:6-8</p></div>
+<p><strong>e.</strong> Prov. 30:8-9; Matt. 6:31-34; Phil. 4:11, 19; 1 Tim. 6:6-8</p>
+</div>
 </details>
 
 
@@ -1215,7 +1263,7 @@ Answer: In the fifth petition, which is, And forgive us our debts, as we <span c
 <details class="scripture-proofs" id="wsc-q105-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p>Psalm 51:1-2, 7, 9; Daniel 9:17-19; 1 John 1:7; Matthew 18:21-35</p>
+<p><strong>f.</strong> Ps. 51:1-2, 7, 9; Dan. 9:17-19; 1 John 1:7, <strong>g.</strong> Matt. 18:21-35; Eph. 4:32; Col. 3:13</p>
 </div>
 </details>
 
@@ -1227,16 +1275,18 @@ Answer: In the sixth petition, which is, And lead us not into temptation, but de
 <details class="scripture-proofs" id="wsc-q106-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>f.</strong> Ps. 51:1-2, 7, 9; Dan. 9:17-19; 1 John 1:7, <strong>g.</strong> Matt. 18:21-35; Eph. 4:32; Col. 3:13, <strong>h.</strong> Ps. 19:13; Matt. 26:41; John 17:15</p></div>
+<p><strong>h.</strong> Ps. 19:13; Matt. 26:41; John 17:15, <strong>i.</strong> Luke 22:31-32; 1 Cor. 10:13; 2 Cor. 12:7-9; Heb. 2:18</p>
+</div>
 </details>
 
 
 <span id="wsc-q107"></span>
 ### Question 107: What doth the conclusion of the Lord's Prayer teach us?  
-Answer: The conclusion of the Lord's Prayer, which is, For <span class="v-const">thine</span><span class="v-modern">yours</span> is the <span class="v-const">kingdom,</span><span class="v-modern">kingdom</span> and the <span class="v-const">power,</span><span class="v-modern">power</span> and the glory, forever. Amen, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to take our encouragement in prayer from God only, and in our prayers to praise him, ascribing kingdom, power, and glory to him;<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof l, question 107">l</a></sup> and, in testimony of our desire, and assurance to be heard, we say, Amen.<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof m, question 107">m</a></sup>
+Answer: The conclusion of the Lord's Prayer, which is, For <span class="v-const">thine</span><span class="v-modern">yours</span> is the <span class="v-const">kingdom,</span><span class="v-modern">kingdom</span> and the <span class="v-const">power,</span><span class="v-modern">power</span> and the glory, forever. Amen, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to take our encouragement in prayer from God only,<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof k, question 107">k</a></sup> and in our prayers to praise him, ascribing kingdom, power, and glory to him;<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof l, question 107">l</a></sup> and, in testimony of our desire, and assurance to be heard, we say, Amen.<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof m, question 107">m</a></sup>
 
 <details class="scripture-proofs" id="wsc-q107-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>i.</strong> Luke 22:31-32; 1 Cor. 10:13; 2 Cor. 12:7-9; Heb. 2:18; Dan. 9:4, 7-9, 16-19; Luke 18:1, 7-8, <strong>l.</strong> 1 Chron. 29:10-13, <strong>m.</strong> 1 Cor. 14:16; Rev. 22:20</p></div>
+<p><strong>k.</strong> Dan. 9:4, 7-9, 16-19; Luke 18:1, 7-8, <strong>l.</strong> 1 Chron. 29:10-13; 1 Tim. 1:17; Rev. 5:11-13, <strong>m.</strong> 1 Cor. 14:16; Rev. 22:20</p>
+</div>
 </details>
