@@ -6,11 +6,16 @@ layout: post
 category: westminster-standards
 nav_order: 5
 description: "The Westminster Shorter Catechism, all 107 questions with OPC scripture proofs and the 2025 Modern English Study Version."
+edition_label: OPC received text (1936) with 2025 Modern English Study Version
+source_organization: Orthodox Presbyterian Church — Confession and Catechisms
+source_url: https://opc.org/confessions.html
+verified_date: 2026-07-29
+source_note: The constitutional text is authoritative; the 2025 MESV is available for study and carries no constitutional authority.
 ---
 -------------
 <span id="wsc-q1"></span>
-### Question 1: What is the chief end of man?  
-Answer: Man's chief end is to glorify God,<sup class="proof-marker"><a href="#wsc-q1-proofs" aria-label="Scripture proof a, question 1">a</a></sup> and to enjoy him forever.<sup class="proof-marker"><a href="#wsc-q1-proofs" aria-label="Scripture proof b, question 1">b</a></sup>
+### Question 1: What is the chief end of man?
+Answer: Man’s chief end is to glorify God,<sup class="proof-marker"><a href="#wsc-q1-proofs" aria-label="Scripture proof a, question 1">a</a></sup> and to enjoy him forever.<sup class="proof-marker"><a href="#wsc-q1-proofs" aria-label="Scripture proof b, question 1">b</a></sup>
 
 <details class="scripture-proofs" id="wsc-q1-proofs">
 <summary>Scripture Proofs</summary>
@@ -21,8 +26,8 @@ Answer: Man's chief end is to glorify God,<sup class="proof-marker"><a href="#ws
 
 
 <span id="wsc-q2"></span>
-### Question 2: What rule hath God given to direct us how we may glorify and enjoy him?  
-Answer: The Word of God, which is contained in the Scriptures of the Old and New Testaments,<sup class="proof-marker"><a href="#wsc-q2-proofs" aria-label="Scripture proof c, question 2">c</a></sup> is the only rule to direct us how we may glorify and enjoy him.<sup class="proof-marker"><a href="#wsc-q2-proofs" aria-label="Scripture proof d, question 2">d</a></sup>
+### Question 2: What rule <span class="text-variant" data-modern="has">hath</span> God given to direct us how we may glorify and enjoy him?
+Answer: The <span class="text-variant" data-modern="word">Word</span> of God, which is contained in the Scriptures of the Old and New Testaments,<sup class="proof-marker"><a href="#wsc-q2-proofs" aria-label="Scripture proof c, question 2">c</a></sup> is the only rule to direct us how we may glorify and enjoy him.<sup class="proof-marker"><a href="#wsc-q2-proofs" aria-label="Scripture proof d, question 2">d</a></sup>
 
 <details class="scripture-proofs" id="wsc-q2-proofs">
 <summary>Scripture Proofs</summary>
@@ -33,7 +38,7 @@ Answer: The Word of God, which is contained in the Scriptures of the Old and New
 
 
 <span id="wsc-q3"></span>
-### Question 3: What do the Scriptures principally teach?  
+### Question 3: What do the Scriptures principally teach?
 Answer: The Scriptures principally teach, what man is to believe concerning God,<sup class="proof-marker"><a href="#wsc-q3-proofs" aria-label="Scripture proof e, question 3">e</a></sup> and what duty God requires of man.<sup class="proof-marker"><a href="#wsc-q3-proofs" aria-label="Scripture proof f, question 3">f</a></sup>
 
 <details class="scripture-proofs" id="wsc-q3-proofs">
@@ -45,7 +50,7 @@ Answer: The Scriptures principally teach, what man is to believe concerning God,
 
 
 <span id="wsc-q4"></span>
-### Question 4: What is God?  
+### Question 4: What is God?
 Answer: God is a Spirit,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof g, question 4">g</a></sup> infinite,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof h, question 4">h</a></sup> eternal,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof i, question 4">i</a></sup> and unchangeable,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof k, question 4">k</a></sup> in his being,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof l, question 4">l</a></sup> wisdom,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof m, question 4">m</a></sup> power,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof n, question 4">n</a></sup> holiness,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof o, question 4">o</a></sup> justice,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof p, question 4">p</a></sup> goodness,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof q, question 4">q</a></sup> and truth.<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-label="Scripture proof r, question 4">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q4-proofs">
@@ -57,8 +62,8 @@ Answer: God is a Spirit,<sup class="proof-marker"><a href="#wsc-q4-proofs" aria-
 
 
 <span id="wsc-q5"></span>
-### Question 5: Are there more Gods than one?  
-Answer: There is <span class="v-const">but one only,</span><span class="v-modern">only one,</span><sup class="proof-marker"><a href="#wsc-q5-proofs" aria-label="Scripture proof s, question 5">s</a></sup> the living and true God.<sup class="proof-marker"><a href="#wsc-q5-proofs" aria-label="Scripture proof t, question 5">t</a></sup>
+### Question 5: Are there more Gods than one?
+Answer: There is <span class="text-variant" data-modern="only one,">but</span> <span class="text-variant" data-modern="">one</span> <span class="text-variant" data-modern="">only,</span><sup class="proof-marker"><a href="#wsc-q5-proofs" aria-label="Scripture proof s, question 5">s</a></sup> the living and true God.<sup class="proof-marker"><a href="#wsc-q5-proofs" aria-label="Scripture proof t, question 5">t</a></sup>
 
 <details class="scripture-proofs" id="wsc-q5-proofs">
 <summary>Scripture Proofs</summary>
@@ -69,8 +74,8 @@ Answer: There is <span class="v-const">but one only,</span><span class="v-modern
 
 
 <span id="wsc-q6"></span>
-### Question 6: How many persons are there in the Godhead?  
-Answer: There are three persons in the <span class="v-const">Godhead:</span><span class="v-modern">Godhead;</span> the Father, the Son, and the Holy <span class="v-const">Ghost;</span><span class="v-modern">Spirit;</span><sup class="proof-marker"><a href="#wsc-q6-proofs" aria-label="Scripture proof u, question 6">u</a></sup> and these three are one God, the same in substance, equal in power and glory.<sup class="proof-marker"><a href="#wsc-q6-proofs" aria-label="Scripture proof w, question 6">w</a></sup>
+### Question 6: How many persons are there in the Godhead?
+Answer: There are three persons in the Godhead; the Father, the Son, and the Holy <span class="text-variant" data-modern="Spirit;">Ghost;</span><sup class="proof-marker"><a href="#wsc-q6-proofs" aria-label="Scripture proof u, question 6">u</a></sup> and these three are one God, the same in substance, equal in power and glory.<sup class="proof-marker"><a href="#wsc-q6-proofs" aria-label="Scripture proof w, question 6">w</a></sup>
 
 <details class="scripture-proofs" id="wsc-q6-proofs">
 <summary>Scripture Proofs</summary>
@@ -81,8 +86,8 @@ Answer: There are three persons in the <span class="v-const">Godhead:</span><spa
 
 
 <span id="wsc-q7"></span>
-### Question 7: What are the decrees of God?  
-Answer: The decrees of God are, his eternal purpose, according to the counsel of his will, <span class="v-const">whereby,</span><span class="v-modern">by which,</span> for his own glory, he <span class="v-const">hath</span><span class="v-modern">has</span> foreordained <span class="v-const">whatsoever</span><span class="v-modern">whatever</span> comes to pass.<sup class="proof-marker"><a href="#wsc-q7-proofs" aria-label="Scripture proof x, question 7">x</a></sup>
+### Question 7: What are the decrees of God?
+Answer: The decrees of God are, his eternal purpose, according to the counsel of his will, <span class="text-variant" data-modern="by which,">whereby,</span> for his own glory, he <span class="text-variant" data-modern="has">hath</span> foreordained <span class="text-variant" data-modern="whatever">whatsoever</span> comes to pass.<sup class="proof-marker"><a href="#wsc-q7-proofs" aria-label="Scripture proof x, question 7">x</a></sup>
 
 <details class="scripture-proofs" id="wsc-q7-proofs">
 <summary>Scripture Proofs</summary>
@@ -93,8 +98,8 @@ Answer: The decrees of God are, his eternal purpose, according to the counsel of
 
 
 <span id="wsc-q8"></span>
-### Question 8: How doth God execute his decrees?  
-Answer: God <span class="v-const">executeth</span><span class="v-modern">executes</span> his decrees in the works of creation and providence.<sup class="proof-marker"><a href="#wsc-q8-proofs" aria-label="Scripture proof y, question 8">y</a></sup>
+### Question 8: How <span class="text-variant" data-modern="does">doth</span> God execute his decrees?
+Answer: God <span class="text-variant" data-modern="executes">executeth</span> his decrees in the works of creation and providence.<sup class="proof-marker"><a href="#wsc-q8-proofs" aria-label="Scripture proof y, question 8">y</a></sup>
 
 <details class="scripture-proofs" id="wsc-q8-proofs">
 <summary>Scripture Proofs</summary>
@@ -105,8 +110,8 @@ Answer: God <span class="v-const">executeth</span><span class="v-modern">execute
 
 
 <span id="wsc-q9"></span>
-### Question 9: What is the work of creation.?  
-Answer: The work of creation is, God's making all things of nothing, by the word of his power,<sup class="proof-marker"><a href="#wsc-q9-proofs" aria-label="Scripture proof z, question 9">z</a></sup> in the space of six days, and all very good.<sup class="proof-marker"><a href="#wsc-q9-proofs" aria-label="Scripture proof a, question 9">a</a></sup>
+### Question 9: What is the work of creation?
+Answer: The work of creation is, God’s making all things of nothing, by the word of his power,<sup class="proof-marker"><a href="#wsc-q9-proofs" aria-label="Scripture proof z, question 9">z</a></sup> in the space of six days, and all very good.<sup class="proof-marker"><a href="#wsc-q9-proofs" aria-label="Scripture proof a, question 9">a</a></sup>
 
 <details class="scripture-proofs" id="wsc-q9-proofs">
 <summary>Scripture Proofs</summary>
@@ -117,8 +122,8 @@ Answer: The work of creation is, God's making all things of nothing, by the word
 
 
 <span id="wsc-q10"></span>
-### Question 10: How did God create man?  
-Answer: God created man male and female, <span class="v-const">afte</span><span class="v-modern">after</span>r his own image,<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof b, question 10">b</a></sup> in knowledge,<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof c, question 10">c</a></sup> righteousness, and holiness,<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof d, question 10">d</a></sup> with dominion over the creatures.<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof e, question 10">e</a></sup>
+### Question 10: How did God create man?
+Answer: God created man male and female, after his own image,<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof b, question 10">b</a></sup> in knowledge,<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof c, question 10">c</a></sup> righteousness, and holiness,<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof d, question 10">d</a></sup> with dominion over the creatures.<sup class="proof-marker"><a href="#wsc-q10-proofs" aria-label="Scripture proof e, question 10">e</a></sup>
 
 <details class="scripture-proofs" id="wsc-q10-proofs">
 <summary>Scripture Proofs</summary>
@@ -129,8 +134,8 @@ Answer: God created man male and female, <span class="v-const">afte</span><span 
 
 
 <span id="wsc-q11"></span>
-### Question 11: What are God's works of providence.?  
-Answer: God's works of providence are, his most holy,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof f, question 11">f</a></sup> wise,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof g, question 11">g</a></sup> and powerful<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof h, question 11">h</a></sup> preserving<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof i, question 11">i</a></sup> and governing<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof k, question 11">k</a></sup> all his creatures, and all their actions.<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof l, question 11">l</a></sup>
+### Question 11: What are God’s works of providence?
+Answer: God’s works of providence <span class="text-variant" data-modern="are">are,</span> his most holy,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof f, question 11">f</a></sup> wise,<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof g, question 11">g</a></sup> and powerful<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof h, question 11">h</a></sup> preserving<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof i, question 11">i</a></sup> and governing<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof k, question 11">k</a></sup> all his creatures, and all their actions.<sup class="proof-marker"><a href="#wsc-q11-proofs" aria-label="Scripture proof l, question 11">l</a></sup>
 
 <details class="scripture-proofs" id="wsc-q11-proofs">
 <summary>Scripture Proofs</summary>
@@ -141,7 +146,7 @@ Answer: God's works of providence are, his most holy,<sup class="proof-marker"><
 
 
 <span id="wsc-q12"></span>
-### Question 12: What special act of providence did God exercise towards man in the estate wherein he was created?  
+### Question 12: What special act of providence did God exercise towards man in the <span class="text-variant" data-modern="state in which">estate</span> <span class="text-variant" data-modern="">wherein</span> he was created?
 Answer: When God had created man, he entered into a covenant of life with him, upon condition of perfect obedience; forbidding him to eat of the tree of the knowledge of good and evil, upon pain of death.<sup class="proof-marker"><a href="#wsc-q12-proofs" aria-label="Scripture proof m, question 12">m</a></sup>
 
 <details class="scripture-proofs" id="wsc-q12-proofs">
@@ -153,8 +158,8 @@ Answer: When God had created man, he entered into a covenant of life with him, u
 
 
 <span id="wsc-q13"></span>
-### Question 13: Did our first parents continue in the estate wherein they were created?  
-Answer: Our first parents, being left to the freedom of their own will, fell from the <span class="v-const">estate wherein</span><span class="v-modern">state in which</span> they were created, by sinning against God.<sup class="proof-marker"><a href="#wsc-q13-proofs" aria-label="Scripture proof n, question 13">n</a></sup>
+### Question 13: Did our first parents continue in the <span class="text-variant" data-modern="state in which">estate</span> <span class="text-variant" data-modern="">wherein</span> they were created?
+Answer: Our first parents, being left to the freedom of their own will, fell from the <span class="text-variant" data-modern="state in which">estate</span> <span class="text-variant" data-modern="">wherein</span> they were created, by sinning against God.<sup class="proof-marker"><a href="#wsc-q13-proofs" aria-label="Scripture proof n, question 13">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q13-proofs">
 <summary>Scripture Proofs</summary>
@@ -165,8 +170,8 @@ Answer: Our first parents, being left to the freedom of their own will, fell fro
 
 
 <span id="wsc-q14"></span>
-### Question 14: What is sin?  
-Answer: Sin is any <span class="v-const">want</span><span class="v-modern">lack</span> of conformity <span class="v-const">unto,</span><span class="v-modern">to,</span> or transgression of, the law of God.<sup class="proof-marker"><a href="#wsc-q14-proofs" aria-label="Scripture proof o, question 14">o</a></sup>
+### Question 14: What is sin?
+Answer: Sin is any <span class="text-variant" data-modern="lack">want</span> of conformity <span class="text-variant" data-modern="to,">unto,</span> or transgression of, the law of God.<sup class="proof-marker"><a href="#wsc-q14-proofs" aria-label="Scripture proof o, question 14">o</a></sup>
 
 <details class="scripture-proofs" id="wsc-q14-proofs">
 <summary>Scripture Proofs</summary>
@@ -177,8 +182,8 @@ Answer: Sin is any <span class="v-const">want</span><span class="v-modern">lack<
 
 
 <span id="wsc-q15"></span>
-### Question 15: What was the sin whereby our first parents fell from the estate wherein they were created?  
-Answer: The sin <span class="v-const">whereby</span><span class="v-modern">by which</span> our first parents fell from the <span class="v-const">estate wherein</span><span class="v-modern">state in which</span> they were created, was their eating the forbidden fruit.<sup class="proof-marker"><a href="#wsc-q15-proofs" aria-label="Scripture proof p, question 15">p</a></sup>
+### Question 15: What was the sin <span class="text-variant" data-modern="by which">whereby</span> our first parents fell from the <span class="text-variant" data-modern="state in which">estate</span> <span class="text-variant" data-modern="">wherein</span> they were created?
+Answer: The sin <span class="text-variant" data-modern="by which">whereby</span> our first parents fell from the <span class="text-variant" data-modern="state in which">estate</span> <span class="text-variant" data-modern="">wherein</span> they were created, was their eating the forbidden fruit.<sup class="proof-marker"><a href="#wsc-q15-proofs" aria-label="Scripture proof p, question 15">p</a></sup>
 
 <details class="scripture-proofs" id="wsc-q15-proofs">
 <summary>Scripture Proofs</summary>
@@ -189,8 +194,8 @@ Answer: The sin <span class="v-const">whereby</span><span class="v-modern">by wh
 
 
 <span id="wsc-q16"></span>
-### Question 16: Did all mankind fall in Adam's first transgression.?  
-Answer: The covenant being made with Adam,<sup class="proof-marker"><a href="#wsc-q16-proofs" aria-label="Scripture proof q, question 16">q</a></sup> not only for himself, but for his posterity; all <span class="v-const">mankind,</span><span class="v-modern">humanity,</span> descending from him by ordinary generation, sinned in him, and fell with him, in his first transgression.<sup class="proof-marker"><a href="#wsc-q16-proofs" aria-label="Scripture proof r, question 16">r</a></sup>
+### Question 16: Did all <span class="text-variant" data-modern="humanity">mankind</span> fall in Adam’s first transgression?
+Answer: The covenant being made with Adam,<sup class="proof-marker"><a href="#wsc-q16-proofs" aria-label="Scripture proof q, question 16">q</a></sup> not only for himself, but for his posterity; all <span class="text-variant" data-modern="humanity,">mankind,</span> descending from him by ordinary generation, sinned in him, and fell with him, in his first transgression.<sup class="proof-marker"><a href="#wsc-q16-proofs" aria-label="Scripture proof r, question 16">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q16-proofs">
 <summary>Scripture Proofs</summary>
@@ -201,8 +206,8 @@ Answer: The covenant being made with Adam,<sup class="proof-marker"><a href="#ws
 
 
 <span id="wsc-q17"></span>
-### Question 17: Into what estate did the fall bring mankind?  
-Answer: The fall brought <span class="v-const">mankind</span><span class="v-modern">humanity</span> into <span class="v-const">an estate</span><span class="v-modern">a state</span> of sin and misery.<sup class="proof-marker"><a href="#wsc-q17-proofs" aria-label="Scripture proof s, question 17">s</a></sup>
+### Question 17: Into what <span class="text-variant" data-modern="state">estate</span> did the fall bring <span class="text-variant" data-modern="humanity?">mankind?</span>
+Answer: The fall brought <span class="text-variant" data-modern="humanity">mankind</span> into <span class="text-variant" data-modern="a state">an</span> <span class="text-variant" data-modern="">estate</span> of sin and misery.<sup class="proof-marker"><a href="#wsc-q17-proofs" aria-label="Scripture proof s, question 17">s</a></sup>
 
 <details class="scripture-proofs" id="wsc-q17-proofs">
 <summary>Scripture Proofs</summary>
@@ -213,8 +218,8 @@ Answer: The fall brought <span class="v-const">mankind</span><span class="v-mode
 
 
 <span id="wsc-q18"></span>
-### Question 18: Wherein consists the sinfulness of that estate whereinto man fell?  
-Answer: The sinfulness of that <span class="v-const">estate whereinto</span><span class="v-modern">state into which</span> man fell, consists in the guilt of Adam's first sin,<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof t, question 18">t</a></sup> the <span class="v-const">want</span><span class="v-modern">lack</span> of original righteousness,<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof u, question 18">u</a></sup> and the corruption of his whole nature,<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof w, question 18">w</a></sup> which is commonly called original sin; together with all actual transgressions <span class="v-const">which</span><span class="v-modern">that</span> proceed from it.<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof x, question 18">x</a></sup>
+### Question 18: <span class="text-variant" data-modern="What is">Wherein</span> <span class="text-variant" data-modern="">consists</span> the sinfulness of that <span class="text-variant" data-modern="state into which">estate</span> <span class="text-variant" data-modern="">whereinto</span> man fell?
+Answer: The sinfulness of that <span class="text-variant" data-modern="state into which">estate</span> <span class="text-variant" data-modern="">whereinto</span> man fell, consists in the guilt of Adam’s first sin,<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof t, question 18">t</a></sup> the <span class="text-variant" data-modern="lack">want</span> of original righteousness,<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof u, question 18">u</a></sup> and the corruption of his whole nature,<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof w, question 18">w</a></sup> which is commonly called original sin; together with all actual transgressions <span class="text-variant" data-modern="that">which</span> proceed from it.<sup class="proof-marker"><a href="#wsc-q18-proofs" aria-label="Scripture proof x, question 18">x</a></sup>
 
 <details class="scripture-proofs" id="wsc-q18-proofs">
 <summary>Scripture Proofs</summary>
@@ -225,8 +230,8 @@ Answer: The sinfulness of that <span class="v-const">estate whereinto</span><spa
 
 
 <span id="wsc-q19"></span>
-### Question 19: What is the misery of that estate whereinto man fell?  
-Answer: All <span class="v-const">mankind</span><span class="v-modern">humanity</span> by their fall lost communion with God,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof y, question 19">y</a></sup> are under his wrath<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof z, question 19">z</a></sup> and curse,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof a, question 19">a</a></sup> and so made liable to all the miseries of this life,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof b, question 19">b</a></sup> to death<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof c, question 19">c</a></sup> itself, and to the pains of hell forever.<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof d, question 19">d</a></sup>
+### Question 19: What is the misery of that <span class="text-variant" data-modern="state into which">estate</span> <span class="text-variant" data-modern="">whereinto</span> man fell?
+Answer: All <span class="text-variant" data-modern="humanity">mankind</span> by their fall lost communion with God,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof y, question 19">y</a></sup> are under his wrath<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof z, question 19">z</a></sup> and curse,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof a, question 19">a</a></sup> and so made liable to all the miseries of this life,<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof b, question 19">b</a></sup> to death<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof c, question 19">c</a></sup> itself, and to the pains of hell forever.<sup class="proof-marker"><a href="#wsc-q19-proofs" aria-label="Scripture proof d, question 19">d</a></sup>
 
 <details class="scripture-proofs" id="wsc-q19-proofs">
 <summary>Scripture Proofs</summary>
@@ -237,8 +242,8 @@ Answer: All <span class="v-const">mankind</span><span class="v-modern">humanity<
 
 
 <span id="wsc-q20"></span>
-### Question 20: Did God leave all mankind to perish in the estate of sin and misery?  
-Answer: <span class="v-const">God, having</span><span class="v-modern">Having elected some to everlasting life,</span> out of his mere good pleasure, from all eternity, elected some to everlasting life,<sup class="proof-marker"><a href="#wsc-q20-proofs" aria-label="Scripture proof e, question 20">e</a></sup> did enter into a covenant of grace to deliver them out of the <span class="v-const">estate</span><span class="v-modern">state</span> of sin and misery, and to bring them into <span class="v-const">an estate</span><span class="v-modern">a state</span> of salvation by a Redeemer.<sup class="proof-marker"><a href="#wsc-q20-proofs" aria-label="Scripture proof f, question 20">f</a></sup>
+### Question 20: Did God leave all <span class="text-variant" data-modern="humanity">mankind</span> to perish in the <span class="text-variant" data-modern="state">estate</span> of sin and misery?
+Answer: <span class="text-variant" data-modern="Havingelected some to everlasting life,">God,</span> <span class="text-variant" data-modern="">having</span> out of his mere good pleasure, from all eternity, <span class="text-variant" data-modern="God entered">elected</span> <span class="text-variant" data-modern="">some</span> <span class="text-variant" data-modern="">to</span> <span class="text-variant" data-modern="">everlasting</span> <span class="text-variant" data-modern="">life,</span><sup class="proof-marker"><a href="#wsc-q20-proofs" aria-label="Scripture proof e, question 20">e</a></sup> <span class="text-variant" data-modern="">did</span> <span class="text-variant" data-modern="">enter</span> into a covenant of grace to deliver them out of the <span class="text-variant" data-modern="state">estate</span> of sin and misery, and to bring them into <span class="text-variant" data-modern="a state">an</span> <span class="text-variant" data-modern="">estate</span> of salvation by a Redeemer.<sup class="proof-marker"><a href="#wsc-q20-proofs" aria-label="Scripture proof f, question 20">f</a></sup>
 
 <details class="scripture-proofs" id="wsc-q20-proofs">
 <summary>Scripture Proofs</summary>
@@ -249,8 +254,8 @@ Answer: <span class="v-const">God, having</span><span class="v-modern">Having el
 
 
 <span id="wsc-q21"></span>
-### Question 21: Who is the Redeemer of God's elect?  
-Answer: The only Redeemer of God's elect is the Lord Jesus Christ,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof g, question 21">g</a></sup> who, being the eternal Son of God,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof h, question 21">h</a></sup> became man,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof i, question 21">i</a></sup> and so was, and <span class="v-const">continueth</span><span class="v-modern">continues</span> to be, God and man in two distinct natures, and one person, forever.<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof k, question 21">k</a></sup>
+### Question 21: Who is the Redeemer of God’s elect?
+Answer: The only Redeemer of God’s elect is the Lord Jesus Christ,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof g, question 21">g</a></sup> who, being the eternal Son of God,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof h, question 21">h</a></sup> became man,<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof i, question 21">i</a></sup> and so was, and <span class="text-variant" data-modern="continues">continueth</span> to be, God and man in two distinct natures, and one person, forever.<sup class="proof-marker"><a href="#wsc-q21-proofs" aria-label="Scripture proof k, question 21">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q21-proofs">
 <summary>Scripture Proofs</summary>
@@ -261,8 +266,8 @@ Answer: The only Redeemer of God's elect is the Lord Jesus Christ,<sup class="pr
 
 
 <span id="wsc-q22"></span>
-### Question 22: How did Christ, being the Son of God, become man?  
-Answer: Christ, the Son of God, became man, by taking to himself a true body, and a reasonable soul,<sup class="proof-marker"><a href="#wsc-q22-proofs" aria-label="Scripture proof l, question 22">l</a></sup> being conceived by the power of the Holy <span class="v-const">Ghost,</span><span class="v-modern">Spirit,</span> in the womb of the <span class="v-const">virgin</span><span class="v-modern">Virgin</span> Mary, and born of her,<sup class="proof-marker"><a href="#wsc-q22-proofs" aria-label="Scripture proof m, question 22">m</a></sup> yet without sin.<sup class="proof-marker"><a href="#wsc-q22-proofs" aria-label="Scripture proof n, question 22">n</a></sup>
+### Question 22: How did Christ, being the Son of God, become man?
+Answer: Christ, the Son of God, became man, by taking to himself a true body, and a reasonable soul,<sup class="proof-marker"><a href="#wsc-q22-proofs" aria-label="Scripture proof l, question 22">l</a></sup> being conceived by the power of the Holy <span class="text-variant" data-modern="Spirit,">Ghost,</span> in the womb of the Virgin Mary, and born of her,<sup class="proof-marker"><a href="#wsc-q22-proofs" aria-label="Scripture proof m, question 22">m</a></sup> yet without sin.<sup class="proof-marker"><a href="#wsc-q22-proofs" aria-label="Scripture proof n, question 22">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q22-proofs">
 <summary>Scripture Proofs</summary>
@@ -273,8 +278,8 @@ Answer: Christ, the Son of God, became man, by taking to himself a true body, an
 
 
 <span id="wsc-q23"></span>
-### Question 23: What offices doth Christ execute as our Redeemer.?  
-Answer: Christ, as our Redeemer, <span class="v-const">executeth</span><span class="v-modern">executes</span> the offices of a prophet,<sup class="proof-marker"><a href="#wsc-q23-proofs" aria-label="Scripture proof o, question 23">o</a></sup> of a priest,<sup class="proof-marker"><a href="#wsc-q23-proofs" aria-label="Scripture proof p, question 23">p</a></sup> and of a king,<sup class="proof-marker"><a href="#wsc-q23-proofs" aria-label="Scripture proof q, question 23">q</a></sup> both in his <span class="v-const">estate</span><span class="v-modern">state</span> of humiliation and exaltation.
+### Question 23: What offices <span class="text-variant" data-modern="does">doth</span> Christ execute as our Redeemer?
+Answer: Christ, as our Redeemer, <span class="text-variant" data-modern="executes">executeth</span> the offices of a prophet,<sup class="proof-marker"><a href="#wsc-q23-proofs" aria-label="Scripture proof o, question 23">o</a></sup> of a priest,<sup class="proof-marker"><a href="#wsc-q23-proofs" aria-label="Scripture proof p, question 23">p</a></sup> and of a king,<sup class="proof-marker"><a href="#wsc-q23-proofs" aria-label="Scripture proof q, question 23">q</a></sup> both in his <span class="text-variant" data-modern="state">estate</span> of humiliation and exaltation.
 
 <details class="scripture-proofs" id="wsc-q23-proofs">
 <summary>Scripture Proofs</summary>
@@ -285,8 +290,8 @@ Answer: Christ, as our Redeemer, <span class="v-const">executeth</span><span cla
 
 
 <span id="wsc-q24"></span>
-### Question 24: How doth Christ execute the office of a prophet?  
-Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a prophet, in revealing to us, by his Word<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof r, question 24">r</a></sup> and Spirit,<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof s, question 24">s</a></sup> the will of God for our salvation.<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof t, question 24">t</a></sup>
+### Question 24: How <span class="text-variant" data-modern="does">doth</span> Christ execute the office of a prophet?
+Answer: Christ <span class="text-variant" data-modern="executes">executeth</span> the office of a prophet, in revealing to us, by his Word<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof r, question 24">r</a></sup> and Spirit,<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof s, question 24">s</a></sup> the will of God for our salvation.<sup class="proof-marker"><a href="#wsc-q24-proofs" aria-label="Scripture proof t, question 24">t</a></sup>
 
 <details class="scripture-proofs" id="wsc-q24-proofs">
 <summary>Scripture Proofs</summary>
@@ -297,8 +302,8 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 
 
 <span id="wsc-q25"></span>
-### Question 25: How doth Christ execute the office of a priest?  
-Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a priest, in his once offering <span class="v-modern">himself</span> up <span class="v-const">of himself</span><span class="v-modern">as</span> a sacrifice to satisfy divine justice,<sup class="proof-marker"><a href="#wsc-q25-proofs" aria-label="Scripture proof u, question 25">u</a></sup> and reconcile us to God,<sup class="proof-marker"><a href="#wsc-q25-proofs" aria-label="Scripture proof w, question 25">w</a></sup> and in making continual intercession for us.<sup class="proof-marker"><a href="#wsc-q25-proofs" aria-label="Scripture proof x, question 25">x</a></sup>
+### Question 25: How <span class="text-variant" data-modern="does">doth</span> Christ execute the office of a priest?
+Answer: Christ <span class="text-variant" data-modern="executes">executeth</span> the office of a priest, in his once offering <span class="text-variant" data-modern="himself"></span> up <span class="text-variant" data-modern="as">of</span> <span class="text-variant" data-modern="">himself</span> a sacrifice to satisfy divine justice,<sup class="proof-marker"><a href="#wsc-q25-proofs" aria-label="Scripture proof u, question 25">u</a></sup> and reconcile us to God,<sup class="proof-marker"><a href="#wsc-q25-proofs" aria-label="Scripture proof w, question 25">w</a></sup> and in making continual intercession for us.<sup class="proof-marker"><a href="#wsc-q25-proofs" aria-label="Scripture proof x, question 25">x</a></sup>
 
 <details class="scripture-proofs" id="wsc-q25-proofs">
 <summary>Scripture Proofs</summary>
@@ -309,8 +314,8 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 
 
 <span id="wsc-q26"></span>
-### Question 26: How doth Christ execute the office of a king?  
-Answer: Christ <span class="v-const">executeth</span><span class="v-modern">executes</span> the office of a king, in subduing us to himself, in ruling and defending us,<sup class="proof-marker"><a href="#wsc-q26-proofs" aria-label="Scripture proof y, question 26">y</a></sup> and in restraining and conquering all his and our enemies.<sup class="proof-marker"><a href="#wsc-q26-proofs" aria-label="Scripture proof z, question 26">z</a></sup>
+### Question 26: How <span class="text-variant" data-modern="does">doth</span> Christ execute the office of a king?
+Answer: Christ <span class="text-variant" data-modern="executes">executeth</span> the office of a king, in subduing us to himself, in ruling and defending us,<sup class="proof-marker"><a href="#wsc-q26-proofs" aria-label="Scripture proof y, question 26">y</a></sup> and in restraining and conquering all his and our enemies.<sup class="proof-marker"><a href="#wsc-q26-proofs" aria-label="Scripture proof z, question 26">z</a></sup>
 
 <details class="scripture-proofs" id="wsc-q26-proofs">
 <summary>Scripture Proofs</summary>
@@ -321,8 +326,8 @@ Answer: Christ <span class="v-const">executeth</span><span class="v-modern">exec
 
 
 <span id="wsc-q27"></span>
-### Question 27: Wherein did Christ's humiliation consist?  
-Answer: Christ's humiliation consisted in his being born, and that in a low condition,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof a, question 27">a</a></sup> made under the law,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof b, question 27">b</a></sup> undergoing the miseries of this life,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof c, question 27">c</a></sup> the wrath of God,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof d, question 27">d</a></sup> and the cursed death of the cross;<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof e, question 27">e</a></sup> in being buried, and continuing under the power of death for a time.<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof f, question 27">f</a></sup>
+### Question 27: <span class="text-variant" data-modern="What was">Wherein</span> <span class="text-variant" data-modern="">did</span> Christ’s <span class="text-variant" data-modern="state of humiliation?">humiliation</span> <span class="text-variant" data-modern="">consist?</span>
+Answer: Christ’s humiliation consisted in his being born, and that in a low condition,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof a, question 27">a</a></sup> made under the law,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof b, question 27">b</a></sup> undergoing the miseries of this life,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof c, question 27">c</a></sup> the wrath of God,<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof d, question 27">d</a></sup> and the cursed death of the cross;<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof e, question 27">e</a></sup> in being buried, and continuing under the power of death for a time.<sup class="proof-marker"><a href="#wsc-q27-proofs" aria-label="Scripture proof f, question 27">f</a></sup>
 
 <details class="scripture-proofs" id="wsc-q27-proofs">
 <summary>Scripture Proofs</summary>
@@ -333,8 +338,8 @@ Answer: Christ's humiliation consisted in his being born, and that in a low cond
 
 
 <span id="wsc-q28"></span>
-### Question 28: Wherein consisteth Christ's exaltation?  
-Answer: Christ's exaltation <span class="v-const">consisteth</span><span class="v-modern">consists</span> in his rising <span class="v-const">again</span> from the dead on the third day,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof g, question 28">g</a></sup> in ascending <span class="v-const">up</span> into heaven,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof h, question 28">h</a></sup> in sitting at the right hand of God the Father,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof i, question 28">i</a></sup> and in coming to judge the world at the last day.<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof k, question 28">k</a></sup>
+### Question 28: <span class="text-variant" data-modern="What is">Wherein</span> <span class="text-variant" data-modern="">consisteth</span> Christ’s <span class="text-variant" data-modern="state of"></span> exaltation?
+Answer: Christ’s exaltation <span class="text-variant" data-modern="consists">consisteth</span> in his rising <span class="text-variant" data-modern="">again</span> from the dead on the third day,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof g, question 28">g</a></sup> in ascending <span class="text-variant" data-modern="">up</span> into heaven,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof h, question 28">h</a></sup> in sitting at the right hand of God the Father,<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof i, question 28">i</a></sup> and in coming to judge the world at the last day.<sup class="proof-marker"><a href="#wsc-q28-proofs" aria-label="Scripture proof k, question 28">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q28-proofs">
 <summary>Scripture Proofs</summary>
@@ -345,7 +350,7 @@ Answer: Christ's exaltation <span class="v-const">consisteth</span><span class="
 
 
 <span id="wsc-q29"></span>
-### Question 29: How are we made partakers of the redemption purchased by Christ?  
+### Question 29: How are we made partakers of the redemption purchased by Christ?
 Answer: We are made partakers of the redemption purchased by Christ, by the effectual application of it to us by his Holy Spirit.<sup class="proof-marker"><a href="#wsc-q29-proofs" aria-label="Scripture proof l, question 29">l</a></sup>
 
 <details class="scripture-proofs" id="wsc-q29-proofs">
@@ -357,8 +362,8 @@ Answer: We are made partakers of the redemption purchased by Christ, by the effe
 
 
 <span id="wsc-q30"></span>
-### Question 30: How doth the Spirit apply to us the redemption purchased by Christ?  
-Answer: The Spirit <span class="v-const">applieth</span><span class="v-modern">applies</span> to us the redemption purchased by Christ, by working faith in us,<sup class="proof-marker"><a href="#wsc-q30-proofs" aria-label="Scripture proof m, question 30">m</a></sup> and <span class="v-const">thereby</span><span class="v-modern">by this</span> uniting us to Christ in our effectual calling.<sup class="proof-marker"><a href="#wsc-q30-proofs" aria-label="Scripture proof n, question 30">n</a></sup>
+### Question 30: How <span class="text-variant" data-modern="does">doth</span> the Spirit apply to us the redemption purchased by Christ?
+Answer: The Spirit <span class="text-variant" data-modern="applies">applieth</span> to us the redemption purchased by Christ, by working faith in us,<sup class="proof-marker"><a href="#wsc-q30-proofs" aria-label="Scripture proof m, question 30">m</a></sup> and <span class="text-variant" data-modern="by this">thereby</span> uniting us to Christ in our effectual calling.<sup class="proof-marker"><a href="#wsc-q30-proofs" aria-label="Scripture proof n, question 30">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q30-proofs">
 <summary>Scripture Proofs</summary>
@@ -369,8 +374,8 @@ Answer: The Spirit <span class="v-const">applieth</span><span class="v-modern">a
 
 
 <span id="wsc-q31"></span>
-### Question 31: What is effectual calling?  
-Answer: Effectual calling is the work of God's Spirit, <span class="v-const">whereby,</span><span class="v-modern">by which,</span> convincing us <span class="v-const">ofour</span><span class="v-modern">of our</span> sin and misery, enlightening our minds in the knowledge of Christ,<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof o, question 31">o</a></sup> and renewing our wills,<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof p, question 31">p</a></sup> he <span class="v-const">doth persuade</span><span class="v-modern">persuades</span> and <span class="v-const">enable</span><span class="v-modern">enables</span> us to embrace Jesus Christ,<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof q, question 31">q</a></sup> freely offered to us in the gospel.<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof r, question 31">r</a></sup>
+### Question 31: What is effectual calling?
+Answer: Effectual calling is the work of God’s Spirit, <span class="text-variant" data-modern="by which,">whereby,</span> convincing us of our sin and misery, enlightening our minds in the knowledge of Christ,<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof o, question 31">o</a></sup> and renewing our wills,<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof p, question 31">p</a></sup> he <span class="text-variant" data-modern="persuades">doth</span> <span class="text-variant" data-modern="">persuade</span> and <span class="text-variant" data-modern="enables">enable</span> us to embrace Jesus Christ,<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof q, question 31">q</a></sup> freely offered to us in the gospel.<sup class="proof-marker"><a href="#wsc-q31-proofs" aria-label="Scripture proof r, question 31">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q31-proofs">
 <summary>Scripture Proofs</summary>
@@ -381,8 +386,8 @@ Answer: Effectual calling is the work of God's Spirit, <span class="v-const">whe
 
 
 <span id="wsc-q32"></span>
-### Question 32: What benefits do they that are effectually called partake of in this life?  
-Answer: <span class="v-const">They that</span><span class="v-modern">Those who</span> are effectually called <span class="v-const">do</span><span class="v-modern">partake</span> in this life <span class="v-const">partake</span> of justification, adoption, and sanctification, and the several benefits <span class="v-const">which</span><span class="v-modern">that</span> in this life <span class="v-const">do</span> either accompany or flow from them.<sup class="proof-marker"><a href="#wsc-q32-proofs" aria-label="Scripture proof s, question 32">s</a></sup>
+### Question 32: What benefits do <span class="text-variant" data-modern="those who">they</span> <span class="text-variant" data-modern="">that</span> are effectually called partake of in this life?
+Answer: <span class="text-variant" data-modern="Those who">They</span> <span class="text-variant" data-modern="">that</span> are effectually called <span class="text-variant" data-modern="partake">do</span> in this life <span class="text-variant" data-modern="">partake</span> of justification, adoption, and sanctification, and the several benefits <span class="text-variant" data-modern="that">which</span> in this life <span class="text-variant" data-modern="">do</span> either accompany or flow from them.<sup class="proof-marker"><a href="#wsc-q32-proofs" aria-label="Scripture proof s, question 32">s</a></sup>
 
 <details class="scripture-proofs" id="wsc-q32-proofs">
 <summary>Scripture Proofs</summary>
@@ -393,8 +398,8 @@ Answer: <span class="v-const">They that</span><span class="v-modern">Those who</
 
 
 <span id="wsc-q33"></span>
-### Question 33: What is justification?  
-Answer: Justification is an act of God's free grace,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof t, question 33">t</a></sup> <span class="v-const">wherein</span><span class="v-modern">in which</span> he <span class="v-const">pardoneth</span><span class="v-modern">pardons</span> all our sins,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof u, question 33">u</a></sup> and <span class="v-const">accepteth</span><span class="v-modern">accepts</span> us as righteous in his sight,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof w, question 33">w</a></sup> only for the righteousness of Christ imputed to us,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof x, question 33">x</a></sup> and received by faith alone.<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof y, question 33">y</a></sup>
+### Question 33: What is justification?
+Answer: Justification is an act of God’s free grace,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof t, question 33">t</a></sup> <span class="text-variant" data-modern="in which">wherein</span> he <span class="text-variant" data-modern="pardons">pardoneth</span> all our sins,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof u, question 33">u</a></sup> and <span class="text-variant" data-modern="accepts">accepteth</span> us as righteous in his sight,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof w, question 33">w</a></sup> only for the righteousness of Christ imputed to us,<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof x, question 33">x</a></sup> and received by faith alone.<sup class="proof-marker"><a href="#wsc-q33-proofs" aria-label="Scripture proof y, question 33">y</a></sup>
 
 <details class="scripture-proofs" id="wsc-q33-proofs">
 <summary>Scripture Proofs</summary>
@@ -405,8 +410,8 @@ Answer: Justification is an act of God's free grace,<sup class="proof-marker"><a
 
 
 <span id="wsc-q34"></span>
-### Question 34: What is adoption?  
-Answer: Adoption is an act of God's free grace,<sup class="proof-marker"><a href="#wsc-q34-proofs" aria-label="Scripture proof z, question 34">z</a></sup> <span class="v-const">whereby</span><span class="v-modern">by which</span> we are received into the number, and have a right to all the privileges, of the sons of God.<sup class="proof-marker"><a href="#wsc-q34-proofs" aria-label="Scripture proof a, question 34">a</a></sup>
+### Question 34: What is adoption?
+Answer: Adoption is an act of God’s free grace,<sup class="proof-marker"><a href="#wsc-q34-proofs" aria-label="Scripture proof z, question 34">z</a></sup> <span class="text-variant" data-modern="by which">whereby</span> we are received into the number, and have a right to all the privileges, of the sons of God.<sup class="proof-marker"><a href="#wsc-q34-proofs" aria-label="Scripture proof a, question 34">a</a></sup>
 
 <details class="scripture-proofs" id="wsc-q34-proofs">
 <summary>Scripture Proofs</summary>
@@ -417,8 +422,8 @@ Answer: Adoption is an act of God's free grace,<sup class="proof-marker"><a href
 
 
 <span id="wsc-q35"></span>
-### Question 35: What is sanctification?  
-Answer: Sanctification is the work of God's free grace,<sup class="proof-marker"><a href="#wsc-q35-proofs" aria-label="Scripture proof b, question 35">b</a></sup> <span class="v-const">whereby</span><span class="v-modern">by which</span> we are renewed in the whole man after the image of God,<sup class="proof-marker"><a href="#wsc-q35-proofs" aria-label="Scripture proof c, question 35">c</a></sup> and are enabled more and more to die <span class="v-const">unto</span><span class="v-modern">to</span> sin, and live <span class="v-const">unto</span><span class="v-modern">to</span> righteousness.<sup class="proof-marker"><a href="#wsc-q35-proofs" aria-label="Scripture proof d, question 35">d</a></sup>
+### Question 35: What is sanctification?
+Answer: Sanctification is the work of God’s free grace,<sup class="proof-marker"><a href="#wsc-q35-proofs" aria-label="Scripture proof b, question 35">b</a></sup> <span class="text-variant" data-modern="by which">whereby</span> we are renewed in the whole man after the image of God,<sup class="proof-marker"><a href="#wsc-q35-proofs" aria-label="Scripture proof c, question 35">c</a></sup> and are enabled more and more to die <span class="text-variant" data-modern="to">unto</span> sin, and live <span class="text-variant" data-modern="to">unto</span> righteousness.<sup class="proof-marker"><a href="#wsc-q35-proofs" aria-label="Scripture proof d, question 35">d</a></sup>
 
 <details class="scripture-proofs" id="wsc-q35-proofs">
 <summary>Scripture Proofs</summary>
@@ -429,8 +434,8 @@ Answer: Sanctification is the work of God's free grace,<sup class="proof-marker"
 
 
 <span id="wsc-q36"></span>
-### Question 36: What are the benefits which in this life do accompany or flow from justification, adoption, and sanctification?  
-Answer: The benefits <span class="v-const">which</span><span class="v-modern">that</span> in this life <span class="v-const">do</span> accompany or flow from justification, adoption, and sanctification, are, assurance of God's love,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof e, question 36">e</a></sup> peace of conscience,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof f, question 36">f</a></sup> joy in the Holy <span class="v-const">Ghost,</span><span class="v-modern">Spirit,</span><sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof g, question 36">g</a></sup> increase of grace,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof h, question 36">h</a></sup> and perseverance <span class="v-const">therein</span><span class="v-modern">in it</span> to the end.<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof i, question 36">i</a></sup>
+### Question 36: What are the benefits <span class="text-variant" data-modern="that">which</span> in this life <span class="text-variant" data-modern="">do</span> accompany or flow from justification, adoption, and sanctification?
+Answer: The benefits <span class="text-variant" data-modern="that">which</span> in this life <span class="text-variant" data-modern="">do</span> accompany or flow from justification, adoption, and sanctification, are, assurance of God’s love,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof e, question 36">e</a></sup> peace of conscience,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof f, question 36">f</a></sup> joy in the Holy <span class="text-variant" data-modern="Spirit,">Ghost,</span><sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof g, question 36">g</a></sup> increase of grace,<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof h, question 36">h</a></sup> and perseverance <span class="text-variant" data-modern="in it">therein</span> to the end.<sup class="proof-marker"><a href="#wsc-q36-proofs" aria-label="Scripture proof i, question 36">i</a></sup>
 
 <details class="scripture-proofs" id="wsc-q36-proofs">
 <summary>Scripture Proofs</summary>
@@ -441,8 +446,8 @@ Answer: The benefits <span class="v-const">which</span><span class="v-modern">th
 
 
 <span id="wsc-q37"></span>
-### Question 37: What benefits do believers receive from Christ at death?  
-Answer: The souls of believers are at their death made perfect in holiness,<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof k, question 37">k</a></sup> and <span class="v-const">do</span> immediately pass into glory;<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof l, question 37">l</a></sup> and their bodies, being still united <span class="v-const">in</span><span class="v-modern">to</span> Christ,<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof m, question 37">m</a></sup> <span class="v-const">do</span> rest in their graves, till the resurrection.<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof n, question 37">n</a></sup>
+### Question 37: What benefits do believers receive from Christ at death?
+Answer: The souls of believers are at their death made perfect in holiness,<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof k, question 37">k</a></sup> and <span class="text-variant" data-modern="">do</span> immediately pass into glory;<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof l, question 37">l</a></sup> and their bodies, being still united to Christ,<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof m, question 37">m</a></sup> <span class="text-variant" data-modern="">do</span> rest in their graves, till the resurrection.<sup class="proof-marker"><a href="#wsc-q37-proofs" aria-label="Scripture proof n, question 37">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q37-proofs">
 <summary>Scripture Proofs</summary>
@@ -453,7 +458,7 @@ Answer: The souls of believers are at their death made perfect in holiness,<sup 
 
 
 <span id="wsc-q38"></span>
-### Question 38: What benefits do believers receive from Christ at the resurrection?  
+### Question 38: What benefits do believers receive from Christ at the resurrection?
 Answer: At the resurrection, believers, being raised up in glory,<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof o, question 38">o</a></sup> shall be openly acknowledged and acquitted in the day of judgment,<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof p, question 38">p</a></sup> and made perfectly blessed in the full enjoying of God<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof q, question 38">q</a></sup> to all eternity.<sup class="proof-marker"><a href="#wsc-q38-proofs" aria-label="Scripture proof r, question 38">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q38-proofs">
@@ -465,8 +470,8 @@ Answer: At the resurrection, believers, being raised up in glory,<sup class="pro
 
 
 <span id="wsc-q39"></span>
-### Question 39: What is the duty which God requireth of man?  
-Answer: The duty <span class="v-const">which</span><span class="v-modern">that</span> God <span class="v-const">requireth</span><span class="v-modern">requires</span> of man, is obedience to his revealed will.<sup class="proof-marker"><a href="#wsc-q39-proofs" aria-label="Scripture proof s, question 39">s</a></sup>
+### Question 39: What is the duty <span class="text-variant" data-modern="that">which</span> God <span class="text-variant" data-modern="requires">requireth</span> of man?
+Answer: The duty <span class="text-variant" data-modern="that">which</span> God <span class="text-variant" data-modern="requires">requireth</span> of man, is obedience to his revealed will.<sup class="proof-marker"><a href="#wsc-q39-proofs" aria-label="Scripture proof s, question 39">s</a></sup>
 
 <details class="scripture-proofs" id="wsc-q39-proofs">
 <summary>Scripture Proofs</summary>
@@ -477,8 +482,8 @@ Answer: The duty <span class="v-const">which</span><span class="v-modern">that</
 
 
 <span id="wsc-q40"></span>
-### Question 40: What did God at first reveal to man for the rule of his obedience?  
-Answer: The rule <span class="v-const">which</span><span class="v-modern">that</span> God at first revealed to man for his obedience, was the moral law.<sup class="proof-marker"><a href="#wsc-q40-proofs" aria-label="Scripture proof t, question 40">t</a></sup>
+### Question 40: What did God at first reveal to man for the rule of his obedience?
+Answer: The rule <span class="text-variant" data-modern="that">which</span> God at first revealed to man for his obedience, was the moral law.<sup class="proof-marker"><a href="#wsc-q40-proofs" aria-label="Scripture proof t, question 40">t</a></sup>
 
 <details class="scripture-proofs" id="wsc-q40-proofs">
 <summary>Scripture Proofs</summary>
@@ -489,8 +494,8 @@ Answer: The rule <span class="v-const">which</span><span class="v-modern">that</
 
 
 <span id="wsc-q41"></span>
-### Question 41: Wherein is the moral law summarily comprehended?  
-Answer: The moral law is <span class="v-const">summarily comprehended</span><span class="v-modern">summarized</span> in the <span class="v-const">ten commandments.</span><span class="v-modern">Ten Commandments.</span><sup class="proof-marker"><a href="#wsc-q41-proofs" aria-label="Scripture proof u, question 41">u</a></sup>
+### Question 41: <span class="text-variant" data-modern="Where">Wherein</span> is the moral law <span class="text-variant" data-modern="summarized?">summarily</span> <span class="text-variant" data-modern="">comprehended?</span>
+Answer: The moral law is <span class="text-variant" data-modern="summarized">summarily</span> <span class="text-variant" data-modern="">comprehended</span> in the Ten Commandments.<sup class="proof-marker"><a href="#wsc-q41-proofs" aria-label="Scripture proof u, question 41">u</a></sup>
 
 <details class="scripture-proofs" id="wsc-q41-proofs">
 <summary>Scripture Proofs</summary>
@@ -501,8 +506,8 @@ Answer: The moral law is <span class="v-const">summarily comprehended</span><spa
 
 
 <span id="wsc-q42"></span>
-### Question 42: What is the sum of the ten commandments?  
-Answer: The sum of the ten commandments is, to love the Lord our God with all our heart, with all our soul, with all our strength, and with all our mind; and our neighbor as ourselves.<sup class="proof-marker"><a href="#wsc-q42-proofs" aria-label="Scripture proof w, question 42">w</a></sup>
+### Question 42: What is the sum of the Ten Commandments?
+Answer: The sum of the Ten Commandments is, to love the Lord our God with all our heart, with all our soul, with all our strength, and with all our mind; and our neighbor as ourselves.<sup class="proof-marker"><a href="#wsc-q42-proofs" aria-label="Scripture proof w, question 42">w</a></sup>
 
 <details class="scripture-proofs" id="wsc-q42-proofs">
 <summary>Scripture Proofs</summary>
@@ -513,8 +518,8 @@ Answer: The sum of the ten commandments is, to love the Lord our God with all ou
 
 
 <span id="wsc-q43"></span>
-### Question 43: What is the preface to the ten commandments?  
-Answer: The preface to the <span class="v-const">ten commandments</span><span class="v-modern">Ten Commandments</span> is in these words, I am the <span class="v-const">Lord thy</span><span class="v-modern">LORD your</span> God, <span class="v-const">which have</span><span class="v-modern">who</span> brought <span class="v-const">thee</span><span class="v-modern">you</span> out of the land of Egypt, out of the house of <span class="v-const">bondage.</span><span class="v-modern">slavery.</span><sup class="proof-marker"><a href="#wsc-q43-proofs" aria-label="Scripture proof x, question 43">x</a></sup>
+### Question 43: What is the preface to the Ten Commandments?
+Answer: The preface to the Ten Commandments is in these words, I am the LORD <span class="text-variant" data-modern="your">thy</span> God, <span class="text-variant" data-modern="who">which</span> <span class="text-variant" data-modern="">have</span> brought <span class="text-variant" data-modern="you">thee</span> out of the land of Egypt, out of the house of <span class="text-variant" data-modern="slavery.">bondage.</span><sup class="proof-marker"><a href="#wsc-q43-proofs" aria-label="Scripture proof x, question 43">x</a></sup>
 
 <details class="scripture-proofs" id="wsc-q43-proofs">
 <summary>Scripture Proofs</summary>
@@ -525,8 +530,8 @@ Answer: The preface to the <span class="v-const">ten commandments</span><span cl
 
 
 <span id="wsc-q44"></span>
-### Question 44: What doth the preface to the ten commandments teach us?  
-Answer: The preface to the <span class="v-const">ten commandments teacheth us,</span><span class="v-modern">Ten Commandments teaches us</span> that because God is the Lord, and our God, and Redeemer, therefore we are bound to keep all his commandments.<sup class="proof-marker"><a href="#wsc-q44-proofs" aria-label="Scripture proof y, question 44">y</a></sup>
+### Question 44: What <span class="text-variant" data-modern="does">doth</span> the preface to the Ten Commandments teach us?
+Answer: The preface to the Ten Commandments <span class="text-variant" data-modern="teaches us">teacheth</span> <span class="text-variant" data-modern="">us,</span> that because God is the Lord, and our God, and Redeemer, therefore we are bound to keep all his commandments.<sup class="proof-marker"><a href="#wsc-q44-proofs" aria-label="Scripture proof y, question 44">y</a></sup>
 
 <details class="scripture-proofs" id="wsc-q44-proofs">
 <summary>Scripture Proofs</summary>
@@ -537,8 +542,8 @@ Answer: The preface to the <span class="v-const">ten commandments teacheth us,</
 
 
 <span id="wsc-q45"></span>
-### Question 45: Which is the first commandment?  
-Answer: The first commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> have no other gods before me.<sup class="proof-marker"><a href="#wsc-q45-proofs" aria-label="Scripture proof z, question 45">z</a></sup>
+### Question 45: Which is the first commandment?
+Answer: The first commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> have no other gods before me.<sup class="proof-marker"><a href="#wsc-q45-proofs" aria-label="Scripture proof z, question 45">z</a></sup>
 
 <details class="scripture-proofs" id="wsc-q45-proofs">
 <summary>Scripture Proofs</summary>
@@ -549,8 +554,8 @@ Answer: The first commandment is, <span class="v-const">Thou shalt</span><span c
 
 
 <span id="wsc-q46"></span>
-### Question 46: What is required in the first commandment?  
-Answer: The first commandment <span class="v-const">requireth</span><span class="v-modern">requires</span> us to know and acknowledge God to be the only true God, and our God; and to worship and glorify him accordingly.<sup class="proof-marker"><a href="#wsc-q46-proofs" aria-label="Scripture proof a, question 46">a</a></sup>
+### Question 46: What is required in the first commandment?
+Answer: The first commandment <span class="text-variant" data-modern="requires">requireth</span> us to know and acknowledge God to be the only true God, and our God; and to worship and glorify him accordingly.<sup class="proof-marker"><a href="#wsc-q46-proofs" aria-label="Scripture proof a, question 46">a</a></sup>
 
 <details class="scripture-proofs" id="wsc-q46-proofs">
 <summary>Scripture Proofs</summary>
@@ -561,8 +566,8 @@ Answer: The first commandment <span class="v-const">requireth</span><span class=
 
 
 <span id="wsc-q47"></span>
-### Question 47: What is forbidden in the first commandment?  
-Answer: The first commandment <span class="v-const">forbiddeth the</span><span class="v-modern">forbids</span> denying,<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof b, question 47">b</a></sup> or not worshiping and glorifying, the true God as God,<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof c, question 47">c</a></sup> and our God;<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof d, question 47">d</a></sup> and <span class="v-const">the</span> giving <span class="v-const">of</span> that worship and glory to any other, which is due to him alone.<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof e, question 47">e</a></sup>
+### Question 47: What is forbidden in the first commandment?
+Answer: The first commandment <span class="text-variant" data-modern="forbids">forbiddeth</span> <span class="text-variant" data-modern="">the</span> denying,<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof b, question 47">b</a></sup> or not worshiping and glorifying, the true God as God,<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof c, question 47">c</a></sup> and our God;<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof d, question 47">d</a></sup> and <span class="text-variant" data-modern="">the</span> giving <span class="text-variant" data-modern="">of</span> that worship and glory to any other, which is due to him alone.<sup class="proof-marker"><a href="#wsc-q47-proofs" aria-label="Scripture proof e, question 47">e</a></sup>
 
 <details class="scripture-proofs" id="wsc-q47-proofs">
 <summary>Scripture Proofs</summary>
@@ -573,8 +578,8 @@ Answer: The first commandment <span class="v-const">forbiddeth the</span><span c
 
 
 <span id="wsc-q48"></span>
-### Question 48: What are we specially taught by these words before me in the first commandment?  
-Answer: These <span class="v-const">words</span><span class="v-modern">words,</span> before <span class="v-const">me</span><span class="v-modern">me,</span> in the first commandment teach us, that God, who <span class="v-const">seeth</span><span class="v-modern">sees</span> all things, <span class="v-const">taketh</span><span class="v-modern">takes</span> notice of, and is <span class="v-const">much</span><span class="v-modern">greatly</span> displeased with, the sin of having any other <span class="v-const">god.</span><span class="v-modern">God.</span><sup class="proof-marker"><a href="#wsc-q48-proofs" aria-label="Scripture proof f, question 48">f</a></sup>
+### Question 48: What are we specially taught by these words, before me, in the first commandment?
+Answer: These words, before me, in the first commandment teach us, that God, who <span class="text-variant" data-modern="sees">seeth</span> all things, <span class="text-variant" data-modern="takes">taketh</span> notice of, and is <span class="text-variant" data-modern="greatly">much</span> displeased with, the sin of having any other God.<sup class="proof-marker"><a href="#wsc-q48-proofs" aria-label="Scripture proof f, question 48">f</a></sup>
 
 <details class="scripture-proofs" id="wsc-q48-proofs">
 <summary>Scripture Proofs</summary>
@@ -585,8 +590,8 @@ Answer: These <span class="v-const">words</span><span class="v-modern">words,</s
 
 
 <span id="wsc-q49"></span>
-### Question 49: Which is the second commandment?  
-Answer: The second commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> not make <span class="v-const">unto thee any graven</span><span class="v-modern">for yourself a carved</span> image, or any likeness of anything that is in heaven above, or that is in the earth beneath, or that is in the water under the <span class="v-const">earth: Thou shalt</span><span class="v-modern">earth. You shall</span> not bow down <span class="v-const">thyself</span> to <span class="v-modern">them or serve</span> them, <span class="v-const">nor serve them:</span> for I the <span class="v-const">Lord thy</span><span class="v-modern">LORD your</span> God am a jealous God, visiting the iniquity of the fathers <span class="v-const">upon</span><span class="v-modern">on</span> the children <span class="v-const">unto</span><span class="v-modern">to</span> the third and fourth generation of <span class="v-const">them that</span><span class="v-modern">those who</span> hate <span class="v-const">me; and</span><span class="v-modern">me, but</span> showing <span class="v-const">mercy unto</span><span class="v-modern">steadfast love to</span> thousands of them that love <span class="v-const">me,</span><span class="v-modern">me</span> and keep my commandments.<sup class="proof-marker"><a href="#wsc-q49-proofs" aria-label="Scripture proof g, question 49">g</a></sup>
+### Question 49: Which is the second commandment?
+Answer: The second commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> not make <span class="text-variant" data-modern="for yourself a carved">unto</span> <span class="text-variant" data-modern="">thee</span> <span class="text-variant" data-modern="">any</span> <span class="text-variant" data-modern="">graven</span> image, or any likeness of <span class="text-variant" data-modern="anything">any</span> <span class="text-variant" data-modern="">thing</span> that is in heaven above, or that is in the earth beneath, or that is in the water under the <span class="text-variant" data-modern="earth. You shall">earth:</span> <span class="text-variant" data-modern="">thou</span> <span class="text-variant" data-modern="">shalt</span> not bow down <span class="text-variant" data-modern="">thyself</span> to <span class="text-variant" data-modern="them or serve"></span> them, <span class="text-variant" data-modern="">nor</span> <span class="text-variant" data-modern="">serve</span> <span class="text-variant" data-modern="">them:</span> for I the L <span class="text-variant" data-modern="your">thy</span> God am a jealous <span class="text-variant" data-modern="God,"></span> ORD <span class="text-variant" data-modern="">God,</span> visiting the iniquity of the fathers <span class="text-variant" data-modern="on">upon</span> the children <span class="text-variant" data-modern="to">unto</span> the third and fourth generation of <span class="text-variant" data-modern="those who">them</span> <span class="text-variant" data-modern="">that</span> hate <span class="text-variant" data-modern="me, but showing steadfast love to">me;</span> <span class="text-variant" data-modern="">and</span> <span class="text-variant" data-modern="">shewing</span> <span class="text-variant" data-modern="">mercy</span> <span class="text-variant" data-modern="">unto</span> thousands of <span class="text-variant" data-modern="those who">them</span> <span class="text-variant" data-modern="">that</span> love <span class="text-variant" data-modern="me">me,</span> and keep my commandments.<sup class="proof-marker"><a href="#wsc-q49-proofs" aria-label="Scripture proof g, question 49">g</a></sup>
 
 <details class="scripture-proofs" id="wsc-q49-proofs">
 <summary>Scripture Proofs</summary>
@@ -597,8 +602,8 @@ Answer: The second commandment is, <span class="v-const">Thou shalt</span><span 
 
 
 <span id="wsc-q50"></span>
-### Question 50: What is required in the second commandment?  
-Answer: The second commandment <span class="v-const">requireth the</span><span class="v-modern">requires</span> receiving, observing, and keeping pure and entire, all <span class="v-const">such</span><span class="v-modern">the</span> religious worship and ordinances <span class="v-const">as</span><span class="v-modern">that</span> God <span class="v-const">hath</span><span class="v-modern">has</span> appointed in his Word.<sup class="proof-marker"><a href="#wsc-q50-proofs" aria-label="Scripture proof h, question 50">h</a></sup>
+### Question 50: What is required in the second commandment?
+Answer: The second commandment <span class="text-variant" data-modern="requires">requireth</span> <span class="text-variant" data-modern="">the</span> receiving, observing, and keeping pure and entire, all <span class="text-variant" data-modern="the">such</span> religious worship and ordinances <span class="text-variant" data-modern="that">as</span> God <span class="text-variant" data-modern="has">hath</span> appointed in his Word.<sup class="proof-marker"><a href="#wsc-q50-proofs" aria-label="Scripture proof h, question 50">h</a></sup>
 
 <details class="scripture-proofs" id="wsc-q50-proofs">
 <summary>Scripture Proofs</summary>
@@ -609,8 +614,8 @@ Answer: The second commandment <span class="v-const">requireth the</span><span c
 
 
 <span id="wsc-q51"></span>
-### Question 51: What is forbidden in the second commandment?  
-Answer: The second commandment <span class="v-const">forbiddeth the</span><span class="v-modern">forbids</span> worshiping <span class="v-const">of</span> God by images,<sup class="proof-marker"><a href="#wsc-q51-proofs" aria-label="Scripture proof i, question 51">i</a></sup> or any other way not appointed in his Word.<sup class="proof-marker"><a href="#wsc-q51-proofs" aria-label="Scripture proof k, question 51">k</a></sup>
+### Question 51: What is forbidden in the second commandment?
+Answer: The second commandment <span class="text-variant" data-modern="forbids">forbiddeth</span> <span class="text-variant" data-modern="">the</span> worshiping <span class="text-variant" data-modern="">of</span> God by images,<sup class="proof-marker"><a href="#wsc-q51-proofs" aria-label="Scripture proof i, question 51">i</a></sup> or any other way not appointed in his Word.<sup class="proof-marker"><a href="#wsc-q51-proofs" aria-label="Scripture proof k, question 51">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q51-proofs">
 <summary>Scripture Proofs</summary>
@@ -621,8 +626,8 @@ Answer: The second commandment <span class="v-const">forbiddeth the</span><span 
 
 
 <span id="wsc-q52"></span>
-### Question 52: What are the reasons annexed to the second commandment?  
-Answer: The reasons annexed to the second commandment are, God's sovereignty over us,<sup class="proof-marker"><a href="#wsc-q52-proofs" aria-label="Scripture proof l, question 52">l</a></sup> his <span class="v-const">propriety in</span><span class="v-modern">ownership of</span> us,<sup class="proof-marker"><a href="#wsc-q52-proofs" aria-label="Scripture proof m, question 52">m</a></sup> and the zeal he <span class="v-const">hath to</span><span class="v-modern">has for</span> his own worship.<sup class="proof-marker"><a href="#wsc-q52-proofs" aria-label="Scripture proof n, question 52">n</a></sup>
+### Question 52: What are the reasons annexed to the second commandment?
+Answer: The reasons annexed to the second commandment are, God’s sovereignty over us,<sup class="proof-marker"><a href="#wsc-q52-proofs" aria-label="Scripture proof l, question 52">l</a></sup> his <span class="text-variant" data-modern="ownership of">propriety</span> <span class="text-variant" data-modern="">in</span> us,<sup class="proof-marker"><a href="#wsc-q52-proofs" aria-label="Scripture proof m, question 52">m</a></sup> and the zeal he <span class="text-variant" data-modern="has for">hath</span> <span class="text-variant" data-modern="">to</span> his own worship.<sup class="proof-marker"><a href="#wsc-q52-proofs" aria-label="Scripture proof n, question 52">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q52-proofs">
 <summary>Scripture Proofs</summary>
@@ -633,8 +638,8 @@ Answer: The reasons annexed to the second commandment are, God's sovereignty ove
 
 
 <span id="wsc-q53"></span>
-### Question 53: Which is the third commandment?  
-Answer: The third commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> not take the name of the <span class="v-const">Lord thy</span><span class="v-modern">LORD your</span> God in <span class="v-const">vain:</span><span class="v-modern">vain,</span> for the Lord will not hold him guiltless <span class="v-const">that taketh</span><span class="v-modern">who takes</span> his name in vain.<sup class="proof-marker"><a href="#wsc-q53-proofs" aria-label="Scripture proof o, question 53">o</a></sup>
+### Question 53: Which is the third commandment?
+Answer: The third commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> not take the name of the LORD <span class="text-variant" data-modern="your">thy</span> God in <span class="text-variant" data-modern="vain,">vain:</span> for the LORD will not hold him guiltless <span class="text-variant" data-modern="who takes">that</span> <span class="text-variant" data-modern="">taketh</span> his name in vain.<sup class="proof-marker"><a href="#wsc-q53-proofs" aria-label="Scripture proof o, question 53">o</a></sup>
 
 <details class="scripture-proofs" id="wsc-q53-proofs">
 <summary>Scripture Proofs</summary>
@@ -645,8 +650,8 @@ Answer: The third commandment is, <span class="v-const">Thou shalt</span><span c
 
 
 <span id="wsc-q54"></span>
-### Question 54: What is required in the third commandment?  
-Answer: The third commandment <span class="v-const">requireth</span><span class="v-modern">requires</span> the holy and <span class="v-const">reverend</span><span class="v-modern">reverent</span> use of God's names, titles,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof p, question 54">p</a></sup> attributes,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof q, question 54">q</a></sup> ordinances,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof r, question 54">r</a></sup> Word,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof s, question 54">s</a></sup> and works.<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof t, question 54">t</a></sup>
+### Question 54: What is required in the third commandment?
+Answer: The third commandment <span class="text-variant" data-modern="requires">requireth</span> the holy and reverent use of God’s names, titles,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof p, question 54">p</a></sup> attributes,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof q, question 54">q</a></sup> ordinances,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof r, question 54">r</a></sup> Word,<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof s, question 54">s</a></sup> and works.<sup class="proof-marker"><a href="#wsc-q54-proofs" aria-label="Scripture proof t, question 54">t</a></sup>
 
 <details class="scripture-proofs" id="wsc-q54-proofs">
 <summary>Scripture Proofs</summary>
@@ -657,8 +662,8 @@ Answer: The third commandment <span class="v-const">requireth</span><span class=
 
 
 <span id="wsc-q55"></span>
-### Question 55: What is forbidden in the third commandment?  
-Answer: The third commandment <span class="v-const">forbiddeth</span><span class="v-modern">forbids</span> all profaning or abusing of anything <span class="v-const">whereby</span><span class="v-modern">by which</span> God <span class="v-const">maketh</span><span class="v-modern">makes</span> himself known.<sup class="proof-marker"><a href="#wsc-q55-proofs" aria-label="Scripture proof u, question 55">u</a></sup>
+### Question 55: What is forbidden in the third commandment?
+Answer: The third commandment <span class="text-variant" data-modern="forbids">forbiddeth</span> all profaning or abusing of anything <span class="text-variant" data-modern="by which">whereby</span> God <span class="text-variant" data-modern="makes">maketh</span> himself known.<sup class="proof-marker"><a href="#wsc-q55-proofs" aria-label="Scripture proof u, question 55">u</a></sup>
 
 <details class="scripture-proofs" id="wsc-q55-proofs">
 <summary>Scripture Proofs</summary>
@@ -669,8 +674,8 @@ Answer: The third commandment <span class="v-const">forbiddeth</span><span class
 
 
 <span id="wsc-q56"></span>
-### Question 56: What is the reason annexed to the third commandment?  
-Answer: The reason annexed to the third commandment is, that however the breakers of this commandment may escape punishment from men, yet the Lord our God will not <span class="v-const">suffer</span><span class="v-modern">allow</span> them to escape his righteous judgment.<sup class="proof-marker"><a href="#wsc-q56-proofs" aria-label="Scripture proof w, question 56">w</a></sup>
+### Question 56: What is the reason annexed to the third commandment?
+Answer: The reason annexed to the third commandment is, that however the breakers of this commandment may escape punishment from men, yet the Lord our God will not <span class="text-variant" data-modern="allow">suffer</span> them to escape his righteous judgment.<sup class="proof-marker"><a href="#wsc-q56-proofs" aria-label="Scripture proof w, question 56">w</a></sup>
 
 <details class="scripture-proofs" id="wsc-q56-proofs">
 <summary>Scripture Proofs</summary>
@@ -681,8 +686,8 @@ Answer: The reason annexed to the third commandment is, that however the breaker
 
 
 <span id="wsc-q57"></span>
-### Question 57: Which is the fourth commandment?  
-Answer: The fourth commandment is, Remember the <span class="v-const">sabbath day</span><span class="v-modern">Sabbath day,</span> to keep it holy. Six days <span class="v-const">shalt thou</span><span class="v-modern">you shall</span> labor, and do all <span class="v-const">thy work:</span><span class="v-modern">your work,</span> but the seventh day is <span class="v-const">the sabbath of</span><span class="v-modern">a Sabbath to</span> the <span class="v-const">Lord</span><span class="v-modern">LORD</span> <span class="v-const">thy God: in</span><span class="v-modern">your God. On</span> it <span class="v-const">thou shalt</span><span class="v-modern">you shall</span> not do any work, <span class="v-const">thou, nor thy</span><span class="v-modern">you, or your</span> son, <span class="v-const">nor thy</span><span class="v-modern">or your</span> daughter, <span class="v-const">thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that</span><span class="v-modern">your male servant, or your female servant, or your livestock, or the sojourner who</span> is within <span class="v-const">thy gates:</span><span class="v-modern">your gates.</span> For in six days the Lord made heaven and earth, the sea, and all that <span class="v-modern">is</span> in <span class="v-const">them is,</span><span class="v-modern">them,</span> and rested <span class="v-modern">on</span> the seventh <span class="v-const">day: wherefore</span><span class="v-modern">day. Therefore</span> the Lord blessed the <span class="v-const">sabbath day,</span><span class="v-modern">Sabbath day</span> and <span class="v-const">hallowed it.</span><span class="v-modern">made it holy.</span><sup class="proof-marker"><a href="#wsc-q57-proofs" aria-label="Scripture proof x, question 57">x</a></sup>
+### Question 57: Which is the fourth commandment?
+Answer: The fourth commandment is, Remember the <span class="text-variant" data-modern="Sabbath">sabbath</span> day, to keep it holy. Six days <span class="text-variant" data-modern="you shall labor,">shalt</span> <span class="text-variant" data-modern="">thou</span> <span class="text-variant" data-modern="">labour,</span> and do all <span class="text-variant" data-modern="your work,">thy</span> <span class="text-variant" data-modern="">work:</span> but the seventh day is <span class="text-variant" data-modern="a Sabbath to"></span> the <span class="text-variant" data-modern="Lord your God. On">sabbath</span> <span class="text-variant" data-modern="">of</span> <span class="text-variant" data-modern="">the</span> <span class="text-variant" data-modern="">LORD</span> <span class="text-variant" data-modern="">thy</span> <span class="text-variant" data-modern="">God:</span> <span class="text-variant" data-modern="">in</span> it <span class="text-variant" data-modern="you shall">thou</span> <span class="text-variant" data-modern="">shalt</span> not do any work, <span class="text-variant" data-modern="you, or your">thou,</span> <span class="text-variant" data-modern="">nor</span> <span class="text-variant" data-modern="">thy</span> son, <span class="text-variant" data-modern="or your">nor</span> <span class="text-variant" data-modern="">thy</span> daughter, <span class="text-variant" data-modern="your male servant, or your female servant, or your livestock, or the sojourner who">thy</span> <span class="text-variant" data-modern="">manservant,</span> <span class="text-variant" data-modern="">nor</span> <span class="text-variant" data-modern="">thy</span> <span class="text-variant" data-modern="">maidservant,</span> <span class="text-variant" data-modern="">nor</span> <span class="text-variant" data-modern="">thy</span> <span class="text-variant" data-modern="">cattle,</span> <span class="text-variant" data-modern="">nor</span> <span class="text-variant" data-modern="">thy</span> <span class="text-variant" data-modern="">stranger</span> <span class="text-variant" data-modern="">that</span> is within <span class="text-variant" data-modern="your gates. For">thy</span> <span class="text-variant" data-modern="">gates:</span> <span class="text-variant" data-modern="">for</span> in six days the <span class="text-variant" data-modern="LORD">L</span> made heaven and <span class="text-variant" data-modern="">ORD</span> earth, the sea, and all that <span class="text-variant" data-modern="is"></span> in <span class="text-variant" data-modern="them,">them</span> <span class="text-variant" data-modern="">is,</span> and rested <span class="text-variant" data-modern="on"></span> the seventh <span class="text-variant" data-modern="day. Therefore">day:</span> <span class="text-variant" data-modern="">wherefore</span> the LORD blessed the <span class="text-variant" data-modern="Sabbath day">sabbath</span> <span class="text-variant" data-modern="">day,</span> and <span class="text-variant" data-modern="made it holy.">hallowed</span> <span class="text-variant" data-modern="">it.</span><sup class="proof-marker"><a href="#wsc-q57-proofs" aria-label="Scripture proof x, question 57">x</a></sup>
 
 <details class="scripture-proofs" id="wsc-q57-proofs">
 <summary>Scripture Proofs</summary>
@@ -693,8 +698,8 @@ Answer: The fourth commandment is, Remember the <span class="v-const">sabbath da
 
 
 <span id="wsc-q58"></span>
-### Question 58: What is required in the fourth commandment?  
-Answer: The fourth commandment <span class="v-const">requireth the</span><span class="v-modern">requires</span> keeping holy to God <span class="v-const">such</span><span class="v-modern">the</span> set times <span class="v-const">as</span> he <span class="v-const">hath</span><span class="v-modern">has</span> appointed in his Word; expressly one whole day in seven, to be a holy <span class="v-const">sabbath</span><span class="v-modern">Sabbath</span> to himself.<sup class="proof-marker"><a href="#wsc-q58-proofs" aria-label="Scripture proof y, question 58">y</a></sup>
+### Question 58: What is required in the fourth commandment?
+Answer: The fourth commandment <span class="text-variant" data-modern="requires">requireth</span> <span class="text-variant" data-modern="">the</span> keeping holy to God <span class="text-variant" data-modern="the">such</span> set times <span class="text-variant" data-modern="">as</span> he <span class="text-variant" data-modern="has">hath</span> appointed in his Word; expressly one whole day in seven, to be a holy Sabbath to himself.<sup class="proof-marker"><a href="#wsc-q58-proofs" aria-label="Scripture proof y, question 58">y</a></sup>
 
 <details class="scripture-proofs" id="wsc-q58-proofs">
 <summary>Scripture Proofs</summary>
@@ -705,8 +710,8 @@ Answer: The fourth commandment <span class="v-const">requireth the</span><span c
 
 
 <span id="wsc-q59"></span>
-### Question 59: Which day of the seven hath God appointed to be the weekly sabbath?  
-Answer: From the beginning of the world to the resurrection of Christ, God appointed the seventh day of the week to be the weekly sabbath;<sup class="proof-marker"><a href="#wsc-q59-proofs" aria-label="Scripture proof z, question 59">z</a></sup> and the first day of the week ever since, to continue to the end of the world, which is the Christian sabbath.<sup class="proof-marker"><a href="#wsc-q59-proofs" aria-label="Scripture proof a, question 59">a</a></sup>
+### Question 59: Which day of the seven <span class="text-variant" data-modern="has">hath</span> God appointed to be the weekly Sabbath?
+Answer: From the beginning of the world to the resurrection of Christ, God appointed the seventh day of the week to be the weekly Sabbath;<sup class="proof-marker"><a href="#wsc-q59-proofs" aria-label="Scripture proof z, question 59">z</a></sup> and the first day of the week ever since, to continue to the end of the world, which is the Christian Sabbath.<sup class="proof-marker"><a href="#wsc-q59-proofs" aria-label="Scripture proof a, question 59">a</a></sup>
 
 <details class="scripture-proofs" id="wsc-q59-proofs">
 <summary>Scripture Proofs</summary>
@@ -717,8 +722,8 @@ Answer: From the beginning of the world to the resurrection of Christ, God appoi
 
 
 <span id="wsc-q60"></span>
-### Question 60: How is the sabbath to be sanctified?  
-Answer: The <span class="v-const">sabbath</span><span class="v-modern">Sabbath</span> is to be sanctified by a holy resting all that day, even from <span class="v-const">such</span><span class="v-modern">the</span> worldly employments and recreations <span class="v-const">as</span><span class="v-modern">that</span> are lawful on other days;<sup class="proof-marker"><a href="#wsc-q60-proofs" aria-label="Scripture proof b, question 60">b</a></sup> and spending the whole time in the public and private exercises of God's worship,<sup class="proof-marker"><a href="#wsc-q60-proofs" aria-label="Scripture proof c, question 60">c</a></sup> except so much as is to be taken up in the works of necessity and mercy.<sup class="proof-marker"><a href="#wsc-q60-proofs" aria-label="Scripture proof d, question 60">d</a></sup>
+### Question 60: How is the Sabbath to be sanctified?
+Answer: The Sabbath is to be sanctified by a holy resting all that day, even from <span class="text-variant" data-modern="the">such</span> worldly employments and recreations <span class="text-variant" data-modern="that">as</span> are lawful on other days;<sup class="proof-marker"><a href="#wsc-q60-proofs" aria-label="Scripture proof b, question 60">b</a></sup> and spending the whole time in the public and private exercises of God’s worship,<sup class="proof-marker"><a href="#wsc-q60-proofs" aria-label="Scripture proof c, question 60">c</a></sup> except so much as is to be taken up in the works of necessity and mercy.<sup class="proof-marker"><a href="#wsc-q60-proofs" aria-label="Scripture proof d, question 60">d</a></sup>
 
 <details class="scripture-proofs" id="wsc-q60-proofs">
 <summary>Scripture Proofs</summary>
@@ -729,8 +734,8 @@ Answer: The <span class="v-const">sabbath</span><span class="v-modern">Sabbath</
 
 
 <span id="wsc-q61"></span>
-### Question 61: What is forbidden in the fourth commandment?  
-Answer: The fourth commandment <span class="v-const">forbiddeth</span><span class="v-modern">forbids</span> the omission, or careless performance, of the duties required, and <span class="v-const">the</span> profaning the day by idleness, or doing that which is in itself sinful, or by unnecessary thoughts, words, or works, about our worldly employments or recreations.<sup class="proof-marker"><a href="#wsc-q61-proofs" aria-label="Scripture proof e, question 61">e</a></sup>
+### Question 61: What is forbidden in the fourth commandment?
+Answer: The fourth commandment <span class="text-variant" data-modern="forbids">forbiddeth</span> the omission, or careless performance, of the duties required, and <span class="text-variant" data-modern="">the</span> profaning the day by idleness, or doing that which is in itself sinful, or by unnecessary thoughts, words, or works, about our worldly employments or recreations.<sup class="proof-marker"><a href="#wsc-q61-proofs" aria-label="Scripture proof e, question 61">e</a></sup>
 
 <details class="scripture-proofs" id="wsc-q61-proofs">
 <summary>Scripture Proofs</summary>
@@ -741,8 +746,8 @@ Answer: The fourth commandment <span class="v-const">forbiddeth</span><span clas
 
 
 <span id="wsc-q62"></span>
-### Question 62: What are the reasons annexed to the fourth commandment?  
-Answer: The reasons annexed to the fourth commandment are, God's allowing us six days of the week for our own employments,<sup class="proof-marker"><a href="#wsc-q62-proofs" aria-label="Scripture proof f, question 62">f</a></sup> his <span class="v-const">challenging</span><span class="v-modern">claiming</span> a special <span class="v-const">propriety in</span><span class="v-modern">ownership of</span> the seventh, his own example, and his blessing the <span class="v-const">sabbath</span><span class="v-modern">Sabbath</span> day.<sup class="proof-marker"><a href="#wsc-q62-proofs" aria-label="Scripture proof g, question 62">g</a></sup>
+### Question 62: What are the reasons annexed to the fourth commandment?
+Answer: The reasons annexed to the fourth commandment are, God’s allowing us six days of the week for our own employments,<sup class="proof-marker"><a href="#wsc-q62-proofs" aria-label="Scripture proof f, question 62">f</a></sup> his <span class="text-variant" data-modern="claiming">challenging</span> a special <span class="text-variant" data-modern="ownership of">propriety</span> <span class="text-variant" data-modern="">in</span> the seventh, his own example, and his blessing the Sabbath day.<sup class="proof-marker"><a href="#wsc-q62-proofs" aria-label="Scripture proof g, question 62">g</a></sup>
 
 <details class="scripture-proofs" id="wsc-q62-proofs">
 <summary>Scripture Proofs</summary>
@@ -753,8 +758,8 @@ Answer: The reasons annexed to the fourth commandment are, God's allowing us six
 
 
 <span id="wsc-q63"></span>
-### Question 63: Which is the fifth commandment?  
-Answer: The fifth commandment is, Honor <span class="v-const">thy</span><span class="v-modern">your</span> father and <span class="v-const">thy mother:</span><span class="v-modern">your mother,</span> that <span class="v-const">thy</span><span class="v-modern">your</span> days may be long <span class="v-const">upon</span><span class="v-modern">in</span> the land <span class="v-const">which</span><span class="v-modern">that</span> the <span class="v-const">Lord thy</span><span class="v-modern">LORD your</span> God <span class="v-const">giveth thee.</span><span class="v-modern">is giving you.</span><sup class="proof-marker"><a href="#wsc-q63-proofs" aria-label="Scripture proof h, question 63">h</a></sup>
+### Question 63: Which is the fifth commandment?
+Answer: The fifth commandment is, <span class="text-variant" data-modern="Honor your">Honour</span> <span class="text-variant" data-modern="">thy</span> father and <span class="text-variant" data-modern="your mother,">thy</span> <span class="text-variant" data-modern="">mother:</span> that <span class="text-variant" data-modern="your">thy</span> days may be long <span class="text-variant" data-modern="in">upon</span> the land <span class="text-variant" data-modern="that">which</span> the L <span class="text-variant" data-modern="your">thy</span> God <span class="text-variant" data-modern="is giving you.">giveth</span> <span class="text-variant" data-modern="">thee.</span><sup class="proof-marker"><a href="#wsc-q63-proofs" aria-label="Scripture proof h, question 63">h</a></sup> ORD
 
 <details class="scripture-proofs" id="wsc-q63-proofs">
 <summary>Scripture Proofs</summary>
@@ -765,8 +770,8 @@ Answer: The fifth commandment is, Honor <span class="v-const">thy</span><span cl
 
 
 <span id="wsc-q64"></span>
-### Question 64: What is required in the fifth commandment?  
-Answer: The fifth commandment <span class="v-const">requireth the</span><span class="v-modern">requires</span> preserving the honor, and performing the duties, belonging to everyone in their several places and relations, as superiors, inferiors, or equals.<sup class="proof-marker"><a href="#wsc-q64-proofs" aria-label="Scripture proof i, question 64">i</a></sup>
+### Question 64: What is required in the fifth commandment?
+Answer: The fifth commandment <span class="text-variant" data-modern="requires">requireth</span> <span class="text-variant" data-modern="">the</span> preserving the honor, and performing the duties, belonging to everyone in their several places and relations, as superiors, inferiors, or equals.<sup class="proof-marker"><a href="#wsc-q64-proofs" aria-label="Scripture proof i, question 64">i</a></sup>
 
 <details class="scripture-proofs" id="wsc-q64-proofs">
 <summary>Scripture Proofs</summary>
@@ -777,8 +782,8 @@ Answer: The fifth commandment <span class="v-const">requireth the</span><span cl
 
 
 <span id="wsc-q65"></span>
-### Question 65: What is forbidden in the fifth commandment?  
-Answer: The fifth commandment <span class="v-const">forbiddeth the neglecting of,</span><span class="v-modern">forbids neglecting,</span> or doing anything against, the honor and duty <span class="v-const">which belongeth</span><span class="v-modern">that belongs</span> to everyone in their several places and relations.<sup class="proof-marker"><a href="#wsc-q65-proofs" aria-label="Scripture proof k, question 65">k</a></sup>
+### Question 65: What is forbidden in the fifth commandment?
+Answer: The fifth commandment <span class="text-variant" data-modern="forbids neglecting,">forbiddeth</span> <span class="text-variant" data-modern="">the</span> <span class="text-variant" data-modern="">neglecting</span> <span class="text-variant" data-modern="">of,</span> or doing anything against, the honor and duty <span class="text-variant" data-modern="that belongs">which</span> <span class="text-variant" data-modern="">belongeth</span> to everyone in their several places and relations.<sup class="proof-marker"><a href="#wsc-q65-proofs" aria-label="Scripture proof k, question 65">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q65-proofs">
 <summary>Scripture Proofs</summary>
@@ -789,8 +794,8 @@ Answer: The fifth commandment <span class="v-const">forbiddeth the neglecting of
 
 
 <span id="wsc-q66"></span>
-### Question 66: What is the reason annexed to the fifth commandment?  
-Answer: The reason annexed to the fifth commandment <span class="v-const">is,</span><span class="v-modern">is</span> a promise of long life and prosperity (as far as it shall serve for God's glory and their own good) to all <span class="v-const">such as</span><span class="v-modern">who</span> keep this commandment.<sup class="proof-marker"><a href="#wsc-q66-proofs" aria-label="Scripture proof l, question 66">l</a></sup>
+### Question 66: What is the reason annexed to the fifth commandment?
+Answer: The reason annexed to the fifth commandment <span class="text-variant" data-modern="is">is,</span> a promise of long life and prosperity (as far as it shall serve for God’s glory and their own good) to all <span class="text-variant" data-modern="who">such</span> <span class="text-variant" data-modern="">as</span> keep this commandment.<sup class="proof-marker"><a href="#wsc-q66-proofs" aria-label="Scripture proof l, question 66">l</a></sup>
 
 <details class="scripture-proofs" id="wsc-q66-proofs">
 <summary>Scripture Proofs</summary>
@@ -801,8 +806,8 @@ Answer: The reason annexed to the fifth commandment <span class="v-const">is,</s
 
 
 <span id="wsc-q67"></span>
-### Question 67: Which is the sixth commandment?  
-Answer: The sixth commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> not <span class="v-const">kill.</span><span class="v-modern">murder.</span><sup class="proof-marker"><a href="#wsc-q67-proofs" aria-label="Scripture proof m, question 67">m</a></sup>
+### Question 67: Which is the sixth commandment?
+Answer: The sixth commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> not <span class="text-variant" data-modern="murder.">kill.</span><sup class="proof-marker"><a href="#wsc-q67-proofs" aria-label="Scripture proof m, question 67">m</a></sup>
 
 <details class="scripture-proofs" id="wsc-q67-proofs">
 <summary>Scripture Proofs</summary>
@@ -813,8 +818,8 @@ Answer: The sixth commandment is, <span class="v-const">Thou shalt</span><span c
 
 
 <span id="wsc-q68"></span>
-### Question 68: What is required in the sixth commandment?  
-Answer: The sixth commandment <span class="v-const">requireth</span><span class="v-modern">requires</span> all lawful endeavors to preserve <span class="v-const">ourown</span><span class="v-modern">our own</span> life, and the life of others.<sup class="proof-marker"><a href="#wsc-q68-proofs" aria-label="Scripture proof n, question 68">n</a></sup>
+### Question 68: What is required in the sixth commandment?
+Answer: The sixth commandment <span class="text-variant" data-modern="requires">requireth</span> all lawful endeavors to preserve our own life, and the life of others.<sup class="proof-marker"><a href="#wsc-q68-proofs" aria-label="Scripture proof n, question 68">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q68-proofs">
 <summary>Scripture Proofs</summary>
@@ -825,8 +830,8 @@ Answer: The sixth commandment <span class="v-const">requireth</span><span class=
 
 
 <span id="wsc-q69"></span>
-### Question 69: What is forbidden in the sixth commandment?  
-Answer: The sixth commandment <span class="v-const">forbiddeth the</span><span class="v-modern">forbids</span> taking away <span class="v-const">of</span> our own life, or the life of our <span class="v-const">neighbor,</span><span class="v-modern">neighbor</span> unjustly, or <span class="v-const">whatsoever tendeth thereunto.</span><span class="v-modern">whatever tends to it.</span><sup class="proof-marker"><a href="#wsc-q69-proofs" aria-label="Scripture proof o, question 69">o</a></sup>
+### Question 69: What is forbidden in the sixth commandment?
+Answer: The sixth commandment <span class="text-variant" data-modern="forbids">forbiddeth</span> <span class="text-variant" data-modern="">the</span> taking away <span class="text-variant" data-modern="">of</span> our own life, or the life of our neighbor unjustly, or <span class="text-variant" data-modern="whatever tends to it.">whatsoever</span> <span class="text-variant" data-modern="">tendeth</span> <span class="text-variant" data-modern="">thereunto.</span><sup class="proof-marker"><a href="#wsc-q69-proofs" aria-label="Scripture proof o, question 69">o</a></sup>
 
 <details class="scripture-proofs" id="wsc-q69-proofs">
 <summary>Scripture Proofs</summary>
@@ -837,8 +842,8 @@ Answer: The sixth commandment <span class="v-const">forbiddeth the</span><span c
 
 
 <span id="wsc-q70"></span>
-### Question 70: Which is the seventh commandment?  
-Answer: The seventh commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> not commit adultery.<sup class="proof-marker"><a href="#wsc-q70-proofs" aria-label="Scripture proof p, question 70">p</a></sup>
+### Question 70: Which is the seventh commandment?
+Answer: The seventh commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> not commit adultery.<sup class="proof-marker"><a href="#wsc-q70-proofs" aria-label="Scripture proof p, question 70">p</a></sup>
 
 <details class="scripture-proofs" id="wsc-q70-proofs">
 <summary>Scripture Proofs</summary>
@@ -849,8 +854,8 @@ Answer: The seventh commandment is, <span class="v-const">Thou shalt</span><span
 
 
 <span id="wsc-q71"></span>
-### Question 71: What is required in the seventh commandment.?  
-Answer: The seventh commandment <span class="v-const">requireth</span><span class="v-modern">requires</span> the preservation of our own and our neighbor's chastity, in heart, speech, and behavior.<sup class="proof-marker"><a href="#wsc-q71-proofs" aria-label="Scripture proof q, question 71">q</a></sup>
+### Question 71: What is required in the seventh commandment?
+Answer: The seventh commandment <span class="text-variant" data-modern="requires">requireth</span> the preservation of our own and our neighbor’s chastity, in heart, speech, and behavior.<sup class="proof-marker"><a href="#wsc-q71-proofs" aria-label="Scripture proof q, question 71">q</a></sup>
 
 <details class="scripture-proofs" id="wsc-q71-proofs">
 <summary>Scripture Proofs</summary>
@@ -861,8 +866,8 @@ Answer: The seventh commandment <span class="v-const">requireth</span><span clas
 
 
 <span id="wsc-q72"></span>
-### Question 72: What is forbidden in the seventh commandment?  
-Answer: The seventh commandment <span class="v-const">forbiddeth</span><span class="v-modern">forbids</span> all unchaste thoughts, words, and actions.<sup class="proof-marker"><a href="#wsc-q72-proofs" aria-label="Scripture proof r, question 72">r</a></sup>
+### Question 72: What is forbidden in the seventh commandment?
+Answer: The seventh commandment <span class="text-variant" data-modern="forbids">forbiddeth</span> all unchaste thoughts, words, and actions.<sup class="proof-marker"><a href="#wsc-q72-proofs" aria-label="Scripture proof r, question 72">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q72-proofs">
 <summary>Scripture Proofs</summary>
@@ -873,8 +878,8 @@ Answer: The seventh commandment <span class="v-const">forbiddeth</span><span cla
 
 
 <span id="wsc-q73"></span>
-### Question 73: Which is the eighth commandment?  
-Answer: The eighth commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> not steal.<sup class="proof-marker"><a href="#wsc-q73-proofs" aria-label="Scripture proof s, question 73">s</a></sup>
+### Question 73: Which is the eighth commandment?
+Answer: The eighth commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> not steal.<sup class="proof-marker"><a href="#wsc-q73-proofs" aria-label="Scripture proof s, question 73">s</a></sup>
 
 <details class="scripture-proofs" id="wsc-q73-proofs">
 <summary>Scripture Proofs</summary>
@@ -885,8 +890,8 @@ Answer: The eighth commandment is, <span class="v-const">Thou shalt</span><span 
 
 
 <span id="wsc-q74"></span>
-### Question 74: What is required in the eighth commandment?  
-Answer: The eighth commandment <span class="v-const">requireth</span><span class="v-modern">requires</span> the lawful procuring and furthering <span class="v-modern">of</span> the wealth and outward estate of ourselves and others.<sup class="proof-marker"><a href="#wsc-q74-proofs" aria-label="Scripture proof t, question 74">t</a></sup>
+### Question 74: What is required in the eighth commandment?
+Answer: The eighth commandment <span class="text-variant" data-modern="requires">requireth</span> the lawful procuring and furthering <span class="text-variant" data-modern="of"></span> the wealth and outward estate of ourselves and others.<sup class="proof-marker"><a href="#wsc-q74-proofs" aria-label="Scripture proof t, question 74">t</a></sup>
 
 <details class="scripture-proofs" id="wsc-q74-proofs">
 <summary>Scripture Proofs</summary>
@@ -897,8 +902,8 @@ Answer: The eighth commandment <span class="v-const">requireth</span><span class
 
 
 <span id="wsc-q75"></span>
-### Question 75: What is forbidden in the eighth commandment?  
-Answer: The eighth commandment <span class="v-const">forbiddeth whatsoever doth,</span><span class="v-modern">forbids whatever does,</span> or may, unjustly hinder our own, or our neighbor's, wealth or outward estate.<sup class="proof-marker"><a href="#wsc-q75-proofs" aria-label="Scripture proof u, question 75">u</a></sup>
+### Question 75: What is forbidden in the eighth commandment?
+Answer: The eighth commandment <span class="text-variant" data-modern="forbids whatever does,">forbiddeth</span> <span class="text-variant" data-modern="">whatsoever</span> <span class="text-variant" data-modern="">doth,</span> or may, unjustly hinder our own, or our neighbor’s, wealth or outward estate.<sup class="proof-marker"><a href="#wsc-q75-proofs" aria-label="Scripture proof u, question 75">u</a></sup>
 
 <details class="scripture-proofs" id="wsc-q75-proofs">
 <summary>Scripture Proofs</summary>
@@ -909,8 +914,8 @@ Answer: The eighth commandment <span class="v-const">forbiddeth whatsoever doth,
 
 
 <span id="wsc-q76"></span>
-### Question 76: Which is the ninth commandment?  
-Answer: The ninth commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> not bear false witness against <span class="v-const">thy</span><span class="v-modern">your</span> neighbor.
+### Question 76: Which is the ninth commandment?
+Answer: The ninth commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> not bear false witness against <span class="text-variant" data-modern="your neighbor.">thy</span> <span class="text-variant" data-modern="">neighbour.</span>
 
 <details class="scripture-proofs" id="wsc-q76-proofs">
 <summary>Scripture Proofs</summary>
@@ -921,8 +926,8 @@ Answer: The ninth commandment is, <span class="v-const">Thou shalt</span><span c
 
 
 <span id="wsc-q77"></span>
-### Question 77: What is required in the ninth commandment?  
-Answer: The ninth commandment <span class="v-const">requireth the</span><span class="v-modern">requires</span> maintaining and promoting <span class="v-const">of</span> truth between man and man, and of our own and our neighbor's good name,<sup class="proof-marker"><a href="#wsc-q77-proofs" aria-label="Scripture proof x, question 77">x</a></sup> especially in witness bearing.<sup class="proof-marker"><a href="#wsc-q77-proofs" aria-label="Scripture proof y, question 77">y</a></sup>
+### Question 77: What is required in the ninth commandment?
+Answer: The ninth commandment <span class="text-variant" data-modern="requires">requireth</span> <span class="text-variant" data-modern="">the</span> maintaining and promoting <span class="text-variant" data-modern="">of</span> truth between man and man, and of our own and our neighbor’s good name,<sup class="proof-marker"><a href="#wsc-q77-proofs" aria-label="Scripture proof x, question 77">x</a></sup> especially in witness bearing.<sup class="proof-marker"><a href="#wsc-q77-proofs" aria-label="Scripture proof y, question 77">y</a></sup>
 
 <details class="scripture-proofs" id="wsc-q77-proofs">
 <summary>Scripture Proofs</summary>
@@ -933,8 +938,8 @@ Answer: The ninth commandment <span class="v-const">requireth the</span><span cl
 
 
 <span id="wsc-q78"></span>
-### Question 78: What is forbidden in the ninth commandment?  
-Answer: The ninth commandment <span class="v-const">forbiddeth whatsoever</span><span class="v-modern">forbids whatever</span> is prejudicial to truth, or injurious to our own, or our neighbor's, good name.<sup class="proof-marker"><a href="#wsc-q78-proofs" aria-label="Scripture proof z, question 78">z</a></sup>
+### Question 78: What is forbidden in the ninth commandment?
+Answer: The ninth commandment <span class="text-variant" data-modern="forbids whatever">forbiddeth</span> <span class="text-variant" data-modern="">whatsoever</span> is prejudicial to truth, or injurious to our own, or our neighbor’s, good name.<sup class="proof-marker"><a href="#wsc-q78-proofs" aria-label="Scripture proof z, question 78">z</a></sup>
 
 <details class="scripture-proofs" id="wsc-q78-proofs">
 <summary>Scripture Proofs</summary>
@@ -945,8 +950,8 @@ Answer: The ninth commandment <span class="v-const">forbiddeth whatsoever</span>
 
 
 <span id="wsc-q79"></span>
-### Question 79: Which is the tenth commandment?  
-Answer: The tenth commandment is, <span class="v-const">Thou shalt</span><span class="v-modern">You shall</span> not covet <span class="v-const">thy</span><span class="v-modern">your</span> neighbor's <span class="v-const">house, thou shalt</span><span class="v-modern">house; you shall</span> not covet thy neighbor's wife, <span class="v-const">nor</span><span class="v-modern">or</span> his <span class="v-const">manservant, nor</span><span class="v-modern">male servant, or</span> his <span class="v-const">maidservant, nor</span><span class="v-modern">female servant, or</span> his ox, <span class="v-const">nor</span><span class="v-modern">or</span> his <span class="v-const">ass, nor</span><span class="v-modern">donkey, or</span> anything that is <span class="v-const">thy</span><span class="v-modern">your</span> neighbor's.
+### Question 79: Which is the tenth commandment?
+Answer: The tenth commandment is, <span class="text-variant" data-modern="You shall">Thou</span> <span class="text-variant" data-modern="">shalt</span> not covet <span class="text-variant" data-modern="your neighbor’s house; you shall">thy</span> <span class="text-variant" data-modern="">neighbour’s</span> <span class="text-variant" data-modern="">house,</span> <span class="text-variant" data-modern="">thou</span> <span class="text-variant" data-modern="">shalt</span> not covet <span class="text-variant" data-modern="your neighbor’s">thy</span> <span class="text-variant" data-modern="">neighbour’s</span> wife, <span class="text-variant" data-modern="or">nor</span> his <span class="text-variant" data-modern="male servant, or">manservant,</span> <span class="text-variant" data-modern="">nor</span> his <span class="text-variant" data-modern="female servant, or">maidservant,</span> <span class="text-variant" data-modern="">nor</span> his ox, <span class="text-variant" data-modern="or">nor</span> his <span class="text-variant" data-modern="donkey, or anything">ass,</span> <span class="text-variant" data-modern="">nor</span> <span class="text-variant" data-modern="">any</span> <span class="text-variant" data-modern="">thing</span> that is <span class="text-variant" data-modern="your neighbor’s.">thy</span> <span class="text-variant" data-modern="">neighbour’s.</span>
 
 <details class="scripture-proofs" id="wsc-q79-proofs">
 <summary>Scripture Proofs</summary>
@@ -957,8 +962,8 @@ Answer: The tenth commandment is, <span class="v-const">Thou shalt</span><span c
 
 
 <span id="wsc-q80"></span>
-### Question 80: What is required in the tenth commandment?  
-Answer: The tenth commandment <span class="v-const">requireth</span><span class="v-modern">requires</span> full contentment with our own condition,<sup class="proof-marker"><a href="#wsc-q80-proofs" aria-label="Scripture proof b, question 80">b</a></sup> with a right and charitable <span class="v-const">frame of spirit</span><span class="v-modern">disposition</span> toward our neighbor, and all that is his.<sup class="proof-marker"><a href="#wsc-q80-proofs" aria-label="Scripture proof c, question 80">c</a></sup>
+### Question 80: What is required in the tenth commandment?
+Answer: The tenth commandment <span class="text-variant" data-modern="requires">requireth</span> full contentment with our own condition,<sup class="proof-marker"><a href="#wsc-q80-proofs" aria-label="Scripture proof b, question 80">b</a></sup> with a right and charitable <span class="text-variant" data-modern="disposition">frame</span> <span class="text-variant" data-modern="">of</span> <span class="text-variant" data-modern="">spirit</span> toward our neighbor, and all that is his.<sup class="proof-marker"><a href="#wsc-q80-proofs" aria-label="Scripture proof c, question 80">c</a></sup>
 
 <details class="scripture-proofs" id="wsc-q80-proofs">
 <summary>Scripture Proofs</summary>
@@ -969,8 +974,8 @@ Answer: The tenth commandment <span class="v-const">requireth</span><span class=
 
 
 <span id="wsc-q81"></span>
-### Question 81: What is forbidden in the tenth commandment?  
-Answer: The tenth commandment <span class="v-const">forbiddeth</span><span class="v-modern">forbids</span> all discontentment with our own <span class="v-const">estate,</span><span class="v-modern">condition,</span><sup class="proof-marker"><a href="#wsc-q81-proofs" aria-label="Scripture proof d, question 81">d</a></sup> envying or grieving at the good of our neighbor, and all inordinate motions and affections to anything that is his.<sup class="proof-marker"><a href="#wsc-q81-proofs" aria-label="Scripture proof e, question 81">e</a></sup>
+### Question 81: What is forbidden in the tenth commandment?
+Answer: The tenth commandment <span class="text-variant" data-modern="forbids">forbiddeth</span> all discontentment with our own <span class="text-variant" data-modern="condition,">estate,</span><sup class="proof-marker"><a href="#wsc-q81-proofs" aria-label="Scripture proof d, question 81">d</a></sup> envying or grieving at the good of our neighbor, and all inordinate motions and affections to anything that is his.<sup class="proof-marker"><a href="#wsc-q81-proofs" aria-label="Scripture proof e, question 81">e</a></sup>
 
 <details class="scripture-proofs" id="wsc-q81-proofs">
 <summary>Scripture Proofs</summary>
@@ -981,8 +986,8 @@ Answer: The tenth commandment <span class="v-const">forbiddeth</span><span class
 
 
 <span id="wsc-q82"></span>
-### Question 82: Is any man able perfectly to keep the commandments of God?  
-Answer: No mere <span class="v-const">men,</span><span class="v-modern">man</span> since the fall, is able in this life <span class="v-const">perfectly</span> to keep the commandments of <span class="v-const">God,</span><span class="v-modern">God perfectly,</span> but <span class="v-const">doth</span> daily <span class="v-const">break</span><span class="v-modern">breaks</span> them in thought, word, and deed.<sup class="proof-marker"><a href="#wsc-q82-proofs" aria-label="Scripture proof f, question 82">f</a></sup>
+### Question 82: Is any man able <span class="text-variant" data-modern="">perfectly</span> to keep the commandments of <span class="text-variant" data-modern="God perfectly?">God?</span>
+Answer: No mere <span class="text-variant" data-modern="man">man,</span> since the fall, is able in this life <span class="text-variant" data-modern="">perfectly</span> to keep the commandments of <span class="text-variant" data-modern="God perfectly,">God,</span> but <span class="text-variant" data-modern="">doth</span> daily <span class="text-variant" data-modern="breaks">break</span> them in thought, word, and deed.<sup class="proof-marker"><a href="#wsc-q82-proofs" aria-label="Scripture proof f, question 82">f</a></sup>
 
 <details class="scripture-proofs" id="wsc-q82-proofs">
 <summary>Scripture Proofs</summary>
@@ -993,7 +998,7 @@ Answer: No mere <span class="v-const">men,</span><span class="v-modern">man</spa
 
 
 <span id="wsc-q83"></span>
-### Question 83: Are all transgressions of the law equally heinous?  
+### Question 83: Are all transgressions of the law equally heinous?
 Answer: Some sins in themselves, and by reason of several aggravations, are more heinous in the sight of God than others.<sup class="proof-marker"><a href="#wsc-q83-proofs" aria-label="Scripture proof g, question 83">g</a></sup>
 
 <details class="scripture-proofs" id="wsc-q83-proofs">
@@ -1005,8 +1010,8 @@ Answer: Some sins in themselves, and by reason of several aggravations, are more
 
 
 <span id="wsc-q84"></span>
-### Question 84: What doth every sin deserve?  
-Answer: Every sin <span class="v-const">deserveth</span><span class="v-modern">deserves</span> God's wrath and curse, both in this life, and that which is to come.<sup class="proof-marker"><a href="#wsc-q84-proofs" aria-label="Scripture proof h, question 84">h</a></sup>
+### Question 84: What <span class="text-variant" data-modern="does">doth</span> every sin deserve?
+Answer: Every sin <span class="text-variant" data-modern="deserves">deserveth</span> God’s wrath and curse, both in this life, and that which is to come.<sup class="proof-marker"><a href="#wsc-q84-proofs" aria-label="Scripture proof h, question 84">h</a></sup>
 
 <details class="scripture-proofs" id="wsc-q84-proofs">
 <summary>Scripture Proofs</summary>
@@ -1017,8 +1022,8 @@ Answer: Every sin <span class="v-const">deserveth</span><span class="v-modern">d
 
 
 <span id="wsc-q85"></span>
-### Question 85: What doth God require of us, that we may escape his wrath and curse, due to us for sin?  
-Answer: To escape the wrath and curse of God, due to us for sin, God <span class="v-const">requireth</span><span class="v-modern">requires</span> of us faith in Jesus <span class="v-const">Christ,</span><span class="v-modern">Christ and</span> repentance unto life,<sup class="proof-marker"><a href="#wsc-q85-proofs" aria-label="Scripture proof i, question 85">i</a></sup> with the diligent use of all the outward means <span class="v-const">whereby</span><span class="v-modern">by which</span> Christ <span class="v-const">communicateth</span><span class="v-modern">communicates</span> to us the benefits of redemption.<sup class="proof-marker"><a href="#wsc-q85-proofs" aria-label="Scripture proof k, question 85">k</a></sup>
+### Question 85: What <span class="text-variant" data-modern="does">doth</span> God require of us, that we may escape his wrath and curse, due to us for sin?
+Answer: To escape the wrath and curse of God, due to us for sin, God <span class="text-variant" data-modern="requires">requireth</span> of us faith in Jesus <span class="text-variant" data-modern="Christ and">Christ,</span> repentance unto life,<sup class="proof-marker"><a href="#wsc-q85-proofs" aria-label="Scripture proof i, question 85">i</a></sup> with the diligent use of all the outward means <span class="text-variant" data-modern="by which">whereby</span> Christ <span class="text-variant" data-modern="communicates">communicateth</span> to us the benefits of redemption.<sup class="proof-marker"><a href="#wsc-q85-proofs" aria-label="Scripture proof k, question 85">k</a></sup>
 
 <details class="scripture-proofs" id="wsc-q85-proofs">
 <summary>Scripture Proofs</summary>
@@ -1029,8 +1034,8 @@ Answer: To escape the wrath and curse of God, due to us for sin, God <span class
 
 
 <span id="wsc-q86"></span>
-### Question 86: What is faith in Jesus Christ?  
-Answer: Faith in Jesus Christ is a saving grace,<sup class="proof-marker"><a href="#wsc-q86-proofs" aria-label="Scripture proof l, question 86">l</a></sup> <span class="v-const">whereby</span><span class="v-modern">by which</span> we receive and rest upon him alone for salvation, as he is offered to us in the gospel.<sup class="proof-marker"><a href="#wsc-q86-proofs" aria-label="Scripture proof m, question 86">m</a></sup>
+### Question 86: What is faith in Jesus Christ?
+Answer: Faith in Jesus Christ is a saving grace,<sup class="proof-marker"><a href="#wsc-q86-proofs" aria-label="Scripture proof l, question 86">l</a></sup> <span class="text-variant" data-modern="by which">whereby</span> we receive and rest upon him alone for salvation, as he is offered to us in the gospel.<sup class="proof-marker"><a href="#wsc-q86-proofs" aria-label="Scripture proof m, question 86">m</a></sup>
 
 <details class="scripture-proofs" id="wsc-q86-proofs">
 <summary>Scripture Proofs</summary>
@@ -1041,8 +1046,8 @@ Answer: Faith in Jesus Christ is a saving grace,<sup class="proof-marker"><a hre
 
 
 <span id="wsc-q87"></span>
-### Question 87: What is repentance unto life?  
-Answer: Repentance unto life is a saving grace,<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof n, question 87">n</a></sup> <span class="v-const">whereby</span><span class="v-modern">by which</span> a sinner, out of a true sense of his sin, and apprehension of the mercy of God in Christ,<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof o, question 87">o</a></sup> <span class="v-const">doth,</span> with grief and hatred of his sin, <span class="v-const">turn</span><span class="v-modern">turns</span> from it <span class="v-const">unto</span><span class="v-modern">to</span> God,<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof p, question 87">p</a></sup> with full purpose of, and endeavor after, new obedience.<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof q, question 87">q</a></sup>
+### Question 87: What is repentance unto life?
+Answer: Repentance unto life is a saving grace,<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof n, question 87">n</a></sup> <span class="text-variant" data-modern="by which">whereby</span> a sinner, out of a true sense of his sin, and apprehension of the mercy of God in Christ,<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof o, question 87">o</a></sup> <span class="text-variant" data-modern="">doth,</span> with grief and hatred of his sin, <span class="text-variant" data-modern="turns">turn</span> from it <span class="text-variant" data-modern="to">unto</span> God,<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof p, question 87">p</a></sup> with full purpose of, and endeavor after, new obedience.<sup class="proof-marker"><a href="#wsc-q87-proofs" aria-label="Scripture proof q, question 87">q</a></sup>
 
 <details class="scripture-proofs" id="wsc-q87-proofs">
 <summary>Scripture Proofs</summary>
@@ -1053,8 +1058,8 @@ Answer: Repentance unto life is a saving grace,<sup class="proof-marker"><a href
 
 
 <span id="wsc-q88"></span>
-### Question 88: What are the outward and ordinary means whereby Christ communicateth to us the benefits of redemption?  
-Answer: The outward and ordinary means <span class="v-const">whereby</span><span class="v-modern">by which</span> Christ <span class="v-const">communicateth</span><span class="v-modern">communicates</span> to us the benefits of redemption are, his ordinances, especially the <span class="v-const">Word,</span><span class="v-modern">word,</span> sacraments, and prayer; all <span class="v-modern">of</span> which are made effectual to the elect for salvation.<sup class="proof-marker"><a href="#wsc-q88-proofs" aria-label="Scripture proof r, question 88">r</a></sup>
+### Question 88: What are the outward and ordinary means <span class="text-variant" data-modern="by which">whereby</span> Christ <span class="text-variant" data-modern="communicates">communicateth</span> to us the benefits of redemption?
+Answer: The outward and ordinary means <span class="text-variant" data-modern="by which">whereby</span> Christ <span class="text-variant" data-modern="communicates">communicateth</span> to us the benefits of redemption are, his ordinances, especially the <span class="text-variant" data-modern="word,">Word,</span> sacraments, and prayer; all <span class="text-variant" data-modern="of"></span> which are made effectual to the elect for salvation.<sup class="proof-marker"><a href="#wsc-q88-proofs" aria-label="Scripture proof r, question 88">r</a></sup>
 
 <details class="scripture-proofs" id="wsc-q88-proofs">
 <summary>Scripture Proofs</summary>
@@ -1065,8 +1070,8 @@ Answer: The outward and ordinary means <span class="v-const">whereby</span><span
 
 
 <span id="wsc-q89"></span>
-### Question 89: How is the Word made effectual to salvation?  
-Answer: The Spirit of God <span class="v-const">maketh</span><span class="v-modern">makes</span> the reading, but especially the preaching, of the Word, an effectual means of convincing and converting sinners, and of building them up in holiness and comfort, through faith, <span class="v-const">unto</span><span class="v-modern">to</span> salvation.<sup class="proof-marker"><a href="#wsc-q89-proofs" aria-label="Scripture proof s, question 89">s</a></sup>
+### Question 89: How is the Word made effectual to salvation?
+Answer: The Spirit of God <span class="text-variant" data-modern="makes">maketh</span> the reading, but especially the preaching, of the Word, an effectual means of convincing and converting sinners, and of building them up in holiness and comfort, through faith, <span class="text-variant" data-modern="to">unto</span> salvation.<sup class="proof-marker"><a href="#wsc-q89-proofs" aria-label="Scripture proof s, question 89">s</a></sup>
 
 <details class="scripture-proofs" id="wsc-q89-proofs">
 <summary>Scripture Proofs</summary>
@@ -1077,8 +1082,8 @@ Answer: The Spirit of God <span class="v-const">maketh</span><span class="v-mode
 
 
 <span id="wsc-q90"></span>
-### Question 90: How is the Word to be read and heard, that it may become effectual to salvation?  
-Answer: That the Word may become effectual to salvation, we must attend <span class="v-const">thereunto</span><span class="v-modern">to it</span> with diligence, preparation, and prayer;<sup class="proof-marker"><a href="#wsc-q90-proofs" aria-label="Scripture proof t, question 90">t</a></sup> receive it with faith and love, lay it up in our hearts, and practice it in our lives.<sup class="proof-marker"><a href="#wsc-q90-proofs" aria-label="Scripture proof u, question 90">u</a></sup>
+### Question 90: How is the Word to be read and heard, that it may become effectual to salvation?
+Answer: That the Word may become effectual to salvation, we must attend <span class="text-variant" data-modern="to it">thereunto</span> with diligence, preparation, and prayer;<sup class="proof-marker"><a href="#wsc-q90-proofs" aria-label="Scripture proof t, question 90">t</a></sup> receive it with faith and love, lay it up in our hearts, and practice it in our lives.<sup class="proof-marker"><a href="#wsc-q90-proofs" aria-label="Scripture proof u, question 90">u</a></sup>
 
 <details class="scripture-proofs" id="wsc-q90-proofs">
 <summary>Scripture Proofs</summary>
@@ -1089,8 +1094,8 @@ Answer: That the Word may become effectual to salvation, we must attend <span cl
 
 
 <span id="wsc-q91"></span>
-### Question 91: How do the sacraments become effectual means of salvation?  
-Answer: The sacraments become effectual means of salvation, not from any virtue in them, or in him that <span class="v-const">doth administer</span><span class="v-modern">administers</span> them; but only by the blessing of Christ, and the working of his Spirit in <span class="v-const">them that</span><span class="v-modern">those who</span> by faith receive them.<sup class="proof-marker"><a href="#wsc-q91-proofs" aria-label="Scripture proof w, question 91">w</a></sup>
+### Question 91: How do the sacraments become effectual means of salvation?
+Answer: The sacraments become effectual means of salvation, not from any virtue in them, or in him that <span class="text-variant" data-modern="administers">doth</span> <span class="text-variant" data-modern="">administer</span> them; but only by the blessing of Christ, and the working of his Spirit in <span class="text-variant" data-modern="those who">them</span> <span class="text-variant" data-modern="">that</span> by faith receive them.<sup class="proof-marker"><a href="#wsc-q91-proofs" aria-label="Scripture proof w, question 91">w</a></sup>
 
 <details class="scripture-proofs" id="wsc-q91-proofs">
 <summary>Scripture Proofs</summary>
@@ -1101,8 +1106,8 @@ Answer: The sacraments become effectual means of salvation, not from any virtue 
 
 
 <span id="wsc-q92"></span>
-### Question 92: What is a sacrament?  
-Answer: A sacrament is a holy ordinance instituted by Christ;<sup class="proof-marker"><a href="#wsc-q92-proofs" aria-label="Scripture proof x, question 92">x</a></sup> <span class="v-const">wherein,</span><span class="v-modern">in which,</span> by sensible <span class="v-modern">1</span> signs, Christ, and the benefits of the new covenant, are represented, sealed, and applied to believers.<sup class="proof-marker"><a href="#wsc-q92-proofs" aria-label="Scripture proof y, question 92">y</a></sup>
+### Question 92: What is a sacrament?
+Answer: A sacrament is a holy ordinance instituted by Christ;<sup class="proof-marker"><a href="#wsc-q92-proofs" aria-label="Scripture proof x, question 92">x</a></sup> <span class="text-variant" data-modern="in which,">wherein,</span> by <span class="text-variant" data-modern="sensible1">sensible</span> signs, Christ, and the benefits of the new covenant, are represented, sealed, and applied to believers.<sup class="proof-marker"><a href="#wsc-q92-proofs" aria-label="Scripture proof y, question 92">y</a></sup>
 
 <details class="scripture-proofs" id="wsc-q92-proofs">
 <summary>Scripture Proofs</summary>
@@ -1113,8 +1118,8 @@ Answer: A sacrament is a holy ordinance instituted by Christ;<sup class="proof-m
 
 
 <span id="wsc-q93"></span>
-### Question 93: Which are the sacraments of the New Testament?  
-Answer: The sacraments of the New Testament are, Baptism,<sup class="proof-marker"><a href="#wsc-q93-proofs" aria-label="Scripture proof z, question 93">z</a></sup> and the Lord's Supper.<sup class="proof-marker"><a href="#wsc-q93-proofs" aria-label="Scripture proof a, question 93">a</a></sup>
+### Question 93: Which are the sacraments of the New Testament?
+Answer: The sacraments of the New Testament are, baptism,<sup class="proof-marker"><a href="#wsc-q93-proofs" aria-label="Scripture proof z, question 93">z</a></sup> and the Lord’s Supper.<sup class="proof-marker"><a href="#wsc-q93-proofs" aria-label="Scripture proof a, question 93">a</a></sup>
 
 <details class="scripture-proofs" id="wsc-q93-proofs">
 <summary>Scripture Proofs</summary>
@@ -1125,8 +1130,8 @@ Answer: The sacraments of the New Testament are, Baptism,<sup class="proof-marke
 
 
 <span id="wsc-q94"></span>
-### Question 94: What is Baptism?  
-Answer: Baptism is a sacrament, <span class="v-const">wherein</span><span class="v-modern">in which</span> the washing with water in the name of the Father, and of the Son, and of the Holy Ghost,<sup class="proof-marker"><a href="#wsc-q94-proofs" aria-label="Scripture proof b, question 94">b</a></sup> doth signify and <span class="v-const">seal</span><span class="v-modern">seals</span> our ingrafting into Christ, and partaking of the benefits of the covenant of grace, and our engagement to be the Lord's.
+### Question 94: What is baptism?
+Answer: Baptism is a sacrament, <span class="text-variant" data-modern="in which">wherein</span> the washing with water in the name of the Father, and of the Son, and of the Holy <span class="text-variant" data-modern="Spirit, signifies">Ghost,</span><sup class="proof-marker"><a href="#wsc-q94-proofs" aria-label="Scripture proof b, question 94">b</a></sup> <span class="text-variant" data-modern="">doth</span> <span class="text-variant" data-modern="">signify</span> and <span class="text-variant" data-modern="seals">seal</span> our ingrafting into Christ, and partaking of the benefits of the covenant of grace, and our engagement to be the Lord’s.
 
 <details class="scripture-proofs" id="wsc-q94-proofs">
 <summary>Scripture Proofs</summary>
@@ -1137,8 +1142,8 @@ Answer: Baptism is a sacrament, <span class="v-const">wherein</span><span class=
 
 
 <span id="wsc-q95"></span>
-### Question 95. To whom is Baptism to be administered?  
-Answer: Baptism is not to be administered to any that are out of the visible church, till they profess their faith in Christ, and obedience to him;<sup class="proof-marker"><a href="#wsc-q95-proofs" aria-label="Scripture proof d, question 95">d</a></sup> but the infants of such as are members of the visible church are to be baptized.<sup class="proof-marker"><a href="#wsc-q95-proofs" aria-label="Scripture proof e, question 95">e</a></sup>
+### Question 95: To whom is baptism to be administered?
+Answer: Baptism is not to be administered to any that are out of the visible church, till they profess their faith in Christ, and obedience to him;<sup class="proof-marker"><a href="#wsc-q95-proofs" aria-label="Scripture proof d, question 95">d</a></sup> but the infants of <span class="text-variant" data-modern="">such</span> <span class="text-variant" data-modern="">as</span> <span class="text-variant" data-modern="">are</span> members of the visible church are to be baptized.<sup class="proof-marker"><a href="#wsc-q95-proofs" aria-label="Scripture proof e, question 95">e</a></sup>
 
 <details class="scripture-proofs" id="wsc-q95-proofs">
 <summary>Scripture Proofs</summary>
@@ -1149,8 +1154,8 @@ Answer: Baptism is not to be administered to any that are out of the visible chu
 
 
 <span id="wsc-q96"></span>
-### Question 96: What is the Lord's Supper?  
-Answer: The Lord's Supper is a sacrament, <span class="v-const">wherein,</span><span class="v-modern">in which,</span> by giving and receiving bread and wine, according to Christ's appointment, his death is <span class="v-const">showed</span><span class="v-modern">shown</span> forth;<sup class="proof-marker"><a href="#wsc-q96-proofs" aria-label="Scripture proof f, question 96">f</a></sup> and the worthy receivers are, not <span class="v-const">after</span><span class="v-modern">in</span> a corporal and carnal manner, but by faith, made partakers of his body and blood, with all his benefits, to their spiritual nourishment, and growth in grace.<sup class="proof-marker"><a href="#wsc-q96-proofs" aria-label="Scripture proof g, question 96">g</a></sup>
+### Question 96: What is the Lord’s Supper?
+Answer: The Lord’s Supper is a sacrament, <span class="text-variant" data-modern="in which,">wherein,</span> by giving and receiving bread and wine, according to Christ’s appointment, his death is <span class="text-variant" data-modern="shown">showed</span> forth;<sup class="proof-marker"><a href="#wsc-q96-proofs" aria-label="Scripture proof f, question 96">f</a></sup> and the worthy receivers are, not <span class="text-variant" data-modern="in">after</span> a corporal and carnal manner, but by faith, made partakers of his body and blood, with all his benefits, to their spiritual nourishment, and growth in grace.<sup class="proof-marker"><a href="#wsc-q96-proofs" aria-label="Scripture proof g, question 96">g</a></sup> <span class="text-variant" data-modern="">1</span> <span class="text-variant" data-modern="">Sensible</span> <span class="text-variant" data-modern="">means</span> <span class="text-variant" data-modern="">they</span> <span class="text-variant" data-modern="">can</span> <span class="text-variant" data-modern="">be</span> <span class="text-variant" data-modern="">sensed</span> <span class="text-variant" data-modern="">by</span> <span class="text-variant" data-modern="">the</span> <span class="text-variant" data-modern="">five</span> <span class="text-variant" data-modern="">senses:</span> <span class="text-variant" data-modern="">sight,</span> <span class="text-variant" data-modern="">hearing,</span> <span class="text-variant" data-modern="">feeling,</span> <span class="text-variant" data-modern="">taste,</span> <span class="text-variant" data-modern="">and</span> <span class="text-variant" data-modern="">smell.</span>
 
 <details class="scripture-proofs" id="wsc-q96-proofs">
 <summary>Scripture Proofs</summary>
@@ -1161,8 +1166,8 @@ Answer: The Lord's Supper is a sacrament, <span class="v-const">wherein,</span><
 
 
 <span id="wsc-q97"></span>
-### Question 97: What is required for the worthy receiving of the Lord's Supper?  
-Answer: It is required of <span class="v-const">them that</span><span class="v-modern">those who</span> would worthily partake of the Lord's Supper, that they examine themselves of their knowledge to discern the Lord's body, of their faith to feed upon him, of their repentance, love, and new obedience; lest, coming unworthily, they eat and drink judgment to themselves.<sup class="proof-marker"><a href="#wsc-q97-proofs" aria-label="Scripture proof h, question 97">h</a></sup>
+### Question 97: What is required for the worthy receiving of the Lord’s Supper?
+Answer: It is required of <span class="text-variant" data-modern="those who">them</span> <span class="text-variant" data-modern="">that</span> would worthily partake of the Lord’s Supper, that they examine themselves of their knowledge to discern the Lord’s body, of their faith to feed upon him, of their repentance, love, and new obedience; lest, coming unworthily, they eat and drink judgment to themselves.<sup class="proof-marker"><a href="#wsc-q97-proofs" aria-label="Scripture proof h, question 97">h</a></sup>
 
 <details class="scripture-proofs" id="wsc-q97-proofs">
 <summary>Scripture Proofs</summary>
@@ -1173,8 +1178,8 @@ Answer: It is required of <span class="v-const">them that</span><span class="v-m
 
 
 <span id="wsc-q98"></span>
-### Question 98: What is prayer?  
-Answer: Prayer is an offering up of our desires <span class="v-const">unto</span><span class="v-modern">to</span> God,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof i, question 98">i</a></sup> for things agreeable to his will,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof k, question 98">k</a></sup> in the name of Christ,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof l, question 98">l</a></sup> with confession of our sins,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof m, question 98">m</a></sup> and thankful acknowledgment of his mercies.<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof n, question 98">n</a></sup>
+### Question 98: What is prayer?
+Answer: Prayer is an offering up of our desires <span class="text-variant" data-modern="to">unto</span> God,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof i, question 98">i</a></sup> for things agreeable to his will,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof k, question 98">k</a></sup> in the name of Christ,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof l, question 98">l</a></sup> with confession of our sins,<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof m, question 98">m</a></sup> and thankful acknowledgment of his mercies.<sup class="proof-marker"><a href="#wsc-q98-proofs" aria-label="Scripture proof n, question 98">n</a></sup>
 
 <details class="scripture-proofs" id="wsc-q98-proofs">
 <summary>Scripture Proofs</summary>
@@ -1185,8 +1190,8 @@ Answer: Prayer is an offering up of our desires <span class="v-const">unto</span
 
 
 <span id="wsc-q99"></span>
-### Question 99: What rule hath God given for our direction in prayer?  
-Answer: The whole Word of God is of use to direct us in prayer;<sup class="proof-marker"><a href="#wsc-q99-proofs" aria-label="Scripture proof o, question 99">o</a></sup> but the special rule of direction is that form of prayer which Christ taught his disciples, commonly called the Lord's Prayer.<sup class="proof-marker"><a href="#wsc-q99-proofs" aria-label="Scripture proof p, question 99">p</a></sup>
+### Question 99: What rule <span class="text-variant" data-modern="has">hath</span> God given for our direction in prayer?
+Answer: The whole Word of God is of use to direct us in prayer;<sup class="proof-marker"><a href="#wsc-q99-proofs" aria-label="Scripture proof o, question 99">o</a></sup> but the special rule of direction is that form of prayer which Christ taught his disciples, commonly called the Lord’s Prayer.<sup class="proof-marker"><a href="#wsc-q99-proofs" aria-label="Scripture proof p, question 99">p</a></sup>
 
 <details class="scripture-proofs" id="wsc-q99-proofs">
 <summary>Scripture Proofs</summary>
@@ -1197,8 +1202,8 @@ Answer: The whole Word of God is of use to direct us in prayer;<sup class="proof
 
 
 <span id="wsc-q100"></span>
-### Question 100: What doth the preface of the Lord's Prayer teach us?  
-Answer: The preface of the Lord's Prayer, which is, Our Father <span class="v-const">which art</span> in heaven, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to draw near to God with all holy reverence<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof q, question 100">q</a></sup> and confidence,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof r, question 100">r</a></sup> as children to a father,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof s, question 100">s</a></sup> able and ready to help us;<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof t, question 100">t</a></sup> and that we should pray with and for others.<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof u, question 100">u</a></sup>
+### Question 100: What <span class="text-variant" data-modern="does">doth</span> the preface of the Lord’s Prayer teach us?
+Answer: The preface of the Lord’s Prayer, which is, Our Father <span class="text-variant" data-modern="">which</span> <span class="text-variant" data-modern="">art</span> in heaven, <span class="text-variant" data-modern="teaches">teacheth</span> us to draw near to God with all holy reverence<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof q, question 100">q</a></sup> and confidence,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof r, question 100">r</a></sup> as children to a father,<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof s, question 100">s</a></sup> able and ready to help us;<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof t, question 100">t</a></sup> and that we should pray with and for others.<sup class="proof-marker"><a href="#wsc-q100-proofs" aria-label="Scripture proof u, question 100">u</a></sup>
 
 <details class="scripture-proofs" id="wsc-q100-proofs">
 <summary>Scripture Proofs</summary>
@@ -1209,8 +1214,8 @@ Answer: The preface of the Lord's Prayer, which is, Our Father <span class="v-co
 
 
 <span id="wsc-q101"></span>
-### Question 101: What do we pray for in the first petition?  
-Answer: In the first petition, which is, Hallowed be <span class="v-const">thy</span><span class="v-modern">your</span> name, we pray that God would enable us, and others, to glorify him in <span class="v-const">all that whereby</span><span class="v-modern">everything by which</span> he <span class="v-const">maketh</span><span class="v-modern">makes</span> himself known;<sup class="proof-marker"><a href="#wsc-q101-proofs" aria-label="Scripture proof w, question 101">w</a></sup> and that he would <span class="v-const">dispose</span><span class="v-modern">cause</span> all things to <span class="v-modern">work for</span> his own glory.<sup class="proof-marker"><a href="#wsc-q101-proofs" aria-label="Scripture proof x, question 101">x</a></sup>
+### Question 101: What do we pray for in the first petition?
+Answer: In the first petition, which is, Hallowed be <span class="text-variant" data-modern="your">thy</span> name, we pray that God would enable us, and others, to glorify him in <span class="text-variant" data-modern="everything by which">all</span> <span class="text-variant" data-modern="">that</span> <span class="text-variant" data-modern="">whereby</span> he <span class="text-variant" data-modern="makes">maketh</span> himself known;<sup class="proof-marker"><a href="#wsc-q101-proofs" aria-label="Scripture proof w, question 101">w</a></sup> and that he would <span class="text-variant" data-modern="cause">dispose</span> all things to <span class="text-variant" data-modern="work for"></span> his own glory.<sup class="proof-marker"><a href="#wsc-q101-proofs" aria-label="Scripture proof x, question 101">x</a></sup>
 
 <details class="scripture-proofs" id="wsc-q101-proofs">
 <summary>Scripture Proofs</summary>
@@ -1221,8 +1226,8 @@ Answer: In the first petition, which is, Hallowed be <span class="v-const">thy</
 
 
 <span id="wsc-q102"></span>
-### Question 102: What do we pray for in the second petition?  
-Answer: In the second petition, which is, <span class="v-const">Thy</span><span class="v-modern">Your</span> kingdom come, we pray that Satan's kingdom may be destroyed;<sup class="proof-marker"><a href="#wsc-q102-proofs" aria-label="Scripture proof y, question 102">y</a></sup> and that the kingdom of grace may <span class="v-const">beadvanced,</span><span class="v-modern">be advanced,</span> ourselves and others brought into it, and kept in it;<sup class="proof-marker"><a href="#wsc-q102-proofs" aria-label="Scripture proof a, question 102">a</a></sup> and that the kingdom of glory may be hastened.<sup class="proof-marker"><a href="#wsc-q102-proofs" aria-label="Scripture proof b, question 102">b</a></sup>
+### Question 102: What do we pray for in the second petition?
+Answer: In the second petition, which is, <span class="text-variant" data-modern="Your">Thy</span> kingdom come, we pray that Satan’s kingdom may be destroyed;<sup class="proof-marker"><a href="#wsc-q102-proofs" aria-label="Scripture proof y, question 102">y</a></sup> and that the kingdom of grace may be advanced, ourselves and others brought into it, and kept in it;<sup class="proof-marker"><a href="#wsc-q102-proofs" aria-label="Scripture proof a, question 102">a</a></sup> and that the kingdom of glory may be hastened.<sup class="proof-marker"><a href="#wsc-q102-proofs" aria-label="Scripture proof b, question 102">b</a></sup>
 
 <details class="scripture-proofs" id="wsc-q102-proofs">
 <summary>Scripture Proofs</summary>
@@ -1233,8 +1238,8 @@ Answer: In the second petition, which is, <span class="v-const">Thy</span><span 
 
 
 <span id="wsc-q103"></span>
-### Question 103: What do we pray for in the third petition?  
-Answer: In the third petition, which is, <span class="v-const">Thy</span><span class="v-modern">Your</span> will be <span class="v-const">done in earth,</span><span class="v-modern">done, on earth</span> as it is in heaven, we pray that God, by his grace, would make us able and willing to know, obey, and submit to his will in all things,<sup class="proof-marker"><a href="#wsc-q103-proofs" aria-label="Scripture proof c, question 103">c</a></sup> as the angels do in heaven.<sup class="proof-marker"><a href="#wsc-q103-proofs" aria-label="Scripture proof d, question 103">d</a></sup>
+### Question 103: What do we pray for in the third petition?
+Answer: In the third petition, which is, <span class="text-variant" data-modern="Your">Thy</span> will be <span class="text-variant" data-modern="done, on earth">done</span> <span class="text-variant" data-modern="">in</span> <span class="text-variant" data-modern="">earth,</span> as it is in heaven, we pray that God, by his grace, would make us able and willing to know, obey, and submit to his will in all things,<sup class="proof-marker"><a href="#wsc-q103-proofs" aria-label="Scripture proof c, question 103">c</a></sup> as the angels do in heaven.<sup class="proof-marker"><a href="#wsc-q103-proofs" aria-label="Scripture proof d, question 103">d</a></sup>
 
 <details class="scripture-proofs" id="wsc-q103-proofs">
 <summary>Scripture Proofs</summary>
@@ -1245,8 +1250,8 @@ Answer: In the third petition, which is, <span class="v-const">Thy</span><span c
 
 
 <span id="wsc-q104"></span>
-### Question 104: What do we pray for in the fourth petition?  
-Answer: In the fourth petition, which is, Give us this day our daily bread, we pray that of God's free <span class="v-const">gift</span><span class="v-modern">gift,</span> we may receive a <span class="v-const">competent</span><span class="v-modern">fitting</span> portion of the good things of this life, and enjoy his blessing with them.<sup class="proof-marker"><a href="#wsc-q104-proofs" aria-label="Scripture proof e, question 104">e</a></sup>
+### Question 104: What do we pray for in the fourth petition?
+Answer: In the fourth petition, which is, Give us this day our daily bread, we pray that of God’s free <span class="text-variant" data-modern="gift,">gift</span> we may receive a <span class="text-variant" data-modern="fitting">competent</span> portion of the good things of this life, and enjoy his blessing with them.<sup class="proof-marker"><a href="#wsc-q104-proofs" aria-label="Scripture proof e, question 104">e</a></sup>
 
 <details class="scripture-proofs" id="wsc-q104-proofs">
 <summary>Scripture Proofs</summary>
@@ -1257,8 +1262,8 @@ Answer: In the fourth petition, which is, Give us this day our daily bread, we p
 
 
 <span id="wsc-q105"></span>
-### Question 105: What do we pray for in the fifth petition?  
-Answer: In the fifth petition, which is, And forgive us our debts, as we <span class="v-const">forgive</span><span class="v-modern">also have forgiven</span> our debtors, we pray that God, for Christ's sake, would freely pardon all our sins;<sup class="proof-marker"><a href="#wsc-q105-proofs" aria-label="Scripture proof f, question 105">f</a></sup> which we are <span class="v-const">the rather</span> encouraged to <span class="v-const">ask,</span><span class="v-modern">ask more readily,</span> because by his grace we are enabled from the heart to forgive others.<sup class="proof-marker"><a href="#wsc-q105-proofs" aria-label="Scripture proof g, question 105">g</a></sup>
+### Question 105: What do we pray for in the fifth petition?
+Answer: In the fifth petition, which is, And forgive us our debts, as we <span class="text-variant" data-modern="also have forgiven">forgive</span> our debtors, we pray that God, for Christ’s sake, would freely pardon all our sins;<sup class="proof-marker"><a href="#wsc-q105-proofs" aria-label="Scripture proof f, question 105">f</a></sup> which we are <span class="text-variant" data-modern="">the</span> <span class="text-variant" data-modern="">rather</span> encouraged to <span class="text-variant" data-modern="ask more readily,">ask,</span> because by his grace we are enabled from the heart to forgive others.<sup class="proof-marker"><a href="#wsc-q105-proofs" aria-label="Scripture proof g, question 105">g</a></sup>
 
 <details class="scripture-proofs" id="wsc-q105-proofs">
 <summary>Scripture Proofs</summary>
@@ -1269,7 +1274,7 @@ Answer: In the fifth petition, which is, And forgive us our debts, as we <span c
 
 
 <span id="wsc-q106"></span>
-### Question 106: What do we pray for in the sixth petition?  
+### Question 106: What do we pray for in the sixth petition?
 Answer: In the sixth petition, which is, And lead us not into temptation, but deliver us from evil, we pray that God would either keep us from being tempted to sin,<sup class="proof-marker"><a href="#wsc-q106-proofs" aria-label="Scripture proof h, question 106">h</a></sup> or support and deliver us when we are tempted.<sup class="proof-marker"><a href="#wsc-q106-proofs" aria-label="Scripture proof i, question 106">i</a></sup>
 
 <details class="scripture-proofs" id="wsc-q106-proofs">
@@ -1281,8 +1286,8 @@ Answer: In the sixth petition, which is, And lead us not into temptation, but de
 
 
 <span id="wsc-q107"></span>
-### Question 107: What doth the conclusion of the Lord's Prayer teach us?  
-Answer: The conclusion of the Lord's Prayer, which is, For <span class="v-const">thine</span><span class="v-modern">yours</span> is the <span class="v-const">kingdom,</span><span class="v-modern">kingdom</span> and the <span class="v-const">power,</span><span class="v-modern">power</span> and the glory, forever. Amen, <span class="v-const">teacheth</span><span class="v-modern">teaches</span> us to take our encouragement in prayer from God only,<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof k, question 107">k</a></sup> and in our prayers to praise him, ascribing kingdom, power, and glory to him;<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof l, question 107">l</a></sup> and, in testimony of our desire, and assurance to be heard, we say, Amen.<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof m, question 107">m</a></sup>
+### Question 107: What <span class="text-variant" data-modern="does">doth</span> the conclusion of the Lord’s Prayer teach us?
+Answer: The conclusion of the Lord’s Prayer, which is, For <span class="text-variant" data-modern="yours">thine</span> is the <span class="text-variant" data-modern="kingdom">kingdom,</span> and the <span class="text-variant" data-modern="power">power,</span> and the glory, <span class="text-variant" data-modern="forever.">for</span> <span class="text-variant" data-modern="">ever.</span> Amen, <span class="text-variant" data-modern="teaches">teacheth</span> us to take our encouragement in prayer from God only,<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof k, question 107">k</a></sup> and in our prayers to praise him, ascribing kingdom, power, and glory to him;<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof l, question 107">l</a></sup> and, in testimony of our desire, and assurance to be heard, we say, Amen.<sup class="proof-marker"><a href="#wsc-q107-proofs" aria-label="Scripture proof m, question 107">m</a></sup>
 
 <details class="scripture-proofs" id="wsc-q107-proofs">
 <summary>Scripture Proofs</summary>

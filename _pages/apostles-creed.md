@@ -1,11 +1,16 @@
 ---
-title: The Apostles Creed
+title: The Apostles' Creed
 author: Tyler Teschon
 date: 2023-08-30
 layout: post
 category: ecumenical-creeds
 nav_order: 1
 description: "The Apostles' Creed — the ancient baptismal confession of the Western church, in its received English text."
+edition_label: Received English text
+source_organization: Christian Reformed Church in North America — Ecumenical Creeds
+source_url: https://www.crcna.org/welcome/beliefs/creeds
+verified_date: 2026-07-29
+source_note: Punctuation and capitalization are normalized for consistent web reading.
 ---
 
 I believe in God, the Father Almighty,

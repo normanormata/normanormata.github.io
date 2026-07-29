@@ -35,41 +35,47 @@
         {% endif %}
     </head>
     <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <div class="book">
 
             {%- include toc-date.html -%}
 
             <div class="book-body">
-                <div class="book-header" role="navigation">
+                <div class="book-header" role="navigation" aria-label="Reading controls">
                     <!-- Title -->
-                    <h1>
+                    <p class="book-header-title">
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         {% if page.title %}
                             <a href="." >{{ page.title | escape }}</a>
                         {% else %}
                             <a href="." >{{ site.title | escape }}</a>
                         {% endif %}
-                    </h1>
+                    </p>
                 </div>
 
                 <div class="body-inner">
                     {%- include body.html -%}
 
-                    {% if prev_doc %}
-                        <a href="{{site.baseurl}}{{prev_doc.url}}" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{prev_doc.title | escape}}">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </a>
-                    {% else %}
-                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: {{site.title | escape}}">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </a>
-                    {% endif %}
+                    <nav class="document-pagination" aria-label="Document pagination">
+                        {% if prev_doc %}
+                            <a href="{{site.baseurl}}{{prev_doc.url}}" class="navigation navigation-prev navigation-unique">
+                                <span class="navigation-direction">Previous</span>
+                                <span class="navigation-title">{{ prev_doc.title | escape }}</span>
+                            </a>
+                        {% else %}
+                            <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique">
+                                <span class="navigation-direction">Previous</span>
+                                <span class="navigation-title">{{ site.title | escape }}</span>
+                            </a>
+                        {% endif %}
 
-                    {% if next_doc %}
-                        <a href="{{site.baseurl}}{{next_doc.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{next_doc.title | escape}}">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    {% endif %}
+                        {% if next_doc %}
+                            <a href="{{site.baseurl}}{{next_doc.url}}" class="navigation navigation-next navigation-unique">
+                                <span class="navigation-direction">Next</span>
+                                <span class="navigation-title">{{ next_doc.title | escape }}</span>
+                            </a>
+                        {% endif %}
+                    </nav>
                 </div>
             </div>
 

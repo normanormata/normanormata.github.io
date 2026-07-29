@@ -43,7 +43,9 @@ def collect_ids(path):
 
 def resolve(site, page, href):
     """Map an href on `page` to a path under `site`, or None if not a page ref."""
-    href = unquote(href)
+    href = unquote(href).split("?", 1)[0]
+    if href == "":
+        return page
     if href.startswith("/"):
         target = site / href.lstrip("/")
     else:

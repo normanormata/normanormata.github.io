@@ -1,5 +1,5 @@
 ---
-# Content index for gitbook-plugin-search-pro
+# Section-level content index for gitbook-plugin-search-pro
 layout: null
 ---
 
@@ -14,14 +14,10 @@ layout: null
       {%- unless post.exclude_from_search == true or excluded_files contains post.path -%}
         {%- assign has_excluded_taxonomy = false -%}
         {%- for tag in post.tags -%}
-          {%- if excluded_taxonomies contains tag -%}
-            {%- assign has_excluded_taxonomy = true -%}
-          {%- endif -%}
+          {%- if excluded_taxonomies contains tag -%}{%- assign has_excluded_taxonomy = true -%}{%- endif -%}
         {%- endfor -%}
         {%- for category in post.categories -%}
-          {%- if excluded_taxonomies contains category -%}
-            {%- assign has_excluded_taxonomy = true -%}
-          {%- endif -%}
+          {%- if excluded_taxonomies contains category -%}{%- assign has_excluded_taxonomy = true -%}{%- endif -%}
         {%- endfor -%}
         {%- unless has_excluded_taxonomy == true -%}
           {%- assign index = index | push: post | uniq -%}
@@ -35,14 +31,10 @@ layout: null
     {%- unless page.exclude_from_search == true or excluded_files contains page.path -%}
       {%- assign has_excluded_taxonomy = false -%}
       {%- for tag in page.tags -%}
-        {%- if excluded_taxonomies contains tag -%}
-          {%- assign has_excluded_taxonomy = true -%}
-        {%- endif -%}
+        {%- if excluded_taxonomies contains tag -%}{%- assign has_excluded_taxonomy = true -%}{%- endif -%}
       {%- endfor -%}
       {%- for category in page.categories -%}
-        {%- if excluded_taxonomies contains category -%}
-          {%- assign has_excluded_taxonomy = true -%}
-        {%- endif -%}
+        {%- if excluded_taxonomies contains category -%}{%- assign has_excluded_taxonomy = true -%}{%- endif -%}
       {%- endfor -%}
       {%- unless has_excluded_taxonomy == true -%}
         {%- assign index = index | push: page | uniq -%}
@@ -56,14 +48,10 @@ layout: null
     {%- unless document.exclude_from_search == true or excluded_files contains document.path -%}
       {%- assign has_excluded_taxonomy = false -%}
       {%- for tag in document.tags -%}
-        {%- if excluded_taxonomies contains tag -%}
-          {%- assign has_excluded_taxonomy = true -%}
-        {%- endif -%}
+        {%- if excluded_taxonomies contains tag -%}{%- assign has_excluded_taxonomy = true -%}{%- endif -%}
       {%- endfor -%}
       {%- for category in document.categories -%}
-        {%- if excluded_taxonomies contains category -%}
-          {%- assign has_excluded_taxonomy = true -%}
-        {%- endif -%}
+        {%- if excluded_taxonomies contains category -%}{%- assign has_excluded_taxonomy = true -%}{%- endif -%}
       {%- endfor -%}
       {%- unless has_excluded_taxonomy == true -%}
         {%- assign index = index | push: document | uniq -%}
@@ -71,125 +59,95 @@ layout: null
     {%- endunless -%}
   {%- endfor -%}
 {%- endfor -%}
+
 {%- comment -%}
-  Build a flat list of JSON "key": {...} entry strings, then join with commas.
-  Documents that carry <span id="..."></span> section anchors (WCF/WSC/WLC) are
-  split into one entry per section with a deep link. Documents without those
-  anchors but with heading tags (Heidelberg, Belgic, Canons, church order) are
-  split on their kramdown auto-id headings instead. Short documents with no
-  headings (creeds) become a single whole-page entry.
-{%- endcomment -%}
-{%- comment -%}
-  In the Westminster Standards each wording difference is marked up as adjacent
-  <span class="v-const">…</span><span class="v-modern">…</span> siblings, only one
-  of which is ever visible. strip_html would concatenate both, so the indexed body
-  came out as "leave men unexcusable;without excuse; yet are theythey are not" —
-  nonsense snippets, and phrase search across any differing word silently failed.
-
-  So: drop the modern variants and index the constitutional text, which is the
-  authoritative one. (Consequence: a phrase unique to the MESV is not findable.
-  Indexing both would mean two entries per section and roughly double a ~950 KB
-  index, which is not worth it for a study-only rendering.)
-
-  Lettered proof markers go too — <sup class="proof-marker">b</sup> otherwise
-  glues a stray letter onto the preceding word ("salvation.b").
-
-  Both strips assume the marked-up spans contain plain text and never nest.
-  script/check-variant-markup.py enforces that; do not remove it.
+  Constitutional wording is ordinary text. MESV alternatives live only in
+  data-modern attributes on .text-variant spans, so strip_html indexes exactly
+  the crawler-visible constitutional edition. Proof bodies are indexed in a
+  separate field so excerpts use them only when the match occurs there.
 {%- endcomment -%}
 {%- assign entries = "" | split: "" -%}
 {%- for document in index -%}
   {%- assign doctitle = document.title | smartify | strip_html | normalize_whitespace -%}
+  {%- assign collection = document.category | default: "general" -%}
+  {%- assign doccontent = document.content -%}
 
-  {%- assign doc_parts = document.content | split: '<span class="v-modern">' -%}
-  {%- assign doc_acc = "" | split: "" -%}
-  {%- assign doc_acc = doc_acc | push: doc_parts.first -%}
-  {%- for doc_part in doc_parts offset: 1 -%}
-    {%- assign cut = doc_part | split: '</span>' | first | append: '</span>' -%}
-    {%- assign kept = doc_part | remove_first: cut -%}
-    {%- assign doc_acc = doc_acc | push: kept -%}
+  {%- comment -%}Remove superscript proof-marker letters from searchable prose.{%- endcomment -%}
+  {%- assign proof_parts = doccontent | split: '<sup class="proof-marker">' -%}
+  {%- assign clean_parts = "" | split: "" -%}
+  {%- assign clean_parts = clean_parts | push: proof_parts.first -%}
+  {%- for proof_part in proof_parts offset: 1 -%}
+    {%- assign cut = proof_part | split: '</sup>' | first | append: '</sup>' -%}
+    {%- assign kept = proof_part | remove_first: cut -%}
+    {%- assign clean_parts = clean_parts | push: kept -%}
   {%- endfor -%}
-  {%- assign doccontent = doc_acc | join: "" -%}
-
-  {%- assign doc_parts = doccontent | split: '<sup class="proof-marker">' -%}
-  {%- assign doc_acc = "" | split: "" -%}
-  {%- assign doc_acc = doc_acc | push: doc_parts.first -%}
-  {%- for doc_part in doc_parts offset: 1 -%}
-    {%- assign cut = doc_part | split: '</sup>' | first | append: '</sup>' -%}
-    {%- assign kept = doc_part | remove_first: cut -%}
-    {%- assign doc_acc = doc_acc | push: kept -%}
-  {%- endfor -%}
-  {%- assign doccontent = doc_acc | join: "" -%}
+  {%- assign doccontent = clean_parts | join: "" -%}
 
   {%- if doccontent contains '<span id="' -%}
     {%- assign chunks = doccontent | split: '<span id="' -%}
-    {%- for chunk in chunks -%}
-      {%- if forloop.first -%}
-        {%- assign preamble = chunk | strip_html | normalize_whitespace | strip -%}
-        {%- if preamble != "" -%}
-          {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": "", "url": {{ document.url | relative_url | jsonify }}, "body": {{ preamble | jsonify }}}{%- endcapture -%}
-          {%- assign entries = entries | push: entry -%}
-        {%- endif -%}
+    {%- for chunk in chunks offset: 1 -%}
+      {%- assign secid = chunk | split: '"' | first -%}
+      {%- assign marker = secid | append: '"></span>' -%}
+      {%- assign section = chunk | remove_first: marker -%}
+      {%- assign main = section | split: '<details class="scripture-proofs"' | first -%}
+      {%- assign body = main | strip_html | normalize_whitespace | strip -%}
+      {%- assign proofs = "" -%}
+      {%- if section contains '<div class="proofs-body">' -%}
+        {%- assign proofs = section | split: '<div class="proofs-body">' | last | split: '</div>' | first | strip_html | normalize_whitespace | strip -%}
+      {%- endif -%}
+      {%- assign securl = document.url | append: '#' | append: secid -%}
+      {%- assign idparts = secid | split: '-' -%}
+      {%- assign keywords = doctitle -%}
+      {%- if idparts[0] == 'wcf' -%}
+        {%- assign seclabel = 'Chapter ' | append: idparts[1] | append: '.' | append: idparts[2] -%}
+        {%- assign reference = 'WCF ' | append: idparts[1] | append: '.' | append: idparts[2] -%}
+      {%- elsif idparts[0] == 'wsc' or idparts[0] == 'wlc' -%}
+        {%- assign qnum = idparts[1] | remove: 'q' -%}
+        {%- assign seclabel = 'Question ' | append: qnum -%}
+        {%- assign acronym = idparts[0] | upcase -%}
+        {%- assign reference = acronym | append: ' ' | append: qnum -%}
       {%- else -%}
-        {%- assign secid = chunk | split: '"' | first -%}
-        {%- assign marker = secid | append: '"></span>' -%}
-        {%- assign body = chunk | remove_first: marker | strip_html | normalize_whitespace | strip -%}
-        {%- assign securl = document.url | append: '#' | append: secid -%}
-        {%- assign idparts = secid | split: '-' -%}
-        {%- if idparts[0] == 'wcf' -%}
-          {%- assign seclabel = 'Chapter ' | append: idparts[1] | append: '.' | append: idparts[2] -%}
-        {%- elsif idparts[0] == 'wsc' or idparts[0] == 'wlc' -%}
-          {%- assign qnum = idparts[1] | remove: 'q' -%}
-          {%- assign seclabel = 'Question ' | append: qnum -%}
+        {%- assign seclabel = secid -%}
+        {%- assign reference = secid -%}
+      {%- endif -%}
+      {%- assign keywords = keywords | append: ' ' | append: reference -%}
+      {%- assign sectitle = doctitle | append: ' — ' | append: seclabel -%}
+      {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "keywords": {{ keywords | jsonify }}, "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": {{ proofs | jsonify }}}{%- endcapture -%}
+      {%- assign entries = entries | push: entry -%}
+    {%- endfor -%}
+  {%- elsif doccontent contains '<h' -%}
+    {%- assign chunks = doccontent | split: '<h' -%}
+    {%- for chunk in chunks offset: 1 -%}
+      {%- assign lvl = chunk | slice: 0, 1 -%}
+      {%- if lvl == '1' or lvl == '2' or lvl == '3' or lvl == '4' or lvl == '5' or lvl == '6' -%}
+        {%- assign section = chunk | prepend: '<h' -%}
+        {%- assign main = section | split: '<details class="scripture-proofs"' | first -%}
+        {%- assign body = main | strip_html | normalize_whitespace | strip -%}
+        {%- assign headertag = chunk | split: '>' | first -%}
+        {%- assign htext = chunk | split: '</h' | first | split: '>' | last | strip_html | normalize_whitespace | strip -%}
+        {%- if headertag contains 'id="' -%}
+          {%- assign secid = headertag | split: 'id="' | last | split: '"' | first -%}
+          {%- assign securl = document.url | append: '#' | append: secid -%}
         {%- else -%}
-          {%- assign seclabel = secid -%}
+          {%- assign securl = document.url -%}
         {%- endif -%}
-        {%- assign sectitle = doctitle | append: ' — ' | append: seclabel -%}
-        {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "keywords": "", "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}}{%- endcapture -%}
+        {%- assign proofs = "" -%}
+        {%- if section contains '<div class="proofs-body">' -%}
+          {%- assign proofs = section | split: '<div class="proofs-body">' | last | split: '</div>' | first | strip_html | normalize_whitespace | strip -%}
+        {%- endif -%}
+        {%- assign keywords = doctitle | append: ' ' | append: htext -%}
+        {%- if doctitle contains 'Heidelberg' -%}
+          {%- assign firstword = htext | split: ' ' | first | remove: '.' -%}
+          {%- assign keywords = keywords | append: ' Heidelberg ' | append: firstword -%}
+        {%- endif -%}
+        {%- assign sectitle = doctitle | append: ' — ' | append: htext -%}
+        {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "keywords": {{ keywords | jsonify }}, "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": {{ proofs | jsonify }}}{%- endcapture -%}
         {%- assign entries = entries | push: entry -%}
       {%- endif -%}
     {%- endfor -%}
-  {%- elsif doccontent contains '<h' -%}
-    {%- comment -%} Split on heading tags; use kramdown auto-ids for deep links. {%- endcomment -%}
-    {%- assign chunks = doccontent | split: '<h' -%}
-    {%- for chunk in chunks -%}
-      {%- if forloop.first -%}
-        {%- assign preamble = chunk | strip_html | normalize_whitespace | strip -%}
-        {%- if preamble != "" -%}
-          {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": "", "url": {{ document.url | relative_url | jsonify }}, "body": {{ preamble | jsonify }}}{%- endcapture -%}
-          {%- assign entries = entries | push: entry -%}
-        {%- endif -%}
-      {%- else -%}
-        {%- assign lvl = chunk | slice: 0, 1 -%}
-        {%- comment -%} Only real headings (h1-h6); skips <hr>, <header>, etc. {%- endcomment -%}
-        {%- if lvl == '1' or lvl == '2' or lvl == '3' or lvl == '4' or lvl == '5' or lvl == '6' -%}
-          {%- comment -%} Re-add the '<h' the split removed so strip_html can drop the opening tag (and its id slug) instead of leaking it as text. {%- endcomment -%}
-          {%- assign body = chunk | prepend: '<h' | strip_html | normalize_whitespace | strip -%}
-          {%- if body != "" -%}
-            {%- assign headertag = chunk | split: '>' | first -%}
-            {%- if headertag contains 'id="' -%}
-              {%- assign secid = headertag | split: 'id="' | last | split: '"' | first -%}
-              {%- assign securl = document.url | append: '#' | append: secid -%}
-            {%- else -%}
-              {%- assign securl = document.url | append: '#h' | append: forloop.index -%}
-            {%- endif -%}
-            {%- assign htext = chunk | split: '</h' | first | split: '>' | last | strip_html | normalize_whitespace | strip -%}
-            {%- if htext != "" -%}
-              {%- assign sectitle = doctitle | append: ' — ' | append: htext -%}
-            {%- else -%}
-              {%- assign sectitle = doctitle -%}
-            {%- endif -%}
-            {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "keywords": "", "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}}{%- endcapture -%}
-            {%- assign entries = entries | push: entry -%}
-          {%- endif -%}
-        {%- endif -%}
-      {%- endif -%}
-    {%- endfor -%}
   {%- else -%}
-    {%- assign tags = document.tags | uniq -%}
-    {%- assign categories = document.categories | uniq -%}
-    {%- assign taxonomies = tags | concat: categories | uniq -%}
-    {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "keywords": {{ taxonomies | join: " " | normalize_whitespace | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "body": {{ doccontent | strip_html | normalize_whitespace | jsonify }}}{%- endcapture -%}
+    {%- assign body = doccontent | strip_html | normalize_whitespace | strip -%}
+    {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "keywords": {{ doctitle | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": ""}{%- endcapture -%}
     {%- assign entries = entries | push: entry -%}
   {%- endif -%}
 {%- endfor -%}

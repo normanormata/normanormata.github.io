@@ -25,8 +25,13 @@ jobs:
           ruby-version: "3.3"
           bundler-cache: true
 
-      - name: Check version-toggle markup
-        run: python3 script/check-variant-markup.py
+      - name: Install PDF text tools
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Check authoritative text fixtures and variants
+        run: |
+          python3 script/build-westminster-fixtures.py --check
+          python3 script/check-variant-markup.py
 
       - name: Build
         run: bundle exec jekyll build --strict_front_matter --trace
@@ -47,14 +52,20 @@ jobs:
           if len(idx) < 800:
               sys.exit(f'search index too small ({len(idx)}); section splitting likely broke')
           garbled = [k for k, v in idx.items()
-                     if 'unexcusable;without' in v['body'] or 'are theythey' in v['body']]
+                     if any(bad in v['body'].lower() for bad in
+                            ('unexcusable;without', 'unto to', 'hath has',
+                             'ofour', 'ourown', 'third epistle to timothy'))]
           if garbled:
-              sys.exit(f'search index contains unstripped version variants: {garbled[:3]}')
+              sys.exit(f'search index contains crawler-text corruption: {garbled[:3]}')
+          missing_fields = [k for k, v in idx.items()
+                            if not {'document', 'collection', 'proofs'} <= set(v)]
+          if missing_fields:
+              sys.exit(f'search index entries missing filter/proof fields: {missing_fields[:3]}')
           "
 
           # Every document, plus the pages that are easy to break.
           for path in index.html 404.html sitemap.xml robots.txt \
-                      assets/search.html assets/search_plus_index.json \
+                      search assets/search.html assets/search_plus_index.json \
                       pages/apostles-creed pages/nicene-creed pages/athanasian-creed \
                       pages/wcf pages/wsc pages/wlc \
                       pages/belgic pages/heidelberg pages/canons-of-dort \
@@ -71,6 +82,9 @@ jobs:
             exit 1
           fi
           echo "no links to the github.io mirror"
+
+      - name: Check semantics and accessible names
+        run: python3 script/check-generated-html.py _site
 
       - name: Check internal links and fragments
         run: python3 script/check-links.py _site

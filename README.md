@@ -16,8 +16,12 @@ edition of the creeds, confessions, and catechisms of the church.
   2025 Modern English Study Version, with an option to highlight what changed. The MESV
   is for study only and carries no constitutional authority.
 - **Scripture proofs** in collapsible callouts, using the OPC lettered proof scheme.
-- **Section-level search** — results deep-link to the individual chapter, section, or
-  catechism question rather than the top of a 2,000-line page.
+- **Section-level search** at `/search/` — filter by collection or document, use
+  reference shortcuts such as `WCF 3.1`, and deep-link to the individual chapter,
+  section, or catechism question. Scripture proof text appears in an excerpt only
+  when the proof itself matches.
+- **Edition provenance** on every document — organization, edition, authoritative
+  source, verification date, and independent-site notice.
 - **Scripture reference tooltips** via [RefTagger](https://faithlife.com/products/reftagger).
 
 ## Building locally
@@ -42,8 +46,9 @@ To match what GitHub Pages actually builds, keep `Gemfile.lock` committed and ru
 | `_pages/*.md` | The twelve documents |
 | `_layouts/`, `_includes/` | Local overrides of the `jekyll-gitbook` remote theme |
 | `assets/gitbook/custom-local.css` | All site-specific CSS (callouts, version toggle, print) |
-| `assets/gitbook/custom.js` | Toolbar buttons, version toggle, RefTagger re-tagging |
+| `assets/gitbook/custom.js` | Accessible reader controls, version toggle, mobile section selector, RefTagger re-tagging |
 | `assets/search_plus_index.json` | Liquid template that builds the section-level search index |
+| `test/fixtures/westminster-text.json` | Constitutional and 2025 MESV passages extracted from the OPC comparison PDFs |
 
 ### Notes for editors
 
@@ -57,22 +62,36 @@ To match what GitHub Pages actually builds, keep `Gemfile.lock` committed and ru
   are wrong here). Group headings are emitted whenever `category` changes, so keep
   same-category pages contiguous in the `nav_order` sequence.
 - The theme is pinned by SHA in `_config.yml`. Bump it deliberately; upstream has no tags.
-- In the Westminster Standards, wording that differs between versions is marked up as
-  adjacent `<span class="v-const">` / `<span class="v-modern">` pairs. Both must be
-  present, in that order, and neither may nest or contain markup — `script/check-variant-markup.py`
-  enforces this, and the search index depends on it.
+- In the Westminster Standards, the constitutional wording is the ordinary,
+  crawler-visible text. Each difference uses one
+  `<span class="text-variant" data-modern="…">constitutional wording</span>`.
+  JavaScript reads `data-modern` only after the visitor explicitly selects MESV;
+  search engines and no-JavaScript readers therefore receive one edition, never
+  concatenated alternatives.
+- Do not hand-edit Westminster variant spans. Update the authoritative PDFs if
+  needed, run `script/build-westminster-fixtures.py`, then run
+  `script/rebuild-westminster-variants.py`.
 
 ## Checks
 
-Both run in CI (`.github/workflows/build.yml`) and can be run by hand:
+These run in CI (`.github/workflows/build.yml`) and can be run by hand:
 
 ```bash
+python3 script/build-westminster-fixtures.py --check
 python3 script/check-variant-markup.py
 ```
 
-Validates the version-toggle markup: no nested or non-plain-text variant spans, no
-`class="…"` attributes corrupted by a find/replace, no answer that opens with a word
-which disappears in MESV mode.
+Re-extracts the comparison PDFs to prove the committed fixture is current, then
+reconstructs and compares all 474 constitutional and MESV passages against it.
+The check also rejects legacy paired spans and known merged-word corruption.
+
+```bash
+python3 script/check-generated-html.py _site
+```
+
+Checks one visible H1, one main landmark, one skip link, named buttons, edition
+panels, crawler-visible variant integrity, and labeled reader controls. Run a
+build first.
 
 ```bash
 python3 script/check-links.py _site

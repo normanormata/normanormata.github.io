@@ -7,6 +7,17 @@ permalink: /
 
 Searchable creeds, confessions, and catechisms of the church.
 
+<form class="home-search" action="{{ site.baseurl }}/search/" method="get" role="search">
+  <label for="home-search-input">Search every creed, confession, catechism, and scripture proof</label>
+  <div class="home-search__field">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    <input id="home-search-input" name="q" type="search"
+           placeholder="Try “justification,” “WCF 3.1,” or “Heidelberg 21”"
+           autocomplete="off">
+    <button type="submit">Search</button>
+  </div>
+</form>
+
 ## The Ecumenical Creeds
 
 - [The Apostles' Creed]({{ site.baseurl }}/pages/apostles-creed/)

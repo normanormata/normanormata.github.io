@@ -6,6 +6,11 @@ layout: post
 category: ecumenical-creeds
 nav_order: 3
 description: "The Athanasian Creed (Quicunque Vult) — the fullest of the ecumenical creeds on the Trinity and the incarnation."
+edition_label: Received English text (Quicunque Vult)
+source_organization: Christian Reformed Church in North America — Ecumenical Creeds
+source_url: https://www.crcna.org/welcome/beliefs/creeds
+verified_date: 2026-07-29
+source_note: Historical wording is retained, with punctuation normalized for the web.
 ---
 
 Whosoever will be saved, before all things it is necessary that he hold the catholic faith; Which faith except every one do keep whole and undefiled, without doubt he shall perish everlastingly.

@@ -6,6 +6,11 @@ layout: post
 category: book-of-church-order
 nav_order: 12
 description: "The Directory for the Public Worship of God of the Orthodox Presbyterian Church."
+edition_label: Orthodox Presbyterian Church Directory for the Public Worship of God
+source_organization: Orthodox Presbyterian Church — Book of Church Order
+source_url: https://opc.org/BCO.html
+verified_date: 2026-07-29
+source_note: This page presents the constitutional directory text; consult the OPC source for the current official edition.
 ---
 ## Preface
 The purpose of this Directory is to express the Church's common understanding of the principles and practice of public worship that is Reformed according to the Scriptures and, subordinately, to the Confession and Catechisms. Where practices are understood by the Church to be required by the Word of God, either expressly or by good and necessary consequence, they are mandated. In matters of circumstance and form in worship not specifically provided for in Scripture, the Directory provides guidance for their ordering according to the light of nature and Christian prudence, consonant with the general rules of the Word.

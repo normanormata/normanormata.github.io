@@ -1,9 +1,14 @@
 ---
 layout: search-base
+title: Search
+permalink: /assets/search.html
+exclude_from_search: true
 ---
 
-<!-- Slightly Modified from _layouts/home.html -->
-
+<div class="legacy-search-notice">
+  <p>The search page has moved. You can search here, or use the primary <a href="{{ site.baseurl }}/search/">search page</a>.</p>
+</div>
 <div id="book-search-input-inside" role="search">
-    <input type="text" placeholder="Type to search" aria-label="Search this site" title="Search this site" />
+    <label for="legacy-search-input">Search this site</label>
+    <input id="legacy-search-input" type="search" placeholder="Enter a word, phrase, or reference" />
 </div>

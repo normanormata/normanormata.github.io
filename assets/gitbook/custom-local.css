@@ -212,15 +212,9 @@ details.scripture-proofs.proof-target {
 
 /* ── Version Toggle (Constitutional vs 2025 MESV) ── */
 
-/* Constitutional text (.v-const) is visible by default, modern (.v-modern) hidden */
-.v-modern { display: none; }
-
-/* When modern version is active, swap visibility */
-.show-modern .v-const { display: none; }
-.show-modern .v-modern { display: inline; }
-
-/* Highlight-changes mode: background on changed modern words */
-.show-modern.highlight-changes .v-modern {
+/* The constitutional wording is the element text. JavaScript swaps in the
+   inert data-modern value only after the reader explicitly selects MESV. */
+.show-modern.highlight-changes .text-variant {
     background-color: rgba(46, 160, 67, 0.18);
     border-radius: 2px;
     padding: 0 1px;
@@ -228,29 +222,25 @@ details.scripture-proofs.proof-target {
 }
 
 /* Sepia theme highlight */
-.book.color-theme-1 .show-modern.highlight-changes .v-modern {
+.book.color-theme-1 .show-modern.highlight-changes .text-variant {
     background-color: rgba(90, 130, 50, 0.22);
     outline-color: rgba(90, 130, 50, 0.35);
 }
 
 /* Night theme highlight */
-.book.color-theme-2 .show-modern.highlight-changes .v-modern {
+.book.color-theme-2 .show-modern.highlight-changes .text-variant {
     background-color: rgba(80, 200, 120, 0.2);
     outline-color: rgba(80, 200, 120, 0.35);
 }
 
 /* Version indicator banner below page title */
 #mesv-version-indicator {
-    display: none;
     font-size: 0.8em;
     font-style: italic;
     color: var(--proofs-summary);
     padding: 0.25em 0 0.75em 0;
     border-bottom: 1px solid var(--proofs-separator);
     margin-bottom: 1em;
-}
-.show-modern #mesv-version-indicator {
-    display: block;
 }
 
 /* Copy link toast notification */
@@ -326,4 +316,435 @@ details.scripture-proofs.proof-target {
 
     /* Avoid orphaned headings */
     h1, h2, h3 { break-after: avoid; }
+}
+
+/* ── Reading layout and accessibility ─────────────────────────────────── */
+
+.skip-link {
+    position: fixed;
+    top: 0;
+    left: 1rem;
+    z-index: 10000;
+    transform: translateY(-120%);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 4px 4px;
+    background: #1a4a72;
+    color: #fff;
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+    color: #fff;
+}
+
+.markdown-section {
+    font-size: 17px;
+    line-height: 1.72;
+}
+
+.book.font-size-2 .book-body .page-inner section.markdown-section {
+    font-size: 17px;
+}
+
+.page-inner {
+    max-width: 70ch;
+    font-size: 17px;
+}
+
+.book-header-title {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    line-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.book-header-title a {
+    color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+select:focus-visible,
+input:focus-visible {
+    outline: 3px solid #2a78b8 !important;
+    outline-offset: 2px;
+}
+
+/* ── Edition information ──────────────────────────────────────────────── */
+
+.edition-panel {
+    --edition-bg: #f7f8fa;
+    --edition-border: #d8dde5;
+    --edition-muted: #536171;
+    margin: 0 0 1.75rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--edition-border);
+    border-radius: 6px;
+    background: var(--edition-bg);
+    color: var(--edition-muted);
+    font-size: 0.82em;
+    line-height: 1.5;
+}
+
+.book.color-theme-1 .edition-panel {
+    --edition-bg: #eee6cf;
+    --edition-border: #cbbd98;
+    --edition-muted: #5d523c;
+}
+
+.book.color-theme-2 .edition-panel {
+    --edition-bg: #252936;
+    --edition-border: #3b4252;
+    --edition-muted: #bdcadb;
+}
+
+.edition-panel dl {
+    margin: 0;
+}
+
+.edition-panel dl > div {
+    display: grid;
+    grid-template-columns: 6rem minmax(0, 1fr);
+    gap: 0.8rem;
+}
+
+.edition-panel dt {
+    font-weight: 700;
+}
+
+.edition-panel dd {
+    margin: 0;
+}
+
+.edition-panel p {
+    margin: 0.5rem 0 0;
+}
+
+.edition-disclaimer {
+    font-weight: 600;
+}
+
+/* ── Search ───────────────────────────────────────────────────────────── */
+
+.home-search,
+.search-page-form {
+    margin: 1.5rem 0 2.25rem;
+}
+
+.home-search > label,
+.search-page-form > label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.home-search__field {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid #76879a;
+    border-radius: 7px;
+    background: #fff;
+}
+
+.home-search__field > i {
+    padding-left: 0.9rem;
+    color: #536171;
+}
+
+.home-search__field input {
+    min-width: 0;
+    min-height: 48px;
+    padding: 0.65rem 0.8rem;
+    border: 0;
+    background: transparent;
+    color: #222;
+    font-size: 1rem;
+}
+
+.home-search__field button {
+    align-self: stretch;
+    min-width: 88px;
+    border: 0;
+    background: #1f6595;
+    color: #fff;
+    font-weight: 700;
+}
+
+.search-results {
+    padding-bottom: 3rem;
+}
+
+.search-results-title {
+    font-size: 1.35rem;
+}
+
+.search-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.search-filters label {
+    font-size: 0.83rem;
+    font-weight: 700;
+}
+
+.search-filters select {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    margin-top: 0.25rem;
+}
+
+.search-results-list {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.search-results-item {
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+    border-bottom: 1px solid #d8dde5;
+}
+
+.search-results-item h3,
+.search-results-item p {
+    margin: 0 0 0.35rem;
+}
+
+.search-result-meta,
+.search-result-source {
+    color: #667483;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+mark.search-highlight-keyword {
+    padding: 0 0.08em;
+    background: #ffe37b;
+    color: #161616;
+}
+
+#book-search-results:not(.open) > .search-results,
+#book-search-results.open > .search-noresults,
+#book-search-results.no-results .has-results,
+#book-search-results:not(.no-results) .no-results {
+    display: none;
+}
+
+/* ── Reader tools ─────────────────────────────────────────────────────── */
+
+.site-toolbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 50px;
+}
+
+.reader-actions {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.reader-action {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 0.65rem;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    gap: 0.35rem;
+}
+
+.reader-action:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.reader-action[aria-pressed="true"] {
+    box-shadow: inset 0 -3px 0 #2a78b8;
+}
+
+.reader-action:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+.reader-action-label {
+    font-size: 0.76rem;
+}
+
+.mobile-tools {
+    display: none;
+}
+
+.mobile-section-nav {
+    display: none;
+    margin: 0 0 1.5rem;
+}
+
+.mobile-section-nav label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.mobile-section-nav select {
+    width: 100%;
+    min-height: 44px;
+}
+
+/* ── Labeled document pagination ──────────────────────────────────────── */
+
+.document-pagination {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    width: min(70ch, calc(100% - 2rem));
+    margin: 2rem auto 3rem;
+}
+
+.document-pagination .navigation {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: none;
+    min-height: 64px;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #d8dde5;
+    border-radius: 6px;
+    color: inherit;
+    line-height: 1.25;
+}
+
+.document-pagination .navigation-next {
+    align-items: flex-end;
+    text-align: right;
+}
+
+.navigation-direction {
+    color: #667483;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.navigation-title {
+    margin-top: 0.25rem;
+    font-size: 0.88rem;
+}
+
+@media (max-width: 900px) {
+    .site-toolbar {
+        display: none;
+    }
+
+    .mobile-tools {
+        position: absolute;
+        top: 4px;
+        right: 6px;
+        z-index: 3;
+        display: block;
+    }
+
+    .mobile-tools > summary {
+        display: flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 0.75rem;
+        cursor: pointer;
+        font-weight: 700;
+        list-style: none;
+    }
+
+    .mobile-tools > summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mobile-tools[open] .reader-actions {
+        position: absolute;
+        top: 44px;
+        right: 0;
+        display: flex;
+        width: min(270px, calc(100vw - 1rem));
+        height: auto;
+        flex-direction: column;
+        padding: 0.4rem;
+        border: 1px solid #c9d0d8;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    .color-theme-2 .mobile-tools[open] .reader-actions {
+        background: #252936;
+    }
+
+    .mobile-tools .reader-action {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .mobile-section-nav {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .markdown-section {
+        font-size: 17px;
+    }
+
+    .page-inner {
+        padding: 20px 18px 30px;
+    }
+
+    .book-header-title {
+        padding-right: 7rem;
+        text-align: left;
+    }
+
+    .edition-panel dl > div {
+        display: block;
+    }
+
+    .edition-panel dt {
+        margin-top: 0.35rem;
+    }
+
+    .search-filters,
+    .document-pagination {
+        grid-template-columns: 1fr;
+    }
+
+    .home-search__field {
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .home-search__field button {
+        grid-column: 1 / -1;
+        min-height: 44px;
+    }
+
+    .document-pagination .navigation-next {
+        align-items: flex-start;
+        text-align: left;
+    }
 }

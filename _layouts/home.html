@@ -4,42 +4,48 @@
 
         {%- include head.html -%}
 
-        {% assign reversed_posts = site.posts | reverse %}
+        {% assign ordered_docs = site.pages | sort: "nav_order" %}
+        {% assign first_doc = ordered_docs.first %}
 
-        {% if reversed_posts %}
-            <link rel="next" href="{{site.baseurl}}{{reversed_posts.first.url}}" />
+        {% if first_doc %}
+            <link rel="next" href="{{site.baseurl}}{{first_doc.url}}" />
         {% endif %}
     </head>
     <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
         <div class="book">
 
             {%- include toc-date.html -%}
 
             <div class="book-body">
-                <div class="book-header" role="navigation">
+                <div class="book-header" role="navigation" aria-label="Reading controls">
                     <!-- Title -->
-                    <h1>
+                    <p class="book-header-title">
                         <i class="fa fa-circle-o-notch fa-spin"></i>
                         {% if page.title %}
                             <a href="." >{{ page.title | escape }}</a>
                         {% else %}
                             <a href="." >{{ site.title | escape }}</a>
                         {% endif %}
-                    </h1>
+                    </p>
                 </div>
 
                 <div class="body-inner">
                     {%- include body.html -%}
 
-                    <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique" aria-label="Home">
-                        <i class="fa fa-home"></i>
-                    </a>
-
-                    {% if reversed_posts %}
-                        <a href="{{site.baseurl}}{{reversed_posts.first.url}}" class="navigation navigation-next navigation-unique" aria-label="Next page: {{reversed_posts.first.title}}">
-                            <i class="fa fa-angle-right"></i>
+                    <nav class="document-pagination" aria-label="Document pagination">
+                        <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique">
+                            <span class="navigation-direction">Home</span>
+                            <span class="navigation-title">{{ site.title | escape }}</span>
                         </a>
-                    {% endif %}
+
+                        {% if first_doc %}
+                            <a href="{{site.baseurl}}{{first_doc.url}}" class="navigation navigation-next navigation-unique">
+                                <span class="navigation-direction">Next</span>
+                                <span class="navigation-title">{{ first_doc.title | escape }}</span>
+                            </a>
+                        {% endif %}
+                    </nav>
                 </div>
             </div>
 

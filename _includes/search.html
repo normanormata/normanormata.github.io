@@ -1,0 +1,29 @@
+<section class="search-results" aria-live="polite" aria-busy="false">
+    <div class="has-results">
+        <h2 class="search-results-title" id="search-results-heading">
+            <span class="search-results-count">0</span>
+            results matching “<span class="search-query"></span>”
+        </h2>
+        <div class="search-filters" aria-label="Filter search results">
+            <label for="search-collection-filter">
+                Collection
+                <select id="search-collection-filter">
+                    <option value="">All collections</option>
+                </select>
+            </label>
+            <label for="search-document-filter">
+                Document
+                <select id="search-document-filter">
+                    <option value="">All documents</option>
+                </select>
+            </label>
+        </div>
+        <ul class="search-results-list" aria-labelledby="search-results-heading"></ul>
+    </div>
+    <div class="no-results">
+        <h2 class="search-results-title">
+            No results matching “<span class="search-query"></span>”
+        </h2>
+        <p>Try a shorter phrase, a document filter, or a reference such as <code>WCF 3.1</code>, <code>WSC 1</code>, or <code>Heidelberg 21</code>.</p>
+    </div>
+</section>

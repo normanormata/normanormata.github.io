@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+    <head>
+        {%- include head.html -%}
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <div class="book">
+            {%- include toc-date.html -%}
+
+            <div class="book-body">
+                <div class="book-header" role="navigation" aria-label="Reading controls">
+                    <p class="book-header-title">
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        <a href="{{ site.baseurl }}/">{{ site.title | escape }}</a>
+                    </p>
+                </div>
+
+                <div class="body-inner">
+                    <main class="page-wrapper" id="main-content" tabindex="-1">
+                        <div class="page-inner">
+                            <section class="normal markdown-section search-page">
+                                <h1>{{ page.title | default: "Search" | escape }}</h1>
+                                {{ content }}
+                                <div id="book-search-results">
+                                {%- include search.html -%}
+                                </div>
+                            </section>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({%- include metadata-home.json.tpl -%});
+            });
+            </script>
+        </div>
+        {%- include footer.html -%}
+    </body>
+</html>

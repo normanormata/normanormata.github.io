@@ -6,6 +6,11 @@ layout: post
 category: three-forms-of-unity
 nav_order: 8
 description: "The Heidelberg Catechism (1563) — 129 questions on the Christian's only comfort, arranged in fifty-two Lord's Days."
+edition_label: Received English translation, 129 questions
+source_organization: Christian Reformed Church in North America — Confessions
+source_url: https://www.crcna.org/welcome/beliefs/confessions
+verified_date: 2026-07-29
+source_note: Scripture proofs are presented in collapsible callouts for study.
 ---
 
 ## 1. Question: What is your only comfort in life and death?                                                                   

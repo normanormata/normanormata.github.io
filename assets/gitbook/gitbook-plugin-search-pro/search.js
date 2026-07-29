@@ -1,327 +1,315 @@
-require([
-    'gitbook',
-    'jquery'
-], function(gitbook, $) {
-    var MAX_DESCRIPTION_SIZE = 500;
+require(['gitbook', 'jquery'], function(gitbook, $) {
+    'use strict';
+
     var state = gitbook.state;
     var INDEX_DATA = {};
-    var usePushState = (typeof history.pushState !== 'undefined');
+    var indexRequest = null;
+    var currentQuery = '';
+    var INPUTS = [
+        '#book-search-input input',
+        '#book-search-input-inside input',
+        '#home-search-input',
+        '#search-page-input'
+    ].join(', ');
 
-    // DOM Elements
-    var $body = $('body');
-    var $bookSearchResults;
-    var $searchList;
-    var $searchTitle;
-    var $searchResultsCount;
-    var $searchQuery;
-
-    // Throttle search
-    function throttle(fn, wait) {
-        var timeout;
-
-        return function() {
-            var ctx = this,
-                args = arguments;
-            if (!timeout) {
-                timeout = setTimeout(function() {
-                    timeout = null;
-                    fn.apply(ctx, args);
-                }, wait);
-            }
-        };
+    function escapeReg(value) {
+        return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
 
-    function displayResults(res) {
-        $bookSearchResults = $('#book-search-results');
-        $searchList = $bookSearchResults.find('.search-results-list');
-        $searchTitle = $bookSearchResults.find('.search-results-title');
-        $searchResultsCount = $searchTitle.find('.search-results-count');
-        $searchQuery = $searchTitle.find('.search-query');
+    function escapeHtml(value) {
+        return $('<div>').text(value == null ? '' : value).html();
+    }
 
-        $bookSearchResults.addClass('open');
+    function labelCollection(value) {
+        return String(value || 'general')
+            .replace(/[-_]+/g, ' ')
+            .replace(/\b\w/g, function(letter) { return letter.toUpperCase(); });
+    }
 
-        var noResults = res.count == 0;
-        $bookSearchResults.toggleClass('no-results', noResults);
+    function isSearchPage() {
+        return /\/search\/(?:index\.html)?$/.test(location.pathname) ||
+            /\/assets\/search\.html$/.test(location.pathname);
+    }
 
-        // Clear old results
-        $searchList.empty();
-
-        // Display title for research
-        $searchResultsCount.text(res.count);
-        $searchQuery.text(res.query);
-
-        // Create an <li> element for each result
-        res.results.forEach(function(item) {
-            var $li = $('<li>', {
-                'class': 'search-results-item'
+    function loadIndex() {
+        if (Object.keys(INDEX_DATA).length) {
+            return Promise.resolve(INDEX_DATA);
+        }
+        if (!indexRequest) {
+            var url = state.basePath + '/assets/search_plus_index.json';
+            indexRequest = window.fetch(url, { credentials: 'same-origin' })
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('HTTP ' + response.status);
+                    }
+                    return response.json();
+                }).then(function(data) {
+                INDEX_DATA = data;
+                populateFilters();
+                return data;
+            }).catch(function(error) {
+                $('.search-results').attr('aria-busy', 'false');
+                $('body').removeClass('search-loading');
+                if (window.console) {
+                    console.error('Search index failed to load: ' + url, error);
+                }
             });
+        }
+        return indexRequest;
+    }
 
-            var $title = $('<h3>');
+    function populateFilters() {
+        var collections = {};
+        var documents = {};
+        Object.keys(INDEX_DATA).forEach(function(key) {
+            var item = INDEX_DATA[key];
+            collections[item.collection || 'general'] = true;
+            documents[item.document || item.title] = true;
+        });
 
-            // Build the href so the ?h= highlight query sits BEFORE any
-            // #section-anchor (index entries are now per-section and their
-            // url may include a fragment, e.g. /pages/wcf/#wcf-1-1).
-            var hParam = '?h=' + encodeURIComponent(res.query);
-            var hashPos = item.url.indexOf('#');
-            var href = hashPos === -1
-                ? item.url + hParam
-                : item.url.slice(0, hashPos) + hParam + item.url.slice(hashPos);
+        var $collection = $('#search-collection-filter');
+        var selectedCollection = $collection.val();
+        $collection.find('option').slice(1).remove();
+        Object.keys(collections).sort().forEach(function(value) {
+            $('<option>', {
+                value: value,
+                text: labelCollection(value)
+            }).appendTo($collection);
+        });
+        $collection.val(selectedCollection || '');
 
+        var $document = $('#search-document-filter');
+        var selectedDocument = $document.val();
+        $document.find('option').slice(1).remove();
+        Object.keys(documents).sort().forEach(function(value) {
+            $('<option>', { value: value, text: value }).appendTo($document);
+        });
+        $document.val(selectedDocument || '');
+    }
+
+    function makeSnippet(text, query, proofMatch) {
+        var source = String(text || '');
+        var lower = source.toLocaleLowerCase();
+        var index = lower.indexOf(query.toLocaleLowerCase());
+        var contextBefore = 72;
+        var maxLength = 250;
+        var start = Math.max(0, index - contextBefore);
+        var end = Math.min(source.length, start + maxLength);
+        var snippet = source.slice(start, end);
+
+        if (start > 0) {
+            var firstSpace = snippet.indexOf(' ');
+            if (firstSpace > -1) snippet = snippet.slice(firstSpace + 1);
+            snippet = '…' + snippet;
+        }
+        if (end < source.length) {
+            var lastSpace = snippet.lastIndexOf(' ');
+            if (lastSpace > -1) snippet = snippet.slice(0, lastSpace);
+            snippet += '…';
+        }
+
+        var safe = escapeHtml(snippet);
+        safe = safe.replace(
+            new RegExp('(' + escapeReg(escapeHtml(query)) + ')', 'gi'),
+            '<mark class="search-highlight-keyword">$1</mark>'
+        );
+        if (proofMatch) {
+            safe = '<span class="search-result-source">Scripture proof:</span> ' + safe;
+        }
+        return safe;
+    }
+
+    function runQuery(query) {
+        query = String(query || '').trim();
+        currentQuery = query;
+        if (!query) {
+            closeSearch();
+            return;
+        }
+
+        var collection = $('#search-collection-filter').val() || '';
+        var documentName = $('#search-document-filter').val() || '';
+        var lowered = query.toLocaleLowerCase();
+        var exactReference = /^(?:wcf\s+\d+\.\d+|wsc\s+\d+|wlc\s+\d+|heidelberg\s+\d+)$/i
+            .test(query);
+        var results = [];
+
+        Object.keys(INDEX_DATA).forEach(function(key) {
+            var item = INDEX_DATA[key];
+            if (collection && item.collection !== collection) return;
+            if (documentName && item.document !== documentName) return;
+
+            var bodyIndex = String(item.body || '').toLocaleLowerCase().indexOf(lowered);
+            var proofIndex = String(item.proofs || '').toLocaleLowerCase().indexOf(lowered);
+            var meta = [item.keywords, item.title, item.document].join(' ');
+            var metaIndex = meta.toLocaleLowerCase().indexOf(lowered);
+            var keywordWords = ' ' + String(item.keywords || '').toLocaleLowerCase() + ' ';
+            if (exactReference &&
+                keywordWords.indexOf(' ' + lowered + ' ') === -1) return;
+            if (bodyIndex === -1 && proofIndex === -1 && metaIndex === -1) return;
+
+            var proofMatch = bodyIndex === -1 && proofIndex !== -1;
+            var snippetSource = proofMatch ? item.proofs : item.body;
+            results.push({
+                url: item.url || key,
+                title: item.title,
+                document: item.document,
+                collection: item.collection,
+                snippet: makeSnippet(snippetSource, query, proofMatch),
+                score: String(item.keywords || '').toLocaleLowerCase() === lowered ? 0 :
+                    (String(item.keywords || '').toLocaleLowerCase().indexOf(lowered) !== -1 ? 1 :
+                    (bodyIndex !== -1 ? 2 : 3))
+            });
+        });
+
+        results.sort(function(a, b) {
+            return a.score - b.score || a.title.localeCompare(b.title);
+        });
+        displayResults(query, results);
+    }
+
+    function resultHref(url, query) {
+        var hashIndex = url.indexOf('#');
+        var path = hashIndex === -1 ? url : url.slice(0, hashIndex);
+        var hash = hashIndex === -1 ? '' : url.slice(hashIndex);
+        return path + '?h=' + encodeURIComponent(query) + hash;
+    }
+
+    function displayResults(query, results) {
+        var $container = $('#book-search-results');
+        var $results = $container.find('.search-results');
+        var $list = $results.find('.search-results-list');
+        var noResults = results.length === 0;
+
+        $('body').addClass('with-search').removeClass('search-loading');
+        $results.attr('aria-busy', 'false');
+        $container.addClass('open').toggleClass('no-results', noResults);
+        $results.find('.search-results-count').text(results.length);
+        $results.find('.search-query').text(query);
+        $list.empty();
+
+        results.forEach(function(item) {
+            var href = resultHref(item.url, query);
             var $link = $('<a>', {
-                'href': href,
-                'text': item.title,
-                'data-is-search': 1
+                href: href,
+                text: item.title,
+                'data-is-search': '1'
             });
-
-            // Reload when the target is the page we're already on (so the
-            // highlight re-runs), comparing paths only — ignore query/hash.
             if ($link[0].pathname === location.pathname) {
-                $link[0].setAttribute('data-need-reload', 1);
+                $link.attr('data-need-reload', '1');
             }
-
-            // item.body is already a trimmed, ellipsis-bounded snippet with the
-            // keyword wrapped in a highlight span (built in query()).
-            var $content = $('<p>').html(item.body);
-
-            $link.appendTo($title);
-            $title.appendTo($li);
-            $content.appendTo($li);
-            $li.appendTo($searchList);
+            $('<li>', { 'class': 'search-results-item' })
+                .append($('<h3>').append($link))
+                .append($('<p>', { 'class': 'search-result-meta' }).text(
+                    labelCollection(item.collection) + ' · ' + item.document
+                ))
+                .append($('<p>').html(item.snippet))
+                .appendTo($list);
         });
-        $('.body-inner').scrollTop(0);
-    }
 
-    function escapeReg(keyword) {
-        //escape regexp prevserve word
-        return String(keyword).replace(/([\*\.\?\+\$\^\[\]\(\)\{\}\|\/\\])/g, '\\$1');
-    }
-
-    function query(keyword) {
-        if (keyword == null || keyword.trim() === '') return;
-
-        var results = [],
-            index = -1;
-        for (var page in INDEX_DATA) {
-            if ((index = INDEX_DATA[page].body.toLowerCase().indexOf(keyword.toLowerCase())) !== -1) {
-                var fullBody = INDEX_DATA[page].body;
-                var start = Math.max(0, index - 50);
-                var end = Math.min(fullBody.length, start + MAX_DESCRIPTION_SIZE);
-                var snippet = fullBody.substring(start, end);
-                // Trim a partial word at the start and prefix an ellipsis.
-                if (start > 0) {
-                    var firstSpace = snippet.indexOf(' ');
-                    if (firstSpace > -1 && firstSpace < 30) {
-                        snippet = snippet.slice(firstSpace + 1);
-                    }
-                    snippet = '…' + snippet;
-                }
-                // Trim a partial word at the end and append an ellipsis.
-                if (end < fullBody.length) {
-                    var lastSpace = snippet.lastIndexOf(' ');
-                    if (lastSpace > snippet.length - 30) {
-                        snippet = snippet.slice(0, lastSpace);
-                    }
-                    snippet = snippet + '…';
-                }
-                results.push({
-                    url: page,
-                    title: INDEX_DATA[page].title,
-                    body: snippet.replace(new RegExp('(' + escapeReg(keyword) + ')', 'gi'), '<span class="search-highlight-keyword">$1</span>')
-                });
-            }
-        }
-        displayResults({
-            count: results.length,
-            query: keyword,
-            results: results
-        });
-    }
-
-    function launchSearch(keyword) {
-        // Add class for loading
-        $body.addClass('with-search');
-        $body.addClass('search-loading');
-
-        function doSearch() {
-            query(keyword);
-            $body.removeClass('search-loading');
-        }
-
-        throttle(doSearch)();
+        var bodyInner = document.querySelector('.body-inner');
+        if (bodyInner) bodyInner.scrollTop = 0;
     }
 
     function closeSearch() {
-        $body.removeClass('with-search');
-        $('#book-search-results').removeClass('open');
+        $('body').removeClass('with-search search-loading');
+        $('#book-search-results').removeClass('open no-results');
     }
 
-    function bindSearch(target) {
-        // Asynchronously load the index data
-        {
-            var url = state.basePath + "/assets/search_plus_index.json";
-            $.getJSON(url).then(function(data) {
-                INDEX_DATA = data;
-                handleUpdate();
-            }).fail(function() {
-                if (window.console) {
-                    console.error('Search index failed to load: ' + url);
-                }
-            });
-        }
-
-        // Bind DOM
-        var $body = $('body');
-
-        // Launch query based on input content
-        function handleUpdate() {
-            var $searchInput = $(target);
-            var keyword = $searchInput.val();
-
-            if (keyword === undefined || keyword.length == 0) {
-                closeSearch();
-            } else {
-                launchSearch(keyword);
-            }
-        }
-
-        $body.on('keyup', target, function(e) {
-            if (e.keyCode === 13) {
-                if (usePushState) {
-                    var uri = updateQueryString('q', $(this).val());
-                    history.pushState({
-                        path: uri
-                    }, null, uri);
-                }
-            }
-            handleUpdate();
+    function syncInputs(value, source) {
+        $(INPUTS).each(function() {
+            if (this !== source) $(this).val(value);
         });
+    }
 
-        $body.on('click', target, function(e) {
-            if (Object.keys(INDEX_DATA).length === 0) {
-                var url = state.basePath + "/assets/search_plus_index.json";
-                $.getJSON(url).then(function(data) {
-                    INDEX_DATA = data;
-                    handleUpdate();
-                }).fail(function() {
-                    if (window.console) {
-                        console.error('Search index failed to load: ' + url);
+    function search(value, source) {
+        syncInputs(value, source);
+        if (!String(value || '').trim()) {
+            closeSearch();
+            return;
+        }
+        $('body').addClass('search-loading');
+        $('.search-results').attr('aria-busy', 'true');
+        loadIndex().then(function() { runQuery(value); });
+    }
+
+    function searchUrl(query) {
+        return state.basePath + '/search/?q=' + encodeURIComponent(query);
+    }
+
+    function bindEvents() {
+        var timer;
+        $('body').off('.creedsSearch');
+        $('body').on('input.creedsSearch', INPUTS, function() {
+            var input = this;
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+                search(input.value, input);
+                if (isSearchPage() && history.replaceState) {
+                    history.replaceState({}, '', searchUrl(input.value));
+                }
+            }, 120);
+        });
+        $('body').on('keydown.creedsSearch', INPUTS, function(event) {
+            if (event.key !== 'Enter') return;
+            var query = this.value.trim();
+            if (!query) return;
+            if (!isSearchPage()) {
+                event.preventDefault();
+                location.href = searchUrl(query);
+            }
+        });
+        $('body').on(
+            'change.creedsSearch',
+            '#search-collection-filter, #search-document-filter',
+            function() { runQuery(currentQuery); }
+        );
+        $('body').on('click.creedsSearch', 'a[data-need-reload]', function() {
+            setTimeout(function() { location.reload(); }, 100);
+        });
+    }
+
+    function highlightPage(query) {
+        if (!query) return;
+        $('.page-inner').unmark({
+            done: function() {
+                $('.page-inner').mark(query, {
+                    ignoreJoiners: true,
+                    acrossElements: true,
+                    separateWordSearch: false,
+                    done: function() {
+                        setTimeout(function() {
+                            var target = location.hash ?
+                                document.getElementById(decodeURIComponent(location.hash.slice(1))) :
+                                document.querySelector('mark[data-markjs="true"]');
+                            if (target) target.scrollIntoView();
+                        }, 100);
                     }
                 });
             }
         });
+    }
 
-        // Push to history on blur
-        $body.on('blur', target, function(e) {
-            // Update history state
-            if (usePushState) {
-                var uri = updateQueryString('q', $(this).val());
-                history.pushState({
-                    path: uri
-                }, null, uri);
-            }
-        });
+    function parameter(name) {
+        return new URLSearchParams(location.search).get(name) || '';
+    }
+
+    function restoreFromUrl() {
+        var query = parameter('q');
+        var highlight = parameter('h');
+        if (query) {
+            $(INPUTS).val(query);
+            search(query);
+        } else {
+            closeSearch();
+        }
+        if (highlight) highlightPage(highlight);
     }
 
     gitbook.events.on('start', function() {
-        bindSearch('#book-search-input input');
-        bindSearch('#book-search-input-inside input');
-
-        showResult();
-        closeSearch();
+        bindEvents();
+        loadIndex();
+        restoreFromUrl();
     });
-
-    // 高亮文本
-    var highLightPageInner = function(keyword) {
-        $('.page-inner').mark(keyword, {
-            'ignoreJoiners': true,
-            'acrossElements': true,
-            'separateWordSearch': false
-        });
-
-        setTimeout(function() {
-            // Prefer the section anchor from the deep link, so the user lands
-            // on the exact matched section; fall back to the first highlight.
-            if (location.hash && location.hash.length > 1) {
-                var target = document.getElementById(
-                    decodeURIComponent(location.hash.slice(1)));
-                if (target) {
-                    target.scrollIntoView();
-                    return;
-                }
-            }
-            var mark = $('mark[data-markjs="true"]');
-            if (mark.length) {
-                mark[0].scrollIntoView();
-            }
-        }, 100);
-    };
-
-    function showResult() {
-        var keyword, type;
-        if (/\b(q|h)=([^&]+)/.test(location.search)) {
-            type = RegExp.$1;
-            keyword = decodeURIComponent(RegExp.$2);
-            if (type === 'q') {
-                launchSearch(keyword);
-            } else {
-                highLightPageInner(keyword);
-            }
-            $('#book-search-input input').val(keyword);
-            $('#book-search-input-inside input').val(keyword);
-        }
-    }
-
-    gitbook.events.on('page.change', showResult);
-
-    function getParameterByName(name) {
-        var url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)', 'i'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    function updateQueryString(key, value) {
-        value = encodeURIComponent(value);
-
-        var url = window.location.href.replace(/([?&])(?:q|h)=([^&]+)(&|$)/, function(all, pre, value, end) {
-            if (end === '&') {
-                return pre;
-            }
-            return '';
-        });
-        var re = new RegExp('([?&])' + key + '=.*?(&|#|$)(.*)', 'gi'),
-            hash;
-
-        if (re.test(url)) {
-            if (typeof value !== 'undefined' && value !== null)
-                return url.replace(re, '$1' + key + '=' + value + '$2$3');
-            else {
-                hash = url.split('#');
-                url = hash[0].replace(re, '$1$3').replace(/(&|\?)$/, '');
-                if (typeof hash[1] !== 'undefined' && hash[1] !== null)
-                    url += '#' + hash[1];
-                return url;
-            }
-        } else {
-            if (typeof value !== 'undefined' && value !== null) {
-                var separator = url.indexOf('?') !== -1 ? '&' : '?';
-                hash = url.split('#');
-                url = hash[0] + separator + key + '=' + value;
-                if (typeof hash[1] !== 'undefined' && hash[1] !== null)
-                    url += '#' + hash[1];
-                return url;
-            } else
-                return url;
-        }
-    }
-    window.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A' && e.target.getAttribute('data-need-reload')) {
-            setTimeout(function() {
-                location.reload();
-            }, 100);
-        }
-    }, true);
+    gitbook.events.on('page.change', restoreFromUrl);
 });

@@ -10,6 +10,7 @@ description: >
 
 version:          1.0
 gitbook_version:  3.2.3
+assets_version:   "20260729-5"
 
 lang:             en
 
@@ -96,7 +97,7 @@ collections:
     # lives in each page's `nav_order` instead; _includes/toc-date.html and
     # _layouts/post.html both sort on it explicitly.
 
-page_width: 900px
+page_width: 70ch
 
 destination:      ./_site
 incremental:      false

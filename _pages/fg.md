@@ -6,6 +6,13 @@ layout: post
 category: book-of-church-order
 nav_order: 10
 description: "The Form of Government of the Orthodox Presbyterian Church."
+edition_label: Orthodox Presbyterian Church Form of Government
+source_organization: Orthodox Presbyterian Church — Book of Church Order
+source_url: https://opc.org/BCO.html
+verified_date: 2026-07-29
+commentary_source: Alan D. Strange, Ordained Servant
+commentary_url: https://opc.org/os.html
+source_note: The constitutional text and editorial commentary are visually separated; commentary is not part of the OPC constitution.
 ---
 ## Chapter I: Christ, the King and Head of the Church
 

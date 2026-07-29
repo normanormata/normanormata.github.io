@@ -1,4 +1,4 @@
-<div class="page-wrapper" tabindex="-1" role="main">
+<main class="page-wrapper" id="main-content" tabindex="-1">
     {% if page.cover %}
         <img src="{{ page.cover }}"
              width="100%"
@@ -18,6 +18,8 @@
                         <h1 id="{{ page.id }}">{{ site.title | escape }}</h1>
                     {% endif %}
 
+                    {%- include edition-panel.html -%}
+
                     {{ content }}
 
                     {%- if jekyll.environment != 'dev' and site.disqushandler -%}
@@ -29,7 +31,7 @@
             {%- include search.html -%}
         </div>
     </div>
-</div>
+</main>
 
 {%- comment -%}
   Per-page MathJax: opt in with `mathjax: true` in front matter. There is no math
