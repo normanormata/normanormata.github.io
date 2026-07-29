@@ -2,8 +2,10 @@
 title: The Directory for the Public Worship of God
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: book-of-church-order
+nav_order: 12
+description: "The Directory for the Public Worship of God of the Orthodox Presbyterian Church."
 ---
 ## Preface
 The purpose of this Directory is to express the Church's common understanding of the principles and practice of public worship that is Reformed according to the Scriptures and, subordinately, to the Confession and Catechisms. Where practices are understood by the Church to be required by the Word of God, either expressly or by good and necessary consequence, they are mandated. In matters of circumstance and form in worship not specifically provided for in Scripture, the Directory provides guidance for their ordering according to the light of nature and Christian prudence, consonant with the general rules of the Word.
@@ -344,7 +346,7 @@ The whole service of baptism shall then be concluded with prayer. It is well in 
 
 a. Prerequisites
 
-An adult who seeks to be baptized shall make a public profession of his faith before the congregation prior to the baptism. He shall previously have received instruction in the Christian faith in accordance with the confessional standards of this Church, including instruction as to the meaning of baptism, and have also made before the session of the church a credible profession of faith in Christ according to the provisions of [Chapter IV](https://normanormata.github.io/pages/dpw/#chapter-iv-public-reception-of-church-members), Section A.3, of this Directory.
+An adult who seeks to be baptized shall make a public profession of his faith before the congregation prior to the baptism. He shall previously have received instruction in the Christian faith in accordance with the confessional standards of this Church, including instruction as to the meaning of baptism, and have also made before the session of the church a credible profession of faith in Christ according to the provisions of [Chapter IV](/pages/dpw/#chapter-iv-public-reception-of-church-members), Section A.3, of this Directory.
 
 b. The Administration of Baptism to Adults
 
@@ -506,7 +508,7 @@ The following benediction is particularly appropriate when the Lord's Supper has
 
 8. Noncommunicant members of the congregation may be received into communicant membership only by confession of faith.
 
-9. The following provisions are designed to assist ministers and sessions to receive members in accordance with the Book of Discipline, [Chapter II](https://normanormata.github.io/pages/bd/#chapter-ii-jurisdiction), Section B.2, which provisions should always be followed.
+9. The following provisions are designed to assist ministers and sessions to receive members in accordance with the Book of Discipline, [Chapter II](/pages/bd/#chapter-ii-jurisdiction), Section B.2, which provisions should always be followed.
 
 ### B. Reception into Full Communion of Noncommunicant Members by Profession of Faith
 1. When a noncommunicant member is received into full communion, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, it is highly advisable that the minister remind the people that he is already a member of the church, albeit a noncommunicant member, and has been receiving the blessings of Christ as a member of the church, and that those blessings have resulted in this day wherein, having given evidence of conscious saving faith in Christ, he is now about to confess that faith and become a communicant member of the congregation. The minister may then address him in these or like words:
@@ -617,7 +619,7 @@ May the God of all grace, who called you unto his eternal glory in Christ, after
 This part of the service shall be concluded with prayer.
 
 ### F. Reception of New Members by Public Profession of Faith
-1. When an unbaptized person is received into membership by profession of faith, that reception is effective at the time of his public profession of faith and baptism. He shall be received in accord with [Chapter III](https://normanormata.github.io/pages/dpw/#chapter-iii-the-administration-of-the-sacraments), Section B.2, of this Directory. When a previously baptized person who is not a member of the congregation and has not previously made a confession of his faith is received into membership by profession of faith, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
+1. When an unbaptized person is received into membership by profession of faith, that reception is effective at the time of his public profession of faith and baptism. He shall be received in accord with [Chapter III](/pages/dpw/#chapter-iii-the-administration-of-the-sacraments), Section B.2, of this Directory. When a previously baptized person who is not a member of the congregation and has not previously made a confession of his faith is received into membership by profession of faith, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
 
 Beloved in the Lord Jesus Christ, we thank our God for the grace that was given you, in that our Savior has sought and found you and through faith you have become a partaker of the covenant of grace. We rejoice that in his grace he has brought you to this congregation and given you the desire to profess your faith before us and to unite with us. We ask that you testify before us to the faith that you profess by giving assent to the following questions.
 
@@ -655,7 +657,7 @@ This part of the service shall be concluded with prayer.
 Under the gospel, we are commanded to keep no other particular day holy, except the Lord's Day. Nevertheless, God's people may observe special occasions as the dispensations of God's providence administer cause and opportunity. Such observance is both consonant with Scripture and pastorally appropriate.
 
 ### A. Prayer and Fasting
-1. When great and notable calamities come upon or threaten the church, community, or nation, when judgment is deserved because of sin, when the people seek some special blessing from the Lord, or when a pastor is to be ordained or installed ([Form of Government, Chapter XXIII](https://normanormata.github.io/pages/fg/#chapter-xxiii-ordaining-and-installing-ministers), Section 7), it is fitting that the people of God engage in times of solemn prayer and fasting.
+1. When great and notable calamities come upon or threaten the church, community, or nation, when judgment is deserved because of sin, when the people seek some special blessing from the Lord, or when a pastor is to be ordained or installed ([Form of Government, Chapter XXIII](/pages/fg/#chapter-xxiii-ordaining-and-installing-ministers), Section 7), it is fitting that the people of God engage in times of solemn prayer and fasting.
 
 2. Prayer and fasting may be observed by private individuals and families at their discretion or by the Church at the discretion of the appropriate judicatory. If the civil authority calls for a time of prayer and fasting that the judicatories of the Church deem to be in harmony with the Scriptures, they should consider issuing such a call to their members.
 

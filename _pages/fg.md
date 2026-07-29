@@ -2,8 +2,10 @@
 title: The Form of Government
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: book-of-church-order
+nav_order: 10
+description: "The Form of Government of the Orthodox Presbyterian Church."
 ---
 ## Chapter I: Christ, the King and Head of the Church
 

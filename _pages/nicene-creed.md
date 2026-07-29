@@ -2,8 +2,10 @@
 title: The Nicene Creed
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: ecumenical-creeds
+nav_order: 2
+description: "The Nicene Creed — the confession of the Councils of Nicaea (325) and Constantinople (381) on the Trinity and the person of Christ."
 ---
 
 We believe in one God, the Father Almighty, Maker of heaven and earth, and of all things visible and invisible.
@@ -27,5 +29,3 @@ And in one Lord Jesus Christ, the Son of God, begotten of the Father the only-be
 And in the Holy Ghost.
 
 But those who say: "There was a time when he was not;" and "He was not before he was made;" and "He was made out of nothing," or "He is of another substance" or "essence," or "The Son of God is created," or "changeable," or "alterable"—they are condemned by the holy catholic and apostolic Church.
-
-[1]: https://github.com/allejo/jekyll-toc

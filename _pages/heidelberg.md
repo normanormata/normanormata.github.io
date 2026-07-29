@@ -2,8 +2,10 @@
 title: The Heidelberg Catechism
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: three-forms-of-unity
+nav_order: 8
+description: "The Heidelberg Catechism (1563) — 129 questions on the Christian's only comfort, arranged in fifty-two Lord's Days."
 ---
 
 ## 1. Question: What is your only comfort in life and death?                                                                   

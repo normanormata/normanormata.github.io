@@ -2,8 +2,10 @@
 title: The Canons of Dort
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: three-forms-of-unity
+nav_order: 9
+description: "The Canons of Dort (1619) — the decision of the Synod of Dordt on the five main points of doctrine in dispute in the Netherlands."
 ---
 The Decision of the Synod of Dordt on the Five Main Points of Doctrine in Dispute in the Netherlands.
 
@@ -405,5 +407,3 @@ Moreover, the Synod earnestly warns the false accusers themselves to consider ho
 Finally, this Synod urges all fellow ministers in the gospel of Christ to deal with this teaching in a godly and reverent manner, in the academic institutions as well as in the churches; to do so, both in their speaking and writing, with a view to the glory of God’s name, holiness of life, and the comfort of anxious souls; to think and also speak with Scripture according to the analogy of faith; and, finally, to refrain from all those ways of speaking which go beyond the bounds set for us by the genuine sense of the Holy Scriptures and which could give impertinent sophists a just occasion to scoff at the teaching of the Reformed churches or even to bring false accusations against it.
 
 May God’s Son Jesus Christ, who sits at the right hand of God and gives gifts to humanity, sanctify us in the truth, lead to the truth those who err, silence the mouths of those who lay false accusations against sound teaching, and equip faithful ministers of God’s Word with a spirit of wisdom and discretion, that all they say may be to the glory of God and the building up of their hearers. Amen.
-
-[1]: https://github.com/allejo/jekyll-toc

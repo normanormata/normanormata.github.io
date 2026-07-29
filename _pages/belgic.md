@@ -2,8 +2,10 @@
 title: The Belgic Confession
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: three-forms-of-unity
+nav_order: 7
+description: "The Belgic Confession (1561) — the first of the Three Forms of Unity, in thirty-seven articles."
 ---
 
 ## 1. That there is One Only God 
@@ -155,5 +157,3 @@ We believe that our gracious God, because of the depravity of mankind, has appoi
 ## 37. Of the Last Judgment
 
 Finally we believe, according to the Word of God, when the time appointed by the Lord (which is unknown to all creatures) is come, and the number of the elect complete, that our Lord Jesus Christ will come from heaven, corporally and visibly, as he ascended, with great glory and majesty to declare himself judge of the quick and the dead; burning this old world with fire and flame, to cleanse it. And then all men will personally appear before this great judge, both men and women and children, that have been from the beginning of the world to the end thereof, being summoned by the voice of the archangel, and by the sound of the trumpet of God. For all the dead shall be raised out of the earth, and their souls joined and united with their proper bodies, in which they formerly lived. As for those who shall then be living, they shall not die as the others, but be changed in the twinkling of an eye, and from corruptible, become incorruptible. Then the books (that is to say the consciences) shall be opened, and the dead judged according to what they shall have done in this world, whether it be good or evil. Nay, all men shall give an account of every idle word they have spoken, which the world only counts amusement and jest; and then the secrets and hypocrisy of men shall be disclosed and laid open before all. And therefore the consideration of this judgment, is justly terrible and dreadful to the wicked and ungodly, but most desirable and comfortable to the righteous and elect: because then their full deliverance shall be perfected, and there they shall receive the fruits of their labour and trouble which they have borne. Their innocence shall be known to all, and they shall see the terrible vengeance which God shall execute on the wicked, who most cruelly persecuted, oppressed and tormented them in this world; and who shall be convicted by the testimony of their own consciences, and being immortal, shall be tormented in that everlasting fire, which is prepared for the devil and his angels. But on the contrary, the faithful and elect shall be crowned with glory and honour; and the Son of God will confess their names before God his Father, and his elect angels; all tears shall be wiped from their eyes; and their cause which is now condemned by many judges and magistrates, as heretical and impious, will then be known to be the cause of the Son of God. And for a gracious reward, the Lord will cause them to possess such a glory, as never entered into the heart of man to conceive. Therefore we expect that great day with a most ardent desire to the end that we may fully enjoy the promises of God in Christ Jesus our Lord. AMEN. “Even so, come, Lord Jesus.” – Rev.22:20.
-
-[1]: https://github.com/allejo/jekyll-toc

@@ -2,8 +2,10 @@
 title: The Book of Discipline
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: book-of-church-order
+nav_order: 11
+description: "The Book of Discipline of the Orthodox Presbyterian Church."
 ---
 ## Chapter I : The Nature and Purposes of Discipline
 

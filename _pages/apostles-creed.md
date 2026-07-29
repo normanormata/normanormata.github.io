@@ -2,8 +2,10 @@
 title: The Apostles Creed
 author: Tyler Teschon
 date: 2023-08-30
-category: Jekyll
 layout: post
+category: ecumenical-creeds
+nav_order: 1
+description: "The Apostles' Creed — the ancient baptismal confession of the Western church, in its received English text."
 ---
 
 I believe in God, the Father Almighty,
