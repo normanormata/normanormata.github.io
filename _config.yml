@@ -72,6 +72,17 @@ permalink:                /:categories/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
+  # ruby/setup-ruby's bundler-cache installs gems into vendor/ inside the
+  # workspace. Without this, Jekyll reads them as site content and the build
+  # dies on Jekyll's own site_template post, whose front matter holds an ERB
+  # date placeholder rather than a date.
+  - vendor
+  # Repo furniture that is not part of the site.
+  - Gemfile
+  - Gemfile.lock
+  - script
+  - README.md
+  - LICENSE
 
 collections:
   pages:
