@@ -5,6 +5,9 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     var INDEX_DATA = {};
     var indexRequest = null;
     var currentQuery = '';
+    // Don't search until there are at least this many characters. A single
+    // letter matches almost every entry, which is slow and looks like noise.
+    var MIN_QUERY = 2;
     var INPUTS = [
         '#book-search-input input',
         '#book-search-input-inside input',
@@ -224,7 +227,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     function search(value, source) {
         syncInputs(value, source);
-        if (!String(value || '').trim()) {
+        if (String(value || '').trim().length < MIN_QUERY) {
             closeSearch();
             return;
         }
@@ -242,13 +245,22 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $('body').off('.creedsSearch');
         $('body').on('input.creedsSearch', INPUTS, function() {
             var input = this;
+            // On reading pages every search box is just a launcher: typing keeps
+            // the boxes in sync but does not search inline, because inline
+            // results replace the whole page on the first keystroke. Enter (the
+            // keydown handler below) sends the query to /search/. Live results
+            // are only for the dedicated search page.
+            if (!isSearchPage()) {
+                syncInputs(input.value, input);
+                return;
+            }
             clearTimeout(timer);
             timer = setTimeout(function() {
                 search(input.value, input);
-                if (isSearchPage() && history.replaceState) {
+                if (history.replaceState) {
                     history.replaceState({}, '', searchUrl(input.value));
                 }
-            }, 120);
+            }, 200);
         });
         $('body').on('keydown.creedsSearch', INPUTS, function(event) {
             if (event.key !== 'Enter') return;
