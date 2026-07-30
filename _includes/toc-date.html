@@ -49,6 +49,15 @@
           Note `site.pages` here is the _pages *collection*, not Jekyll's built-in
           page list: Jekyll::Drops::SiteDrop#[] resolves collection labels ahead of
           its own `pages` delegate. Renaming the collection would change this.
+
+          toc.html is passed sanitize=true so entry labels are stripped to plain
+          text. Question headings carry inline markup — <span class="text-variant">
+          for the MESV toggle, and a couple of Heidelberg questions carry a proof
+          marker — and unsanitised that markup lands inside the sidebar link. The
+          theme styles `.book-summary ul.summary li span` as display:block with
+          padding, so a variant word rendered on its own indented line; and a
+          proof marker's <a> nested inside the entry's <a> made the parser split
+          the entry into two links, one pointing at the proofs callout.
         {%- endcomment -%}
 
         <ul class="summary">
@@ -61,7 +70,7 @@
                     {{ site.title | escape }}
                 </a>
                 {% if site.toc.enabled and site.toc.enabled_index %}
-                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max sanitize=true %}
                 {% endif %}
             </li>
 
@@ -85,7 +94,7 @@
                         {{ doc.title | escape }}
                     </a>
                     {% if site.toc.enabled and page.url == doc.url %}
-                        {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                        {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max sanitize=true %}
                     {% endif %}
                 </li>
             {%- endfor -%}
@@ -103,7 +112,7 @@
                             {{ post.title | escape }}
                         </a>
                         {% if site.toc.enabled and page.url == post.url %}
-                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max sanitize=true %}
                         {% endif %}
                     </li>
                 {%- endfor -%}
