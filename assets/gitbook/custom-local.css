@@ -1,3 +1,19 @@
+/* Site-specific styles, imported at the end of custom.css.
+ *
+ * Do NOT use `rem` in this file. The vendored GitBook stylesheet sets
+ * `html { font-size: 62.5% }`, so 1rem is 10px, not 16px — every rem value here
+ * silently rendered at 62.5% of its intended size (filter labels at 8.3px, the
+ * search input at 10px, the header title at 12.5px). The 62.5% base cannot be
+ * changed either: gitbook-plugin-fontsettings/website.css expresses the reader's
+ * font-size presets as 1.2rem–4rem and depends on it. Use px.
+ *
+ * Search UI note: class names use a `cc-` namespace rather than the theme's
+ * `search-results*` / `has-results` / `no-results` names, because
+ * `#book-search-results .search-results .has-results .search-results-item *`
+ * (specificity 1,3,0) forces `font-size: inherit` on every descendant and would
+ * override anything set here.
+ */
+
 /* This file is kept intentionally blank inside the jekyll-github-theme
  * It gets imported at the end of custom.css
  * Its purpose is for users of the theme to be able to add css rules from a blank file
@@ -246,9 +262,9 @@ details.scripture-proofs.proof-target {
 /* Copy link toast notification */
 #copy-toast {
     position: fixed;
-    bottom: 2rem;
+    bottom: 32px;
     left: 50%;
-    transform: translateX(-50%) translateY(1rem);
+    transform: translateX(-50%) translateY(16px);
     background: rgba(0, 0, 0, 0.75);
     color: #fff;
     padding: 0.5em 1.25em;
@@ -272,7 +288,7 @@ details.scripture-proofs.proof-target {
     .book-header,
     #book-search-input,
     #book-search-input-link,
-    #book-search-results .search-results,
+    #book-search-results .cc-search,
     .navigation,
     #copy-toast,
     #mesv-version-indicator {
@@ -323,10 +339,10 @@ details.scripture-proofs.proof-target {
 .skip-link {
     position: fixed;
     top: 0;
-    left: 1rem;
+    left: 16px;
     z-index: 10000;
     transform: translateY(-120%);
-    padding: 0.75rem 1rem;
+    padding: 12px 16px;
     border-radius: 0 0 4px 4px;
     background: #1a4a72;
     color: #fff;
@@ -352,11 +368,43 @@ details.scripture-proofs.proof-target {
     font-size: 17px;
 }
 
+/* The reading column is a 70ch measure, but a result list is scanned rather than
+   read, so give the search page more room. */
+body.is-search-page .page-inner {
+    max-width: 860px;
+}
+
+body.is-search-page .search-page > h1 {
+    margin-bottom: 4px !important;
+    font-size: 30px;
+}
+
+/* Lay the header out as a row. The theme's menu button is a sibling of the
+   title, and a full-width block title pushed it onto a second line — escaping
+   the fixed 50px header and landing on top of the page h1 on narrow screens. */
+.book-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    /* Leave room for .site-toolbar / .mobile-tools, which are positioned. */
+    padding-right: 116px;
+}
+
+/* The theme appends its menu button after the title, which flex would place on
+   the right underneath the reader tools. Pull it back to the left. It is the only
+   direct <a> child of the header — avoiding :has() keeps this working in older
+   browsers, where a silent failure would put the button back under the tools. */
+.book-header > a {
+    order: -1;
+}
+
 .book-header-title {
+    flex: 1 1 auto;
+    min-width: 0;
     overflow: hidden;
     margin: 0;
-    padding: 0 1rem;
-    font-size: 1.25rem;
+    padding: 0 8px;
+    font-size: 20px;
     line-height: 50px;
     text-align: center;
     white-space: nowrap;
@@ -382,8 +430,8 @@ input:focus-visible {
     --edition-bg: #f7f8fa;
     --edition-border: #d8dde5;
     --edition-muted: #536171;
-    margin: 0 0 1.75rem;
-    padding: 0.9rem 1rem;
+    margin: 0 0 28px;
+    padding: 14px 16px;
     border: 1px solid var(--edition-border);
     border-radius: 6px;
     background: var(--edition-bg);
@@ -410,8 +458,8 @@ input:focus-visible {
 
 .edition-panel dl > div {
     display: grid;
-    grid-template-columns: 6rem minmax(0, 1fr);
-    gap: 0.8rem;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 13px;
 }
 
 .edition-panel dt {
@@ -423,7 +471,7 @@ input:focus-visible {
 }
 
 .edition-panel p {
-    margin: 0.5rem 0 0;
+    margin: 8px 0 0;
 }
 
 .edition-disclaimer {
@@ -432,15 +480,122 @@ input:focus-visible {
 
 /* ── Search ───────────────────────────────────────────────────────────── */
 
+/* Search palette, themed below for sepia and night like the other components. */
+.book {
+    --cc-surface:            #fff;
+    --cc-border:             #b6c0cc;
+    --cc-border-soft:        #e2e7ee;
+    --cc-rule:               #eef1f5;
+    --cc-text:               #1c2430;
+    --cc-muted:              #5b6a7d;
+    --cc-muted-2:            #7d8798;
+    --cc-icon:               #66748a;
+    --cc-accent:             #1f6595;
+    --cc-accent-dark:        #185480;
+    /* Text drawn on top of --cc-accent, and the link colour for result titles.
+       These are not interchangeable with --cc-surface / --cc-accent: reusing
+       those put dark text on the mid-blue chip in night mode. */
+    --cc-on-accent:          #fff;
+    --cc-link:               #1f6595;
+    --cc-chip-bg:            #f7f9fc;
+    --cc-chip-border:        #cdd5e0;
+    --cc-chip-hover-bg:      #eef3f9;
+    --cc-chip-hover-border:  #9fb0c4;
+    --cc-ref-bg:             #e7eef7;
+    --cc-ref-text:           #1a4f7a;
+    --cc-proof-bg:           #f0ece0;
+    --cc-proof-text:         #6b5a2a;
+    --cc-row-hover:          #f5f8fc;
+    --cc-snippet:            #43506b;
+    --cc-count-text:         #33415a;
+    --cc-mark-bg:            #ffe37b;
+    --cc-mark-text:          #161616;
+}
+
+/* Sepia */
+.book.color-theme-1 {
+    --cc-surface:            #f6efd9;
+    --cc-border:             #c9bc98;
+    --cc-border-soft:        #ddd0ad;
+    --cc-rule:               #e6dbbd;
+    --cc-text:               #3a2f18;
+    --cc-muted:              #6b5f45;
+    --cc-muted-2:            #7d7159;
+    --cc-icon:               #6b5f45;
+    --cc-accent:             #7a5a1c;
+    --cc-accent-dark:        #5f4614;
+    --cc-on-accent:          #fdf8ea;
+    --cc-link:               #6b4a12;
+    --cc-chip-bg:            #efe6c9;
+    --cc-chip-border:        #d3c6a2;
+    --cc-chip-hover-bg:      #e8dcba;
+    --cc-chip-hover-border:  #bdae86;
+    --cc-ref-bg:             #eae0c0;
+    --cc-ref-text:           #5f4614;
+    --cc-proof-bg:           #e6dab4;
+    --cc-proof-text:         #5a4a1e;
+    --cc-row-hover:          #efe7ce;
+    --cc-snippet:            #4a3f26;
+    --cc-count-text:         #3a2f18;
+    --cc-mark-bg:            #e8cf72;
+    --cc-mark-text:          #2b2411;
+}
+
+/* Night */
+.book.color-theme-2 {
+    --cc-surface:            #1e222e;
+    --cc-border:             #3d4658;
+    --cc-border-soft:        #333a4a;
+    --cc-rule:               #2b3240;
+    --cc-text:               #e4eaf3;
+    --cc-muted:              #9aa8bd;
+    --cc-muted-2:            #8593a8;
+    --cc-icon:               #9aa8bd;
+    --cc-accent:             #4a90c4;
+    --cc-accent-dark:        #3a76a3;
+    /* #4a90c4 against white is only 3.4:1, so night uses dark text on the chip
+       and a lighter blue for links. */
+    --cc-on-accent:          #0e1420;
+    --cc-link:               #7fbbe6;
+    --cc-chip-bg:            #262c3a;
+    --cc-chip-border:        #3d4658;
+    --cc-chip-hover-bg:      #2f3646;
+    --cc-chip-hover-border:  #566274;
+    --cc-ref-bg:             #26374a;
+    --cc-ref-text:           #9fcbe8;
+    --cc-proof-bg:           #3a3524;
+    --cc-proof-text:         #d8c78a;
+    --cc-row-hover:          #262c3a;
+    --cc-snippet:            #b8c4d4;
+    --cc-count-text:         #dbe3ee;
+    --cc-mark-bg:            #7a6320;
+    --cc-mark-text:          #f6f1e2;
+}
+
 .home-search,
 .search-page-form {
-    margin: 1.5rem 0 2.25rem;
+    margin: 20px 0 8px;
+}
+
+/* The placeholder is not a label, so the field keeps one for screen readers
+   even where the heading already says "Search". */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
 }
 
 .home-search > label,
 .search-page-form > label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 
@@ -449,105 +604,286 @@ input:focus-visible {
     grid-template-columns: auto minmax(0, 1fr) auto;
     align-items: center;
     overflow: hidden;
-    border: 2px solid #76879a;
-    border-radius: 7px;
-    background: #fff;
+    border: 1px solid var(--cc-border);
+    border-radius: 8px;
+    background: var(--cc-surface);
+    box-shadow: 0 1px 2px rgba(16, 32, 48, 0.06);
+}
+
+.home-search__field:focus-within {
+    border-color: #2a78b8;
+    box-shadow: 0 0 0 3px rgba(42, 120, 184, 0.18);
 }
 
 .home-search__field > i {
-    padding-left: 0.9rem;
-    color: #536171;
+    padding-left: 14px;
+    color: var(--cc-icon);
 }
 
 .home-search__field input {
     min-width: 0;
     min-height: 48px;
-    padding: 0.65rem 0.8rem;
+    padding: 10px 12px;
     border: 0;
     background: transparent;
-    color: #222;
-    font-size: 1rem;
+    color: var(--cc-text);
+    font-size: 17px;
 }
 
 .home-search__field button {
     align-self: stretch;
-    min-width: 88px;
+    min-width: 92px;
+    padding: 0 18px;
     border: 0;
-    background: #1f6595;
-    color: #fff;
+    background: var(--cc-accent);
+    color: var(--cc-on-accent);
+    font-size: 15px;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.search-results {
-    padding-bottom: 3rem;
+.home-search__field button:hover {
+    background: var(--cc-accent-dark);
 }
 
-.search-results-title {
-    font-size: 1.35rem;
+.search-page-hint {
+    margin: 0 0 20px;
+    color: var(--cc-muted);
+    font-size: 14px;
 }
 
-.search-filters {
+.cc-search {
+    padding-bottom: 48px;
+}
+
+/* Controls row: collection select on the left, live count on the right. */
+.cc-search__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cc-border-soft);
+}
+
+.cc-search__collection {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.75rem;
-    margin: 1rem 0 1.5rem;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--cc-muted);
 }
 
-.search-filters label {
-    font-size: 0.83rem;
+.cc-search__collection select {
+    min-height: 40px;
+    min-width: 210px;
+    padding: 6px 34px 6px 10px;
+    border: 1px solid var(--cc-border);
+    border-radius: 7px;
+    background-color: var(--cc-surface);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='%2352617a' d='M1 1.5 6 6.5l5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 11px;
+    color: var(--cc-text);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.cc-search__count {
+    margin: 0;
+    color: var(--cc-count-text);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cc-search__count .search-results-count {
     font-weight: 700;
 }
 
-.search-filters select {
-    display: block;
-    width: 100%;
-    min-height: 44px;
-    margin-top: 0.25rem;
+.cc-search__hint {
+    margin: 8px 0 0;
+    color: var(--cc-muted);
+    font-size: 15px;
 }
 
-.search-results-list {
+/* Document filter chips: replace the old second <select>, which duplicated the
+   result group headers. */
+.cc-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0 4px;
+}
+
+.cc-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 32px;
+    padding: 4px 11px;
+    border: 1px solid var(--cc-chip-border);
+    border-radius: 999px;
+    background: var(--cc-chip-bg);
+    color: var(--cc-count-text);
+    font-size: 13px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.cc-chip:hover {
+    border-color: var(--cc-chip-hover-border);
+    background: var(--cc-chip-hover-bg);
+}
+
+.cc-chip[aria-pressed="true"] {
+    border-color: var(--cc-accent);
+    background: var(--cc-accent);
+    color: var(--cc-on-accent);
+}
+
+.cc-chip__count {
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: rgba(31, 101, 149, 0.12);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+}
+
+.cc-chip[aria-pressed="true"] .cc-chip__count {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+/* Results, grouped by document in sidebar order. */
+.cc-results,
+.cc-group__items {
     margin: 0 !important;
     padding: 0 !important;
     list-style: none !important;
 }
 
-.search-results-item {
+.cc-group {
+    margin: 0 0 8px;
+}
+
+.cc-group__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 22px 0 2px !important;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--cc-border-soft);
+    color: var(--cc-muted);
+    font-size: 12px !important;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.cc-group__count {
+    color: var(--cc-muted-2);
+    font-variant-numeric: tabular-nums;
+}
+
+.cc-result {
     margin: 0 !important;
-    padding: 1rem 0 !important;
-    border-bottom: 1px solid #d8dde5;
+    padding: 0 !important;
+    border-bottom: 1px solid var(--cc-rule);
 }
 
-.search-results-item h3,
-.search-results-item p {
-    margin: 0 0 0.35rem;
+/* The whole row is the link: one target, one keyboard stop. */
+.cc-result__link {
+    display: grid;
+    gap: 3px;
+    padding: 11px 10px;
+    border-radius: 7px;
+    color: inherit !important;
+    text-decoration: none !important;
 }
 
-.search-result-meta,
-.search-result-source {
-    color: #667483;
-    font-size: 0.78rem;
+.cc-result__link:hover {
+    background: var(--cc-row-hover);
+}
+
+.cc-result__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.cc-result__ref {
+    padding: 1px 7px;
+    border-radius: 4px;
+    background: var(--cc-ref-bg);
+    color: var(--cc-ref-text);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.cc-result__label {
+    color: var(--cc-link);
+    font-size: 15px;
     font-weight: 600;
 }
 
-mark.search-highlight-keyword {
-    padding: 0 0.08em;
-    background: #ffe37b;
-    color: #161616;
+.cc-result__proof {
+    padding: 1px 7px;
+    border-radius: 4px;
+    background: var(--cc-proof-bg);
+    color: var(--cc-proof-text);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
-#book-search-results:not(.open) > .search-results,
+/* Clamp to two lines so every row is the same height and the list stays
+   scannable. */
+.cc-result__snippet {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: var(--cc-snippet);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+mark.search-highlight-keyword {
+    padding: 0 2px;
+    border-radius: 2px;
+    background: var(--cc-mark-bg);
+    color: var(--cc-mark-text);
+    font-weight: 600;
+}
+
+#book-search-results:not(.open) > .cc-search,
 #book-search-results.open > .search-noresults,
-#book-search-results.no-results .has-results,
-#book-search-results:not(.no-results) .no-results {
+#book-search-results.no-results .cc-search__has,
+#book-search-results:not(.no-results) .cc-search__none {
     display: none;
 }
+
 
 /* ── Reader tools ─────────────────────────────────────────────────────── */
 
 .site-toolbar {
     position: absolute;
     top: 0;
-    right: 0;
+    /* Clear of the overlay scrollbar, which otherwise clips the last button. */
+    right: 10px;
     z-index: 2;
     height: 50px;
 }
@@ -562,13 +898,19 @@ mark.search-highlight-keyword {
     display: inline-flex;
     align-items: center;
     min-height: 44px;
-    padding: 0 0.65rem;
+    padding: 0 10px;
     border: 0;
     background: transparent;
     color: inherit;
     cursor: pointer;
     font: inherit;
-    gap: 0.35rem;
+    gap: 6px;
+}
+
+/* An explicit `display` beats the user-agent rule for [hidden], so controls that
+   do not apply to the current page have to opt out again here. */
+.reader-action[hidden] {
+    display: none;
 }
 
 .reader-action:hover {
@@ -585,7 +927,7 @@ mark.search-highlight-keyword {
 }
 
 .reader-action-label {
-    font-size: 0.76rem;
+    font-size: 12px;
 }
 
 .mobile-tools {
@@ -594,13 +936,13 @@ mark.search-highlight-keyword {
 
 .mobile-section-nav {
     display: none;
-    margin: 0 0 1.5rem;
+    margin: 0 0 24px;
 }
 
 .mobile-section-nav label {
     display: block;
-    margin-bottom: 0.35rem;
-    font-size: 0.82rem;
+    margin-bottom: 6px;
+    font-size: 13px;
     font-weight: 700;
 }
 
@@ -614,9 +956,9 @@ mark.search-highlight-keyword {
 .document-pagination {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-    width: min(70ch, calc(100% - 2rem));
-    margin: 2rem auto 3rem;
+    gap: 16px;
+    width: min(70ch, calc(100% - 32px));
+    margin: 32px auto 48px;
 }
 
 .document-pagination .navigation {
@@ -626,7 +968,7 @@ mark.search-highlight-keyword {
     width: auto;
     max-width: none;
     min-height: 64px;
-    padding: 0.7rem 0.9rem;
+    padding: 11px 14px;
     border: 1px solid #d8dde5;
     border-radius: 6px;
     color: inherit;
@@ -640,15 +982,15 @@ mark.search-highlight-keyword {
 
 .navigation-direction {
     color: #667483;
-    font-size: 0.72rem;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
 .navigation-title {
-    margin-top: 0.25rem;
-    font-size: 0.88rem;
+    margin-top: 4px;
+    font-size: 14px;
 }
 
 @media (max-width: 900px) {
@@ -668,7 +1010,7 @@ mark.search-highlight-keyword {
         display: flex;
         align-items: center;
         min-height: 44px;
-        padding: 0 0.75rem;
+        padding: 0 12px;
         cursor: pointer;
         font-weight: 700;
         list-style: none;
@@ -683,10 +1025,10 @@ mark.search-highlight-keyword {
         top: 44px;
         right: 0;
         display: flex;
-        width: min(270px, calc(100vw - 1rem));
+        width: min(270px, calc(100vw - 16px));
         height: auto;
         flex-direction: column;
-        padding: 0.4rem;
+        padding: 6px;
         border: 1px solid #c9d0d8;
         border-radius: 6px;
         background: #fff;
@@ -717,7 +1059,7 @@ mark.search-highlight-keyword {
     }
 
     .book-header-title {
-        padding-right: 7rem;
+        padding-right: 112px;
         text-align: left;
     }
 
@@ -726,12 +1068,35 @@ mark.search-highlight-keyword {
     }
 
     .edition-panel dt {
-        margin-top: 0.35rem;
+        margin-top: 6px;
     }
 
-    .search-filters,
     .document-pagination {
         grid-template-columns: 1fr;
+    }
+
+    /* Stack the controls row so the count sits under the select. */
+    .cc-search__controls {
+        align-items: stretch;
+    }
+
+    .cc-search__collection select {
+        min-width: 0;
+        width: 100%;
+    }
+
+    /* Six stacked chips cost ~220px of vertical space and pushed the first
+       result off screen. Keep them on one scrollable row instead. */
+    .cc-chips {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .cc-chip {
+        flex: 0 0 auto;
     }
 
     .home-search__field {

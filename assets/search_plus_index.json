@@ -69,6 +69,12 @@ layout: null
 {%- assign entries = "" | split: "" -%}
 {%- for document in index -%}
   {%- assign doctitle = document.title | smartify | strip_html | normalize_whitespace -%}
+  {%- comment -%}
+    `order` mirrors the page's nav_order so the search UI can group results in
+    the same sequence as the sidebar. Collection order cannot be used: GitHub
+    Pages builds with Jekyll 3.10, which sorts collection documents by date then
+    path, not by nav_order.
+  {%- endcomment -%}
   {%- assign collection = document.category | default: "general" -%}
   {%- assign doccontent = document.content -%}
 
@@ -107,12 +113,22 @@ layout: null
         {%- assign acronym = idparts[0] | upcase -%}
         {%- assign reference = acronym | append: ' ' | append: qnum -%}
       {%- else -%}
+        {%- comment -%}
+          An anchor slug is not a citable reference, so leave the badge empty
+          rather than printing the raw id.
+        {%- endcomment -%}
         {%- assign seclabel = secid -%}
-        {%- assign reference = secid -%}
+        {%- assign reference = "" -%}
       {%- endif -%}
       {%- assign keywords = keywords | append: ' ' | append: reference -%}
       {%- assign sectitle = doctitle | append: ' — ' | append: seclabel -%}
-      {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "keywords": {{ keywords | jsonify }}, "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": {{ proofs | jsonify }}}{%- endcapture -%}
+      {%- comment -%}
+        `label` is the extra heading a result row shows beside its reference badge.
+        Here the badge ("WCF 1.1", "WSC 33") already says everything seclabel would
+        ("Chapter 1.1", "Question 33"), so leave it empty rather than print both.
+      {%- endcomment -%}
+      {%- assign label = "" -%}
+      {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "order": {{ document.nav_order | default: 99 }}, "reference": {{ reference | jsonify }}, "label": {{ label | jsonify }}, "keywords": {{ keywords | jsonify }}, "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": {{ proofs | jsonify }}}{%- endcapture -%}
       {%- assign entries = entries | push: entry -%}
     {%- endfor -%}
   {%- elsif doccontent contains '<h' -%}
@@ -136,18 +152,29 @@ layout: null
           {%- assign proofs = section | split: '<div class="proofs-body">' | last | split: '</div>' | first | strip_html | normalize_whitespace | strip -%}
         {%- endif -%}
         {%- assign keywords = doctitle | append: ' ' | append: htext -%}
+        {%- comment -%}
+          Assign `reference` unconditionally: Liquid variables outlive the loop, so
+          without this a Belgic or church-order section would inherit the last
+          Westminster reference set above.
+        {%- endcomment -%}
+        {%- assign reference = "" -%}
         {%- if doctitle contains 'Heidelberg' -%}
           {%- assign firstword = htext | split: ' ' | first | remove: '.' -%}
           {%- assign keywords = keywords | append: ' Heidelberg ' | append: firstword -%}
+          {%- assign reference = 'Heidelberg ' | append: firstword -%}
         {%- endif -%}
         {%- assign sectitle = doctitle | append: ' — ' | append: htext -%}
-        {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "keywords": {{ keywords | jsonify }}, "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": {{ proofs | jsonify }}}{%- endcapture -%}
+        {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "order": {{ document.nav_order | default: 99 }}, "reference": {{ reference | jsonify }}, "label": {{ htext | jsonify }}, "keywords": {{ keywords | jsonify }}, "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": {{ proofs | jsonify }}}{%- endcapture -%}
         {%- assign entries = entries | push: entry -%}
       {%- endif -%}
     {%- endfor -%}
   {%- else -%}
+    {%- comment -%}
+      Short documents with no sections (the creeds) index as one whole-page entry:
+      the document title is the heading, so there is no separate label or badge.
+    {%- endcomment -%}
     {%- assign body = doccontent | strip_html | normalize_whitespace | strip -%}
-    {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "keywords": {{ doctitle | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": ""}{%- endcapture -%}
+    {%- capture entry -%}{{ document.url | relative_url | jsonify }}: {"title": {{ doctitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "order": {{ document.nav_order | default: 99 }}, "reference": "", "label": "", "keywords": {{ doctitle | jsonify }}, "url": {{ document.url | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": ""}{%- endcapture -%}
     {%- assign entries = entries | push: entry -%}
   {%- endif -%}
 {%- endfor -%}

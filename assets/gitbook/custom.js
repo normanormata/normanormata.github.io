@@ -50,15 +50,26 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     function updateControls() {
         var available = isStandardsPage();
         var versionLabel = showModern ? 'Text: MESV' : 'Text: Constitutional';
+        // Hide rather than disable. A greyed-out "Text: MESV" on a creed or the
+        // search page reads as a broken control; the edition only exists in the
+        // Westminster Standards, so the button simply should not be there.
         $('.reader-action-version')
+            .prop('hidden', !available)
             .prop('disabled', !available)
             .attr('aria-pressed', showModern ? 'true' : 'false')
-            .attr('title', available ? 'Switch text edition' :
-                'Edition switching is available in the Westminster Standards')
+            .attr('title', 'Switch text edition')
             .find('.reader-action-label').text(versionLabel);
         $('.reader-action-highlight')
+            .prop('hidden', !available || !showModern)
             .prop('disabled', !available || !showModern)
             .attr('aria-pressed', highlightOn ? 'true' : 'false');
+        // On the search page the toolbar's own Search button goes nowhere useful.
+        $('.reader-action-search').prop('hidden', isSearchPage());
+    }
+
+    function isSearchPage() {
+        return /\/search\/(?:index\.html)?$/.test(location.pathname) ||
+            /\/assets\/search\.html$/.test(location.pathname);
     }
 
     function updateIndicator() {

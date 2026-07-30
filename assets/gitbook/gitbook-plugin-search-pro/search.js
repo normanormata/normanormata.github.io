@@ -5,9 +5,13 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     var INDEX_DATA = {};
     var indexRequest = null;
     var currentQuery = '';
+    // Which document chip is selected, '' for all. Replaces the old document
+    // <select>, which duplicated the result group headers.
+    var activeDocument = '';
     // Don't search until there are at least this many characters. A single
     // letter matches almost every entry, which is slow and looks like noise.
     var MIN_QUERY = 2;
+    var REFERENCE_QUERY = /^(?:wcf\s+\d+\.\d+|wsc\s+\d+|wlc\s+\d+|heidelberg\s+\d+)$/i;
     var INPUTS = [
         '#book-search-input input',
         '#book-search-input-inside input',
@@ -51,7 +55,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 populateFilters();
                 return data;
             }).catch(function(error) {
-                $('.search-results').attr('aria-busy', 'false');
+                $('.cc-search').attr('aria-busy', 'false');
                 $('body').removeClass('search-loading');
                 if (window.console) {
                     console.error('Search index failed to load: ' + url, error);
@@ -63,11 +67,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     function populateFilters() {
         var collections = {};
-        var documents = {};
         Object.keys(INDEX_DATA).forEach(function(key) {
-            var item = INDEX_DATA[key];
-            collections[item.collection || 'general'] = true;
-            documents[item.document || item.title] = true;
+            collections[INDEX_DATA[key].collection || 'general'] = true;
         });
 
         var $collection = $('#search-collection-filter');
@@ -80,17 +81,9 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             }).appendTo($collection);
         });
         $collection.val(selectedCollection || '');
-
-        var $document = $('#search-document-filter');
-        var selectedDocument = $document.val();
-        $document.find('option').slice(1).remove();
-        Object.keys(documents).sort().forEach(function(value) {
-            $('<option>', { value: value, text: value }).appendTo($document);
-        });
-        $document.val(selectedDocument || '');
     }
 
-    function makeSnippet(text, query, proofMatch) {
+    function makeSnippet(text, query) {
         var source = String(text || '');
         var lower = source.toLocaleLowerCase();
         var index = lower.indexOf(query.toLocaleLowerCase());
@@ -112,14 +105,12 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }
 
         var safe = escapeHtml(snippet);
-        safe = safe.replace(
+        // A proof-only match is flagged by the row's "proof" badge rather than an
+        // inline prefix, which used to sit at the same size as the snippet text.
+        return safe.replace(
             new RegExp('(' + escapeReg(escapeHtml(query)) + ')', 'gi'),
             '<mark class="search-highlight-keyword">$1</mark>'
         );
-        if (proofMatch) {
-            safe = '<span class="search-result-source">Scripture proof:</span> ' + safe;
-        }
-        return safe;
     }
 
     function runQuery(query) {
@@ -131,10 +122,9 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }
 
         var collection = $('#search-collection-filter').val() || '';
-        var documentName = $('#search-document-filter').val() || '';
+        var documentName = activeDocument;
         var lowered = query.toLocaleLowerCase();
-        var exactReference = /^(?:wcf\s+\d+\.\d+|wsc\s+\d+|wlc\s+\d+|heidelberg\s+\d+)$/i
-            .test(query);
+        var exactReference = REFERENCE_QUERY.test(query);
         var results = [];
 
         Object.keys(INDEX_DATA).forEach(function(key) {
@@ -158,7 +148,11 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 title: item.title,
                 document: item.document,
                 collection: item.collection,
-                snippet: makeSnippet(snippetSource, query, proofMatch),
+                order: typeof item.order === 'number' ? item.order : 99,
+                reference: item.reference || '',
+                label: item.label || '',
+                proofMatch: proofMatch,
+                snippet: makeSnippet(snippetSource, query),
                 score: String(item.keywords || '').toLocaleLowerCase() === lowered ? 0 :
                     (String(item.keywords || '').toLocaleLowerCase().indexOf(lowered) !== -1 ? 1 :
                     (bodyIndex !== -1 ? 2 : 3))
@@ -168,7 +162,48 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         results.sort(function(a, b) {
             return a.score - b.score || a.title.localeCompare(b.title);
         });
-        displayResults(query, results);
+        displayResults(query, results, countByDocument(query, collection));
+    }
+
+    // Chip counts ignore the active document filter, so the chips still show how
+    // many hits the other documents hold while one of them is selected.
+    function countByDocument(query, collection) {
+        var lowered = String(query || '').toLocaleLowerCase();
+        var exactReference = REFERENCE_QUERY.test(query);
+        var counts = [];
+        var byName = {};
+        Object.keys(INDEX_DATA).forEach(function(key) {
+            var item = INDEX_DATA[key];
+            if (collection && item.collection !== collection) return;
+            var keywordWords = ' ' + String(item.keywords || '').toLocaleLowerCase() + ' ';
+            if (exactReference && keywordWords.indexOf(' ' + lowered + ' ') === -1) return;
+            var haystack = [item.body, item.proofs, item.keywords, item.title, item.document]
+                .join(' ').toLocaleLowerCase();
+            if (haystack.indexOf(lowered) === -1) return;
+            var name = item.document || item.title;
+            if (!byName[name]) {
+                byName[name] = { name: name, count: 0,
+                    order: typeof item.order === 'number' ? item.order : 99 };
+                counts.push(byName[name]);
+            }
+            byName[name].count += 1;
+        });
+        return counts.sort(function(a, b) { return a.order - b.order; });
+    }
+
+    function groupByDocument(results) {
+        var groups = [];
+        var byName = {};
+        results.forEach(function(item) {
+            var name = item.document || item.title;
+            if (!byName[name]) {
+                byName[name] = { name: name, order: item.order, items: [] };
+                groups.push(byName[name]);
+            }
+            byName[name].items.push(item);
+        });
+        // Sidebar order, so the results read in the same sequence as the site.
+        return groups.sort(function(a, b) { return a.order - b.order; });
     }
 
     function resultHref(url, query) {
@@ -178,10 +213,62 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         return path + '?h=' + encodeURIComponent(query) + hash;
     }
 
-    function displayResults(query, results) {
+    function renderRow(item, query) {
+        var href = resultHref(item.url, query);
+        var $link = $('<a>', { href: href, 'class': 'cc-result__link', 'data-is-search': '1' });
+        if ($link[0].pathname === location.pathname) {
+            $link.attr('data-need-reload', '1');
+        }
+
+        var $head = $('<span class="cc-result__head"></span>');
+        if (item.reference) {
+            $head.append($('<span>', { 'class': 'cc-result__ref', text: item.reference }));
+        }
+        // Westminster rows carry no label because the badge already names the
+        // section; fall back to the document name so a row is never headless.
+        var heading = item.label || (item.reference ? '' : item.document);
+        if (heading) {
+            $head.append($('<span>', { 'class': 'cc-result__label', text: heading }));
+        }
+        if (item.proofMatch) {
+            $head.append($('<span>', { 'class': 'cc-result__proof', text: 'proof' }));
+        }
+
+        return $('<li>', { 'class': 'cc-result' }).append(
+            $link
+                .append($head)
+                .append($('<span>', { 'class': 'cc-result__snippet' }).html(item.snippet))
+        );
+    }
+
+    function renderChips(counts, total) {
+        var $chips = $('.cc-chips').empty();
+        if (counts.length < 2) return;          // one document: nothing to filter
+        var all = $('<button>', {
+            type: 'button',
+            'class': 'cc-chip',
+            'data-document': '',
+            'aria-pressed': activeDocument ? 'false' : 'true'
+        }).append($('<span>', { 'class': 'cc-chip__name', text: 'All documents' }))
+          .append($('<span>', { 'class': 'cc-chip__count', text: total }));
+        $chips.append(all);
+
+        counts.forEach(function(entry) {
+            $('<button>', {
+                type: 'button',
+                'class': 'cc-chip',
+                'data-document': entry.name,
+                'aria-pressed': activeDocument === entry.name ? 'true' : 'false'
+            }).append($('<span>', { 'class': 'cc-chip__name', text: entry.name }))
+              .append($('<span>', { 'class': 'cc-chip__count', text: entry.count }))
+              .appendTo($chips);
+        });
+    }
+
+    function displayResults(query, results, documentCounts) {
         var $container = $('#book-search-results');
-        var $results = $container.find('.search-results');
-        var $list = $results.find('.search-results-list');
+        var $results = $container.find('.cc-search');
+        var $list = $results.find('.cc-results');
         var noResults = results.length === 0;
 
         $('body').addClass('with-search').removeClass('search-loading');
@@ -191,22 +278,21 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $results.find('.search-query').text(query);
         $list.empty();
 
-        results.forEach(function(item) {
-            var href = resultHref(item.url, query);
-            var $link = $('<a>', {
-                href: href,
-                text: item.title,
-                'data-is-search': '1'
+        var total = documentCounts.reduce(function(sum, entry) {
+            return sum + entry.count;
+        }, 0);
+        renderChips(documentCounts, total);
+
+        groupByDocument(results).forEach(function(group) {
+            var $items = $('<ol class="cc-group__items"></ol>');
+            group.items.forEach(function(item) {
+                $items.append(renderRow(item, query));
             });
-            if ($link[0].pathname === location.pathname) {
-                $link.attr('data-need-reload', '1');
-            }
-            $('<li>', { 'class': 'search-results-item' })
-                .append($('<h3>').append($link))
-                .append($('<p>', { 'class': 'search-result-meta' }).text(
-                    labelCollection(item.collection) + ' · ' + item.document
-                ))
-                .append($('<p>').html(item.snippet))
+            $('<li>', { 'class': 'cc-group' })
+                .append($('<h2>', { 'class': 'cc-group__title' })
+                    .append($('<span>', { 'class': 'cc-group__name', text: group.name }))
+                    .append($('<span>', { 'class': 'cc-group__count', text: group.items.length })))
+                .append($items)
                 .appendTo($list);
         });
 
@@ -232,7 +318,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             return;
         }
         $('body').addClass('search-loading');
-        $('.search-results').attr('aria-busy', 'true');
+        $('.cc-search').attr('aria-busy', 'true');
         loadIndex().then(function() { runQuery(value); });
     }
 
@@ -263,6 +349,21 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             }, 200);
         });
         $('body').on('keydown.creedsSearch', INPUTS, function(event) {
+            if (event.key === 'Escape') {
+                this.value = '';
+                syncInputs('', this);
+                closeSearch();
+                return;
+            }
+            // Arrow down from the field walks into the results.
+            if (event.key === 'ArrowDown' && isSearchPage()) {
+                var first = resultLinks()[0];
+                if (first) {
+                    event.preventDefault();
+                    first.focus();
+                }
+                return;
+            }
             if (event.key !== 'Enter') return;
             var query = this.value.trim();
             if (!query) return;
@@ -271,14 +372,41 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
                 location.href = searchUrl(query);
             }
         });
-        $('body').on(
-            'change.creedsSearch',
-            '#search-collection-filter, #search-document-filter',
-            function() { runQuery(currentQuery); }
-        );
+        $('body').on('change.creedsSearch', '#search-collection-filter', function() {
+            // A collection change can orphan the selected document, so reset it.
+            activeDocument = '';
+            runQuery(currentQuery);
+        });
+        $('body').on('click.creedsSearch', '.cc-chip', function() {
+            var name = this.getAttribute('data-document') || '';
+            activeDocument = activeDocument === name ? '' : name;
+            runQuery(currentQuery);
+        });
+        // Arrow keys move between results; Enter and Tab keep their native
+        // behaviour, so the list stays reachable without a mouse either way.
+        $('body').on('keydown.creedsSearch', '.cc-result__link', function(event) {
+            if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+            var links = resultLinks();
+            var index = links.indexOf(this);
+            if (index === -1) return;
+            event.preventDefault();
+            var next = index + (event.key === 'ArrowDown' ? 1 : -1);
+            if (next < 0) {
+                var input = document.querySelector('#search-page-input');
+                if (input) input.focus();
+                return;
+            }
+            if (links[next]) links[next].focus();
+        });
         $('body').on('click.creedsSearch', 'a[data-need-reload]', function() {
             setTimeout(function() { location.reload(); }, 100);
         });
+    }
+
+    function resultLinks() {
+        return Array.prototype.slice.call(
+            document.querySelectorAll('.cc-result__link')
+        );
     }
 
     function highlightPage(query) {
