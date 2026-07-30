@@ -104,9 +104,17 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         updateControls();
     }
 
-    function retagReferences() {
+    // RefTagger is a third-party script fetched from api.reftagger.com. On a cold
+    // load it can still be in flight when the first page.change fires, so poll
+    // briefly rather than firing once and silently giving up.
+    function retagReferences(attempt) {
+        attempt = attempt || 0;
         if (window.refTagger && typeof window.refTagger.tag === 'function') {
             try { window.refTagger.tag(); } catch (error) { /* isolate vendor errors */ }
+            return;
+        }
+        if (attempt < 20) {
+            setTimeout(function() { retagReferences(attempt + 1); }, 150);
         }
     }
 
@@ -244,8 +252,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         installToolbar();
         installSectionSelector();
         applyVersionState();
-        retagReferences();
-        setTimeout(retagReferences, 600);
+        retagReferences();      // self-retries while the vendor script loads
         revealProofs(location.hash.slice(1));
     }
 

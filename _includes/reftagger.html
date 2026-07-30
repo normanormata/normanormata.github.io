@@ -1,27 +1,52 @@
+{%- comment -%}
+  Included from footer.html, NOT from body.html.
+
+  GitBook navigates between pages by swapping the contents of .body-inner over
+  XHR and re-running the inline scripts it finds there. This bootstrap used to
+  live in body.html, inside that region, so every soft navigation re-ran
+  `var refTagger = { settings: … }` and overwrote the fully initialised RefTagger
+  object — including its tag() method — with a bare config object. References
+  then stopped being tagged until a full page reload, and custom.js's
+  retagReferences() could not help because refTagger.tag no longer existed.
+
+  The footer sits outside .book, so it is not swapped. The guard below is a
+  second line of defence in case this is ever included twice.
+{%- endcomment -%}
 <script>
-	var refTagger = {
-		settings: {
-			bibleVersion: "ESV",
-			roundCorners: true,
-			socialSharing: ["twitter","google"],
-			tooltipStyle: "dark",
-			customStyle : {
-				heading: {
-					backgroundColor : "#555555",
-					color : "#aaaaaa"
-				},
-				body   : {
-					color : "#ffffff"
-				}
-			}
-		}
-	};
-	(function(d, t) {
-		var n=d.querySelector("[nonce]");
-		refTagger.settings.nonce = n && (n.nonce||n.getAttribute("nonce"));
-		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-		g.src = "https://api.reftagger.com/v2/RefTagger.js";
-		g.nonce = refTagger.settings.nonce;
-		s.parentNode.insertBefore(g, s);
-	}(document, "script"));
+(function (d, t) {
+    if (window.refTagger && typeof window.refTagger.tag === 'function') {
+        return;                 // already initialised — never clobber the API
+    }
+    if (d.querySelector('script[data-reftagger]')) {
+        return;                 // loader already injected, still in flight
+    }
+
+    window.refTagger = {
+        settings: {
+            bibleVersion: "ESV",
+            roundCorners: true,
+            socialSharing: [],
+            tooltipStyle: "dark",
+            customStyle: {
+                heading: {
+                    backgroundColor: "#555555",
+                    color: "#aaaaaa"
+                },
+                body: {
+                    color: "#ffffff"
+                }
+            }
+        }
+    };
+
+    var n = d.querySelector("[nonce]");
+    window.refTagger.settings.nonce = n && (n.nonce || n.getAttribute("nonce"));
+
+    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    g.src = "https://api.reftagger.com/v2/RefTagger.js";
+    g.async = true;
+    g.setAttribute('data-reftagger', '');
+    g.nonce = window.refTagger.settings.nonce;
+    s.parentNode.insertBefore(g, s);
+}(document, "script"));
 </script>

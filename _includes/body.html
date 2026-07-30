@@ -50,5 +50,9 @@
 <!-- work around Chrome not honouring the URL fragment on first paint -->
 {% include fixes-chrome-anchors.html %}
 
-<!-- introduce reftagger support -->
-{% include reftagger.html %}
+{%- comment -%}
+  RefTagger is bootstrapped from footer.html instead of here. Anything in this
+  include sits inside .body-inner, which GitBook re-renders and re-executes on
+  every AJAX navigation — which reset window.refTagger and broke tagging until
+  the reader refreshed.
+{%- endcomment -%}
