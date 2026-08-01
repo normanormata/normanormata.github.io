@@ -102,6 +102,8 @@ details.commentary .commentary-body p:last-child {
     --proofs-summary:   #1a4a72;
     --proofs-separator: #b8d0e8;
     --proofs-text:      #1a2a3a;
+    --permalink-color:  #9aa8b8;
+    --permalink-hover:  #1f6595;
 }
 
 .book.color-theme-1 {
@@ -110,6 +112,8 @@ details.commentary .commentary-body p:last-child {
     --proofs-summary:   #3a5a1a;
     --proofs-separator: #b8ccaa;
     --proofs-text:      #2a3a1a;
+    --permalink-color:  #a89a78;
+    --permalink-hover:  #5a7a3a;
 }
 
 .book.color-theme-2 {
@@ -118,6 +122,8 @@ details.commentary .commentary-body p:last-child {
     --proofs-summary:   #7ab8e0;
     --proofs-separator: #2e3e50;
     --proofs-text:      #bdcadb;
+    --permalink-color:  #6b7a8c;
+    --permalink-hover:  #7ab8e0;
 }
 
 /* Scripture proof callouts */
@@ -166,6 +172,64 @@ details.scripture-proofs .proofs-body p {
 
 details.scripture-proofs .proofs-body p:last-child {
     margin-bottom: 0;
+}
+
+/* ── Per-section permalinks ───────────────────────────────────────────── */
+
+/* One control per citable unit: trailing a question heading, or leading a WCF
+   numbered paragraph. Quiet until the section is hovered or the control is
+   focused, so it never competes with the lettered proof markers. */
+.section-permalink {
+    /* `inline`, not `inline-block`: an inline-block is an atomic box that the
+       word joiner in appendToHeading() cannot bind to, so the control could wrap
+       onto a line by itself. As a plain inline it stays glued to the last word.
+       The glyph occupies its space whether or not it is transparent, so
+       revealing it never reflows the confessional text. */
+    display: inline;
+    margin-left: 0.25em;
+    color: var(--permalink-color) !important;
+    font-size: 0.72em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none !important;
+    opacity: 0;
+    transition: opacity 120ms ease-in-out;
+    user-select: none;
+}
+
+/* WCF cites numbered paragraphs, where the control leads the section number. */
+span[id] + .section-permalink {
+    margin-left: 0;
+    margin-right: 0.3em;
+}
+
+h1:hover .section-permalink,
+h2:hover .section-permalink,
+h3:hover .section-permalink,
+h4:hover .section-permalink,
+p:hover > .section-permalink,
+li:hover > .section-permalink,
+.section-permalink:hover,
+/* Plain :focus, not :focus-visible. A control that is invisible until hover
+   must become visible on *any* focus, or a keyboard user tabs onto something
+   they cannot see. :focus-visible still governs the outline below. */
+.section-permalink:focus {
+    opacity: 1;
+}
+
+.section-permalink:hover {
+    color: var(--permalink-hover) !important;
+}
+
+/* Touch devices get no hover, so keep the control permanently visible there
+   rather than unreachable. */
+@media (hover: none) {
+    .section-permalink { opacity: 0.55; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .section-permalink { transition: none; }
 }
 
 /* Lettered proof markers in section/answer text.
@@ -291,6 +355,7 @@ details.scripture-proofs.proof-target {
     #book-search-results .cc-search,
     .navigation,
     #copy-toast,
+    .section-permalink,
     #mesv-version-indicator {
         display: none !important;
     }

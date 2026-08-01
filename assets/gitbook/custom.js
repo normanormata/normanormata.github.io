@@ -118,6 +118,125 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         }
     }
 
+    // ── Per-section permalinks ─────────────────────────────────────────────
+    // Readers cite "WCF 11.1" or "WSC 33" and need a link to exactly that unit.
+    // The ids already exist; only the affordance was missing.
+    //
+    // Deliberately NOT a route to the scripture proofs. Section numbers used to
+    // link down to their proof callout and were removed for duplicating the
+    // lettered proof markers; this control copies a citation instead.
+    //
+    // The reference labels mirror the derivation in assets/search_plus_index.json,
+    // which builds the same strings for search result badges. Keep the two in sync.
+
+    var DOC_PREFIX = {
+        wcf: 'WCF',
+        wsc: 'WSC',
+        wlc: 'WLC',
+        heidelberg: 'Heidelberg',
+        belgic: 'Belgic'
+    };
+
+    function documentPrefix() {
+        var match = location.pathname.match(/\/pages\/([a-z-]+)\//);
+        return (match && DOC_PREFIX[match[1]]) || '';
+    }
+
+    // "wcf-11-1" -> "11.1";  "wsc-q33" -> "33";  otherwise null.
+    function unitFromId(id) {
+        var wcf = /^wcf-(\d+)-(\d+)$/.exec(id);
+        if (wcf) return wcf[1] + '.' + wcf[2];
+        var question = /^w(?:sc|lc)-q(\d+)$/.exec(id);
+        if (question) return question[1];
+        return null;
+    }
+
+    // Heidelberg/Belgic headings open with "1. …"; WCF chapters with "Chapter 1:".
+    function unitFromHeading(text) {
+        var chapter = /^\s*Chapter\s+(\d+)\b/i.exec(text);
+        if (chapter) return chapter[1];
+        var numbered = /^\s*(\d+)\s*\./.exec(text);
+        return numbered ? numbered[1] : null;
+    }
+
+    function referenceFor(id, headingText) {
+        var prefix = documentPrefix();
+        if (!prefix) return '';
+        var unit = unitFromId(id) ||
+            (headingText ? unitFromHeading(headingText) : null);
+        return unit ? prefix + ' ' + unit : '';
+    }
+
+    function citationFor(link) {
+        var reference = link.getAttribute('data-reference') || '';
+        var url = location.origin + location.pathname +
+            '#' + link.getAttribute('href').slice(1);
+        return reference ? reference + ' — ' + url : url;
+    }
+
+    // A trailing inline control can wrap onto a line of its own when the heading
+    // fills its last line, which reads as a stray "#". A word joiner removes the
+    // break opportunity, so the control always travels with the final word.
+    function appendToHeading(heading, id) {
+        heading.appendChild(document.createTextNode('\u2060'));
+        permalinkControl(id, referenceFor(id, heading.textContent))
+            .appendTo(heading);
+    }
+
+    function permalinkControl(id, reference) {
+        var label = reference
+            ? 'Copy link to ' + reference
+            : 'Copy link to this section';
+        return $('<a>', {
+            'class': 'section-permalink',
+            href: '#' + id,
+            'data-reference': reference,
+            'aria-label': label,
+            title: label,
+            text: '#'
+        });
+    }
+
+    function installPermalinks() {
+        var $scope = $('.page-inner .markdown-section');
+        if (!$scope.length) return;
+        // onPageChange runs on every AJAX navigation; clear first so controls
+        // are not stacked one per visit.
+        $scope.find('.section-permalink').remove();
+
+        var seen = {};
+
+        // Anchor spans: WCF numbered paragraphs, and WSC/WLC questions whose
+        // span sits in an empty <p> just before the heading.
+        $scope.find('span[id]').each(function() {
+            var span = this;
+            var id = span.id;
+            if (!id || seen[id]) return;
+            var paragraph = span.parentElement;
+            var heading = null;
+            if (paragraph && !paragraph.textContent.trim()) {
+                var next = paragraph.nextElementSibling;
+                if (next && /^H[1-6]$/.test(next.tagName)) heading = next;
+            }
+            seen[id] = true;
+            if (heading) {
+                appendToHeading(heading, id);
+            } else {
+                // WCF: sits at the head of the numbered paragraph, beside the
+                // section number it cites.
+                permalinkControl(id, referenceFor(id, '')).insertAfter(span);
+            }
+        });
+
+        // Everything else cites its heading. h1 is the document title, which the
+        // page URL already addresses.
+        $scope.find('h2[id], h3[id], h4[id]').each(function() {
+            if (seen[this.id] || $(this).find('.section-permalink').length) return;
+            seen[this.id] = true;
+            appendToHeading(this, this.id);
+        });
+    }
+
     function revealProofs(id) {
         if (!id) return false;
         var element = document.getElementById(id);
@@ -235,14 +354,55 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         applyVersionState();
         showToast(highlightOn ? 'Changes highlighted' : 'Change highlights off');
     });
-    $('body').on('click', '.reader-action-copy', function() {
+    function copyText(text, confirmation) {
         if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(location.href)
-                .then(function() { showToast('Link copied'); })
-                .catch(function() { showToast('Could not copy link'); });
+            navigator.clipboard.writeText(text)
+                .then(function() { showToast(confirmation); })
+                .catch(function() { showToast('Could not copy'); });
         } else {
-            showToast('Copy this address: ' + location.href);
+            // Non-secure contexts have no async clipboard; show the text so it
+            // can still be copied by hand.
+            showToast(text);
         }
+    }
+
+    // The section whose permalink is nearest the top of the reading area, so the
+    // toolbar copies what the reader is actually looking at rather than the whole
+    // 24,000-word document.
+    function currentSectionLink() {
+        var best = null;
+        var bestDistance = Infinity;
+        $('.page-inner .section-permalink').each(function() {
+            var top = this.getBoundingClientRect().top;
+            var distance = top < 0 ? -top * 0.25 : top;   // prefer what is above
+            if (distance < bestDistance) {
+                bestDistance = distance;
+                best = this;
+            }
+        });
+        return best;
+    }
+
+    $('body').on('click', '.section-permalink', function(event) {
+        event.preventDefault();
+        var reference = this.getAttribute('data-reference');
+        // Keep the address bar in step, so copying from there works too.
+        if (history.replaceState) {
+            history.replaceState({}, '', this.getAttribute('href'));
+        }
+        copyText(citationFor(this),
+            reference ? 'Copied citation for ' + reference : 'Link copied');
+    });
+
+    $('body').on('click', '.reader-action-copy', function() {
+        var link = currentSectionLink();
+        if (!link) {
+            copyText(location.href, 'Link copied');
+            return;
+        }
+        var reference = link.getAttribute('data-reference');
+        copyText(citationFor(link),
+            reference ? 'Copied citation for ' + reference : 'Link copied');
     });
     $('body').on('change', '#mobile-section-select', function() {
         if (this.value) location.href = this.value;
@@ -251,6 +411,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     function onPageChange() {
         installToolbar();
         installSectionSelector();
+        installPermalinks();
         applyVersionState();
         retagReferences();      // self-retries while the vendor script loads
         revealProofs(location.hash.slice(1));
