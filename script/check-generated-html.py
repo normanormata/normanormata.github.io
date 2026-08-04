@@ -16,6 +16,8 @@ class PageAudit(HTMLParser):
         self.main = 0
         self.skip_links = 0
         self.edition_panels = 0
+        self.edition_summaries = 0
+        self._in_edition_panel = False
         self.buttons: list[dict[str, str]] = []
         self.button_text: list[list[str]] = []
         self._button_depth = 0
@@ -28,8 +30,14 @@ class PageAudit(HTMLParser):
             self.main += 1
         elif tag == "a" and "skip-link" in attributes.get("class", "").split():
             self.skip_links += 1
-        elif tag == "aside" and "edition-panel" in attributes.get("class", "").split():
+        elif tag == "details" and "edition-panel" in attributes.get("class", "").split():
+            # The panel is a disclosure rather than an <aside>: always open it
+            # filled half the opening screen of every document.
             self.edition_panels += 1
+            self._in_edition_panel = True
+        elif tag == "summary" and self._in_edition_panel:
+            self.edition_summaries += 1
+            self._in_edition_panel = False
         elif tag == "button":
             self.buttons.append(attributes)
             self.button_text.append([])
@@ -78,6 +86,13 @@ def main() -> int:
             problems.append(
                 f"{relative}: expected one edition panel, "
                 f"found {audit.edition_panels}"
+            )
+        # A <details> with no <summary> collapses to an unlabelled triangle, and
+        # the edition would be unreachable rather than merely folded away.
+        if audit.edition_panels != audit.edition_summaries:
+            problems.append(
+                f"{relative}: {audit.edition_panels} edition panel(s) but "
+                f"{audit.edition_summaries} summary element(s)"
             )
         for number, (attrs, text_parts) in enumerate(
             zip(audit.buttons, audit.button_text), start=1

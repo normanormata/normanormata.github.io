@@ -13,7 +13,7 @@
                 "articlesExpand": true,
             },
             "fontsettings": {
-                "family": "sans",
+                "family": "serif",
                 "size": 2,
                 "theme": "white"
             },

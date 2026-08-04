@@ -12,7 +12,6 @@ source_url: https://opc.org/confessions.html
 verified_date: 2026-07-29
 source_note: The constitutional text is authoritative; the 2025 MESV is available for study and carries no constitutional authority.
 ---
--------------
 <span id="wlc-q1"></span>
 ### Question 1: What is the chief and highest end of man?
 Answer: Man’s chief and highest end is to glorify God,<sup class="proof-marker"><a href="#wlc-q1-proofs" aria-label="Scripture proof a, question 1">a</a></sup> and fully to enjoy him forever.<sup class="proof-marker"><a href="#wlc-q1-proofs" aria-label="Scripture proof b, question 1">b</a></sup>

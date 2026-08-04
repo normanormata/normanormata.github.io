@@ -102,6 +102,7 @@ details.commentary .commentary-body p:last-child {
     --proofs-summary:   #1a4a72;
     --proofs-separator: #b8d0e8;
     --proofs-text:      #1a2a3a;
+    --proofs-link-rule: #a8c0d8;
     --permalink-color:  #9aa8b8;
     --permalink-hover:  #1f6595;
 }
@@ -112,6 +113,7 @@ details.commentary .commentary-body p:last-child {
     --proofs-summary:   #3a5a1a;
     --proofs-separator: #b8ccaa;
     --proofs-text:      #2a3a1a;
+    --proofs-link-rule: #a3b894;
     --permalink-color:  #a89a78;
     --permalink-hover:  #5a7a3a;
 }
@@ -122,6 +124,7 @@ details.commentary .commentary-body p:last-child {
     --proofs-summary:   #7ab8e0;
     --proofs-separator: #2e3e50;
     --proofs-text:      #bdcadb;
+    --proofs-link-rule: #4a5d73;
     --permalink-color:  #6b7a8c;
     --permalink-hover:  #7ab8e0;
 }
@@ -172,6 +175,23 @@ details.scripture-proofs .proofs-body p {
 
 details.scripture-proofs .proofs-body p:last-child {
     margin-bottom: 0;
+}
+
+/* RefTagger turns every citation into a link, so an expanded callout arrived as
+   forty-odd bright blue links packed into a block — visually louder than the
+   confessional text it exists to support. Keep them links, at text weight, with
+   a rule underneath so they still read as clickable. `!important` because
+   RefTagger applies its own colour to .rtBibleRef after the page loads. */
+details.scripture-proofs .proofs-body a {
+    color: inherit !important;
+    text-decoration: none;
+    border-bottom: 1px solid var(--proofs-link-rule);
+}
+
+details.scripture-proofs .proofs-body a:hover,
+details.scripture-proofs .proofs-body a:focus-visible {
+    color: var(--proofs-summary) !important;
+    border-bottom-color: currentColor;
 }
 
 /* ── Per-section permalinks ───────────────────────────────────────────── */
@@ -420,9 +440,72 @@ details.scripture-proofs.proof-target {
     color: #fff;
 }
 
+/* ── Reading typography ───────────────────────────────────────────────── */
+
+.book {
+    /* Charter and Iowan Old Style ship with macOS and iOS, Palatino Linotype
+       with Windows, Georgia everywhere else. All system faces, so the reading
+       column changes character without costing a web-font fetch. */
+    --reading-font: Charter, "Bitstream Charter", "Iowan Old Style",
+                    "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* The theme's font toggle (Reader tools → Aa) switches between these two. The
+   default is now `serif` — see the fontsettings block in
+   _includes/metadata.json.tpl — so a first-time reader gets the serif; anyone
+   who has already chosen Sans keeps it, since fontsettings.js stores the
+   choice in localStorage and that wins over the config default. */
+.book.font-family-0 {
+    font-family: var(--reading-font);
+}
+
+.book.font-family-1 {
+    font-family: var(--ui-font);
+}
+
+/* Chrome and reference tables stay in the UI face whichever reading face is
+   chosen: sidebars, toolbars, search results and the scripture index are
+   scanned, not read, and a serif slows scanning down. */
+.book-summary,
+.book-header,
+.site-toolbar,
+.mobile-tools,
+#book-search-input,
+#book-search-input-link,
+#book-search-results .cc-search,
+.edition-panel,
+.scripture-page,
+.search-page,
+.home-search {
+    font-family: var(--ui-font);
+}
+
 .markdown-section {
     font-size: 17px;
     line-height: 1.72;
+}
+
+/* The theme's scale is 2em / 1.75em / 1.5em, which put the document title and
+   the chapter titles 4px apart (34px against 29.75px) and made every heading
+   read as the same rank. Widen the gap at the top and close it lower down, so
+   a chapter heading sits over the text rather than competing with the title. */
+.markdown-section h1 {
+    font-size: 1.9em;
+    letter-spacing: -0.01em;
+}
+
+.markdown-section h2 {
+    font-size: 1.42em;
+}
+
+.markdown-section h3 {
+    font-size: 1.18em;
+}
+
+.markdown-section h4 {
+    font-size: 1.05em;
 }
 
 .book.font-size-2 .book-body .page-inner section.markdown-section {
@@ -496,14 +579,56 @@ input:focus-visible {
     --edition-bg: #f7f8fa;
     --edition-border: #d8dde5;
     --edition-muted: #536171;
-    margin: 0 0 28px;
-    padding: 14px 16px;
-    border: 1px solid var(--edition-border);
-    border-radius: 6px;
-    background: var(--edition-bg);
+    margin: 0 0 24px;
     color: var(--edition-muted);
     font-size: 0.82em;
     line-height: 1.5;
+}
+
+/* Collapsed, the panel is a single quiet line, so it reads as a caption under
+   the title rather than as a box between the title and the text. */
+.edition-panel > summary {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--edition-border);
+    cursor: pointer;
+    list-style: none;
+}
+
+.edition-panel > summary::-webkit-details-marker {
+    display: none;
+}
+
+.edition-panel__label {
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+
+.edition-panel__label::after {
+    content: ' ▸';
+    letter-spacing: 0;
+}
+
+.edition-panel[open] .edition-panel__label::after {
+    content: ' ▾';
+}
+
+.edition-panel__text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.edition-panel__body {
+    padding: 12px 14px;
+    border: 1px solid var(--edition-border);
+    border-top: 0;
+    border-radius: 0 0 6px 6px;
+    background: var(--edition-bg);
 }
 
 .book.color-theme-1 .edition-panel {
@@ -540,7 +665,7 @@ input:focus-visible {
     margin: 8px 0 0;
 }
 
-.edition-disclaimer {
+.edition-panel__notice {
     font-weight: 600;
 }
 

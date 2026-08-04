@@ -1,29 +1,37 @@
 {%- if page.source_url and page.source_organization -%}
-<aside class="edition-panel" aria-label="Edition information">
-    <p class="edition-panel__eyebrow">About this edition</p>
-    <dl>
-        <div>
-            <dt>Text</dt>
-            <dd>{{ page.edition_label | default: "Received English text" | escape }}</dd>
-        </div>
-        <div>
-            <dt>Source</dt>
-            <dd><a href="{{ page.source_url }}">{{ page.source_organization | escape }}</a></dd>
-        </div>
-        <div>
-            <dt>Verified</dt>
-            <dd><time datetime="{{ page.verified_date | date: '%Y-%m-%d' }}">{{ page.verified_date | date: "%B %-d, %Y" }}</time></dd>
-        </div>
-        {%- if page.commentary_url -%}
-        <div>
-            <dt>Commentary</dt>
-            <dd><a href="{{ page.commentary_url }}">{{ page.commentary_source | default: "Source commentary" | escape }}</a></dd>
-        </div>
+{%- comment -%}
+  Provenance matters on a site that reproduces constitutional texts, but as an
+  always-open panel it filled half the opening screen: the first chapter heading
+  of the Confession began 501px down a 1000px viewport, below a four-row table
+  and two disclaimer paragraphs. Collapsed to one line the edition is still
+  named before a word of the text is read, and the rest is one click away.
+{%- endcomment -%}
+<details class="edition-panel">
+    <summary>
+        <span class="edition-panel__label">Edition</span>
+        <span class="edition-panel__text">{{ page.edition_label | default: "Received English text" | escape }}</span>
+    </summary>
+    <div class="edition-panel__body">
+        <dl>
+            <div>
+                <dt>Source</dt>
+                <dd><a href="{{ page.source_url }}">{{ page.source_organization | escape }}</a></dd>
+            </div>
+            <div>
+                <dt>Verified</dt>
+                <dd><time datetime="{{ page.verified_date | date: '%Y-%m-%d' }}">{{ page.verified_date | date: "%B %-d, %Y" }}</time></dd>
+            </div>
+            {%- if page.commentary_url -%}
+            <div>
+                <dt>Commentary</dt>
+                <dd><a href="{{ page.commentary_url }}">{{ page.commentary_source | default: "Source commentary" | escape }}</a></dd>
+            </div>
+            {%- endif -%}
+        </dl>
+        {%- if page.source_note -%}
+        <p>{{ page.source_note | escape }}</p>
         {%- endif -%}
-    </dl>
-    {%- if page.source_note -%}
-    <p>{{ page.source_note | escape }}</p>
-    {%- endif -%}
-    <p class="edition-panel__notice">Creeds &amp; Confessions is an independent study resource and is not an official publication of the source organization.</p>
-</aside>
+        <p class="edition-panel__notice">Creeds &amp; Confessions is an independent study resource and is not an official publication of the source organization.</p>
+    </div>
+</details>
 {%- endif -%}
