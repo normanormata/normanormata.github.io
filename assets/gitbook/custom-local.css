@@ -564,6 +564,31 @@ body.is-search-page .search-page > h1 {
     color: inherit;
 }
 
+/* The spinner is theme.js's page-loading indicator: it wraps each AJAX
+   navigation in `loading.show()`, which puts `is-loading` on .book for the
+   duration. The theme hides it the rest of the time with
+   `.book-header h1 i { display: none }` — a selector that stopped matching when
+   this site's header title became a <p class="book-header-title"> (a second h1
+   per page would be wrong). Nothing else hid it, so it sat in the header
+   spinning on every page, forever. Restore the pairing against the new class.
+
+   The title link is deliberately left in place while loading, unlike the theme,
+   which swaps it out: here the title is always visible rather than revealed on
+   header hover, so replacing it would flash on every navigation. */
+.book-header-title > .fa-spin {
+    display: none;
+}
+
+.book.is-loading .book-header-title > .fa-spin {
+    display: inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .book-header-title > .fa-spin {
+        animation: none;
+    }
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
