@@ -47,6 +47,12 @@ is for study only and carries no constitutional authority.
 - [The Book of Discipline]({{ site.baseurl }}/pages/bd/)
 - [The Directory for the Public Worship of God]({{ site.baseurl }}/pages/dpw/)
 
+## Scripture Index
+
+The confessions cite scripture; the [scripture index]({{ site.baseurl }}/scripture/) reads
+the other way. Look up a book of the Bible and see every section of the Westminster
+Standards and the Heidelberg Catechism that cites it.
+
 ## Downloads
 
 Two-column comparisons of the constitutional text against the 2025 MESV:

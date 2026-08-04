@@ -250,7 +250,7 @@ Answer: Because God has so revealed Himself in His Word<sup class="proof-marker"
 <details class="scripture-proofs" id="hc-q25-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>1.</strong> Deut. 6:4; Is. 44:6; 45:5; I Cor. 8:4, 6, <strong>2.</strong> Gen. 1:2, 3; Is. 61:1; 63:8-10; Matt. 3:16, 17; 28:18, 19; Luke 4:18; John 14:26; 15:26; II Cor. 13:14; Gal. 4:6; Tit. 3:5, 6. God the Father and Our Creation</p>
+<p><strong>1.</strong> Deut. 6:4; Is. 44:6; 45:5; I Cor. 8:4, 6, <strong>2.</strong> Gen. 1:2, 3; Is. 61:1; 63:8-10; Matt. 3:16, 17; 28:18, 19; Luke 4:18; John 14:26; 15:26; II Cor. 13:14; Gal. 4:6; Tit. 3:5, 6</p>
 </div>
 </details>
 ## 26. Question: What do you believe when you say: I believe in God the Father almighty, Creator of heaven and earth?
@@ -680,7 +680,7 @@ Answer: Two: holy baptism and the holy supper.<sup class="proof-marker"><a href=
 <details class="scripture-proofs" id="hc-q68-proofs">
 <summary>Scripture Proofs</summary>
 <div class="proofs-body">
-<p><strong>1.</strong> Matt. 28:19, 20; I Cor. 11:23-26. Holy Baptism</p>
+<p><strong>1.</strong> Matt. 28:19, 20; I Cor. 11:23-26</p>
 </div>
 </details>
 ## 69. Question: How does holy baptism signify and seal to you that the one sacrifice of Christ on the cross benefits you?

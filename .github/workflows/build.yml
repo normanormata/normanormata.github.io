@@ -33,6 +33,11 @@ jobs:
           python3 script/build-westminster-fixtures.py --check
           python3 script/check-variant-markup.py
 
+      # _scripture/ is generated from the proof callouts. Editing a proof without
+      # regenerating would leave the index quietly citing the old passage.
+      - name: Check the scripture index matches the proofs
+        run: python3 script/build-scripture-index.py --check
+
       - name: Build
         run: bundle exec jekyll build --strict_front_matter --trace
         env:
@@ -69,7 +74,8 @@ jobs:
                       pages/apostles-creed pages/nicene-creed pages/athanasian-creed \
                       pages/wcf pages/wsc pages/wlc \
                       pages/belgic pages/heidelberg pages/canons-of-dort \
-                      pages/fg pages/bd pages/dpw; do
+                      pages/fg pages/bd pages/dpw \
+                      scripture scripture/romans scripture/psalms scripture/jude; do
             target="_site/$path"
             [ -d "$target" ] && target="$target/index.html"
             [ -s "$target" ] || { echo "missing or empty: $target"; exit 1; }

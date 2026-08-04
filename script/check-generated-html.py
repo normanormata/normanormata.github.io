@@ -50,6 +50,10 @@ def main() -> int:
         site / "index.html",
         site / "search" / "index.html",
         *sorted((site / "pages").glob("*/index.html")),
+        # The generated scripture index uses its own layout, so it needs the same
+        # heading/landmark audit rather than inheriting the post layout's.
+        site / "scripture" / "index.html",
+        *sorted((site / "scripture").glob("*/index.html")),
     ]
     problems: list[str] = []
     audited = 0

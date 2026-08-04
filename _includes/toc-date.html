@@ -99,6 +99,23 @@
                 </li>
             {%- endfor -%}
 
+            {%- comment -%}
+              The scripture index is a reference tool over all of the above, not
+              one of the documents, so it sits in its own group below them rather
+              than inside a confessional category. `active` covers the whole
+              collection: every book page belongs to the same entry.
+            {%- endcomment -%}
+            <li class="header">Reference</li>
+            {% if page.collection == "scripture" %}
+            <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}/scripture/">
+            {% else %}
+            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}/scripture/">
+            {% endif %}
+                <a href="{{site.baseurl}}/scripture/" onclick="pageScrollToTop(this)">
+                    Scripture Index
+                </a>
+            </li>
+
             {%- if site.posts.size > 0 -%}
                 <li class="divider"></li>
                 {%- assign reversed_posts = site.posts | reverse -%}
