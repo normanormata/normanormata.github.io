@@ -196,17 +196,16 @@ details.scripture-proofs .proofs-body a:focus-visible {
 
 /* ── Per-section permalinks ───────────────────────────────────────────── */
 
-/* One control per citable unit: trailing a question heading, or leading a WCF
-   numbered paragraph. Quiet until the section is hovered or the control is
-   focused, so it never competes with the lettered proof markers. */
+/* One control per citable unit, leading its heading or its numbered paragraph.
+   Quiet until the section is hovered or the control is focused, so it never
+   competes with the lettered proof markers. */
 .section-permalink {
-    /* `inline`, not `inline-block`: an inline-block is an atomic box that the
-       word joiner in appendToHeading() cannot bind to, so the control could wrap
-       onto a line by itself. As a plain inline it stays glued to the last word.
-       The glyph occupies its space whether or not it is transparent, so
-       revealing it never reflows the confessional text. */
+    /* `inline`, not `inline-block`: an inline-block is an atomic box, and as a
+       plain inline the control sits on the text baseline with the words it
+       precedes. The glyph occupies its space whether or not it is transparent,
+       so revealing it never reflows the confessional text. */
     display: inline;
-    margin-left: 0.25em;
+    margin-right: 0.3em;
     color: var(--permalink-color) !important;
     font-size: 0.72em;
     font-weight: 700;
@@ -216,12 +215,6 @@ details.scripture-proofs .proofs-body a:focus-visible {
     opacity: 0;
     transition: opacity 120ms ease-in-out;
     user-select: none;
-}
-
-/* WCF cites numbered paragraphs, where the control leads the section number. */
-span[id] + .section-permalink {
-    margin-left: 0;
-    margin-right: 0.3em;
 }
 
 h1:hover .section-permalink,

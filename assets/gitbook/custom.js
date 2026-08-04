@@ -175,13 +175,17 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         return reference ? reference + ' — ' + url : url;
     }
 
-    // A trailing inline control can wrap onto a line of its own when the heading
-    // fills its last line, which reads as a stray "#". A word joiner removes the
-    // break opportunity, so the control always travels with the final word.
-    function appendToHeading(heading, id) {
-        heading.appendChild(document.createTextNode('\u2060'));
+    // The control leads its heading, matching the WCF numbered paragraphs where
+    // it already sits in front of the section number. Leading also removes the
+    // reason the trailing version needed a word joiner: a control at the end of
+    // a heading could wrap onto a line of its own when the heading filled its
+    // last line, and read as a stray "#".
+    //
+    // referenceFor() is passed heading.textContent before the control is
+    // inserted, so the "#" is not part of the text the reference is derived from.
+    function prependToHeading(heading, id) {
         permalinkControl(id, referenceFor(id, heading.textContent))
-            .appendTo(heading);
+            .prependTo(heading);
     }
 
     function permalinkControl(id, reference) {
@@ -221,7 +225,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             }
             seen[id] = true;
             if (heading) {
-                appendToHeading(heading, id);
+                prependToHeading(heading, id);
             } else {
                 // WCF: sits at the head of the numbered paragraph, beside the
                 // section number it cites.
@@ -234,7 +238,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $scope.find('h2[id], h3[id], h4[id]').each(function() {
             if (seen[this.id] || $(this).find('.section-permalink').length) return;
             seen[this.id] = true;
-            appendToHeading(this, this.id);
+            prependToHeading(this, this.id);
         });
     }
 
