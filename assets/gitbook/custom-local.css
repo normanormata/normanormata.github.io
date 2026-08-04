@@ -1121,6 +1121,107 @@ mark.search-highlight-keyword {
     font-size: 12px;
 }
 
+/* Display settings (text size, reading face, colour theme). The plugin's own
+   dropdown never reaches the DOM on this site — see the comment above
+   displayMenu() in custom.js — so the controls live here instead. */
+.reader-display {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.reader-display > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 0 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.reader-display > summary::-webkit-details-marker {
+    display: none;
+}
+
+.reader-display > summary:hover,
+.reader-display[open] > summary {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.reader-display__panel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 20;
+    width: max-content;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid var(--cc-border);
+    border-radius: 6px;
+    background: var(--cc-surface);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+    color: var(--cc-text);
+    text-align: left;
+}
+
+.reader-display__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 4px 0;
+}
+
+.reader-display__name {
+    color: var(--cc-muted);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.reader-display__set {
+    display: inline-flex;
+    gap: 4px;
+}
+
+.reader-display__option {
+    min-width: 34px;
+    min-height: 30px;
+    padding: 0 9px;
+    border: 1px solid var(--cc-chip-border);
+    border-radius: 4px;
+    background: var(--cc-chip-bg);
+    color: var(--cc-text);
+    cursor: pointer;
+    font: inherit;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.reader-display__option:hover {
+    border-color: var(--cc-chip-hover-border);
+    background: var(--cc-chip-hover-bg);
+}
+
+.reader-display__option[aria-pressed="true"] {
+    border-color: var(--cc-accent);
+    background: var(--cc-accent);
+    color: var(--cc-on-accent);
+}
+
+/* The two size buttons are the same glyph at different sizes, the convention
+   for "smaller / larger" in a reader. */
+.reader-display__size {
+    font-size: 12px;
+}
+
+.reader-display__size--large {
+    font-size: 17px;
+}
+
 .mobile-tools {
     display: none;
 }
@@ -1381,6 +1482,27 @@ mark.search-highlight-keyword {
     .mobile-tools .reader-action {
         justify-content: flex-start;
         width: 100%;
+    }
+
+    /* Inside the mobile popover the actions are already a column, so the
+       display settings expand in place rather than opening a second floating
+       panel that would hang off the edge of the screen. */
+    .mobile-tools .reader-display {
+        display: block;
+        width: 100%;
+    }
+
+    .mobile-tools .reader-display > summary {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .mobile-tools .reader-display__panel {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        margin-top: 4px;
+        box-shadow: none;
     }
 
     .mobile-section-nav {

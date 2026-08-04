@@ -65,6 +65,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             .attr('aria-pressed', highlightOn ? 'true' : 'false');
         // On the search page the toolbar's own Search button goes nowhere useful.
         $('.reader-action-search').prop('hidden', isSearchPage());
+        updateDisplayMenu();
     }
 
     function isSearchPage() {
@@ -281,11 +282,124 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             }));
     }
 
+    // Display settings — text size, reading face, colour theme.
+    //
+    // These come from gitbook-plugin-fontsettings, which normally supplies its
+    // own toolbar dropdown. It cannot here: theme.js inserts any button created
+    // without an explicit `index` with `insertBefore($('.book-header').find('h1'))`,
+    // and this site's header title is a <p class="book-header-title">, not an
+    // <h1> (a second h1 per page would be wrong, and script/check-generated-html.py
+    // enforces exactly one). With no h1 to insert before, the Font Settings
+    // dropdown was created and then silently dropped — the sidebar toggle
+    // survived only because it passes index: 0, which takes a different path.
+    //
+    // Rather than reintroduce the h1, drive the plugin's public API from this
+    // toolbar. gitbook.fontsettings exposes everything needed; note that
+    // enlargeFontSize/reduceFontSize call preventDefault() unconditionally, so
+    // they must be handed a real event.
+    var FAMILY_OPTIONS = [
+        { config: 'serif', label: 'Serif' },
+        { config: 'sans', label: 'Sans' }
+    ];
+    var THEME_OPTIONS = [
+        { config: 'white', label: 'Light' },
+        { config: 'sepia', label: 'Sepia' },
+        { config: 'night', label: 'Night' }
+    ];
+
+    function displayOption(group, config, label) {
+        return $('<button>', {
+            type: 'button',
+            'class': 'reader-display__option',
+            'data-group': group,
+            'data-config': config,
+            'aria-pressed': 'false',
+            text: label
+        });
+    }
+
+    function displayGroup(name, group, options) {
+        var $row = $('<div class="reader-display__row"></div>')
+            .append($('<span class="reader-display__name"></span>').text(name));
+        var $set = $('<div class="reader-display__set" role="group"></div>')
+            .attr('aria-label', name);
+        options.forEach(function(option) {
+            $set.append(displayOption(group, option.config, option.label));
+        });
+        return $row.append($set);
+    }
+
+    function displayMenu() {
+        var $panel = $('<div class="reader-display__panel"></div>')
+            .append(
+                $('<div class="reader-display__row"></div>')
+                    .append($('<span class="reader-display__name">Text size</span>'))
+                    .append($('<div class="reader-display__set" role="group" aria-label="Text size"></div>')
+                        .append($('<button>', {
+                            type: 'button',
+                            'class': 'reader-display__option reader-display__size',
+                            'data-step': 'smaller',
+                            title: 'Smaller text',
+                            html: '<span aria-hidden="true">A</span>'
+                        }).attr('aria-label', 'Smaller text'))
+                        .append($('<button>', {
+                            type: 'button',
+                            'class': 'reader-display__option reader-display__size reader-display__size--large',
+                            'data-step': 'larger',
+                            title: 'Larger text',
+                            html: '<span aria-hidden="true">A</span>'
+                        }).attr('aria-label', 'Larger text')))
+            )
+            .append(displayGroup('Face', 'family', FAMILY_OPTIONS))
+            .append(displayGroup('Theme', 'theme', THEME_OPTIONS));
+
+        return $('<details class="reader-display"></details>')
+            .append($('<summary>')
+                .attr('title', 'Display settings')
+                .append($('<i>', { 'class': 'fa fa-font', 'aria-hidden': 'true' }))
+                .append($('<span class="reader-action-label">Display</span>')))
+            .append($panel);
+    }
+
+    // The plugin keeps its state only in the classes it puts on .book, so read
+    // the active option back from there rather than duplicating the state.
+    function displayState() {
+        var classes = $('.book').attr('class') || '';
+        var family = /\bfont-family-(\d)\b/.exec(classes);
+        var theme = /\bcolor-theme-(\d)\b/.exec(classes);
+        return {
+            family: family ? Number(family[1]) : 0,
+            // No color-theme class at all is theme 0 (white); the plugin only
+            // adds the class for the non-default themes.
+            theme: theme ? Number(theme[1]) : 0
+        };
+    }
+
+    function updateDisplayMenu() {
+        var state = displayState();
+        $('.reader-display__option[data-group="family"]').each(function() {
+            var index = indexOfConfig(FAMILY_OPTIONS, this.getAttribute('data-config'));
+            this.setAttribute('aria-pressed', index === state.family ? 'true' : 'false');
+        });
+        $('.reader-display__option[data-group="theme"]').each(function() {
+            var index = indexOfConfig(THEME_OPTIONS, this.getAttribute('data-config'));
+            this.setAttribute('aria-pressed', index === state.theme ? 'true' : 'false');
+        });
+    }
+
+    function indexOfConfig(options, config) {
+        for (var i = 0; i < options.length; i++) {
+            if (options[i].config === config) return i;
+        }
+        return -1;
+    }
+
     function toolButtons() {
         return $('<div class="reader-actions"></div>')
             .append(button('search', 'fa-search', 'Search'))
             .append(button('version', 'fa-language', 'Text: Constitutional', true))
             .append(button('highlight', 'fa-paint-brush', 'Highlight changes', true))
+            .append(displayMenu())
             .append(button('copy', 'fa-clipboard', 'Copy link'));
     }
 
@@ -334,6 +448,36 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             .append($select)
             .insertAfter($('.edition-panel').first());
     }
+
+    $('body').on('click', '.reader-display__size', function(event) {
+        if (!window.gitbook || !gitbook.fontsettings) return;
+        if (this.getAttribute('data-step') === 'larger') {
+            gitbook.fontsettings.enlargeFontSize(event);
+        } else {
+            gitbook.fontsettings.reduceFontSize(event);
+        }
+    });
+
+    $('body').on('click', '.reader-display__option[data-group]', function(event) {
+        if (!window.gitbook || !gitbook.fontsettings) return;
+        var config = this.getAttribute('data-config');
+        if (this.getAttribute('data-group') === 'family') {
+            gitbook.fontsettings.setFamily(config, event);
+        } else {
+            gitbook.fontsettings.setTheme(config, event);
+        }
+        updateDisplayMenu();
+    });
+
+    // Close the menu on an outside click or Escape, the way a dropdown should.
+    $(document).on('click', function(event) {
+        if ($(event.target).closest('.reader-display').length) return;
+        $('.reader-display').removeAttr('open');
+    });
+
+    $(document).on('keydown', function(event) {
+        if (event.key === 'Escape') $('.reader-display').removeAttr('open');
+    });
 
     $('body').on('click', '.reader-action-search', function() {
         location.href = gitbook.state.basePath + '/search/';
