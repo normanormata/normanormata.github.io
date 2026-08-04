@@ -52,6 +52,16 @@ class PageAudit(HTMLParser):
             self.button_text[-1].append(data.strip())
 
 
+BLOCK_COMMENT = re.compile(r"/\*.*?\*/", re.S)
+# `(?<!:)` keeps the `//` of a URL out of it, so "https://…" survives.
+LINE_COMMENT = re.compile(r"(?<!:)//[^\n]*")
+
+
+def strip_js_comments(source: str) -> str:
+    """Source with comments removed, for checks that should only see code."""
+    return LINE_COMMENT.sub("", BLOCK_COMMENT.sub("", source))
+
+
 def main() -> int:
     site = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "_site")
     expected = [
@@ -114,13 +124,16 @@ def main() -> int:
     javascript = (site / "assets" / "gitbook" / "custom.js")
     if javascript.exists():
         js = javascript.read_text(encoding="utf-8")
-        if "gitbook.toolbar.createButton" in js:
+        # Match code, not prose: the comments explain at length why this API is
+        # avoided, and naming it there is not the same as calling it.
+        if "gitbook.toolbar.createButton" in strip_js_comments(js):
             problems.append("custom.js still creates empty href toolbar links")
         for label in (
             "Search",
             "Text: Constitutional",
             "Highlight changes",
             "Copy link",
+            "View source on GitHub",
         ):
             if label not in js:
                 problems.append(f"custom.js is missing labeled control {label!r}")

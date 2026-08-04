@@ -286,6 +286,30 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             }));
     }
 
+    // Link to the public source. This used to come from gitbook-plugin-sharing,
+    // whose button — like every plugin toolbar button — is created through
+    // gitbook.toolbar.createButton and therefore never reaches the DOM on this
+    // site (see the comment above displayMenu()). Building it here sidesteps
+    // that, and the URL comes from site.repository_url via a meta tag so it is
+    // configured in _config.yml rather than hard-coded in an asset.
+    function repositoryLink() {
+        var meta = document.querySelector('meta[name="repository-url"]');
+        var url = meta && meta.getAttribute('content');
+        if (!url) return null;
+        var label = 'View source on GitHub';
+        return $('<a>', {
+            'class': 'reader-action reader-action-repo',
+            href: url,
+            target: '_blank',
+            // noopener because the new tab must not get a handle on this one.
+            rel: 'noopener',
+            title: label,
+            'aria-label': label
+        })
+            .append($('<i>', { 'class': 'fa fa-github', 'aria-hidden': 'true' }))
+            .append($('<span>', { 'class': 'reader-action-label', text: 'GitHub' }));
+    }
+
     // Display settings — text size, reading face, colour theme.
     //
     // These come from gitbook-plugin-fontsettings, which normally supplies its
@@ -404,7 +428,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             .append(button('version', 'fa-language', 'Text: Constitutional', true))
             .append(button('highlight', 'fa-paint-brush', 'Highlight changes', true))
             .append(displayMenu())
-            .append(button('copy', 'fa-clipboard', 'Copy link'));
+            .append(button('copy', 'fa-clipboard', 'Copy link'))
+            .append(repositoryLink() || '');
     }
 
     function installToolbar() {

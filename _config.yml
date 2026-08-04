@@ -10,7 +10,7 @@ description: >
 
 version:          1.0
 gitbook_version:  3.2.3
-assets_version:   "20260804-5"
+assets_version:   "20260804-6"
 
 lang:             en
 
@@ -19,6 +19,11 @@ lang:             en
 url:              'https://creedsandconfessions.com'
 baseurl:          ''
 rss:              RSS
+
+# Public source repository. Emitted as a meta tag by _includes/head.html and read
+# by custom.js, which puts a GitHub link in the reader toolbar. Leave blank to
+# drop the link entirely.
+repository_url:   'https://github.com/normanormata/normanormata.github.io'
 
 # bootstrap: use the remote theme for the site itself.
 # Pinned by SHA: upstream publishes no tags, and an unpinned remote_theme lets an

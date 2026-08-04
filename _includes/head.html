@@ -23,6 +23,15 @@
     <meta name="author" content="{{ site.author | escape }}">
 {%- endif -%}
 
+{%- comment -%}
+  custom.js builds the reader toolbar client-side and is served as a static
+  asset, so it cannot read site config directly. Pass the repository through a
+  meta tag rather than hard-coding the URL in two places.
+{%- endcomment -%}
+{%- if site.repository_url -%}
+    <meta name="repository-url" content="{{ site.repository_url | escape }}">
+{%- endif -%}
+
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/style.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">

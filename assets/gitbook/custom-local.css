@@ -1135,6 +1135,13 @@ mark.search-highlight-keyword {
     opacity: 0.45;
 }
 
+/* The repository link is an <a> among <button>s, so it needs the link defaults
+   neutralised to sit level with the rest of the row. */
+.reader-action-repo {
+    color: inherit;
+    text-decoration: none;
+}
+
 .reader-action-label {
     font-size: 12px;
 }
