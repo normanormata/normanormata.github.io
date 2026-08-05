@@ -53,7 +53,7 @@ The confessions cite scripture; the [scripture index]({{ site.baseurl }}/scriptu
 the other way. Look up a book of the Bible and see every section of the Westminster
 Standards and the Heidelberg Catechism that cites it.
 
-## Downloads
+## Downloads and tools
 
 Two-column comparisons of the constitutional text against the 2025 MESV:
 
@@ -66,3 +66,9 @@ OPC print layouts:
 - [Confession of Faith]({{ site.baseurl }}/assets/CFLayout.pdf) (PDF)
 - [Shorter Catechism]({{ site.baseurl }}/assets/SCLayout.pdf) (PDF)
 - [Larger Catechism]({{ site.baseurl }}/assets/LCLayout.pdf) (PDF)
+
+For the terminal, the [Westminster Standards CLI](https://github.com/normanormata/westminster_cli)
+reads, searches, and quizzes you on the same OPC constitutional text and 2025 MESV that this
+site carries. Install it with
+[`uv tool install westminster-standards-cli`](https://pypi.org/project/westminster-standards-cli/),
+then run `ws wcf 1` or `ws wsc 1 --question`.
