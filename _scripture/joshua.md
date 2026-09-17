@@ -29,7 +29,7 @@ exclude_from_search: true
 ## Joshua 9
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">9:15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#101-question-but-may-we-swear-an-oath-by-the-name-of-god-in-a-godly-manner">Heidelberg 101</a></span></li>
+<li><span class="scripture-index__passage">9:15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q101">Heidelberg 101</a></span></li>
 <li><span class="scripture-index__passage">9:18-19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-22-4">WCF 22.4</a></span></li>
 </ul>
 

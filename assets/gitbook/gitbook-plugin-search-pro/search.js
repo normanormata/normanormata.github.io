@@ -11,7 +11,18 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     // Don't search until there are at least this many characters. A single
     // letter matches almost every entry, which is slow and looks like noise.
     var MIN_QUERY = 2;
-    var REFERENCE_QUERY = /^(?:wcf\s+\d+\.\d+|wsc\s+\d+|wlc\s+\d+|heidelberg\s+\d+)$/i;
+    // A query that is exactly a citation matches only the unit it names: the
+    // forms are the `reference` strings search_plus_index.json builds.
+    var REFERENCE_QUERY = new RegExp('^(?:' + [
+        'wcf\\s+\\d+\\.\\d+',
+        'wsc\\s+\\d+',
+        'wlc\\s+\\d+',
+        'heidelberg\\s+\\d+',
+        'belgic\\s+\\d+',
+        'dort\\s+(?:conclusion|(?:3/4|\\d)(?:\\.\\d+|\\s+re(?:\\s+\\d+)?)?)',
+        '(?:fg|bd)\\s+\\d+(?:\\.[a-z])?(?:\\.\\d+)?',
+        'dpw\\s+(?:preface(?:\\s+\\d+)?|\\d+(?:\\.[a-z])?(?:\\.\\d+)?)'
+    ].join('|') + ')$', 'i');
     var INPUTS = [
         '#book-search-input input',
         '#book-search-input-inside input',

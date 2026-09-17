@@ -22,8 +22,8 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">1:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q130">WLC 130</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a></span></li>
-<li><span class="scripture-index__passage">1:29</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#101-question-but-may-we-swear-an-oath-by-the-name-of-god-in-a-godly-manner">Heidelberg 101</a></span></li>
-<li><span class="scripture-index__passage">1:30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#101-question-but-may-we-swear-an-oath-by-the-name-of-god-in-a-godly-manner">Heidelberg 101</a></span></li>
+<li><span class="scripture-index__passage">1:29</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q101">Heidelberg 101</a></span></li>
+<li><span class="scripture-index__passage">1:30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q101">Heidelberg 101</a></span></li>
 </ul>
 
 ## 1 Kings 2

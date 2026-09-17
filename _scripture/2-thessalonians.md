@@ -16,7 +16,7 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">1:5-7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-33-3">WCF 33.3</a></span></li>
 <li><span class="scripture-index__passage">1:6-8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q56">WLC 56</a></span></li>
-<li><span class="scripture-index__passage">1:6-10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#52-question-what-comfort-is-it-to-you-that-christ-will-come-to-judge-the-living-and-the-dead">Heidelberg 52</a></span></li>
+<li><span class="scripture-index__passage">1:6-10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q52">Heidelberg 52</a></span></li>
 <li><span class="scripture-index__passage">1:7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q16">WLC 16</a></span></li>
 <li><span class="scripture-index__passage">1:7-10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-33-2">WCF 33.2</a></span></li>
 <li><span class="scripture-index__passage">1:8-9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q45">WLC 45</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q60">WLC 60</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q89">WLC 89</a></span></li>
@@ -42,15 +42,15 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">3:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q190">WLC 190</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q191">WLC 191</a></span></li>
 <li><span class="scripture-index__passage">3:1-5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q102">WSC 102</a></span></li>
-<li><span class="scripture-index__passage">3:3</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-17-2">WCF 17.2</a><a href="{{ site.baseurl }}/pages/heidelberg/#1-question-what-is-your-only-comfort-in-life-and-death">Heidelberg 1</a></span></li>
+<li><span class="scripture-index__passage">3:3</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-17-2">WCF 17.2</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q1">Heidelberg 1</a></span></li>
 <li><span class="scripture-index__passage">3:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-20-4">WCF 20.4</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-29-8">WCF 29.8</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-30-4">WCF 30.4</a></span></li>
 <li><span class="scripture-index__passage">3:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q75">WSC 75</a></span></li>
 <li><span class="scripture-index__passage">3:10-11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
 <li><span class="scripture-index__passage">3:11-12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q193">WLC 193</a></span></li>
 <li><span class="scripture-index__passage">3:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a></span></li>
-<li><span class="scripture-index__passage">3:14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-20-4">WCF 20.4</a><a href="{{ site.baseurl }}/pages/heidelberg/#85-question-how-is-the-kingdom-of-heaven-closed-and-opened-by-church-discipline">Heidelberg 85</a></span></li>
+<li><span class="scripture-index__passage">3:14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-20-4">WCF 20.4</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q85">Heidelberg 85</a></span></li>
 <li><span class="scripture-index__passage">3:14-15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-29-8">WCF 29.8</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-30-4">WCF 30.4</a></span></li>
-<li><span class="scripture-index__passage">3:15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#85-question-how-is-the-kingdom-of-heaven-closed-and-opened-by-church-discipline">Heidelberg 85</a></span></li>
+<li><span class="scripture-index__passage">3:15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q85">Heidelberg 85</a></span></li>
 </ul>
 
 <nav class="scripture-nav" aria-label="Scripture index navigation">

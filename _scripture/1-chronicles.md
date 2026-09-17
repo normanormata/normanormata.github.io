@@ -30,7 +30,7 @@ exclude_from_search: true
 ## 1 Chronicles 16
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">16:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#95-question-what-is-idolatry">Heidelberg 95</a></span></li>
+<li><span class="scripture-index__passage">16:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q95">Heidelberg 95</a></span></li>
 </ul>
 
 ## 1 Chronicles 21

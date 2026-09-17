@@ -78,7 +78,7 @@ exclude_from_search: true
 ## Numbers 33
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">33:52</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#97-question-may-we-then-not-make-any-image-at-all">Heidelberg 97</a></span></li>
+<li><span class="scripture-index__passage">33:52</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q97">Heidelberg 97</a></span></li>
 </ul>
 
 ## Numbers 35

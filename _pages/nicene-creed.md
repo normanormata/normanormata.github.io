@@ -14,6 +14,7 @@ verified_date: 2026-07-29
 source_note: The two historical forms are labeled separately; the 381 form is presented first.
 ---
 
+<span id="nicene-381"></span>
 ## The Niceno-Constantinopolitan Creed (381 AD)
 We believe in one God, the Father Almighty, Maker of heaven and earth, and of all things visible and invisible.
 
@@ -21,6 +22,7 @@ And in one Lord Jesus Christ, the only-begotten Son of God, begotten of the Fath
 
 And in the Holy Ghost, the Lord and Giver of life, who proceedeth from the Father, who with the Father and the Son together is worshiped and glorified, who spake by the prophets. In one holy catholic and apostolic Church; we acknowledge one baptism for the remission of sins; we look for the resurrection of the dead, and the life of the world to come. Amen.
 
+<span id="nicene-325"></span>
 ## The Nicene Creed (325 AD)
 We believe in one God, the Father Almighty, Maker of all things visible and invisible.
 

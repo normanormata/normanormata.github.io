@@ -38,7 +38,7 @@ exclude_from_search: true
 ## 2 Samuel 7
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">7:12-16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#35-question-what-do-you-confess-when-you-say-he-was-conceived-by-the-holy-spirit-born-of-the-virgin-mary">Heidelberg 35</a></span></li>
+<li><span class="scripture-index__passage">7:12-16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q35">Heidelberg 35</a></span></li>
 <li><span class="scripture-index__passage">7:29</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-21-4">WCF 21.4</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q183">WLC 183</a></span></li>
 </ul>
 

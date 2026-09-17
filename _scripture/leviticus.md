@@ -25,13 +25,13 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q34">WLC 34</a></span></li>
-<li><span class="scripture-index__passage">1:7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#19-question-from-where-do-you-know-this">Heidelberg 19</a></span></li>
+<li><span class="scripture-index__passage">1:7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q19">Heidelberg 19</a></span></li>
 </ul>
 
 ## Leviticus 5
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">5:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#99-question-what-is-required-in-the-third-commandment">Heidelberg 99</a><a href="{{ site.baseurl }}/pages/heidelberg/#100-question-is-the-blaspheming-of-gods-name-by-swearing-and-cursing-such-a-grievous-sin-that-god-is-angry-also-with-those-who-do-not-prevent-and-forbid-it-as-much-as-they-can">Heidelberg 100</a></span></li>
+<li><span class="scripture-index__passage">5:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q99">Heidelberg 99</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q100">Heidelberg 100</a></span></li>
 <li><span class="scripture-index__passage">5:17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q14">WSC 14</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q24">WLC 24</a></span></li>
 </ul>
 
@@ -45,7 +45,7 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">10:1-2</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q51">WSC 51</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q109">WLC 109</a></span></li>
-<li><span class="scripture-index__passage">10:1-7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#96-question-what-does-god-require-in-the-second-commandment">Heidelberg 96</a></span></li>
+<li><span class="scripture-index__passage">10:1-7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q96">Heidelberg 96</a></span></li>
 <li><span class="scripture-index__passage">10:3</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q152">WLC 152</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q174">WLC 174</a></span></li>
 </ul>
 
@@ -59,12 +59,12 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">18:1-21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q139">WLC 139</a></span></li>
-<li><span class="scripture-index__passage">18:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#91-question-but-what-are-good-works">Heidelberg 91</a></span></li>
+<li><span class="scripture-index__passage">18:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q91">Heidelberg 91</a></span></li>
 <li><span class="scripture-index__passage">18:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-6">WCF 19.6</a></span></li>
 <li><span class="scripture-index__passage">18:6-17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-24-4">WCF 24.4</a></span></li>
 <li><span class="scripture-index__passage">18:24-28</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-24-4">WCF 24.4</a></span></li>
 <li><span class="scripture-index__passage">18:24-30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-24-4">WCF 24.4</a></span></li>
-<li><span class="scripture-index__passage">18:30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q101">WLC 101</a><a href="{{ site.baseurl }}/pages/heidelberg/#108-question-what-does-the-seventh-commandment-teach-us">Heidelberg 108</a></span></li>
+<li><span class="scripture-index__passage">18:30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q101">WLC 101</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q108">Heidelberg 108</a></span></li>
 </ul>
 
 ## Leviticus 19
@@ -72,18 +72,18 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">19:3</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q127">WLC 127</a></span></li>
 <li><span class="scripture-index__passage">19:9-10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-3">WCF 19.3</a></span></li>
-<li><span class="scripture-index__passage">19:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
-<li><span class="scripture-index__passage">19:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-22-1">WCF 22.1</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-22-3">WCF 22.3</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q55">WSC 55</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q114">WLC 114</a><a href="{{ site.baseurl }}/pages/heidelberg/#99-question-what-is-required-in-the-third-commandment">Heidelberg 99</a><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">19:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">19:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-22-1">WCF 22.1</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-22-3">WCF 22.3</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q55">WSC 55</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q114">WLC 114</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q99">Heidelberg 99</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
 <li><span class="scripture-index__passage">19:13</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
 <li><span class="scripture-index__passage">19:15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q144">WLC 144</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a></span></li>
 <li><span class="scripture-index__passage">19:16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q78">WSC 78</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a></span></li>
-<li><span class="scripture-index__passage">19:17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q99">WLC 99</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q136">WLC 136</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#105-question-what-does-god-require-in-the-sixth-commandment">Heidelberg 105</a></span></li>
-<li><span class="scripture-index__passage">19:18</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#4-question-what-does-gods-law-require-of-us">Heidelberg 4</a><a href="{{ site.baseurl }}/pages/heidelberg/#105-question-what-does-god-require-in-the-sixth-commandment">Heidelberg 105</a></span></li>
+<li><span class="scripture-index__passage">19:17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q99">WLC 99</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q136">WLC 136</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q105">Heidelberg 105</a></span></li>
+<li><span class="scripture-index__passage">19:18</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q4">Heidelberg 4</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q105">Heidelberg 105</a></span></li>
 <li><span class="scripture-index__passage">19:19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-3">WCF 19.3</a></span></li>
 <li><span class="scripture-index__passage">19:23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-3">WCF 19.3</a></span></li>
 <li><span class="scripture-index__passage">19:27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-3">WCF 19.3</a></span></li>
 <li><span class="scripture-index__passage">19:29</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q130">WLC 130</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q139">WLC 139</a></span></li>
-<li><span class="scripture-index__passage">19:31</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#94-question-what-does-the-lord-require-in-the-first-commandment">Heidelberg 94</a></span></li>
+<li><span class="scripture-index__passage">19:31</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q94">Heidelberg 94</a></span></li>
 <li><span class="scripture-index__passage">19:32</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q127">WLC 127</a></span></li>
 <li><span class="scripture-index__passage">19:37</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q101">WLC 101</a></span></li>
 </ul>
@@ -112,9 +112,9 @@ exclude_from_search: true
 ## Leviticus 24
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">24:10-17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#99-question-what-is-required-in-the-third-commandment">Heidelberg 99</a></span></li>
+<li><span class="scripture-index__passage">24:10-17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q99">Heidelberg 99</a></span></li>
 <li><span class="scripture-index__passage">24:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q113">WLC 113</a></span></li>
-<li><span class="scripture-index__passage">24:16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#100-question-is-the-blaspheming-of-gods-name-by-swearing-and-cursing-such-a-grievous-sin-that-god-is-angry-also-with-those-who-do-not-prevent-and-forbid-it-as-much-as-they-can">Heidelberg 100</a></span></li>
+<li><span class="scripture-index__passage">24:16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q100">Heidelberg 100</a></span></li>
 </ul>
 
 ## Leviticus 25

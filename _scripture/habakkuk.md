@@ -21,8 +21,8 @@ exclude_from_search: true
 ## Habakkuk 2
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">2:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#59-question-but-what-does-it-help-you-now-that-you-believe-all-this">Heidelberg 59</a></span></li>
-<li><span class="scripture-index__passage">2:18-20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#98-question-but-may-images-not-be-tolerated-in-the-churches-as-books-for-the-laity">Heidelberg 98</a></span></li>
+<li><span class="scripture-index__passage">2:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q59">Heidelberg 59</a></span></li>
+<li><span class="scripture-index__passage">2:18-20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q98">Heidelberg 98</a></span></li>
 </ul>
 
 <nav class="scripture-nav" aria-label="Scripture index navigation">

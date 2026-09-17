@@ -27,7 +27,7 @@ exclude_from_search: true
 <li><span class="scripture-index__passage">1:1-2</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-1-4">WCF 1.4</a></span></li>
 <li><span class="scripture-index__passage">1:3</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-1-8">WCF 1.8</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-21-5">WCF 21.5</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q156">WLC 156</a></span></li>
 <li><span class="scripture-index__passage">1:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q4">WSC 4</a></span></li>
-<li><span class="scripture-index__passage">1:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q165">WLC 165</a><a href="{{ site.baseurl }}/pages/heidelberg/#70-question-what-does-it-mean-to-be-washed-with-christs-blood-and-spirit">Heidelberg 70</a><a href="{{ site.baseurl }}/pages/heidelberg/#73-question-why-then-does-the-holy-spirit-call-baptism-the-washing-of-regeneration-and-the-washing-away-of-sins">Heidelberg 73</a></span></li>
+<li><span class="scripture-index__passage">1:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q165">WLC 165</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q70">Heidelberg 70</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q73">Heidelberg 73</a></span></li>
 <li><span class="scripture-index__passage">1:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q4">WSC 4</a></span></li>
 <li><span class="scripture-index__passage">1:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-21-7">WCF 21.7</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q59">WSC 59</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q116">WLC 116</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q121">WLC 121</a></span></li>
 <li><span class="scripture-index__passage">1:18</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q52">WLC 52</a></span></li>
@@ -57,7 +57,7 @@ exclude_from_search: true
 ## Revelation 4
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#117-question-what-belongs-to-a-prayer-which-pleases-god-and-is-heard-by-him">Heidelberg 117</a></span></li>
+<li><span class="scripture-index__passage">4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q117">Heidelberg 117</a></span></li>
 <li><span class="scripture-index__passage">4:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-1">WCF 2.1</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q7">WLC 7</a></span></li>
 <li><span class="scripture-index__passage">4:8-11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q191">WLC 191</a></span></li>
 <li><span class="scripture-index__passage">4:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-1">WCF 2.1</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-2">WCF 2.2</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q1">WSC 1</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q8">WSC 8</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q54">WSC 54</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q101">WSC 101</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q14">WLC 14</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q15">WLC 15</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q190">WLC 190</a></span></li>
@@ -66,7 +66,7 @@ exclude_from_search: true
 ## Revelation 5
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">5:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#54-question-what-do-you-believe-concerning-the-holy-catholic-christian-church">Heidelberg 54</a></span></li>
+<li><span class="scripture-index__passage">5:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q54">Heidelberg 54</a></span></li>
 <li><span class="scripture-index__passage">5:11-13</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q107">WSC 107</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q196">WLC 196</a></span></li>
 <li><span class="scripture-index__passage">5:11-14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-21-2">WCF 21.2</a></span></li>
 <li><span class="scripture-index__passage">5:12-14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-2">WCF 2.2</a></span></li>
@@ -76,15 +76,15 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">7:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-25-2">WCF 25.2</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q62">WLC 62</a></span></li>
-<li><span class="scripture-index__passage">7:14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#70-question-what-does-it-mean-to-be-washed-with-christs-blood-and-spirit">Heidelberg 70</a><a href="{{ site.baseurl }}/pages/heidelberg/#73-question-why-then-does-the-holy-spirit-call-baptism-the-washing-of-regeneration-and-the-washing-away-of-sins">Heidelberg 73</a></span></li>
+<li><span class="scripture-index__passage">7:14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q70">Heidelberg 70</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q73">Heidelberg 73</a></span></li>
 </ul>
 
 ## Revelation 12
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">12:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#31-question-why-is-he-called-christ-that-is-anointed">Heidelberg 31</a></span></li>
+<li><span class="scripture-index__passage">12:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q31">Heidelberg 31</a></span></li>
 <li><span class="scripture-index__passage">12:10-11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q191">WLC 191</a></span></li>
-<li><span class="scripture-index__passage">12:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#31-question-why-is-he-called-christ-that-is-anointed">Heidelberg 31</a></span></li>
+<li><span class="scripture-index__passage">12:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q31">Heidelberg 31</a></span></li>
 </ul>
 
 ## Revelation 13
@@ -113,15 +113,15 @@ exclude_from_search: true
 ## Revelation 19
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">19:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-21-2">WCF 21.2</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q105">WLC 105</a><a href="{{ site.baseurl }}/pages/heidelberg/#94-question-what-does-the-lord-require-in-the-first-commandment">Heidelberg 94</a><a href="{{ site.baseurl }}/pages/heidelberg/#117-question-what-belongs-to-a-prayer-which-pleases-god-and-is-heard-by-him">Heidelberg 117</a></span></li>
-<li><span class="scripture-index__passage">19:11-16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#51-question-how-does-the-glory-of-christ-our-head-benefit-us">Heidelberg 51</a></span></li>
+<li><span class="scripture-index__passage">19:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-21-2">WCF 21.2</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q105">WLC 105</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q94">Heidelberg 94</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q117">Heidelberg 117</a></span></li>
+<li><span class="scripture-index__passage">19:11-16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q51">Heidelberg 51</a></span></li>
 </ul>
 
 ## Revelation 21
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">21:3-4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q1">WSC 1</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q1">WLC 1</a></span></li>
-<li><span class="scripture-index__passage">21:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">21:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
 <li><span class="scripture-index__passage">21:27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-9-5">WCF 9.5</a></span></li>
 </ul>
 
@@ -129,12 +129,12 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">22:3</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q19">WSC 19</a></span></li>
-<li><span class="scripture-index__passage">22:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#94-question-what-does-the-lord-require-in-the-first-commandment">Heidelberg 94</a></span></li>
-<li><span class="scripture-index__passage">22:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#94-question-what-does-the-lord-require-in-the-first-commandment">Heidelberg 94</a></span></li>
+<li><span class="scripture-index__passage">22:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q94">Heidelberg 94</a></span></li>
+<li><span class="scripture-index__passage">22:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q94">Heidelberg 94</a></span></li>
 <li><span class="scripture-index__passage">22:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q45">WLC 45</a></span></li>
-<li><span class="scripture-index__passage">22:17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-7-3">WCF 7.3</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-10-1">WCF 10.1</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q31">WSC 31</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q67">WLC 67</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q174">WLC 174</a><a href="{{ site.baseurl }}/pages/heidelberg/#123-question-what-is-the-second-petition">Heidelberg 123</a></span></li>
+<li><span class="scripture-index__passage">22:17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-7-3">WCF 7.3</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-10-1">WCF 10.1</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q31">WSC 31</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q67">WLC 67</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q174">WLC 174</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q123">Heidelberg 123</a></span></li>
 <li><span class="scripture-index__passage">22:18-19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-1-3">WCF 1.3</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q54">WSC 54</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q3">WLC 3</a></span></li>
-<li><span class="scripture-index__passage">22:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-33-3">WCF 33.3</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q102">WSC 102</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q107">WSC 107</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q191">WLC 191</a><a href="{{ site.baseurl }}/pages/heidelberg/#123-question-what-is-the-second-petition">Heidelberg 123</a></span></li>
+<li><span class="scripture-index__passage">22:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-33-3">WCF 33.3</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q102">WSC 102</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q107">WSC 107</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q191">WLC 191</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q123">Heidelberg 123</a></span></li>
 <li><span class="scripture-index__passage">22:20-21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q196">WLC 196</a></span></li>
 </ul>
 

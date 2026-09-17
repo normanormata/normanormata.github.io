@@ -16,8 +16,8 @@ exclude_from_search: true
 <li><span class="scripture-index__passage">8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-23-4">WCF 23.4</a></span></li>
 <li><span class="scripture-index__passage">16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a></span></li>
 <li><span class="scripture-index__passage">20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-16-3">WCF 16.3</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q75">WLC 75</a></span></li>
-<li><span class="scripture-index__passage">22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#108-question-what-does-the-seventh-commandment-teach-us">Heidelberg 108</a></span></li>
-<li><span class="scripture-index__passage">23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-3">WCF 19.3</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-30-3">WCF 30.3</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q99">WLC 99</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q173">WLC 173</a><a href="{{ site.baseurl }}/pages/heidelberg/#108-question-what-does-the-seventh-commandment-teach-us">Heidelberg 108</a></span></li>
+<li><span class="scripture-index__passage">22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q108">Heidelberg 108</a></span></li>
+<li><span class="scripture-index__passage">23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-3">WCF 19.3</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-30-3">WCF 30.3</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q99">WLC 99</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q173">WLC 173</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q108">Heidelberg 108</a></span></li>
 <li><span class="scripture-index__passage">24</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-9-5">WCF 9.5</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q6">WSC 6</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q195">WLC 195</a></span></li>
 </ul>
 

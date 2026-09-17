@@ -46,7 +46,7 @@ exclude_from_search: true
 ## Zechariah 9
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">9:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-11-3">WCF 11.3</a><a href="{{ site.baseurl }}/pages/heidelberg/#31-question-why-is-he-called-christ-that-is-anointed">Heidelberg 31</a></span></li>
+<li><span class="scripture-index__passage">9:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-11-3">WCF 11.3</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q31">Heidelberg 31</a></span></li>
 </ul>
 
 ## Zechariah 12
@@ -60,7 +60,7 @@ exclude_from_search: true
 ## Zechariah 13
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">13:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#70-question-what-does-it-mean-to-be-washed-with-christs-blood-and-spirit">Heidelberg 70</a></span></li>
+<li><span class="scripture-index__passage">13:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q70">Heidelberg 70</a></span></li>
 </ul>
 
 <nav class="scripture-nav" aria-label="Scripture index navigation">

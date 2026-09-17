@@ -121,51 +121,48 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     // ── Per-section permalinks ─────────────────────────────────────────────
     // Readers cite "WCF 11.1" or "WSC 33" and need a link to exactly that unit.
-    // The ids already exist; only the affordance was missing.
+    // Every citable unit has a short anchor: the Westminster Standards always
+    // did, and script/section-anchors.py writes the rest (#hc-q1, #dort-3-4-2,
+    // #fg-3-3). This puts a visible control beside each one.
     //
     // Deliberately NOT a route to the scripture proofs. Section numbers used to
     // link down to their proof callout and were removed for duplicating the
     // lettered proof markers; this control copies a citation instead.
-    //
-    // The reference labels mirror the derivation in assets/search_plus_index.json,
-    // which builds the same strings for search result badges. Keep the two in sync.
 
-    var DOC_PREFIX = {
-        wcf: 'WCF',
-        wsc: 'WSC',
-        wlc: 'WLC',
-        heidelberg: 'Heidelberg',
-        belgic: 'Belgic'
-    };
-
-    function documentPrefix() {
-        var match = location.pathname.match(/\/pages\/([a-z-]+)\//);
-        return (match && DOC_PREFIX[match[1]]) || '';
+    // The citation an anchor stands for: "wcf-11-1" -> "WCF 11.1", "hc-q1" ->
+    // "Heidelberg 1", "dort-3-4-rej-2" -> "Dort 3/4 RE 2", "bd-2-b-3" ->
+    // "BD 2.B.3"; otherwise ''. assets/search_plus_index.json builds the same
+    // strings for search result badges. Keep the two in sync.
+    function referenceFromId(id) {
+        var match;
+        if ((match = /^wcf-(\d+)-(\d+)$/.exec(id))) return 'WCF ' + match[1] + '.' + match[2];
+        if ((match = /^(wsc|wlc)-q(\d+)$/.exec(id))) return match[1].toUpperCase() + ' ' + match[2];
+        if ((match = /^hc-q(\d+)$/.exec(id))) return 'Heidelberg ' + match[1];
+        if ((match = /^belgic-(\d+)$/.exec(id))) return 'Belgic ' + match[1];
+        if (id === 'dort-conclusion') return 'Dort Conclusion';
+        if ((match = /^dort-(3-4|\d)(?:-(\d+))?(-rej(?:-(\d+))?)?$/.exec(id))) {
+            var head = match[1].replace('-', '/');
+            if (match[3]) return 'Dort ' + head + ' RE' + (match[4] ? ' ' + match[4] : '');
+            return 'Dort ' + head + (match[2] ? '.' + match[2] : '');
+        }
+        if ((match = /^dpw-preface(?:-(\d+))?$/.exec(id))) {
+            return 'DPW Preface' + (match[1] ? ' ' + match[1] : '');
+        }
+        if ((match = /^(fg|bd|dpw)-(\d+(?:-[a-z])?(?:-\d+)?)$/.exec(id))) {
+            return match[1].toUpperCase() + ' ' + match[2].replace(/-/g, '.').toUpperCase();
+        }
+        return '';
     }
 
-    // "wcf-11-1" -> "11.1";  "wsc-q33" -> "33";  otherwise null.
-    function unitFromId(id) {
-        var wcf = /^wcf-(\d+)-(\d+)$/.exec(id);
-        if (wcf) return wcf[1] + '.' + wcf[2];
-        var question = /^w(?:sc|lc)-q(\d+)$/.exec(id);
-        if (question) return question[1];
-        return null;
-    }
-
-    // Heidelberg/Belgic headings open with "1. …"; WCF chapters with "Chapter 1:".
-    function unitFromHeading(text) {
-        var chapter = /^\s*Chapter\s+(\d+)\b/i.exec(text);
-        if (chapter) return chapter[1];
-        var numbered = /^\s*(\d+)\s*\./.exec(text);
-        return numbered ? numbered[1] : null;
-    }
-
+    // The Confession's chapter headings are the one citable unit without a short
+    // anchor; they cite from their own text, "Chapter 11: Of Justification".
     function referenceFor(id, headingText) {
-        var prefix = documentPrefix();
-        if (!prefix) return '';
-        var unit = unitFromId(id) ||
-            (headingText ? unitFromHeading(headingText) : null);
-        return unit ? prefix + ' ' + unit : '';
+        var reference = referenceFromId(id);
+        if (reference) return reference;
+        var chapter = /^\s*Chapter\s+(\d+)\b/i.exec(headingText || '');
+        return chapter && /\/pages\/wcf\//.test(location.pathname)
+            ? 'WCF ' + chapter[1]
+            : '';
     }
 
     function citationFor(link) {
@@ -182,7 +179,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     // last line, and read as a stray "#".
     //
     // referenceFor() is passed heading.textContent before the control is
-    // inserted, so the "#" is not part of the text the reference is derived from.
+    // inserted, so nothing of the control is in the text it reads.
     function prependToHeading(heading, id) {
         permalinkControl(id, referenceFor(id, heading.textContent))
             .prependTo(heading);
@@ -197,9 +194,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             href: '#' + id,
             'data-reference': reference,
             'aria-label': label,
-            title: label,
-            text: '#'
-        });
+            title: label
+        }).append($('<i>', { 'class': 'fa fa-link', 'aria-hidden': 'true' }));
     }
 
     function installPermalinks() {
@@ -267,8 +263,62 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         if (marker) revealProofs(marker.getAttribute('href').slice(1));
     });
 
+    // ── Landing on a linked section ─────────────────────────────────────────
+    // A shared link such as /pages/wcf/#wcf-1-4 scrolls to an empty <span>,
+    // which shows the reader nothing, in a page of continuous text. Mark the
+    // unit it anchors instead: the paragraph it leads (Confession sections,
+    // church-order paragraphs), or the heading after its empty paragraph
+    // (catechism questions, articles, chapters). A heading's own id — the
+    // sidebar's links, and links made before the short anchors — marks that
+    // heading. Proof callouts are revealProofs()'s business.
+    function sectionUnit(id) {
+        if (!id || /-proofs$/.test(id)) return null;
+        var element = document.getElementById(id);
+        if (!element || !element.closest || !element.closest('.markdown-section')) return null;
+        if (/^H[2-6]$/.test(element.tagName)) return element;
+        var paragraph = element.tagName === 'SPAN' ? element.parentElement : null;
+        if (!paragraph || paragraph.tagName !== 'P') return null;
+        if (paragraph.textContent.trim()) return paragraph;
+        var next = paragraph.nextElementSibling;
+        return next && /^H[2-6]$/.test(next.tagName) ? next : null;
+    }
+
+    function markSectionTarget(id) {
+        $('.section-target').removeClass('section-target');
+        var unit = sectionUnit(id);
+        if (unit) unit.classList.add('section-target');
+        return unit;
+    }
+
+    // Loading a link natively honours scroll-margin-top (custom-local.css), which
+    // keeps the unit clear of the fixed header. GitBook's own navigation does
+    // not: it animates the scroller to the element's exact top, which below
+    // 1240px is under the header. Once any such animation has finished, bring
+    // the unit into view again if it ended up there. page.change fires before
+    // GitBook starts animating, hence the timeout.
+    function keepClearOfHeader(unit) {
+        if (!unit) return;
+        setTimeout(function() {
+            $('.book-body, .body-inner').promise().done(function() {
+                var header = document.querySelector('.book-header');
+                var limit = header ? header.getBoundingClientRect().bottom : 0;
+                if (unit.getBoundingClientRect().top < limit + 8) {
+                    unit.scrollIntoView({ block: 'start' });
+                }
+            });
+        }, 0);
+    }
+
     window.addEventListener('hashchange', function() {
-        revealProofs(location.hash.slice(1));
+        var id = location.hash.slice(1);
+        revealProofs(id);
+        keepClearOfHeader(markSectionTarget(id));
+    });
+
+    // The sidebar's section links scroll in place with pushState, which fires no
+    // hashchange.
+    $(document).on('click', '.book-summary a[href^="#"]', function() {
+        keepClearOfHeader(markSectionTarget(this.getAttribute('href').slice(1)));
     });
 
     function button(action, icon, label, toggle) {
@@ -599,6 +649,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         if (history.replaceState) {
             history.replaceState({}, '', this.getAttribute('href'));
         }
+        markSectionTarget(this.getAttribute('href').slice(1));
         copyText(citationFor(this),
             reference ? 'Copied citation for ' + reference : 'Link copied');
     });
@@ -652,6 +703,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         applyVersionState();
         retagReferences();      // self-retries while the vendor script loads
         revealProofs(location.hash.slice(1));
+        keepClearOfHeader(markSectionTarget(location.hash.slice(1)));
     }
 
     gitbook.events.bind('start', installToolbar);

@@ -14,20 +14,14 @@ import re
 REPO = pathlib.Path(__file__).resolve().parent.parent
 
 # Documents that carry proof callouts, in the order references should be listed.
-# `anchor` is how a callout id maps back to the linkable section on the page:
-#   "span"    — the callout id is the section id with "-proofs" removed
-#               (<span id="wcf-1-1"> sits in the paragraph above the callout)
-#   "heading" — Heidelberg has no span anchors, so the link target is the
-#               kramdown auto-id of the "## " heading the callout belongs to
+# A callout's id is its section's anchor with "-proofs" appended: the callout
+# wcf-1-1-proofs belongs to <span id="wcf-1-1">, and hc-q1-proofs to
+# <span id="hc-q1"> (written by script/section-anchors.py).
 DOCUMENTS = [
-    {"slug": "wcf", "title": "Westminster Confession of Faith",
-     "prefix": "WCF", "anchor": "span"},
-    {"slug": "wsc", "title": "Westminster Shorter Catechism",
-     "prefix": "WSC", "anchor": "span"},
-    {"slug": "wlc", "title": "Westminster Larger Catechism",
-     "prefix": "WLC", "anchor": "span"},
-    {"slug": "heidelberg", "title": "Heidelberg Catechism",
-     "prefix": "Heidelberg", "anchor": "heading"},
+    {"slug": "wcf", "title": "Westminster Confession of Faith", "prefix": "WCF"},
+    {"slug": "wsc", "title": "Westminster Shorter Catechism", "prefix": "WSC"},
+    {"slug": "wlc", "title": "Westminster Larger Catechism", "prefix": "WLC"},
+    {"slug": "heidelberg", "title": "Heidelberg Catechism", "prefix": "Heidelberg"},
 ]
 
 # Protestant canon in canonical order. `key` is the lookup form: lower-cased with
@@ -128,18 +122,6 @@ LETTER = re.compile(r"<strong>([^<]+)</strong>")
 # numeral or roman numeral) or goes straight to a chapter, carrying the previous
 # citation's book forward — "I Pet. 1:2; Rev. 1:5; 7:19" means Rev. 7:19.
 CITATION = re.compile(r"^\s*(?P<book>[0-9IVi]*\s*[A-Za-z][A-Za-z.]*(?:\s+[A-Za-z][A-Za-z.]*)*)?\s*(?P<rest>[0-9].*)$")
-
-
-def slugify(text):
-    """kramdown's auto-generated heading id.
-
-    Tags are dropped but their text is kept, which is why a heading carrying a
-    proof marker ends up with the marker digit fused onto the last word.
-    """
-    text = re.sub(r"<[^>]+>", "", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    text = re.sub(r"[^a-zA-Z0-9 -]", "", text)
-    return text.replace(" ", "-").lower()
 
 
 def canonical_book(token):
@@ -288,13 +270,16 @@ def parse_proofs(body):
 
 
 def reference_for(section_id):
-    """The citable short form for a section id: "WCF 1.1", "WLC 100"."""
+    """The citable short form for a section id: "WCF 1.1", "WLC 100", "Heidelberg 1"."""
     match = re.fullmatch(r"wcf-(\d+)-(\d+)", section_id)
     if match:
         return "WCF %s.%s" % match.groups()
     match = re.fullmatch(r"w(sc|lc)-q(\d+)", section_id)
     if match:
         return "W%sC %s" % (match.group(1).upper()[0], match.group(2))
+    match = re.fullmatch(r"hc-q(\d+)", section_id)
+    if match:
+        return "Heidelberg %s" % match.group(1)
     return None
 
 
@@ -310,27 +295,10 @@ def collect():
         path = REPO / "_pages" / (document["slug"] + ".md")
         text = path.read_text(encoding="utf-8")
 
-        # Heidelberg callouts link to their heading, so walk the file in order and
-        # remember the heading each callout falls under.
-        heading_for = {}
-        current = None
-        for line in text.splitlines():
-            if line.startswith("## "):
-                current = line[3:]
-            match = re.search(r'<details class="scripture-proofs" id="([^"]+)"', line)
-            if match:
-                heading_for[match.group(1)] = current
-
         for callout_id, body in BLOCK.findall(text):
-            if document["anchor"] == "span":
-                section_id = callout_id[: -len("-proofs")]
-                reference = reference_for(section_id)
-            else:
-                heading = heading_for.get(callout_id)
-                section_id = slugify(heading) if heading else None
-                number = re.match(r"\s*(\d+)", heading or "")
-                reference = ("Heidelberg " + number.group(1)) if number else None
-            if not section_id or not reference:
+            section_id = callout_id[: -len("-proofs")]
+            reference = reference_for(section_id)
+            if not reference or '<span id="%s">' % section_id not in text:
                 unparsed.append("%s: no anchor for %s" % (document["slug"], callout_id))
                 continue
 
