@@ -615,6 +615,20 @@ body.is-search-page .search-page > h1 {
     container: book-header / inline-size;
 }
 
+/* custom.css hides the header's overflow below 1240px while the sidebar is
+   open. That clipped everything hanging below the 50px row — the Display panel
+   and the whole Reader tools popover opened invisibly, so on a tablet or small
+   laptop with the sidebar open none of the reader tools could be used. The rule
+   predates the flex row above; with the toolbar in flow and the title
+   ellipsising, nothing in the row can overflow sideways any more. Not on
+   phones: there the open sidebar leaves the header ~20px wide and slides it
+   off-screen, and the tools would only spill out past it. */
+@media (min-width: 601px) and (max-width: 1240px) {
+    .book.with-summary .book-body .book-header {
+        overflow: visible;
+    }
+}
+
 /* The theme's #7e888b header text is 3.6:1 at 12px. */
 .book .book-body .book-header {
     color: var(--cc-muted);
