@@ -52,8 +52,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{site.baseurl}}/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
-<link rel="shortcut icon" href="{{site.baseurl}}/{{site.favicon_path}}" type="image/x-icon">
+{%- comment -%}
+  The C&C monogram, in the colours of assets/og-card.png. Browsers that take SVG
+  icons use favicon.svg; `sizes` on the .ico keeps them from preferring it. The
+  .ico holds 16, 32 and 48px PNGs for the rest. The touch icon is full-bleed
+  because iOS and Android round the corners themselves.
+
+  favicon_path already starts with "/". This used to be
+  {{site.baseurl}}/{{site.favicon_path}}, which rendered as
+  "//assets/gitbook/images/favicon.ico" — a protocol-relative URL naming a host
+  called "assets" — so no browser ever loaded the favicon.
+{%- endcomment %}
+<link rel="icon" href="{{ site.baseurl }}{{ site.favicon_path }}" sizes="16x16 32x32 48x48">
+<link rel="icon" href="{{ site.baseurl }}/assets/gitbook/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/gitbook/images/apple-touch-icon.png">
 
 {% if site.extra_css %}
     {%- for extra_css in site.extra_css -%}
