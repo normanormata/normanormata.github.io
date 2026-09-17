@@ -1419,6 +1419,28 @@ mark.search-highlight-keyword {
     border-color: #2a78b8;
 }
 
+/* ── Sidebar ──────────────────────────────────────────────────────────── */
+
+/* Section entries under the open document wrap to a second line instead of
+   cutting off after ~25 characters, which on the catechisms left little more
+   than "1. Question: What is your only co…". Clamped at two lines so the list
+   stays scannable. The vertical spacing sits on the <li>: the theme's
+   overflow: hidden clips the link at its padding edge, so padding there left
+   the top of the clamped third line showing beneath the second. */
+.book-summary ul.summary li.chapter > ul > li {
+    padding: 5px 0;
+}
+
+.book-summary ul.summary li.chapter > ul > li > a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: normal;
+    line-height: 1.35;
+}
+
 /* ── Labeled document pagination ──────────────────────────────────────── */
 
 .document-pagination {
