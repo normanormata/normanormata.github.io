@@ -536,6 +536,39 @@ details.scripture-proofs.proof-target {
     font-size: 1.18em;
 }
 
+/* Tables: rules between rows only. The theme's full grid and zebra stripes made
+   the one table on the site — the canon in WCF 1.2 — the heaviest thing on the
+   first screen of the Confession. `.book.book` matches the specificity of the
+   theme's sepia and night table rules in fontsettings/website.css. */
+.book.book .book-body .page-wrapper .page-inner section.normal table {
+    font-family: var(--ui-font);
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table tr,
+.book.book .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
+    border: 0;
+    background: transparent;
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table th,
+.book.book .book-body .page-wrapper .page-inner section.normal table td {
+    padding: 5px 12px 5px 0;
+    border: 0;
+    border-bottom: 1px solid var(--cc-rule);
+    color: var(--cc-text);
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table th {
+    text-align: left;
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table thead th {
+    padding-top: 0;
+    border-bottom-color: var(--cc-border);
+}
+
 .markdown-section h3 {
     font-size: 1.18em;
 }
