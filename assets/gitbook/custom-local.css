@@ -1605,6 +1605,13 @@ mark.search-highlight-keyword {
     background: rgba(0, 0, 0, 0.75);
 }
 
+/* custom.js makes it a keyboard control; show where focus is, as the other
+   controls do. */
+.book .back-to-top:focus-visible {
+    outline: 3px solid #2a78b8;
+    outline-offset: 2px;
+}
+
 .book .back-to-top i {
     position: absolute;
     top: 50%;

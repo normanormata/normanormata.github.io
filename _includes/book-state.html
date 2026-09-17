@@ -1,0 +1,61 @@
+{%- comment -%}
+  Put the reader's saved display state on .book before anything is painted.
+
+  Include this as the first child of <div class="book">. The theme applies the
+  sidebar, text size, reading face and colour theme only once gitbook.js,
+  theme.js and the plugins — ~290KB of script at the end of <body> — have loaded
+  and run. Until then a first visit rendered with no sidebar and in the theme's
+  Helvetica, then jumped: the sidebar opened, the text moved 150px right and
+  changed face, and a reader on Night, or on a dark system, saw a white page
+  first.
+
+  The logic mirrors what runs later, so the classes set here are the ones those
+  scripts will set, and nothing flips back:
+    - gitbook-plugin-fontsettings/fontsettings.js stores {size, family, theme}
+      under ":fontState" (gitbook.storage has an empty base key), defaulting to
+      the fontsettings block in _includes/metadata.json.tpl: size 2, serif (0),
+      white (0).
+    - theme.js opens the sidebar above 600px unless ":sidebar" is false.
+    - followSystemTheme() in assets/gitbook/custom.js matches the system colour
+      scheme while nothing is stored or "theme-follows-system" is "on". When
+      that means a change, the state is written here first, so fontsettings.js
+      starts from the same theme instead of restoring the old one over it.
+
+  The layouts write the default size and face into the markup
+  (class="book font-size-2 font-family-0"), so a reader without JavaScript gets
+  the serif too; this replaces them when something else is stored.
+
+  On GitBook's AJAX navigation jQuery re-runs this from a temporary <script> in
+  <head>, which is not inside .book, so it does nothing; the theme carries the
+  classes across itself.
+{%- endcomment -%}
+<script>
+(function () {
+    var script = document.currentScript;
+    var book = script && script.parentNode;
+    if (!book || !book.classList || !book.classList.contains('book')) return;
+    try {
+        var stored = JSON.parse(localStorage.getItem(':fontState'));
+        var state = stored || { size: 2, family: 0, theme: 0 };
+        if (!stored || localStorage.getItem('theme-follows-system') === 'on') {
+            var wanted = window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: dark)').matches ? 2 : 0;
+            if (state.theme !== wanted) {
+                state = { size: state.size, family: state.family, theme: wanted };
+                localStorage.setItem(':fontState', JSON.stringify(state));
+                localStorage.setItem('theme-follows-system', 'on');
+            }
+        }
+        book.className = book.className.replace(/\s*\bfont-(size|family)-\d+\b/g, '');
+        book.classList.add('font-size-' + state.size, 'font-family-' + state.family);
+        if (state.theme) book.classList.add('color-theme-' + state.theme);
+        if (document.documentElement.clientWidth > 600 &&
+                JSON.parse(localStorage.getItem(':sidebar')) !== false) {
+            book.classList.add('with-summary', 'without-animation');
+        }
+    } catch (error) {
+        // Storage blocked or unreadable: the theme's scripts still apply the
+        // defaults once they run, exactly as before.
+    }
+}());
+</script>
