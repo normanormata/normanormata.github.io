@@ -487,13 +487,43 @@ details.scripture-proofs.proof-target {
    the chapter titles 4px apart (34px against 29.75px) and made every heading
    read as the same rank. Widen the gap at the top and close it lower down, so
    a chapter heading sits over the text rather than competing with the title. */
+/* Headings inherited the 1.72 body leading, which set a two-line title on a
+   phone as two separate-looking lines 55px apart. */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4 {
+    line-height: 1.25;
+}
+
 .markdown-section h1 {
     font-size: 1.9em;
     letter-spacing: -0.01em;
 }
 
 .markdown-section h2 {
+    margin-top: 1.6em;
     font-size: 1.42em;
+}
+
+/* One link colour everywhere. The theme's #4183c4 is 4.0:1 on white, under the
+   4.5:1 AA minimum, and differed from the blue search and the scripture index
+   already use. Sepia's theme sets links to `inherit`, which made them
+   indistinguishable from the text. --cc-link is themed for all three. The
+   second selector matches the specificity of the theme's sepia and night rules
+   in gitbook-plugin-fontsettings/website.css; components that colour their own
+   links re-assert themselves below with a longer selector. */
+.markdown-section a,
+.book .book-body .page-wrapper .page-inner section.normal a {
+    color: var(--cc-link);
+}
+
+.book .book-body .page-wrapper .page-inner section.normal sup.proof-marker a {
+    color: inherit;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .scripture-index__cites a {
+    color: var(--cc-ref-text);
 }
 
 .markdown-section h3 {
