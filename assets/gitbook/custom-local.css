@@ -1639,8 +1639,10 @@ mark.search-highlight-keyword {
 }
 
 /* Book list on the overview page. Sized so the 63 books fill the column in
-   even rows rather than one long scroll. */
-.scripture-books {
+   even rows rather than one long scroll. Prefixed with `.markdown-section`,
+   like .scripture-index below, to outrank the theme's `.markdown-section ul`
+   padding, which otherwise indented every row 34px past its heading. */
+.markdown-section .scripture-books {
     list-style: none;
     margin: 12px 0 0;
     padding: 0;
@@ -1679,7 +1681,7 @@ mark.search-highlight-keyword {
 /* One row per cited passage: the passage on the left, the sections citing it
    on the right. The passage column is fixed so the citations line up down the
    page; it wraps under on narrow screens rather than squeezing. */
-.scripture-index {
+.markdown-section .scripture-index {
     list-style: none;
     margin: 12px 0 0;
     padding: 0;
