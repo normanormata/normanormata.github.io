@@ -587,12 +587,15 @@ details.scripture-proofs.proof-target {
 }
 
 /* The reading column is a 70ch measure, but a result list is scanned rather than
-   read, so give the search page more room. */
-body.is-search-page .page-inner {
+   read, so give the search page more room. The class is on .page-inner, not
+   <body>: GitBook's AJAX navigation swaps .book and keeps the original <body>,
+   so a body class followed the reader from a search result into the document
+   and set the Confession at 860px until a reload. */
+.page-inner.page-inner--search {
     max-width: 860px;
 }
 
-body.is-search-page .search-page > h1 {
+.page-inner--search .search-page > h1 {
     margin-bottom: 4px !important;
     font-size: 30px;
 }

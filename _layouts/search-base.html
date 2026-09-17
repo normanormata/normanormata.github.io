@@ -3,7 +3,7 @@
     <head>
         {%- include head.html -%}
     </head>
-    <body class="is-search-page">
+    <body>
         <a class="skip-link" href="#main-content">Skip to main content</a>
         <div class="book">
             {%- include toc-date.html -%}
@@ -12,13 +12,19 @@
                 <div class="book-header" role="navigation" aria-label="Reading controls">
                     <p class="book-header-title">
                         <i class="fa fa-circle-o-notch fa-spin"></i>
-                        <a href="{{ site.baseurl }}/">{{ site.title | escape }}</a>
+                        <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title | default: site.title | escape }}</a>
                     </p>
                 </div>
 
                 <div class="body-inner">
                     <main class="page-wrapper" id="main-content" tabindex="-1">
-                        <div class="page-inner">
+                        {%- comment -%}
+                          page-inner--search, not a class on <body>: GitBook's
+                          AJAX navigation swaps .book but keeps <body>, so a body
+                          class followed the reader from a search result into
+                          the document and widened its column.
+                        {%- endcomment -%}
+                        <div class="page-inner page-inner--search">
                             <section class="normal markdown-section search-page">
                                 <h1>{{ page.title | default: "Search" | escape }}</h1>
                                 {{ content }}
