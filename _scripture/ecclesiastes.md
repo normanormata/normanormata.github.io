@@ -60,7 +60,7 @@ exclude_from_search: true
 ## Ecclesiastes 7
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">7:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-6-5">WCF 6.5</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q149">WLC 149</a><a href="{{ site.baseurl }}/pages/heidelberg/#114-question-but-can-those-converted-to-god-keep-these-commandments-perfectly">Heidelberg 114</a></span></li>
+<li><span class="scripture-index__passage">7:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-6-5">WCF 6.5</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q149">WLC 149</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q114">Heidelberg 114</a></span></li>
 <li><span class="scripture-index__passage">7:29</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-4-2">WCF 4.2</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-9-2">WCF 9.2</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-19-1">WCF 19.1</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q17">WLC 17</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q21">WLC 21</a></span></li>
 </ul>
 

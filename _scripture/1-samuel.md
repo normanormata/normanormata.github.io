@@ -102,8 +102,8 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">15:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q109">WLC 109</a></span></li>
 <li><span class="scripture-index__passage">15:21-23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-16-1">WCF 16.1</a></span></li>
-<li><span class="scripture-index__passage">15:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#91-question-but-what-are-good-works">Heidelberg 91</a><a href="{{ site.baseurl }}/pages/heidelberg/#96-question-what-does-god-require-in-the-second-commandment">Heidelberg 96</a></span></li>
-<li><span class="scripture-index__passage">15:23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#96-question-what-does-god-require-in-the-second-commandment">Heidelberg 96</a></span></li>
+<li><span class="scripture-index__passage">15:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q91">Heidelberg 91</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q96">Heidelberg 96</a></span></li>
+<li><span class="scripture-index__passage">15:23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q96">Heidelberg 96</a></span></li>
 </ul>
 
 ## 1 Samuel 17
@@ -138,7 +138,7 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">24:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a></span></li>
-<li><span class="scripture-index__passage">24:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#101-question-but-may-we-swear-an-oath-by-the-name-of-god-in-a-godly-manner">Heidelberg 101</a></span></li>
+<li><span class="scripture-index__passage">24:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q101">Heidelberg 101</a></span></li>
 </ul>
 
 ## 1 Samuel 25

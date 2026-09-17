@@ -23,6 +23,6 @@ exclude_from_search: true
   {%- endcomment -%}
   <p class="search-page-hint">
     Searches the constitutional text and the scripture proofs — or jump straight to
-    a reference like <code>WCF 3.1</code>, <code>WSC 1</code>, <code>Heidelberg 21</code>
+    a reference like <code>WCF 3.1</code>, <code>WSC 1</code>, <code>Heidelberg 21</code>, <code>FG 3.3</code>
   </p>
 </div>

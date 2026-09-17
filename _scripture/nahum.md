@@ -10,9 +10,9 @@ exclude_from_search: true
 ## Nahum 1
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">1:2</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#10-question-will-god-allow-such-disobedience-and-apostasy-to-go-unpunished">Heidelberg 10</a></span></li>
+<li><span class="scripture-index__passage">1:2</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q10">Heidelberg 10</a></span></li>
 <li><span class="scripture-index__passage">1:2-3</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-1">WCF 2.1</a></span></li>
-<li><span class="scripture-index__passage">1:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-1">WCF 2.1</a><a href="{{ site.baseurl }}/pages/heidelberg/#14-question-can-any-mere-creature-pay-for-us">Heidelberg 14</a><a href="{{ site.baseurl }}/pages/heidelberg/#17-question-why-must-he-at-the-same-time-be-true-god">Heidelberg 17</a></span></li>
+<li><span class="scripture-index__passage">1:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-1">WCF 2.1</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q14">Heidelberg 14</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q17">Heidelberg 17</a></span></li>
 </ul>
 
 <nav class="scripture-nav" aria-label="Scripture index navigation">

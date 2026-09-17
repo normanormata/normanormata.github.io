@@ -81,8 +81,8 @@ exclude_from_search: true
 ## Ezekiel 18
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">18:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q19">WSC 19</a><a href="{{ site.baseurl }}/pages/heidelberg/#14-question-can-any-mere-creature-pay-for-us">Heidelberg 14</a></span></li>
-<li><span class="scripture-index__passage">18:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#14-question-can-any-mere-creature-pay-for-us">Heidelberg 14</a></span></li>
+<li><span class="scripture-index__passage">18:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q19">WSC 19</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q14">Heidelberg 14</a></span></li>
+<li><span class="scripture-index__passage">18:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q14">Heidelberg 14</a></span></li>
 <li><span class="scripture-index__passage">18:28</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q76">WLC 76</a></span></li>
 <li><span class="scripture-index__passage">18:30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q76">WLC 76</a></span></li>
 <li><span class="scripture-index__passage">18:30-31</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-15-2">WCF 15.2</a></span></li>
@@ -93,8 +93,8 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">20:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q121">WLC 121</a></span></li>
-<li><span class="scripture-index__passage">20:18</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#91-question-but-what-are-good-works">Heidelberg 91</a></span></li>
-<li><span class="scripture-index__passage">20:19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#91-question-but-what-are-good-works">Heidelberg 91</a></span></li>
+<li><span class="scripture-index__passage">20:18</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q91">Heidelberg 91</a></span></li>
+<li><span class="scripture-index__passage">20:19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q91">Heidelberg 91</a></span></li>
 <li><span class="scripture-index__passage">20:19-20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q121">WLC 121</a></span></li>
 </ul>
 
@@ -131,9 +131,9 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">36:21-23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q114">WLC 114</a></span></li>
-<li><span class="scripture-index__passage">36:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#60-question-how-are-you-righteous-before-god">Heidelberg 60</a></span></li>
+<li><span class="scripture-index__passage">36:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q60">Heidelberg 60</a></span></li>
 <li><span class="scripture-index__passage">36:22-28</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-13-1">WCF 13.1</a></span></li>
-<li><span class="scripture-index__passage">36:25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#70-question-what-does-it-mean-to-be-washed-with-christs-blood-and-spirit">Heidelberg 70</a></span></li>
+<li><span class="scripture-index__passage">36:25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q70">Heidelberg 70</a></span></li>
 <li><span class="scripture-index__passage">36:25-27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q35">WSC 35</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q75">WLC 75</a></span></li>
 <li><span class="scripture-index__passage">36:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-10-1">WCF 10.1</a></span></li>
 <li><span class="scripture-index__passage">36:26-27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-7-3">WCF 7.3</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-16-3">WCF 16.3</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q31">WSC 31</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q67">WLC 67</a></span></li>
@@ -153,7 +153,7 @@ exclude_from_search: true
 ## Ezekiel 45
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">45:9-12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#110-question-what-does-god-forbid-in-the-eighth-commandment">Heidelberg 110</a></span></li>
+<li><span class="scripture-index__passage">45:9-12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q110">Heidelberg 110</a></span></li>
 </ul>
 
 <nav class="scripture-nav" aria-label="Scripture index navigation">

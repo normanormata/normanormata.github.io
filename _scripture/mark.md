@@ -100,14 +100,14 @@ exclude_from_search: true
 ## Mark 13
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">13:33</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#127-question-what-is-the-sixth-petition">Heidelberg 127</a></span></li>
+<li><span class="scripture-index__passage">13:33</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q127">Heidelberg 127</a></span></li>
 <li><span class="scripture-index__passage">13:35-37</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-33-3">WCF 33.3</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q88">WLC 88</a></span></li>
 </ul>
 
 ## Mark 14
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">14:22-24</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-29-3">WCF 29.3</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q169">WLC 169</a><a href="{{ site.baseurl }}/pages/heidelberg/#75-question-how-does-the-lords-supper-signify-and-seal-to-you-that-you-share-in-christs-one-sacrifice-on-the-cross-and-in-all-his-gifts">Heidelberg 75</a></span></li>
+<li><span class="scripture-index__passage">14:22-24</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-29-3">WCF 29.3</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q169">WLC 169</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q75">Heidelberg 75</a></span></li>
 <li><span class="scripture-index__passage">14:22-25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q92">WSC 92</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q162">WLC 162</a></span></li>
 <li><span class="scripture-index__passage">14:23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-29-4">WCF 29.4</a></span></li>
 <li><span class="scripture-index__passage">14:66-72</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-5-5">WCF 5.5</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q78">WLC 78</a></span></li>
@@ -125,8 +125,8 @@ exclude_from_search: true
 ## Mark 16
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">16:16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#69-question-how-does-holy-baptism-signify-and-seal-to-you-that-the-one-sacrifice-of-christ-on-the-cross-benefits-you">Heidelberg 69</a><a href="{{ site.baseurl }}/pages/heidelberg/#73-question-why-then-does-the-holy-spirit-call-baptism-the-washing-of-regeneration-and-the-washing-away-of-sins">Heidelberg 73</a></span></li>
-<li><span class="scripture-index__passage">16:19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#46-question-what-do-you-confess-when-you-say-he-ascended-into-heaven">Heidelberg 46</a></span></li>
+<li><span class="scripture-index__passage">16:16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q69">Heidelberg 69</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q73">Heidelberg 73</a></span></li>
+<li><span class="scripture-index__passage">16:19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q46">Heidelberg 46</a></span></li>
 </ul>
 
 <nav class="scripture-nav" aria-label="Scripture index navigation">

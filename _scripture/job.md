@@ -34,15 +34,15 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">1:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-21-6">WCF 21.6</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q129">WLC 129</a></span></li>
-<li><span class="scripture-index__passage">1:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q19">WLC 19</a><a href="{{ site.baseurl }}/pages/heidelberg/#28-question-what-does-it-benefit-us-to-know-that-god-has-created-all-things-and-still-upholds-them-by-his-providence">Heidelberg 28</a></span></li>
-<li><span class="scripture-index__passage">1:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q192">WLC 192</a><a href="{{ site.baseurl }}/pages/heidelberg/#28-question-what-does-it-benefit-us-to-know-that-god-has-created-all-things-and-still-upholds-them-by-his-providence">Heidelberg 28</a></span></li>
-<li><span class="scripture-index__passage">1:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q105">WLC 105</a><a href="{{ site.baseurl }}/pages/heidelberg/#28-question-what-does-it-benefit-us-to-know-that-god-has-created-all-things-and-still-upholds-them-by-his-providence">Heidelberg 28</a></span></li>
+<li><span class="scripture-index__passage">1:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q19">WLC 19</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q28">Heidelberg 28</a></span></li>
+<li><span class="scripture-index__passage">1:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q192">WLC 192</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q28">Heidelberg 28</a></span></li>
+<li><span class="scripture-index__passage">1:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q105">WLC 105</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q28">Heidelberg 28</a></span></li>
 </ul>
 
 ## Job 2
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">2:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#28-question-what-does-it-benefit-us-to-know-that-god-has-created-all-things-and-still-upholds-them-by-his-providence">Heidelberg 28</a></span></li>
+<li><span class="scripture-index__passage">2:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q28">Heidelberg 28</a></span></li>
 </ul>
 
 ## Job 5
@@ -73,7 +73,7 @@ exclude_from_search: true
 ## Job 14
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">14:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q26">WLC 26</a><a href="{{ site.baseurl }}/pages/heidelberg/#8-question-but-are-we-so-corrupt-that-we-are-totally-unable-to-do-any-good-and-inclined-to-all-evil">Heidelberg 8</a></span></li>
+<li><span class="scripture-index__passage">14:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q26">WLC 26</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q8">Heidelberg 8</a></span></li>
 </ul>
 
 ## Job 15
@@ -86,8 +86,8 @@ exclude_from_search: true
 ## Job 19
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">19:25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#57-question-what-comfort-does-the-resurrection-of-the-body-offer-you">Heidelberg 57</a></span></li>
-<li><span class="scripture-index__passage">19:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q87">WLC 87</a><a href="{{ site.baseurl }}/pages/heidelberg/#57-question-what-comfort-does-the-resurrection-of-the-body-offer-you">Heidelberg 57</a></span></li>
+<li><span class="scripture-index__passage">19:25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q57">Heidelberg 57</a></span></li>
+<li><span class="scripture-index__passage">19:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q87">WLC 87</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q57">Heidelberg 57</a></span></li>
 <li><span class="scripture-index__passage">19:26-27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-32-2">WCF 32.2</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q86">WLC 86</a></span></li>
 </ul>
 
@@ -165,13 +165,13 @@ exclude_from_search: true
 ## Job 38
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">38</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-5-1">WCF 5.1</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q18">WLC 18</a><a href="{{ site.baseurl }}/pages/heidelberg/#26-question-what-do-you-believe-when-you-say-i-believe-in-god-the-father-almighty-creator-of-heaven-and-earth">Heidelberg 26</a></span></li>
+<li><span class="scripture-index__passage">38</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-5-1">WCF 5.1</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q18">WLC 18</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q26">Heidelberg 26</a></span></li>
 </ul>
 
 ## Job 39
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">39</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#26-question-what-do-you-believe-when-you-say-i-believe-in-god-the-father-almighty-creator-of-heaven-and-earth">Heidelberg 26</a></span></li>
+<li><span class="scripture-index__passage">39</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q26">Heidelberg 26</a></span></li>
 </ul>
 
 <nav class="scripture-nav" aria-label="Scripture index navigation">

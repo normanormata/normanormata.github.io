@@ -29,7 +29,7 @@ exclude_from_search: true
 ## 2 Chronicles 7
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">7:14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q87">WSC 87</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q76">WLC 76</a><a href="{{ site.baseurl }}/pages/heidelberg/#117-question-what-belongs-to-a-prayer-which-pleases-god-and-is-heard-by-him">Heidelberg 117</a></span></li>
+<li><span class="scripture-index__passage">7:14</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q87">WSC 87</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q76">WLC 76</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q117">Heidelberg 117</a></span></li>
 </ul>
 
 ## 2 Chronicles 14
@@ -63,7 +63,7 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">20:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q190">WLC 190</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q196">WLC 196</a></span></li>
 <li><span class="scripture-index__passage">20:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q196">WLC 196</a></span></li>
-<li><span class="scripture-index__passage">20:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#117-question-what-belongs-to-a-prayer-which-pleases-god-and-is-heard-by-him">Heidelberg 117</a></span></li>
+<li><span class="scripture-index__passage">20:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q117">Heidelberg 117</a></span></li>
 </ul>
 
 ## 2 Chronicles 26

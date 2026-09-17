@@ -42,8 +42,8 @@ exclude_from_search: true
 ## Proverbs 1
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">1:7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#94-question-what-does-the-lord-require-in-the-first-commandment">Heidelberg 94</a></span></li>
-<li><span class="scripture-index__passage">1:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#104-question-what-does-god-require-in-the-fifth-commandment">Heidelberg 104</a></span></li>
+<li><span class="scripture-index__passage">1:7</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q94">Heidelberg 94</a></span></li>
+<li><span class="scripture-index__passage">1:8</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q104">Heidelberg 104</a></span></li>
 <li><span class="scripture-index__passage">1:10-11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a></span></li>
 <li><span class="scripture-index__passage">1:15-16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a></span></li>
 <li><span class="scripture-index__passage">1:19</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q99">WLC 99</a></span></li>
@@ -70,7 +70,7 @@ exclude_from_search: true
 ## Proverbs 4
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">4:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#104-question-what-does-god-require-in-the-fifth-commandment">Heidelberg 104</a></span></li>
+<li><span class="scripture-index__passage">4:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q104">Heidelberg 104</a></span></li>
 <li><span class="scripture-index__passage">4:3-4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q127">WLC 127</a></span></li>
 <li><span class="scripture-index__passage">4:23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q139">WLC 139</a></span></li>
 <li><span class="scripture-index__passage">4:27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q139">WLC 139</a></span></li>
@@ -120,7 +120,7 @@ exclude_from_search: true
 ## Proverbs 9
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">9:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#94-question-what-does-the-lord-require-in-the-first-commandment">Heidelberg 94</a></span></li>
+<li><span class="scripture-index__passage">9:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q94">Heidelberg 94</a></span></li>
 </ul>
 
 ## Proverbs 10
@@ -132,7 +132,7 @@ exclude_from_search: true
 ## Proverbs 11
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">11:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a><a href="{{ site.baseurl }}/pages/heidelberg/#110-question-what-does-god-forbid-in-the-eighth-commandment">Heidelberg 110</a></span></li>
+<li><span class="scripture-index__passage">11:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q110">Heidelberg 110</a></span></li>
 <li><span class="scripture-index__passage">11:15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q141">WLC 141</a></span></li>
 <li><span class="scripture-index__passage">11:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
 </ul>
@@ -141,13 +141,13 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">12:18</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q136">WLC 136</a></span></li>
-<li><span class="scripture-index__passage">12:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#110-question-what-does-god-forbid-in-the-eighth-commandment">Heidelberg 110</a><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">12:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q110">Heidelberg 110</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
 </ul>
 
 ## Proverbs 13
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">13:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">13:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
 <li><span class="scripture-index__passage">13:13</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q105">WLC 105</a></span></li>
 </ul>
 
@@ -158,7 +158,7 @@ exclude_from_search: true
 <li><span class="scripture-index__passage">14:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q132">WLC 132</a></span></li>
 <li><span class="scripture-index__passage">14:25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wsc/#wsc-q77">WSC 77</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q144">WLC 144</a></span></li>
 <li><span class="scripture-index__passage">14:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-12-1">WCF 12.1</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q74">WLC 74</a></span></li>
-<li><span class="scripture-index__passage">14:30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q136">WLC 136</a><a href="{{ site.baseurl }}/pages/heidelberg/#106-question-but-does-this-commandment-speak-only-of-killing">Heidelberg 106</a></span></li>
+<li><span class="scripture-index__passage">14:30</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q136">WLC 136</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q106">Heidelberg 106</a></span></li>
 </ul>
 
 ## Proverbs 15
@@ -172,7 +172,7 @@ exclude_from_search: true
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">16:4</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-2-1">WCF 2.1</a><a href="{{ site.baseurl }}/pages/wcf/#wcf-3-3">WCF 3.3</a></span></li>
-<li><span class="scripture-index__passage">16:33</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-3-1">WCF 3.1</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q11">WSC 11</a><a href="{{ site.baseurl }}/pages/heidelberg/#27-question-what-do-you-understand-by-the-providence-of-god">Heidelberg 27</a></span></li>
+<li><span class="scripture-index__passage">16:33</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-3-1">WCF 3.1</a><a href="{{ site.baseurl }}/pages/wsc/#wsc-q11">WSC 11</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q27">Heidelberg 27</a></span></li>
 </ul>
 
 ## Proverbs 17
@@ -192,8 +192,8 @@ exclude_from_search: true
 ## Proverbs 19
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">19:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
-<li><span class="scripture-index__passage">19:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">19:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">19:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
 <li><span class="scripture-index__passage">19:26</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q128">WLC 128</a></span></li>
 </ul>
 
@@ -202,26 +202,26 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">20:9</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-6-5">WCF 6.5</a></span></li>
 <li><span class="scripture-index__passage">20:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
-<li><span class="scripture-index__passage">20:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#104-question-what-does-god-require-in-the-fifth-commandment">Heidelberg 104</a></span></li>
+<li><span class="scripture-index__passage">20:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q104">Heidelberg 104</a></span></li>
 <li><span class="scripture-index__passage">20:25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q151">WLC 151</a></span></li>
 </ul>
 
 ## Proverbs 21
 
 <ul class="scripture-index">
-<li><span class="scripture-index__passage">21:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#28-question-what-does-it-benefit-us-to-know-that-god-has-created-all-things-and-still-upholds-them-by-his-providence">Heidelberg 28</a></span></li>
+<li><span class="scripture-index__passage">21:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q28">Heidelberg 28</a></span></li>
 <li><span class="scripture-index__passage">21:6</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
 <li><span class="scripture-index__passage">21:17</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
-<li><span class="scripture-index__passage">21:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q141">WLC 141</a><a href="{{ site.baseurl }}/pages/heidelberg/#110-question-what-does-god-forbid-in-the-eighth-commandment">Heidelberg 110</a></span></li>
+<li><span class="scripture-index__passage">21:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q141">WLC 141</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q110">Heidelberg 110</a></span></li>
 <li><span class="scripture-index__passage">21:27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wcf/#wcf-16-7">WCF 16.7</a></span></li>
-<li><span class="scripture-index__passage">21:28</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#112-question-what-is-required-in-the-ninth-commandment">Heidelberg 112</a></span></li>
+<li><span class="scripture-index__passage">21:28</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q112">Heidelberg 112</a></span></li>
 </ul>
 
 ## Proverbs 22
 
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">22:1</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q144">WLC 144</a></span></li>
-<li><span class="scripture-index__passage">22:2</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#27-question-what-do-you-understand-by-the-providence-of-god">Heidelberg 27</a></span></li>
+<li><span class="scripture-index__passage">22:2</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q27">Heidelberg 27</a></span></li>
 </ul>
 
 ## Proverbs 23
@@ -229,10 +229,10 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">23:5</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
 <li><span class="scripture-index__passage">23:10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
-<li><span class="scripture-index__passage">23:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a><a href="{{ site.baseurl }}/pages/heidelberg/#110-question-what-does-god-forbid-in-the-eighth-commandment">Heidelberg 110</a></span></li>
+<li><span class="scripture-index__passage">23:20</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q110">Heidelberg 110</a></span></li>
 <li><span class="scripture-index__passage">23:20-21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a></span></li>
-<li><span class="scripture-index__passage">23:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#110-question-what-does-god-forbid-in-the-eighth-commandment">Heidelberg 110</a></span></li>
-<li><span class="scripture-index__passage">23:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q124">WLC 124</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q127">WLC 127</a><a href="{{ site.baseurl }}/pages/heidelberg/#104-question-what-does-god-require-in-the-fifth-commandment">Heidelberg 104</a></span></li>
+<li><span class="scripture-index__passage">23:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q110">Heidelberg 110</a></span></li>
+<li><span class="scripture-index__passage">23:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q124">WLC 124</a><a href="{{ site.baseurl }}/pages/wlc/#wlc-q127">WLC 127</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q104">Heidelberg 104</a></span></li>
 <li><span class="scripture-index__passage">23:25</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q124">WLC 124</a></span></li>
 <li><span class="scripture-index__passage">23:29</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q136">WLC 136</a></span></li>
 <li><span class="scripture-index__passage">23:30-33</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q139">WLC 139</a></span></li>
@@ -250,8 +250,8 @@ exclude_from_search: true
 <ul class="scripture-index">
 <li><span class="scripture-index__passage">25:9-10</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a></span></li>
 <li><span class="scripture-index__passage">25:16</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a></span></li>
-<li><span class="scripture-index__passage">25:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#105-question-what-does-god-require-in-the-sixth-commandment">Heidelberg 105</a></span></li>
-<li><span class="scripture-index__passage">25:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#105-question-what-does-god-require-in-the-sixth-commandment">Heidelberg 105</a></span></li>
+<li><span class="scripture-index__passage">25:21</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q105">Heidelberg 105</a></span></li>
+<li><span class="scripture-index__passage">25:22</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q105">Heidelberg 105</a></span></li>
 <li><span class="scripture-index__passage">25:23</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q144">WLC 144</a></span></li>
 <li><span class="scripture-index__passage">25:27</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q135">WLC 135</a></span></li>
 </ul>
@@ -282,7 +282,7 @@ exclude_from_search: true
 <li><span class="scripture-index__passage">29:11</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a></span></li>
 <li><span class="scripture-index__passage">29:12</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q145">WLC 145</a></span></li>
 <li><span class="scripture-index__passage">29:15</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q129">WLC 129</a></span></li>
-<li><span class="scripture-index__passage">29:24</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a><a href="{{ site.baseurl }}/pages/heidelberg/#99-question-what-is-required-in-the-third-commandment">Heidelberg 99</a></span></li>
+<li><span class="scripture-index__passage">29:24</span><span class="scripture-index__cites"><a href="{{ site.baseurl }}/pages/wlc/#wlc-q142">WLC 142</a><a href="{{ site.baseurl }}/pages/heidelberg/#hc-q99">Heidelberg 99</a></span></li>
 </ul>
 
 ## Proverbs 30
