@@ -422,6 +422,41 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         return -1;
     }
 
+    // Follow the system's light or dark setting until the reader picks a theme.
+    // fontsettings.js knows only a stored choice or the config default (white),
+    // so a reader with a dark system got a white page. THEME_AUTO_KEY marks a
+    // theme chosen here, which keeps it following the system across visits;
+    // picking a theme in the Display menu turns that off for good. A reader
+    // whose settings were stored before this existed is left alone, since a
+    // stored state cannot say whether its theme was chosen.
+    var THEME_AUTO_KEY = 'theme-follows-system';
+    var darkScheme = window.matchMedia
+        ? window.matchMedia('(prefers-color-scheme: dark)')
+        : null;
+
+    function followSystemTheme() {
+        if (!darkScheme || !gitbook.fontsettings) return;
+        if (gitbook.storage.get('fontState') && lsGet(THEME_AUTO_KEY) !== 'on') return;
+        var wanted = darkScheme.matches ? 'night' : 'white';
+        if (displayState().theme === indexOfConfig(THEME_OPTIONS, wanted)) return;
+        gitbook.fontsettings.setTheme(wanted);
+        lsSet(THEME_AUTO_KEY, 'on');
+        updateDisplayMenu();
+    }
+
+    // Bound to 'start' rather than run here: fontsettings.js restores the stored
+    // state in its own 'start' handler, which is registered first because that
+    // script loads first, and setTheme() needs that state in place.
+    function watchSystemTheme() {
+        followSystemTheme();
+        if (!darkScheme) return;
+        if (darkScheme.addEventListener) {
+            darkScheme.addEventListener('change', followSystemTheme);
+        } else if (darkScheme.addListener) {
+            darkScheme.addListener(followSystemTheme);
+        }
+    }
+
     function toolButtons() {
         return $('<div class="reader-actions"></div>')
             .append(button('search', 'fa-search', 'Search'))
@@ -494,6 +529,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             gitbook.fontsettings.setFamily(config, event);
         } else {
             gitbook.fontsettings.setTheme(config, event);
+            lsSet(THEME_AUTO_KEY, 'off');
         }
         updateDisplayMenu();
     });
@@ -591,5 +627,6 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     }
 
     gitbook.events.bind('start', installToolbar);
+    gitbook.events.bind('start', watchSystemTheme);
     gitbook.events.bind('page.change', onPageChange);
 });
