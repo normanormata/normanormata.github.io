@@ -103,7 +103,7 @@ details.commentary .commentary-body p:last-child {
     --proofs-separator: #b8d0e8;
     --proofs-text:      #1a2a3a;
     --proofs-link-rule: #a8c0d8;
-    --permalink-color:  #9aa8b8;
+    --permalink-color:  #8495a9;   /* 3:1 on white: always visible now */
     --permalink-hover:  #1f6595;
 }
 
@@ -114,7 +114,7 @@ details.commentary .commentary-body p:last-child {
     --proofs-separator: #b8ccaa;
     --proofs-text:      #2a3a1a;
     --proofs-link-rule: #a3b894;
-    --permalink-color:  #a89a78;
+    --permalink-color:  #93845f;   /* 3:1 on sepia */
     --permalink-hover:  #5a7a3a;
 }
 
@@ -196,28 +196,39 @@ details.scripture-proofs .proofs-body a:focus-visible {
 
 /* ── Per-section permalinks ───────────────────────────────────────────── */
 
-/* One control per citable unit, leading its heading or its numbered paragraph.
-   Quiet until the section is hovered or the control is focused, so it never
-   competes with the lettered proof markers. */
+/* One control per citable unit, leading its heading or its numbered paragraph:
+   a small link icon that copies the unit's citation and address. Always shown —
+   it was invisible until hovered, and nobody found it — but in a muted colour at
+   the 3:1 minimum for a control, darkening when its section is hovered. */
 .section-permalink {
     /* Hung in the left gutter: a fixed-width box pulled back by its own width,
        so the heading or paragraph text starts flush with the column exactly as
-       if the control were not there. As an ordinary inline it took ~18px at the
-       start of every heading and numbered paragraph, and nothing lined up with
-       the text around it. Revealing it still never reflows the text. 18px is
-       the narrowest page gutter (see the 600px breakpoint below). */
+       if the control were not there. 18px is the narrowest page gutter (see the
+       600px breakpoint below). A fixed 12px glyph looks the same beside a
+       paragraph and beside a chapter title. */
+    position: relative;
     display: inline-block;
     width: 18px;
     margin-left: -18px;
     color: var(--permalink-color) !important;
-    font-size: 0.72em;
-    font-weight: 700;
+    font-size: 12px;
     line-height: 1;
-    text-align: center;
+    text-align: left;
     text-decoration: none !important;
-    opacity: 0;
-    transition: opacity 120ms ease-in-out;
+    transition: color 120ms ease-in-out;
     user-select: none;
+}
+
+/* The glyph is 12px; the target is not. This transparent box makes it about
+   32 x 40px to tap without moving any text, reaching left into the page margin
+   and only a few pixels into the column. */
+.section-permalink::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    right: -4px;
+    bottom: -14px;
+    left: -10px;
 }
 
 h1:hover .section-permalink,
@@ -226,22 +237,8 @@ h3:hover .section-permalink,
 h4:hover .section-permalink,
 p:hover > .section-permalink,
 li:hover > .section-permalink,
-.section-permalink:hover,
-/* Plain :focus, not :focus-visible. A control that is invisible until hover
-   must become visible on *any* focus, or a keyboard user tabs onto something
-   they cannot see. :focus-visible still governs the outline below. */
 .section-permalink:focus {
-    opacity: 1;
-}
-
-.section-permalink:hover {
     color: var(--permalink-hover) !important;
-}
-
-/* Touch devices get no hover, so keep the control permanently visible there
-   rather than unreachable — but faint, since it leads every paragraph. */
-@media (hover: none) {
-    .section-permalink { opacity: 0.35; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -481,6 +478,19 @@ details.scripture-proofs.proof-target {
 .markdown-section {
     font-size: 17px;
     line-height: 1.72;
+}
+
+/* The theme clips .markdown-section (overflow: hidden) to contain wide content,
+   but the section link icons hang in the gutter left of the text, and a linked
+   section's highlight reaches a little past the text on both sides. Widen the
+   clipping box by that much, with matching negative margins so the text does
+   not move. Without it the icons — and their tap areas — were clipped away
+   entirely, invisible and unclickable. */
+.page-inner .markdown-section {
+    margin-right: -12px;
+    margin-left: -28px;
+    padding-right: 12px;
+    padding-left: 28px;
 }
 
 /* The theme's scale is 2em / 1.75em / 1.5em, which put the document title and

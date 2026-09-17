@@ -121,51 +121,48 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     // ── Per-section permalinks ─────────────────────────────────────────────
     // Readers cite "WCF 11.1" or "WSC 33" and need a link to exactly that unit.
-    // The ids already exist; only the affordance was missing.
+    // Every citable unit has a short anchor: the Westminster Standards always
+    // did, and script/section-anchors.py writes the rest (#hc-q1, #dort-3-4-2,
+    // #fg-3-3). This puts a visible control beside each one.
     //
     // Deliberately NOT a route to the scripture proofs. Section numbers used to
     // link down to their proof callout and were removed for duplicating the
     // lettered proof markers; this control copies a citation instead.
-    //
-    // The reference labels mirror the derivation in assets/search_plus_index.json,
-    // which builds the same strings for search result badges. Keep the two in sync.
 
-    var DOC_PREFIX = {
-        wcf: 'WCF',
-        wsc: 'WSC',
-        wlc: 'WLC',
-        heidelberg: 'Heidelberg',
-        belgic: 'Belgic'
-    };
-
-    function documentPrefix() {
-        var match = location.pathname.match(/\/pages\/([a-z-]+)\//);
-        return (match && DOC_PREFIX[match[1]]) || '';
+    // The citation an anchor stands for: "wcf-11-1" -> "WCF 11.1", "hc-q1" ->
+    // "Heidelberg 1", "dort-3-4-rej-2" -> "Dort 3/4 RE 2", "bd-2-b-3" ->
+    // "BD 2.B.3"; otherwise ''. assets/search_plus_index.json builds the same
+    // strings for search result badges. Keep the two in sync.
+    function referenceFromId(id) {
+        var match;
+        if ((match = /^wcf-(\d+)-(\d+)$/.exec(id))) return 'WCF ' + match[1] + '.' + match[2];
+        if ((match = /^(wsc|wlc)-q(\d+)$/.exec(id))) return match[1].toUpperCase() + ' ' + match[2];
+        if ((match = /^hc-q(\d+)$/.exec(id))) return 'Heidelberg ' + match[1];
+        if ((match = /^belgic-(\d+)$/.exec(id))) return 'Belgic ' + match[1];
+        if (id === 'dort-conclusion') return 'Dort Conclusion';
+        if ((match = /^dort-(3-4|\d)(?:-(\d+))?(-rej(?:-(\d+))?)?$/.exec(id))) {
+            var head = match[1].replace('-', '/');
+            if (match[3]) return 'Dort ' + head + ' RE' + (match[4] ? ' ' + match[4] : '');
+            return 'Dort ' + head + (match[2] ? '.' + match[2] : '');
+        }
+        if ((match = /^dpw-preface(?:-(\d+))?$/.exec(id))) {
+            return 'DPW Preface' + (match[1] ? ' ' + match[1] : '');
+        }
+        if ((match = /^(fg|bd|dpw)-(\d+(?:-[a-z])?(?:-\d+)?)$/.exec(id))) {
+            return match[1].toUpperCase() + ' ' + match[2].replace(/-/g, '.').toUpperCase();
+        }
+        return '';
     }
 
-    // "wcf-11-1" -> "11.1";  "wsc-q33" -> "33";  otherwise null.
-    function unitFromId(id) {
-        var wcf = /^wcf-(\d+)-(\d+)$/.exec(id);
-        if (wcf) return wcf[1] + '.' + wcf[2];
-        var question = /^w(?:sc|lc)-q(\d+)$/.exec(id);
-        if (question) return question[1];
-        return null;
-    }
-
-    // Heidelberg/Belgic headings open with "1. …"; WCF chapters with "Chapter 1:".
-    function unitFromHeading(text) {
-        var chapter = /^\s*Chapter\s+(\d+)\b/i.exec(text);
-        if (chapter) return chapter[1];
-        var numbered = /^\s*(\d+)\s*\./.exec(text);
-        return numbered ? numbered[1] : null;
-    }
-
+    // The Confession's chapter headings are the one citable unit without a short
+    // anchor; they cite from their own text, "Chapter 11: Of Justification".
     function referenceFor(id, headingText) {
-        var prefix = documentPrefix();
-        if (!prefix) return '';
-        var unit = unitFromId(id) ||
-            (headingText ? unitFromHeading(headingText) : null);
-        return unit ? prefix + ' ' + unit : '';
+        var reference = referenceFromId(id);
+        if (reference) return reference;
+        var chapter = /^\s*Chapter\s+(\d+)\b/i.exec(headingText || '');
+        return chapter && /\/pages\/wcf\//.test(location.pathname)
+            ? 'WCF ' + chapter[1]
+            : '';
     }
 
     function citationFor(link) {
@@ -182,7 +179,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     // last line, and read as a stray "#".
     //
     // referenceFor() is passed heading.textContent before the control is
-    // inserted, so the "#" is not part of the text the reference is derived from.
+    // inserted, so nothing of the control is in the text it reads.
     function prependToHeading(heading, id) {
         permalinkControl(id, referenceFor(id, heading.textContent))
             .prependTo(heading);
@@ -197,9 +194,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             href: '#' + id,
             'data-reference': reference,
             'aria-label': label,
-            title: label,
-            text: '#'
-        });
+            title: label
+        }).append($('<i>', { 'class': 'fa fa-link', 'aria-hidden': 'true' }));
     }
 
     function installPermalinks() {
