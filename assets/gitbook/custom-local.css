@@ -413,6 +413,37 @@ details.scripture-proofs.proof-target {
     h1, h2, h3 { break-after: avoid; }
 }
 
+/* ── Linked section ───────────────────────────────────────────────────── */
+
+/* A shared link lands with a little room below the fixed 50px header, rather
+   than with its first line touching it. */
+.markdown-section [id],
+.markdown-section .section-target {
+    scroll-margin-top: 16px;
+}
+
+/* The unit a link points at (custom.js adds the class): a gold wash, the gold
+   of the site's icon and social card, carried 10px past the text on each side
+   by box-shadow so nothing moves. .markdown-section's clipping box is widened
+   to make room (see Reading typography). */
+.book {
+    --section-target-bg: rgba(201, 168, 76, 0.2);
+}
+
+.book.color-theme-1 {
+    --section-target-bg: rgba(160, 118, 38, 0.2);
+}
+
+.book.color-theme-2 {
+    --section-target-bg: rgba(201, 168, 76, 0.16);
+}
+
+.markdown-section .section-target {
+    border-radius: 4px;
+    background-color: var(--section-target-bg);
+    box-shadow: -10px 0 0 var(--section-target-bg), 10px 0 0 var(--section-target-bg);
+}
+
 /* ── Reading layout and accessibility ─────────────────────────────────── */
 
 .skip-link {

@@ -263,8 +263,62 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         if (marker) revealProofs(marker.getAttribute('href').slice(1));
     });
 
+    // ── Landing on a linked section ─────────────────────────────────────────
+    // A shared link such as /pages/wcf/#wcf-1-4 scrolls to an empty <span>,
+    // which shows the reader nothing, in a page of continuous text. Mark the
+    // unit it anchors instead: the paragraph it leads (Confession sections,
+    // church-order paragraphs), or the heading after its empty paragraph
+    // (catechism questions, articles, chapters). A heading's own id — the
+    // sidebar's links, and links made before the short anchors — marks that
+    // heading. Proof callouts are revealProofs()'s business.
+    function sectionUnit(id) {
+        if (!id || /-proofs$/.test(id)) return null;
+        var element = document.getElementById(id);
+        if (!element || !element.closest || !element.closest('.markdown-section')) return null;
+        if (/^H[2-6]$/.test(element.tagName)) return element;
+        var paragraph = element.tagName === 'SPAN' ? element.parentElement : null;
+        if (!paragraph || paragraph.tagName !== 'P') return null;
+        if (paragraph.textContent.trim()) return paragraph;
+        var next = paragraph.nextElementSibling;
+        return next && /^H[2-6]$/.test(next.tagName) ? next : null;
+    }
+
+    function markSectionTarget(id) {
+        $('.section-target').removeClass('section-target');
+        var unit = sectionUnit(id);
+        if (unit) unit.classList.add('section-target');
+        return unit;
+    }
+
+    // Loading a link natively honours scroll-margin-top (custom-local.css), which
+    // keeps the unit clear of the fixed header. GitBook's own navigation does
+    // not: it animates the scroller to the element's exact top, which below
+    // 1240px is under the header. Once any such animation has finished, bring
+    // the unit into view again if it ended up there. page.change fires before
+    // GitBook starts animating, hence the timeout.
+    function keepClearOfHeader(unit) {
+        if (!unit) return;
+        setTimeout(function() {
+            $('.book-body, .body-inner').promise().done(function() {
+                var header = document.querySelector('.book-header');
+                var limit = header ? header.getBoundingClientRect().bottom : 0;
+                if (unit.getBoundingClientRect().top < limit + 8) {
+                    unit.scrollIntoView({ block: 'start' });
+                }
+            });
+        }, 0);
+    }
+
     window.addEventListener('hashchange', function() {
-        revealProofs(location.hash.slice(1));
+        var id = location.hash.slice(1);
+        revealProofs(id);
+        keepClearOfHeader(markSectionTarget(id));
+    });
+
+    // The sidebar's section links scroll in place with pushState, which fires no
+    // hashchange.
+    $(document).on('click', '.book-summary a[href^="#"]', function() {
+        keepClearOfHeader(markSectionTarget(this.getAttribute('href').slice(1)));
     });
 
     function button(action, icon, label, toggle) {
@@ -595,6 +649,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         if (history.replaceState) {
             history.replaceState({}, '', this.getAttribute('href'));
         }
+        markSectionTarget(this.getAttribute('href').slice(1));
         copyText(citationFor(this),
             reference ? 'Copied citation for ' + reference : 'Link copied');
     });
@@ -648,6 +703,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         applyVersionState();
         retagReferences();      // self-retries while the vendor script loads
         revealProofs(location.hash.slice(1));
+        keepClearOfHeader(markSectionTarget(location.hash.slice(1)));
     }
 
     gitbook.events.bind('start', installToolbar);
