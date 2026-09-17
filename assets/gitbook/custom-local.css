@@ -526,6 +526,16 @@ details.scripture-proofs.proof-target {
     color: var(--cc-ref-text);
 }
 
+/* The Heidelberg questions are `##` where the Westminster catechisms' are `###`,
+   so 129 of them came out at chapter-heading size and the page read as a wall
+   of headings. Match the Shorter and Larger Catechisms without renumbering the
+   headings, whose ids are the permalinks and search deep links. The class
+   comes from _includes/body.html. */
+.markdown-section.doc-heidelberg h2 {
+    margin-top: 1.275em;
+    font-size: 1.18em;
+}
+
 .markdown-section h3 {
     font-size: 1.18em;
 }
