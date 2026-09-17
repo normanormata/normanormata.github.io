@@ -617,10 +617,38 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         if (this.value) location.href = this.value;
     });
 
+    // gitbook-plugin-back-to-top-button builds its control as a bare <div> with
+    // a click handler, so a keyboard could never reach it. Give it a button's
+    // role, name and keys. It is display: none until the page has been scrolled,
+    // and Tab skips hidden elements, so it joins the tab order only while it is
+    // on screen. Its plugin.js handler runs first on page.change, so the element
+    // exists by the time onPageChange() calls this.
+    function installBackToTop() {
+        $('.back-to-top')
+            .attr({
+                role: 'button',
+                tabindex: '0',
+                title: 'Back to top',
+                'aria-label': 'Back to top'
+            })
+            .find('i').attr('aria-hidden', 'true');
+    }
+
+    $('body').on('keydown', '.back-to-top', function(event) {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();     // Space would otherwise scroll the page
+        $(this).trigger('click');
+        // The control fades out once the page is back at the top, which would
+        // leave focus on <body>; start the reader at the top of the content.
+        var main = document.getElementById('main-content');
+        if (main) main.focus({ preventScroll: true });
+    });
+
     function onPageChange() {
         installToolbar();
         installSectionSelector();
         installPermalinks();
+        installBackToTop();
         applyVersionState();
         retagReferences();      // self-retries while the vendor script loads
         revealProofs(location.hash.slice(1));
