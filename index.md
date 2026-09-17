@@ -12,7 +12,7 @@ Searchable creeds, confessions, and catechisms of the church.
   <div class="home-search__field">
     <i class="fa fa-search" aria-hidden="true"></i>
     <input id="home-search-input" name="q" type="search"
-           placeholder="Try “justification,” “WCF 3.1,” or “Heidelberg 21”"
+           placeholder="Try “justification” or “WCF 3.1”"
            autocomplete="off">
     <button type="submit">Search</button>
   </div>
@@ -20,15 +20,19 @@ Searchable creeds, confessions, and catechisms of the church.
 
 ## The Ecumenical Creeds
 
-- [The Apostles' Creed]({{ site.baseurl }}/pages/apostles-creed/)
-- [The Nicene Creed]({{ site.baseurl }}/pages/nicene-creed/)
-- [The Athanasian Creed]({{ site.baseurl }}/pages/athanasian-creed/)
+<ul class="doc-grid">
+  <li><a href="{{ site.baseurl }}/pages/apostles-creed/"><span class="doc-grid__title">The Apostles’ Creed</span><span class="doc-grid__meta">The ancient baptismal confession</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/nicene-creed/"><span class="doc-grid__title">The Nicene Creed</span><span class="doc-grid__meta">Nicaea 325 · Constantinople 381</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/athanasian-creed/"><span class="doc-grid__title">The Athanasian Creed</span><span class="doc-grid__meta">Quicunque Vult</span></a></li>
+</ul>
 
 ## The Westminster Standards
 
-- [The Westminster Confession of Faith]({{ site.baseurl }}/pages/wcf/)
-- [The Westminster Shorter Catechism]({{ site.baseurl }}/pages/wsc/)
-- [The Westminster Larger Catechism]({{ site.baseurl }}/pages/wlc/)
+<ul class="doc-grid">
+  <li><a href="{{ site.baseurl }}/pages/wcf/"><span class="doc-grid__title">The Westminster Confession of Faith</span><span class="doc-grid__meta">33 chapters</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/wsc/"><span class="doc-grid__title">The Westminster Shorter Catechism</span><span class="doc-grid__meta">107 questions</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/wlc/"><span class="doc-grid__title">The Westminster Larger Catechism</span><span class="doc-grid__meta">196 questions</span></a></li>
+</ul>
 
 Each of these carries the OPC lettered scripture proofs in collapsible callouts, and can
 be read either in the constitutional text or in the 2025 Modern English Study Version —
@@ -37,15 +41,19 @@ is for study only and carries no constitutional authority.
 
 ## The Three Forms of Unity
 
-- [The Belgic Confession]({{ site.baseurl }}/pages/belgic/)
-- [The Heidelberg Catechism]({{ site.baseurl }}/pages/heidelberg/)
-- [The Canons of Dort]({{ site.baseurl }}/pages/canons-of-dort/)
+<ul class="doc-grid">
+  <li><a href="{{ site.baseurl }}/pages/belgic/"><span class="doc-grid__title">The Belgic Confession</span><span class="doc-grid__meta">1561 · 37 articles</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/heidelberg/"><span class="doc-grid__title">The Heidelberg Catechism</span><span class="doc-grid__meta">1563 · 129 questions</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/canons-of-dort/"><span class="doc-grid__title">The Canons of Dort</span><span class="doc-grid__meta">1619 · Five main points of doctrine</span></a></li>
+</ul>
 
 ## The OPC Book of Church Order
 
-- [The Form of Government]({{ site.baseurl }}/pages/fg/)
-- [The Book of Discipline]({{ site.baseurl }}/pages/bd/)
-- [The Directory for the Public Worship of God]({{ site.baseurl }}/pages/dpw/)
+<ul class="doc-grid">
+  <li><a href="{{ site.baseurl }}/pages/fg/"><span class="doc-grid__title">The Form of Government</span><span class="doc-grid__meta">32 chapters</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/bd/"><span class="doc-grid__title">The Book of Discipline</span><span class="doc-grid__meta">9 chapters</span></a></li>
+  <li><a href="{{ site.baseurl }}/pages/dpw/"><span class="doc-grid__title">The Directory for the Public Worship of God</span><span class="doc-grid__meta">Preface and 5 chapters</span></a></li>
+</ul>
 
 ## Scripture Index
 
@@ -55,17 +63,35 @@ Standards and the Heidelberg Catechism that cites it.
 
 ## Downloads and tools
 
-Two-column comparisons of the constitutional text against the 2025 MESV:
+The Westminster Standards as PDFs: two-column comparisons of the constitutional text against
+the 2025 MESV, and the OPC print layouts.
 
-- [Confession of Faith]({{ site.baseurl }}/assets/Two_column_comparison_of_the_constitutional_text_of_The_Confession_of_Faith_and_2025_MESV.pdf) (PDF)
-- [Shorter Catechism]({{ site.baseurl }}/assets/Two_column_comparison_of_the_constitutional_text_of_The_Shorter_Catechism_and_2025_MESV.pdf) (PDF)
-- [Larger Catechism]({{ site.baseurl }}/assets/Two_column_comparison_of_the_constitutional_text_of_The_Larger_Catechism_and_2025_MESV.pdf) (PDF)
-
-OPC print layouts:
-
-- [Confession of Faith]({{ site.baseurl }}/assets/CFLayout.pdf) (PDF)
-- [Shorter Catechism]({{ site.baseurl }}/assets/SCLayout.pdf) (PDF)
-- [Larger Catechism]({{ site.baseurl }}/assets/LCLayout.pdf) (PDF)
+<table class="downloads">
+  <thead>
+    <tr>
+      <th scope="col">Document</th>
+      <th scope="col">Compared with the 2025 MESV</th>
+      <th scope="col">OPC print layout</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Confession of Faith</th>
+      <td><a href="{{ site.baseurl }}/assets/Two_column_comparison_of_the_constitutional_text_of_The_Confession_of_Faith_and_2025_MESV.pdf" aria-label="Confession of Faith: comparison with the 2025 MESV (PDF)">PDF</a></td>
+      <td><a href="{{ site.baseurl }}/assets/CFLayout.pdf" aria-label="Confession of Faith: OPC print layout (PDF)">PDF</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Shorter Catechism</th>
+      <td><a href="{{ site.baseurl }}/assets/Two_column_comparison_of_the_constitutional_text_of_The_Shorter_Catechism_and_2025_MESV.pdf" aria-label="Shorter Catechism: comparison with the 2025 MESV (PDF)">PDF</a></td>
+      <td><a href="{{ site.baseurl }}/assets/SCLayout.pdf" aria-label="Shorter Catechism: OPC print layout (PDF)">PDF</a></td>
+    </tr>
+    <tr>
+      <th scope="row">Larger Catechism</th>
+      <td><a href="{{ site.baseurl }}/assets/Two_column_comparison_of_the_constitutional_text_of_The_Larger_Catechism_and_2025_MESV.pdf" aria-label="Larger Catechism: comparison with the 2025 MESV (PDF)">PDF</a></td>
+      <td><a href="{{ site.baseurl }}/assets/LCLayout.pdf" aria-label="Larger Catechism: OPC print layout (PDF)">PDF</a></td>
+    </tr>
+  </tbody>
+</table>
 
 For the terminal, the [Westminster Standards CLI](https://github.com/normanormata/westminster_cli)
 reads, searches, and quizzes you on the same OPC constitutional text and 2025 MESV that this

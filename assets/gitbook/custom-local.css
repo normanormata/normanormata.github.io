@@ -200,12 +200,15 @@ details.scripture-proofs .proofs-body a:focus-visible {
    Quiet until the section is hovered or the control is focused, so it never
    competes with the lettered proof markers. */
 .section-permalink {
-    /* `inline`, not `inline-block`: an inline-block is an atomic box, and as a
-       plain inline the control sits on the text baseline with the words it
-       precedes. The glyph occupies its space whether or not it is transparent,
-       so revealing it never reflows the confessional text. */
-    display: inline;
-    margin-right: 0.3em;
+    /* Hung in the left gutter: a fixed-width box pulled back by its own width,
+       so the heading or paragraph text starts flush with the column exactly as
+       if the control were not there. As an ordinary inline it took ~18px at the
+       start of every heading and numbered paragraph, and nothing lined up with
+       the text around it. Revealing it still never reflows the text. 18px is
+       the narrowest page gutter (see the 600px breakpoint below). */
+    display: inline-block;
+    width: 18px;
+    margin-left: -18px;
     color: var(--permalink-color) !important;
     font-size: 0.72em;
     font-weight: 700;
@@ -236,9 +239,9 @@ li:hover > .section-permalink,
 }
 
 /* Touch devices get no hover, so keep the control permanently visible there
-   rather than unreachable. */
+   rather than unreachable — but faint, since it leads every paragraph. */
 @media (hover: none) {
-    .section-permalink { opacity: 0.55; }
+    .section-permalink { opacity: 0.35; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -484,13 +487,86 @@ details.scripture-proofs.proof-target {
    the chapter titles 4px apart (34px against 29.75px) and made every heading
    read as the same rank. Widen the gap at the top and close it lower down, so
    a chapter heading sits over the text rather than competing with the title. */
+/* Headings inherited the 1.72 body leading, which set a two-line title on a
+   phone as two separate-looking lines 55px apart. */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4 {
+    line-height: 1.25;
+}
+
 .markdown-section h1 {
     font-size: 1.9em;
     letter-spacing: -0.01em;
 }
 
 .markdown-section h2 {
+    margin-top: 1.6em;
     font-size: 1.42em;
+}
+
+/* One link colour everywhere. The theme's #4183c4 is 4.0:1 on white, under the
+   4.5:1 AA minimum, and differed from the blue search and the scripture index
+   already use. Sepia's theme sets links to `inherit`, which made them
+   indistinguishable from the text. --cc-link is themed for all three. The
+   second selector matches the specificity of the theme's sepia and night rules
+   in gitbook-plugin-fontsettings/website.css; components that colour their own
+   links re-assert themselves below with a longer selector. */
+.markdown-section a,
+.book .book-body .page-wrapper .page-inner section.normal a {
+    color: var(--cc-link);
+}
+
+.book .book-body .page-wrapper .page-inner section.normal sup.proof-marker a {
+    color: inherit;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .scripture-index__cites a {
+    color: var(--cc-ref-text);
+}
+
+/* The Heidelberg questions are `##` where the Westminster catechisms' are `###`,
+   so 129 of them came out at chapter-heading size and the page read as a wall
+   of headings. Match the Shorter and Larger Catechisms without renumbering the
+   headings, whose ids are the permalinks and search deep links. The class
+   comes from _includes/body.html. */
+.markdown-section.doc-heidelberg h2 {
+    margin-top: 1.275em;
+    font-size: 1.18em;
+}
+
+/* Tables: rules between rows only. The theme's full grid and zebra stripes made
+   the one table on the site — the canon in WCF 1.2 — the heaviest thing on the
+   first screen of the Confession. `.book.book` matches the specificity of the
+   theme's sepia and night table rules in fontsettings/website.css. */
+.book.book .book-body .page-wrapper .page-inner section.normal table {
+    font-family: var(--ui-font);
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table tr,
+.book.book .book-body .page-wrapper .page-inner section.normal table tr:nth-child(2n) {
+    border: 0;
+    background: transparent;
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table th,
+.book.book .book-body .page-wrapper .page-inner section.normal table td {
+    padding: 5px 12px 5px 0;
+    border: 0;
+    border-bottom: 1px solid var(--cc-rule);
+    color: var(--cc-text);
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table th {
+    text-align: left;
+}
+
+.book.book .book-body .page-wrapper .page-inner section.normal table thead th {
+    padding-top: 0;
+    border-bottom-color: var(--cc-border);
 }
 
 .markdown-section h3 {
@@ -528,8 +604,20 @@ body.is-search-page .search-page > h1 {
     display: flex;
     align-items: center;
     gap: 4px;
-    /* Leave room for .site-toolbar / .mobile-tools, which are positioned. */
-    padding-right: 116px;
+    /* Clear of the overlay scrollbar, which otherwise clips the last button. */
+    padding-right: 10px;
+    /* The toolbar is a flex item in this row, so the title only gets the room
+       the tools leave. It used to be absolutely positioned against a fixed
+       116px of padding — the width of the phone's "Reader tools" button — so on
+       desktop the ~470px toolbar sat on top of any title longer than a few
+       words. Named container so the toolbar can drop its labels when the
+       header, not the viewport, gets narrow (the sidebar takes 300px of it). */
+    container: book-header / inline-size;
+}
+
+/* The theme's #7e888b header text is 3.6:1 at 12px. */
+.book .book-body .book-header {
+    color: var(--cc-muted);
 }
 
 /* The theme appends its menu button after the title, which flex would place on
@@ -548,13 +636,20 @@ body.is-search-page .search-page > h1 {
     padding: 0 8px;
     font-size: 20px;
     line-height: 50px;
-    text-align: center;
+    /* Left, beside the menu button: centred in whatever the toolbar leaves, the
+       title sat visibly off-centre against both the page and the column. */
+    text-align: left;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 .book-header-title a {
     color: inherit;
+}
+
+/* The homepage h1 sits directly below and says the same thing. */
+.book-header--home .book-header-title {
+    visibility: hidden;
 }
 
 /* The spinner is theme.js's page-loading indicator: it wraps each AJAX
@@ -685,6 +780,71 @@ input:focus-visible {
 
 .edition-panel__notice {
     font-weight: 600;
+}
+
+/* ── Homepage ─────────────────────────────────────────────────────────── */
+
+/* One card per document, with a line saying what it is, in place of a bulleted
+   list that repeated the sidebar word for word. Built from the --cc-* tokens
+   defined under Search below, so sepia and night follow. */
+.markdown-section .doc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+    gap: 10px;
+    margin: 14px 0 8px;
+    padding: 0;
+    list-style: none;
+}
+
+.markdown-section .doc-grid li {
+    margin: 0;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .doc-grid a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--cc-border-soft);
+    border-radius: 8px;
+    background: var(--cc-surface);
+    color: var(--cc-link);
+    text-decoration: none;
+    transition: border-color 120ms ease-in-out, background-color 120ms ease-in-out;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .doc-grid a:hover {
+    border-color: var(--cc-chip-hover-border);
+    background: var(--cc-row-hover);
+}
+
+.doc-grid__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.doc-grid a:hover .doc-grid__title {
+    text-decoration: underline;
+}
+
+.doc-grid__meta {
+    color: var(--cc-muted);
+    font-family: var(--ui-font);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .book .book-body .page-wrapper .page-inner section.normal .doc-grid a {
+        transition: none;
+    }
+}
+
+.markdown-section table.downloads td,
+.markdown-section table.downloads th[scope="col"]:not(:first-child) {
+    width: 30%;
 }
 
 /* ── Search ───────────────────────────────────────────────────────────── */
@@ -1089,12 +1249,51 @@ mark.search-highlight-keyword {
 /* ── Reader tools ─────────────────────────────────────────────────────── */
 
 .site-toolbar {
-    position: absolute;
-    top: 0;
-    /* Clear of the overlay scrollbar, which otherwise clips the last button. */
-    right: 10px;
+    position: relative;
     z-index: 2;
+    flex: 0 0 auto;
     height: 50px;
+}
+
+/* A narrow header — a small laptop with the sidebar open — cannot fit every
+   label beside a readable title, so the plain actions go icon-only. Their
+   labels stay in the accessibility tree, and each keeps its tooltip. The
+   edition toggles keep their words longest — "Text: MESV" is state, not a
+   name — and a pressed Highlight still shows its underline without one. */
+@container book-header (max-width: 1000px) {
+    .site-toolbar .reader-action-search .reader-action-label,
+    .site-toolbar .reader-display .reader-action-label,
+    .site-toolbar .reader-action-copy .reader-action-label,
+    .site-toolbar .reader-action-repo .reader-action-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+}
+
+@container book-header (max-width: 800px) {
+    .site-toolbar .reader-action-highlight .reader-action-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+}
+
+@container book-header (max-width: 660px) {
+    .site-toolbar .reader-action-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
 }
 
 .reader-actions {
@@ -1259,13 +1458,57 @@ mark.search-highlight-keyword {
 .mobile-section-nav label {
     display: block;
     margin-bottom: 6px;
+    font-family: var(--ui-font);
     font-size: 13px;
     font-weight: 700;
 }
 
+/* Styled to match the search field and the search page's collection select,
+   rather than left as a native control in the reading serif. */
 .mobile-section-nav select {
     width: 100%;
     min-height: 44px;
+    padding: 8px 34px 8px 12px;
+    border: 1px solid var(--cc-border);
+    border-radius: 8px;
+    background-color: var(--cc-surface);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='%2352617a' d='M1 1.5 6 6.5l5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 11px;
+    box-shadow: 0 1px 2px rgba(16, 32, 48, 0.06);
+    color: var(--cc-text);
+    font-family: var(--ui-font);
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.mobile-section-nav select:focus-visible {
+    border-color: #2a78b8;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────────────── */
+
+/* Section entries under the open document wrap to a second line instead of
+   cutting off after ~25 characters, which on the catechisms left little more
+   than "1. Question: What is your only co…". Clamped at two lines so the list
+   stays scannable. The vertical spacing sits on the <li>: the theme's
+   overflow: hidden clips the link at its padding edge, so padding there left
+   the top of the clamped third line showing beneath the second. */
+.book-summary ul.summary li.chapter > ul > li {
+    padding: 5px 0;
+}
+
+.book-summary ul.summary li.chapter > ul > li > a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: normal;
+    line-height: 1.35;
 }
 
 /* ── Labeled document pagination ──────────────────────────────────────── */
@@ -1274,19 +1517,29 @@ mark.search-highlight-keyword {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
-    width: min(70ch, calc(100% - 32px));
-    margin: 32px auto 48px;
+    /* Same box as .page-inner — 17px so 70ch is the same length, and the same
+       side padding — so the cards line up with the text above them. At the
+       inherited size they were ~90px narrower and off-centre. */
+    font-size: 17px;
+    width: min(70ch, 100%);
+    padding: 0 15px;
+    /* Room below for the back-to-top button, which otherwise covers the Next
+       card once the page is scrolled to the end. */
+    margin: 32px auto 80px;
 }
 
-.document-pagination .navigation {
+/* Long enough to outrank custom.css's `.book-body .body-inner .navigation`
+   below 1240px, whose `width: calc(50% - 3px)` halves each card in its cell. */
+.book-body .body-inner .document-pagination .navigation {
     position: static;
     display: flex;
     flex-direction: column;
     width: auto;
     max-width: none;
+    margin: 0;
     min-height: 64px;
     padding: 11px 14px;
-    border: 1px solid #d8dde5;
+    border: 1px solid var(--cc-border-soft);
     border-radius: 6px;
     color: inherit;
     line-height: 1.25;
@@ -1295,10 +1548,14 @@ mark.search-highlight-keyword {
 .document-pagination .navigation-next {
     align-items: flex-end;
     text-align: right;
+    /* theme.js writes an inline margin-right on .navigation-next to clear a
+       scrollbar for the theme's floated arrows; in this grid it only makes the
+       Next card 5px narrower than Previous. */
+    margin-right: 0 !important;
 }
 
 .navigation-direction {
-    color: #667483;
+    color: var(--cc-muted);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -1308,6 +1565,46 @@ mark.search-highlight-keyword {
 .navigation-title {
     margin-top: 4px;
     font-size: 14px;
+}
+
+/* ── Back to top ──────────────────────────────────────────────────────── */
+
+/* The plugin's 50px half-opaque disc sat over the reading column on phones and
+   over the Next card at the end of every page. Smaller and fainter until it is
+   pointed at. `display` is left alone: plugin.js fades it in and out. */
+.book .back-to-top {
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.28);
+}
+
+.book .back-to-top:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.book .back-to-top i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 17px;
+    transform: translate(-50%, -50%);
+}
+
+.book.color-theme-1 .back-to-top {
+    background: rgba(112, 66, 20, 0.3);
+}
+
+.book.color-theme-1 .back-to-top:hover {
+    background: rgba(112, 66, 20, 0.75);
+}
+
+.book.color-theme-2 .back-to-top {
+    background: rgba(189, 202, 219, 0.3);
+}
+
+.book.color-theme-2 .back-to-top:hover {
+    background: rgba(189, 202, 219, 0.75);
 }
 
 /* ── Scripture index ──────────────────────────────────────────────────── */
@@ -1342,8 +1639,10 @@ mark.search-highlight-keyword {
 }
 
 /* Book list on the overview page. Sized so the 63 books fill the column in
-   even rows rather than one long scroll. */
-.scripture-books {
+   even rows rather than one long scroll. Prefixed with `.markdown-section`,
+   like .scripture-index below, to outrank the theme's `.markdown-section ul`
+   padding, which otherwise indented every row 34px past its heading. */
+.markdown-section .scripture-books {
     list-style: none;
     margin: 12px 0 0;
     padding: 0;
@@ -1382,7 +1681,7 @@ mark.search-highlight-keyword {
 /* One row per cited passage: the passage on the left, the sections citing it
    on the right. The passage column is fixed so the citations line up down the
    page; it wraps under on narrow screens rather than squeezing. */
-.scripture-index {
+.markdown-section .scripture-index {
     list-style: none;
     margin: 12px 0 0;
     padding: 0;
@@ -1464,10 +1763,9 @@ mark.search-highlight-keyword {
     }
 
     .mobile-tools {
-        position: absolute;
-        top: 4px;
-        right: 6px;
+        position: relative;
         z-index: 3;
+        flex: 0 0 auto;
         display: block;
     }
 
@@ -1544,11 +1842,6 @@ mark.search-highlight-keyword {
         padding: 20px 18px 30px;
     }
 
-    .book-header-title {
-        padding-right: 112px;
-        text-align: left;
-    }
-
     .edition-panel dl > div {
         display: block;
     }
@@ -1559,6 +1852,7 @@ mark.search-highlight-keyword {
 
     .document-pagination {
         grid-template-columns: 1fr;
+        padding: 0 18px;
     }
 
     /* Stack the controls row so the count sits under the select. */
