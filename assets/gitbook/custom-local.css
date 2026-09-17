@@ -528,8 +528,20 @@ body.is-search-page .search-page > h1 {
     display: flex;
     align-items: center;
     gap: 4px;
-    /* Leave room for .site-toolbar / .mobile-tools, which are positioned. */
-    padding-right: 116px;
+    /* Clear of the overlay scrollbar, which otherwise clips the last button. */
+    padding-right: 10px;
+    /* The toolbar is a flex item in this row, so the title only gets the room
+       the tools leave. It used to be absolutely positioned against a fixed
+       116px of padding — the width of the phone's "Reader tools" button — so on
+       desktop the ~470px toolbar sat on top of any title longer than a few
+       words. Named container so the toolbar can drop its labels when the
+       header, not the viewport, gets narrow (the sidebar takes 300px of it). */
+    container: book-header / inline-size;
+}
+
+/* The theme's #7e888b header text is 3.6:1 at 12px. */
+.book .book-body .book-header {
+    color: var(--cc-muted);
 }
 
 /* The theme appends its menu button after the title, which flex would place on
@@ -548,7 +560,9 @@ body.is-search-page .search-page > h1 {
     padding: 0 8px;
     font-size: 20px;
     line-height: 50px;
-    text-align: center;
+    /* Left, beside the menu button: centred in whatever the toolbar leaves, the
+       title sat visibly off-centre against both the page and the column. */
+    text-align: left;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
@@ -1089,12 +1103,51 @@ mark.search-highlight-keyword {
 /* ── Reader tools ─────────────────────────────────────────────────────── */
 
 .site-toolbar {
-    position: absolute;
-    top: 0;
-    /* Clear of the overlay scrollbar, which otherwise clips the last button. */
-    right: 10px;
+    position: relative;
     z-index: 2;
+    flex: 0 0 auto;
     height: 50px;
+}
+
+/* A narrow header — a small laptop with the sidebar open — cannot fit every
+   label beside a readable title, so the plain actions go icon-only. Their
+   labels stay in the accessibility tree, and each keeps its tooltip. The
+   edition toggles keep their words longest — "Text: MESV" is state, not a
+   name — and a pressed Highlight still shows its underline without one. */
+@container book-header (max-width: 1000px) {
+    .site-toolbar .reader-action-search .reader-action-label,
+    .site-toolbar .reader-display .reader-action-label,
+    .site-toolbar .reader-action-copy .reader-action-label,
+    .site-toolbar .reader-action-repo .reader-action-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+}
+
+@container book-header (max-width: 800px) {
+    .site-toolbar .reader-action-highlight .reader-action-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+}
+
+@container book-header (max-width: 660px) {
+    .site-toolbar .reader-action-label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
 }
 
 .reader-actions {
@@ -1464,10 +1517,9 @@ mark.search-highlight-keyword {
     }
 
     .mobile-tools {
-        position: absolute;
-        top: 4px;
-        right: 6px;
+        position: relative;
         z-index: 3;
+        flex: 0 0 auto;
         display: block;
     }
 
@@ -1542,11 +1594,6 @@ mark.search-highlight-keyword {
 
     .page-inner {
         padding: 20px 18px 30px;
-    }
-
-    .book-header-title {
-        padding-right: 112px;
-        text-align: left;
     }
 
     .edition-panel dl > div {
