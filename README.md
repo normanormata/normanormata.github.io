@@ -86,6 +86,15 @@ reconstructs and compares all 474 constitutional and MESV passages against it.
 The check also rejects legacy paired spans and known merged-word corruption.
 
 ```bash
+python3 script/section-anchors.py --check
+```
+
+Verifies the short section anchors outside the Westminster Standards — `#hc-q1`,
+`#belgic-1`, `#dort-3-4-2`, `#fg-3-3`, `#bd-2-b-3`, `#dpw-1-a-1`, `#nicene-381` — are
+present, unique, and numbered in sequence. Run it without `--check` to regenerate
+them after adding or renumbering a heading or church-order paragraph.
+
+```bash
 python3 script/check-generated-html.py _site
 ```
 

@@ -13,20 +13,21 @@ source_url: https://opc.org/BCO.html
 verified_date: 2026-07-29
 source_note: This page presents the constitutional directory text; consult the OPC source for the current official edition.
 ---
+<span id="dpw-preface"></span>
 ## Preface
 The purpose of this Directory is to express the Church's common understanding of the principles and practice of public worship that is Reformed according to the Scriptures and, subordinately, to the Confession and Catechisms. Where practices are understood by the Church to be required by the Word of God, either expressly or by good and necessary consequence, they are mandated. In matters of circumstance and form in worship not specifically provided for in Scripture, the Directory provides guidance for their ordering according to the light of nature and Christian prudence, consonant with the general rules of the Word.
 
 The Directory seeks to make clear this distinction in its use of language. The following denotations used in the Directory are to be understood as indicated. The first category denotes practices that are required by the Word of God.
 
-1. Practices that are mandated are denoted by "shall," "will," "is to be," "must," and "are to be."
+<span id="dpw-preface-1"></span>1. Practices that are mandated are denoted by "shall," "will," "is to be," "must," and "are to be."
 
 The following three categories denote practices that are not mandated:
 
-2. Practices that are strongly recommended are denoted by "should," "ought to," "is desirable," and "is advisable."
+<span id="dpw-preface-2"></span>2. Practices that are strongly recommended are denoted by "should," "ought to," "is desirable," and "is advisable."
 
-3. Practices that are commended as suitable are denoted by "is appropriate," "is well," and "is fitting."
+<span id="dpw-preface-3"></span>3. Practices that are commended as suitable are denoted by "is appropriate," "is well," and "is fitting."
 
-4. Practices that are permissible are denoted by "may."
+<span id="dpw-preface-4"></span>4. Practices that are permissible are denoted by "may."
 
 Other imperative forms occur in the Directory, and sometimes the forms in the list above are varied by modifying words or are put in the negative, either of which alters their force. For example, "may not" and "may only" are mandatory prohibitions, even though "may" is permissive. The meaning of these additional and altered forms is to be determined by the rules of English usage, with due respect to the distinctions outlined above.
 
@@ -34,10 +35,13 @@ The Suggested Forms for Particular Services are, by definition, suggested. The d
 
 Scripture quotations in the Directory and the Suggested Forms are drawn from the King James Version with a few variations, indicated by brackets, where deemed advisable for current understanding, without prejudice to other translations. In the use of the Directory, any accurate, faithful translation may be substituted.
 
+<span id="dpw-1"></span>
 ## Chapter I: The Principles of Public Worship
+
+<span id="dpw-1-a"></span>
 ### A. God's Institution of Public Worship
 
-1. The living and true God, our triune Creator, has instituted the worship of himself by all people everywhere in spirit and in truth.
+<span id="dpw-1-a-1"></span>1. The living and true God, our triune Creator, has instituted the worship of himself by all people everywhere in spirit and in truth.
 
 a. Because man's chief end is to glorify God and fully to enjoy him forever, all of life is to be worshipful. Nevertheless, worship itself consists primarily in specific acts of communion with God.
 
@@ -45,9 +49,9 @@ b. Only those people whose hearts have been made new through God's grace by the 
 
 c. While believers are to worship in secret as individuals and in private as families, they are also to worship as churches in assemblies of public worship, which are not carelessly or willfully to be neglected or forsaken. Public worship occurs when God, by his Word and Spirit, through the lawful government of the church, calls his people to assemble to worship him together.
 
-2. In his Word, God has specially appointed one day in seven as a Sabbath to be kept holy to him. It is the duty of every one to remember the Sabbath day, to keep it holy. From the beginning of the world to the resurrection of Christ, the Sabbath was the last day of the week, marking the completion of six days of work, anticipating eternal rest in the coming Messiah. By raising Christ from the dead on the first day of the week, God sanctified that day. And from the time of the apostles, the church, accordingly, has kept the first day of the week holy as the Christian Sabbath, the Lord's Day, and as the day on which it is to assemble for worship. Now each weekly cycle begins with the people of God resting in Christ in the worship of his name, followed by six days of work. The Lord's Day thus both depicts that the Christian's rest has already begun in Christ, and anticipates the eternal rest of his sons and daughters in the new heaven and the new earth.
+<span id="dpw-1-a-2"></span>2. In his Word, God has specially appointed one day in seven as a Sabbath to be kept holy to him. It is the duty of every one to remember the Sabbath day, to keep it holy. From the beginning of the world to the resurrection of Christ, the Sabbath was the last day of the week, marking the completion of six days of work, anticipating eternal rest in the coming Messiah. By raising Christ from the dead on the first day of the week, God sanctified that day. And from the time of the apostles, the church, accordingly, has kept the first day of the week holy as the Christian Sabbath, the Lord's Day, and as the day on which it is to assemble for worship. Now each weekly cycle begins with the people of God resting in Christ in the worship of his name, followed by six days of work. The Lord's Day thus both depicts that the Christian's rest has already begun in Christ, and anticipates the eternal rest of his sons and daughters in the new heaven and the new earth.
 
-3. God's covenant people are to devote the entire Lord's Day as holy to the Lord.
+<span id="dpw-1-a-3"></span>3. God's covenant people are to devote the entire Lord's Day as holy to the Lord.
 
 a. In order to sanctify the day, it is necessary for them to prepare for its approach. They should attend to their ordinary affairs beforehand, so that they may not be hindered from setting the Sabbath apart to God.
 
@@ -57,14 +61,15 @@ c. They are then to observe a holy rest all the day from their own works, words,
 
 d. They shall so order works of necessity on that day that they do not improperly detain others from the public worship of God, nor otherwise hinder them from sanctifying the Sabbath.
 
-4. The Lord's Day is a day of holy convocation, the day on which the Lord calls his people to assemble for public worship.
+<span id="dpw-1-a-4"></span>4. The Lord's Day is a day of holy convocation, the day on which the Lord calls his people to assemble for public worship.
 
 a. Although it is fitting and proper that the members of Christ's church assemble for worship on other occasions also, which are left to the discretion of particular sessions, the Lord calls the whole congregation of each local church to the sacred duty and high privilege of assembling for public worship each Lord's Day. He expressly commands his people to draw near to him, not forsaking the assembling of themselves together.
 
 b. It is highly advisable that a congregation assemble for public worship at the beginning and the ending of the Lord's Day. God established this pattern for his Old Testament people when he commanded morning and evening sacrifice and incense burning. Moreover, he sanctifies the entire Lord's Day to himself and gives his people in it a foretaste of their eternal enjoyment of him and his people.
 
+<span id="dpw-1-b"></span>
 ### B. The Nature of Public Worship
-1. An assembly of public worship is not merely a gathering of God's children with each other, but is, before all else, a meeting of the triune God with his covenant people. In the covenant, God promises his chosen ones that he will dwell among them as their God and they will be his people.
+<span id="dpw-1-b-1"></span>1. An assembly of public worship is not merely a gathering of God's children with each other, but is, before all else, a meeting of the triune God with his covenant people. In the covenant, God promises his chosen ones that he will dwell among them as their God and they will be his people.
 
 a. The triune God is present in public worship, not only by virtue of the divine omnipresence, but, much more intimately, as the faithful covenant Savior. Through Christ, God's people have access by one Spirit to the Father.
 
@@ -72,13 +77,13 @@ b. In an assembly of public worship, the triune God is not only the One to whom 
 
 c. Pastors and ruling elders are to endeavor to inculcate in themselves and in the congregation expectations for, attitudes concerning, and behavior during public worship which are appropriate to the glorious fact that public worship is covenantal communion between God and his people in his public ordinances.
 
-2. Because Christ is the Mediator of the covenant, no one draws near to God except through him alone.
+<span id="dpw-1-b-2"></span>2. Because Christ is the Mediator of the covenant, no one draws near to God except through him alone.
 
 a. God's people enter the Most Holy Place, the heavenly sanctuary, by the redeeming blood of Jesus, by the new and living way opened for them through the curtain, that is, his flesh. They draw near through him as their Great High Priest, who has not entered a man-made sanctuary but heaven itself, now to appear for them in God's presence.
 
 b. Public worship is to be conducted in a manner that plainly expresses conscious reliance upon the mediation and merits of Jesus Christ. To this end, it is well that there be a prayer of confession of sin early in the worship service. It is fitting that the minister, as God's ambassador, then declare an assurance of God's grace in Christ, reminding each worshiper that he can have boldness to approach the holy God only through the mediation and merits of Jesus Christ.
 
-3. By the Spirit of the exalted Christ, God draws near to his people and they draw near to their God. They come by grace to Mount Zion, the heavenly Jerusalem, joining innumerable angels and all the people of God in joyous and reverent communion with him.
+<span id="dpw-1-b-3"></span>3. By the Spirit of the exalted Christ, God draws near to his people and they draw near to their God. They come by grace to Mount Zion, the heavenly Jerusalem, joining innumerable angels and all the people of God in joyous and reverent communion with him.
 
 a. God's people not only are to come into his presence with a deep sense of awe at the thought of his perfect holiness and their own exceeding sinfulness, but also are to enter into his gates with thanksgiving and into his courts with praise for the great salvation that he has so graciously wrought for them through his only begotten Son and which he applies to them by his Holy Spirit. All are therefore to worship with sincere devotion, reverence, and expectation.
 
@@ -86,7 +91,7 @@ b. Public worship is to be conducted in reliance on the gracious working of the 
 
 c. Accordingly, the whole congregation should assemble promptly, that all may be present and may join together for the entire worship service. Unless necessary, none should depart until after the benediction. All should refrain from any behavior that would distract other worshipers or detract from their communion with God.
 
-4. In public worship, God's people draw near to their God unitedly as his covenant people, the body of Christ.
+<span id="dpw-1-b-4"></span>4. In public worship, God's people draw near to their God unitedly as his covenant people, the body of Christ.
 
 a. For this reason, the covenant children should be present so far as possible, as well as adults. Because God makes his covenant with believers and their children, families should be taught and encouraged to sit together as families.
 
@@ -96,26 +101,27 @@ c. The unity and catholicity of the covenant people are to be manifest in public
 
 d. Because God's people worship, not as an aggregation of individuals, but as a congregation of those who are members of one another in Christ, public worship is to be conducted as a corporate activity in which all the members participate as the body of Christ.
 
-5. The triune God assembles his covenant people for public worship in order to manifest and renew their covenant bond with him and one another. The Holy Spirit engages them and draws them into the Father's presence as a living sacrifice in Christ. God himself has fellowship with them, strengthening and guiding them for life in his presence and service in his kingdom.
+<span id="dpw-1-b-5"></span>5. The triune God assembles his covenant people for public worship in order to manifest and renew their covenant bond with him and one another. The Holy Spirit engages them and draws them into the Father's presence as a living sacrifice in Christ. God himself has fellowship with them, strengthening and guiding them for life in his presence and service in his kingdom.
 
 a. Public worship should be conducted in a manner that reflects God's initiative in the covenant itself, making clear that God establishes and renews his covenant with his people, assuring God's people of those things which they so easily forget unless Christ crucified is portrayed before their eyes week after week, cultivating the expectation that God himself meets his people in Christ as the Holy Spirit works through the public ordinances, always keeping central the persons and works of the triune God.
 
 b. Consequently, it is well that public worship be so conducted that it is apparent that God summons his church to assemble in his presence, that he assures his people of his receiving and cleansing them through Christ the Mediator, that he consecrates them to himself and his service by his Word, that he communes with them and gives them grace to help in time of need through his means of grace, and that he sends them out to serve with his blessing.
 
-6. The triune God reveals the way of knowing and worshiping him in his Word, the Holy Scriptures of the Old and New Testaments, which is the only infallible rule of faith and practice.
+<span id="dpw-1-b-6"></span>6. The triune God reveals the way of knowing and worshiping him in his Word, the Holy Scriptures of the Old and New Testaments, which is the only infallible rule of faith and practice.
 
 a. The principles of public worship must be derived from the Bible—either as they are expressly set down in Scripture or by good and necessary consequence may be deduced from Scripture—and from no other source.
 
 b. God may not be worshiped according to human imaginations or inventions or in any way not prescribed by his Word, nor may the church require her members to participate in elements of worship that God's Word does not require. Only when the elements of worship are those appointed in God's Word, and the circumstances and forms of worship are consonant with God's Word, is there true freedom to know God as he is and to worship him as he desires to be worshiped.
 
-7. The end of public worship is the glory of the triune God. To that end, Christ builds his church by perfecting the saints and adding to its membership such as are being saved—all to the glory of God.
+<span id="dpw-1-b-7"></span>7. The end of public worship is the glory of the triune God. To that end, Christ builds his church by perfecting the saints and adding to its membership such as are being saved—all to the glory of God.
 
 a. Through public worship on the Lord's Day, God calls his people to serve him all the days of the week in their every activity, and enables them, whether they eat or drink or whatever they do, to do all to the glory of God.
 
 b. God's people are to be led to engage in all the elements of worship with a single-minded focus on God's glory and with a humble and dependent expectation that the exalted Lord Jesus Christ himself will edify them and build his church through his appointed means of grace—all to the glory of God.
 
+<span id="dpw-1-c"></span>
 ### C. The Parts of Public Worship
-1. Because a service of public worship is in its essence a meeting of the triune God with his chosen people, a worship service consists of two principal parts: those elements which are performed on behalf of God (through a representative voice) and those elements which are performed by the congregation (through their own or a representative voice).
+<span id="dpw-1-c-1"></span>1. Because a service of public worship is in its essence a meeting of the triune God with his chosen people, a worship service consists of two principal parts: those elements which are performed on behalf of God (through a representative voice) and those elements which are performed by the congregation (through their own or a representative voice).
 
 a. By his Spirit working through the ministry of the Word, God addresses his people in the call to worship, in the salutation and benediction, in the reading and preaching of the Word, and in the sacraments.
 
@@ -123,32 +129,33 @@ b. His people, enabled by the Holy Spirit, address God in prayer, in song, in of
 
 c. It is advisable that these two parts be made to alternate.
 
-2. The triune God is not a passive spectator in public worship, but actively works in each element of the service of worship. Neither are the people of God to be passive spectators in public worship, but by faith are to participate actively in each element of the service of worship.
+<span id="dpw-1-c-2"></span>2. The triune God is not a passive spectator in public worship, but actively works in each element of the service of worship. Neither are the people of God to be passive spectators in public worship, but by faith are to participate actively in each element of the service of worship.
 
 a. Public worship should be conducted in a manner that enables and expects God's people by faith actively to embrace the blessing of the Lord in the salutation and benediction; to pray with him who leads in prayer, so that the prayer being uttered aloud becomes their prayer; to attend, in the reading of God's Word, to what God reveals of himself, his redeeming actions for them, and his will for their lives; to confess together with all the people the faith of the church; to heed the Word of truth as the sermon is preached and to appropriate it to their lives as God, through his servant, proclaims and applies it; to sing psalms, hymns, and spiritual songs to the praise of God and the edification of one another; to offer their possessions and themselves together as a living sacrifice to the Lord.
 
 b. Accordingly, it is appropriate that worshipers at times respond with brief spoken or sung expressions of praise or affirmation such as "hallelujah" or "amen." The former is a heartfelt declaration that the living God alone is worthy of adoration. The latter grows out of the responsibility of God's people to affirm solemnly and earnestly the truthfulness of his Word and the permanence of his character. It is especially fitting for the congregation to join in an "amen" at such times as a response to a blessing, a Scripture reading, a psalm or hymn, a confession of faith, or a prayer. When believers sing or say "amen," they are testifying to their wholehearted agreement with what has been spoken as being in harmony with God's permanently valid Word.
 
-3. The Lord Jesus Christ has not prescribed a set order for public worship; rather, he has given his church a large measure of liberty in this matter. It may not be forgotten, however, that there is true liberty only where the rules of God's Word are observed and the Spirit of the Lord is, so that all things are done decently and in order, and God's people approach him with reverence and in the beauty of holiness.
+<span id="dpw-1-c-3"></span>3. The Lord Jesus Christ has not prescribed a set order for public worship; rather, he has given his church a large measure of liberty in this matter. It may not be forgotten, however, that there is true liberty only where the rules of God's Word are observed and the Spirit of the Lord is, so that all things are done decently and in order, and God's people approach him with reverence and in the beauty of holiness.
 
 a. While Christ has not prescribed a set order for public worship, this does not mean that it is fitting to ignore proper and scriptural patterns of worship that have been historically observed by the church, particularly in the Reformed tradition. The order of worship should be so structured that there will be an enlightened movement on the part of the congregation from one element of the service to the next. When each act of worship is full of meaning, the order of the elements will assume a coherent, edifying form.
 
 b. Worship should be conducted with regard to the time, taking care that neither reading, singing, praying, preaching, nor any other ordinance be disproportionate, one to the other, nor the whole rendered either too short or too tedious.
 
-4. The session does well to ensure that the public worship assembly space is so arranged as to reflect and reinforce God's initiative in drawing near to and gathering his people through the ministry of the Word and sacraments.
+<span id="dpw-1-c-4"></span>4. The session does well to ensure that the public worship assembly space is so arranged as to reflect and reinforce God's initiative in drawing near to and gathering his people through the ministry of the Word and sacraments.
 
 a. Because the pulpit, baptismal font, and communion table facilitate the part of worship which is performed on behalf of God, it is fitting that they be positioned so as to draw the focus of the congregation upon the Word and sacraments, and that they be easily accessible and visible to the entire congregation throughout the worship service. Because the Word is primary and the sacraments serve to seal the Word, it is fitting that the pulpit be in the position of prominence.
 
 b. Because musicians and musical instruments serve the part of worship that is performed by the congregation, it is fitting that they be positioned with or behind the congregation.
 
+<span id="dpw-1-d"></span>
 ### D. The Oversight and Conduct of Public Worship
-1. Public worship is Christian, not only when the worshipers consciously recognize that Christ is the Mediator by whom alone they can come unto God, but also when they honor the exalted Christ as the living and only Head of the church, who rules over public worship.
+<span id="dpw-1-d-1"></span>1. Public worship is Christian, not only when the worshipers consciously recognize that Christ is the Mediator by whom alone they can come unto God, but also when they honor the exalted Christ as the living and only Head of the church, who rules over public worship.
 
 a. He rules over public worship by his Word and Spirit, not only directly, but also through the ministry of officers in their ruling and teaching his church.
 
 b. The exalted Christ thus applies himself and his benefits to the elect through his Spirit working in human hearts by and with his Word, especially in its public reading, its preaching, its sealing by the sacraments, and as it is received in faith by prayer.
 
-2. For this reason:
+<span id="dpw-1-d-2"></span>2. For this reason:
 
 a. The session is responsible to give immediate oversight to the conduct of public worship in the local church.
 
@@ -162,15 +169,18 @@ e. On occasion, with the approval of the session and under the close supervision
 
 f. No others should take such leadership in overseeing or conducting public worship.
 
+<span id="dpw-2"></span>
 ## Chapter II: Elements of Ordinary Public Worship
+
+<span id="dpw-2-a"></span>
 ### A. The Part from God to the People
-1. The Call to Worship
+<span id="dpw-2-a-1"></span>1. The Call to Worship
 
 a. God having summoned his people to assemble in his presence to worship him on the Lord's Day, there ought to be a call to the congregation, in God's own words, to worship him. He who performs this element serves as God's representative voice; accordingly, it ordinarily should be performed by a minister of the Word.
 
 b. It is fitting that the congregation respond to the call to worship in words of Scripture, or with singing, or with prayer, or with all of these.
 
-2. The Public Reading of God's Word
+<span id="dpw-2-a-2"></span>2. The Public Reading of God's Word
 
 a. Because the hearing of God's Word is a means of grace, the public reading of the Holy Scriptures is an essential element of public worship. He who performs this serves as God's representative voice. Thus, it ordinarily should be performed by a minister of the Word. Through this reading, God speaks directly to the congregation in his own words. For this reason, the reader should refrain from interspersing the reading of God's Word with human comments. He should use an accurate, faithful translation in the language of the people. He should read clearly and with understanding, and the congregation should attend to the reading with the deepest reverence.
 
@@ -178,7 +188,7 @@ b. It is desirable that portions from both the Old and the New Testaments be rea
 
 c. The public reading of the Scriptures to the congregation is to be distinguished from the unison or antiphonal reading of certain portions of Scripture by the minister and the congregation together. In the former, God addresses his people; in the latter, God's people address their God, expressing in the words of Scripture their own contrition, adoration, gratitude, and other holy sentiments. The Psalms of Scripture are especially appropriate for this purpose.
 
-3. The Preaching of God's Word
+<span id="dpw-2-a-3"></span>3. The Preaching of God's Word
 
 a. The preaching of the Word, the power of God unto salvation, is indispensable in the public worship of God. It is therefore a matter of supreme importance that the minister preach only the Word of God, not the wisdom of man, and that he handle the Word of God correctly, always setting forth Jesus Christ, the author and finisher of our faith. In the sermon, God addresses the congregation by the mouth of his servant, and through his Spirit opens the ears of his people.
 
@@ -188,7 +198,7 @@ The preacher must, as Christ's ambassador, seek to build up the saints in the mo
 
 c. The session is to give diligence that no person enter the pulpit concerning whose soundness in doctrine and life, or knowledge of Scripture, there is reasonable doubt.
 
-4. The Sacraments
+<span id="dpw-2-a-4"></span>4. The Sacraments
 
 a. The sacraments, baptism and the Lord's Supper, as visible signs and seals of the Word of the covenant, are important elements of public worship. They represent Christ and his benefits, confirm his people's participation in him, visibly mark off from the world those who belong to his church, and solemnly bind them to covenant faith and loyalty.
 
@@ -196,7 +206,7 @@ b. Because the sacraments are ordinances of Christ for the benefit of the visibl
 
 c. Although the efficacy of the sacraments does not depend upon the piety or intention of the person administering them, they are not to be administered by any private person, but only by a minister of the Word.
 
-5. Blessings
+<span id="dpw-2-a-5"></span>5. Blessings
 
 a. The salutation and the benediction are blessings pronounced in God's name and in his own words. Accordingly, they are properly used only in a gathering of Christ's church and by a minister of the Word.
 
@@ -204,8 +214,9 @@ b. A salutation is the greeting from God to his people who have gathered to wors
 
 c. A benediction is the pronouncement of God's blessing upon his people at the conclusion of the worship service. Words of benediction taken from Scripture are to be used. The high priestly benediction, "The Lord bless thee [you], and keep thee [you]: the Lord make his face shine upon thee [you], and be gracious unto thee [you]: the Lord lift up his countenance upon thee [you], and give thee [you] peace" (Num. 6:24-26), or the Trinitarian apostolic benediction, "The grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Ghost, be with you all" (2 Cor. 13:14), are distinctly appropriate. If, however, the minister deems another benediction taken from Scripture more fitting for a particular occasion, he may use it.
 
+<span id="dpw-2-b"></span>
 ### B. The Part from the People to God
-1. Public Prayer
+<span id="dpw-2-b-1"></span>1. Public Prayer
 
 a. Prayer is an essential element of public worship. In order to be accepted by God, prayer is to be by faith, in the name of the Son of God, by the help of his Spirit, and according to God's will.
 
@@ -229,7 +240,7 @@ j. While public prayer must always be offered with deep humility and holy revere
 
 k. It is fitting to encourage the congregation to join vocally in a corporate "amen" at the conclusion of a prayer.
 
-2. Congregational Singing
+<span id="dpw-2-b-2"></span>2. Congregational Singing
 
 a. Congregational singing is a duty and privilege to be practiced and cultivated in all the churches. Let every member of the church take part in this act of worship. God's people should sing, not merely with the lips, but with understanding and with grace in their hearts, making melody to the Lord.
 
@@ -241,13 +252,13 @@ d. In the choice of song for public worship, great care must be taken that all t
 
 e. Musical gifts are properly used in public worship to assist the congregation in its worship of God. They may not be used for the praise or applause of men. No person may take a special part in the musical service unless he is a professing Christian who adorns his profession with a godly walk, or who is a baptized covenant child whose conduct is appropriate to his status.
 
-3. Public Confession of Faith
+<span id="dpw-2-b-3"></span>3. Public Confession of Faith
 
 a. Individual believers are to publicly profess their faith in Christ before God and his people in order formally to pledge their commitment to serve Christ and to be welcomed into all the privileges of full communion with God's people.
 
 b. It is also fitting that the congregation as one body confess its common faith, using creeds that are true to the Word of God, such as the Apostles' Creed or the Nicene Creed.
 
-4. The Bringing of Offerings
+<span id="dpw-2-b-4"></span>4. The Bringing of Offerings
 
 a. The bringing of offerings in the public assembly of God's people on the Lord's Day is a solemn act of worship to almighty God. The people of God are to set aside to him the firstfruits of their labors; in so doing, they should present themselves with thanksgiving as a living sacrifice to God. All should participate in this act of worship when God gives opportunity for it. Parents are to instruct and encourage their children by precept and example to give of their substance regularly, purposefully, generously, and joyfully to the Lord through his church.
 
@@ -257,18 +268,22 @@ c. The session shall take care that the offerings of the congregation are used o
 
 d. It is desirable that Christian love be demonstrated by offerings for the use of the deacons in the ministry of mercy on behalf of the church. It is appropriate that a special offering be received for this purpose following the Lord's Supper.
 
+<span id="dpw-3"></span>
 ## Chapter III: The Administration of the Sacraments
+
+<span id="dpw-3-a"></span>
 ### A. General Provisions
-1. In order that the sacraments may be observed with discernment and profit, it is imperative that adequate preparation be made prior to their administration. Before observing the sacraments, God's people ought to meditate on the teaching of the Word of God concerning them, particularly as summarized in the Confession of Faith and Catechisms. It is also advisable that from time to time the preaching include suitable instruction on the sacraments. Moreover, when the sacraments are being celebrated, the minister shall always accompany them by the preaching of the Word, and he shall take especial care in that preaching to proclaim Christ and his benefits, so that God's people can understand what the sacrament means. In connection with the administration of the sacraments, he shall set forth a summary of the teaching of the Word of God as to their institution, meaning, and nature.
+<span id="dpw-3-a-1"></span>1. In order that the sacraments may be observed with discernment and profit, it is imperative that adequate preparation be made prior to their administration. Before observing the sacraments, God's people ought to meditate on the teaching of the Word of God concerning them, particularly as summarized in the Confession of Faith and Catechisms. It is also advisable that from time to time the preaching include suitable instruction on the sacraments. Moreover, when the sacraments are being celebrated, the minister shall always accompany them by the preaching of the Word, and he shall take especial care in that preaching to proclaim Christ and his benefits, so that God's people can understand what the sacrament means. In connection with the administration of the sacraments, he shall set forth a summary of the teaching of the Word of God as to their institution, meaning, and nature.
 
-2. The baptism of infants is not to be unduly delayed, but is to be administered as soon as practicable. The baptism of adults must await their public profession of faith in Christ.
+<span id="dpw-3-a-2"></span>2. The baptism of infants is not to be unduly delayed, but is to be administered as soon as practicable. The baptism of adults must await their public profession of faith in Christ.
 
-3. The Lord's Supper is to be celebrated frequently, but the frequency may be determined by each session as it may judge most conducive to edification.
+<span id="dpw-3-a-3"></span>3. The Lord's Supper is to be celebrated frequently, but the frequency may be determined by each session as it may judge most conducive to edification.
 
-4. In the administration of the sacraments, the minister shall follow the directions prescribed in this chapter, but, except in the case of the words of the baptismal formula, he is not required to use the exact language of the indented forms (below), which are suggested as appropriate. He may employ these or similar forms, using his own liberty and godly wisdom, as he deems best for the edification of the people.
+<span id="dpw-3-a-4"></span>4. In the administration of the sacraments, the minister shall follow the directions prescribed in this chapter, but, except in the case of the words of the baptismal formula, he is not required to use the exact language of the indented forms (below), which are suggested as appropriate. He may employ these or similar forms, using his own liberty and godly wisdom, as he deems best for the edification of the people.
 
+<span id="dpw-3-b"></span>
 ### B. Baptism
-1. The Baptism of Infants
+<span id="dpw-3-b-1"></span>1. The Baptism of Infants
 
 a. Prerequisites
 
@@ -348,7 +363,7 @@ Beloved in Christ Jesus, we give thanks to God for this child that he has given 
 
 The whole service of baptism shall then be concluded with prayer. It is well in such prayer to thank the Lord for his covenant of grace, rejoice that this child has been included, and to ask the Lord to graciously enable him to be a covenant keeper, daily dying to sin and walking in newness of life in Christ.
 
-2. The Baptism of Adults
+<span id="dpw-3-b-2"></span>2. The Baptism of Adults
 
 a. Prerequisites
 
@@ -432,18 +447,19 @@ May the God of all grace, who called you unto his eternal glory in Christ, after
 
 The whole service of baptism shall be concluded with prayer. It is well in such a prayer to thank the Lord for his covenant of grace, rejoice that this brother has been included, and to ask the Lord to graciously enable him to be a covenant keeper, daily dying to sin and walking in newness of life in Christ.
 
+<span id="dpw-3-c"></span>
 ### C. The Lord's Supper
-1. The Institution of the Sacrament
+<span id="dpw-3-c-1"></span>1. The Institution of the Sacrament
 
 The minister shall read the words of the institution and instruction of the Lord's Supper as found in 1 Corinthians 11:23-29 or one of the Gospel accounts (Matthew 26:26-29, Mark 14:22-25, or Luke 22:14-20). In addition, he may read words of instruction from passages such as John 6 and 1 Corinthians 10.
 
-2. The Meaning and Nature of the Sacrament
+<span id="dpw-3-c-2"></span>2. The Meaning and Nature of the Sacrament
 
 The minister shall then summarize before the congregation the teaching of the Word of God as to the meaning and nature of the sacrament in the following or like words:
 
 Our Lord Jesus Christ instituted the Lord's Supper as an ordinance to be observed by his church until he comes again. It is not a resacrificing of Christ, but is a remembrance of the once-for-all sacrifice of himself in his death for our sins. Nor is it a mere memorial to Christ's sacrifice. It is a means of grace by which God feeds us with the crucified, resurrected, exalted Christ. He does so by his Holy Spirit and through faith. Thus he strengthens us in our warfare against sin and in our endeavors to serve him in holiness. The sacrament further signifies and seals the forgiveness of our sin and our nourishment and growth in Christ. The bread and wine represent the crucified body and the shed blood of the Savior, which he gave for his people. In this sacrament, God confirms that he is faithful and true to fulfill the promises of his covenant, and he calls us to deeper gratitude for our salvation, to renewed consecration, and to more faithful obedience. The Supper is also a bond and pledge of the communion that believers have with him and with each other as members of his body. As Scripture says, "For we being many are one bread, and one body: for we are all partakers of that one bread" (1 Cor. 10:17). The Supper anticipates the consummation of the ages, when Christ returns to gather all his redeemed people at the glorious wedding feast of the Lamb. As we come to the Lord's Table, we humbly resolve to deny ourselves, to crucify the sin that is within us, to resist the devil, and to follow Christ as becomes those who bear his name.
 
-3. Invitation and Fencing the Table
+<span id="dpw-3-c-3"></span>3. Invitation and Fencing the Table
 
 The minister shall then declare who may come to, and who are excluded from, the Lord's Table according to the Word of God. He may use the following or like words:
 
@@ -455,17 +471,17 @@ This warning is not aimed to keep the humble and contrite from the Table of the 
 
 Let us examine our minds and hearts to determine whether such discernment is ours, to the end that we may partake to the glory of God and to our growth in the grace of Christ. Come then with joy and thankfulness to the Lord's Table. The Lord's Supper is medicine for poor, sick souls. Come to Jesus and find rest, refreshing, and nourishment for your weak and weary soul.
 
-4. Exhortation
+<span id="dpw-3-c-4"></span>4. Exhortation
 
 If desired, the minister may exhort the people of God, in the following or other words, to embrace in the sign the thing that is signified:
 
 Beloved congregation, lift up your hearts from these visible elements even to heaven itself, where Jesus Christ is seated at the right hand of the Father, from where we look for him to return and perfect our redemption. All the promises of God are yes and amen in him. Every spiritual blessing is found in him. With joyful hearts, in Christian love, partake of his Table, giving thanks for the great love that he has shown to us.
 
-5. Prayer
+<span id="dpw-3-c-5"></span>5. Prayer
 
 The distribution of the elements shall be preceded by prayer. It is well in such prayer to praise God for his mighty power and grace in bringing salvation; confess our unworthiness to come to the Table because of our own utter lack of righteousness; reaffirm our trust in God's grace and in Christ's righteousness and mediation; plead for the Lord to grant the gracious, effectual working of his Spirit in us; thank God for the elements, request him to use them for their intended purpose; and ask him to grant that by faith his people may feed upon Jesus Christ, crucified and raised for them, so that, being strengthened by grace, they might live in him and for him.
 
-6. Partaking of the Elements
+<span id="dpw-3-c-6"></span>6. Partaking of the Elements
 
 After prayer and thanksgiving, the minister shall take the bread, saying in the following or like words:
 
@@ -484,44 +500,48 @@ saying:
 
 Our Lord Jesus said, "This cup is the new covenant in my blood, which is shed for many for the remission of sins; drink of it, all of you."
 
-7. Response of Thanksgiving and Commitment
+<span id="dpw-3-c-7"></span>7. Response of Thanksgiving and Commitment
 
 When all have partaken, prayer should be offered. It is well in such prayer to give thanks for the sacrifice of Jesus Christ, through whom we have the forgiveness of sins; recommit God's people to Christ and to each other; present them as a living sacrifice to God; and plead that the Holy Spirit will make the sacrament effectual to the edifying and strengthening of God's people.
 
 It is well that the congregation respond by singing a psalm or hymn that focuses on the benefits of Christ's death and the triumph of the gospel, bringing forth gratitude and joy and renewed commitment of the believer to his Lord, and that an offering be taken for the relief of the poor or for some other sacred purpose.
 
-8. Blessing
+<span id="dpw-3-c-8"></span>8. Blessing
 
 The following benediction is particularly appropriate when the Lord's Supper has been celebrated:
 
 "Now the God of peace, that brought again from the dead our Lord Jesus, that great shepherd of the sheep, through the blood of the everlasting covenant, make you perfect in every good work to do his will, working in you that which is well pleasing in his sight, through Jesus Christ; to whom be glory for ever and ever. Amen."
 
+<span id="dpw-4"></span>
 ## Chapter IV: Public Reception of Church Members
+
+<span id="dpw-4-a"></span>
 ### A. General Provisions
-1. Only those may be admitted to full communion in the church who have been baptized and have made public profession of faith in Jesus Christ.
+<span id="dpw-4-a-1"></span>1. Only those may be admitted to full communion in the church who have been baptized and have made public profession of faith in Jesus Christ.
 
-2. In order to aid those who contemplate making public profession or reaffirmation of faith in Christ to understand the implication of this significant act and to perform it meaningfully, the pastor or someone approved by the session shall conduct classes in Christian doctrine and life, both for the covenant youth and for any others who may manifest an interest in the way of salvation.
+<span id="dpw-4-a-2"></span>2. In order to aid those who contemplate making public profession or reaffirmation of faith in Christ to understand the implication of this significant act and to perform it meaningfully, the pastor or someone approved by the session shall conduct classes in Christian doctrine and life, both for the covenant youth and for any others who may manifest an interest in the way of salvation.
 
-3. Before permitting anyone to make profession of his faith in the presence of the congregation, the session shall announce his name to the congregation on a prior Lord's Day in order that the members of the church may have opportunity to acquaint the session with such facts concerning him as may appear to be irreconcilable with a credible profession. In order for the session to assure itself so far as possible that the candidate makes a credible profession, it shall examine him to ascertain that he possesses the doctrinal knowledge requisite for saving faith in the Lord Jesus Christ, relies on the merits of Christ alone, and is determined by the grace of God to lead a Christian life.
+<span id="dpw-4-a-3"></span>3. Before permitting anyone to make profession of his faith in the presence of the congregation, the session shall announce his name to the congregation on a prior Lord's Day in order that the members of the church may have opportunity to acquaint the session with such facts concerning him as may appear to be irreconcilable with a credible profession. In order for the session to assure itself so far as possible that the candidate makes a credible profession, it shall examine him to ascertain that he possesses the doctrinal knowledge requisite for saving faith in the Lord Jesus Christ, relies on the merits of Christ alone, and is determined by the grace of God to lead a Christian life.
 
-4. In the public reception of church members, the minister shall follow the directions prescribed in this chapter, but he is not required to use the exact language of the indented forms (below), which are suggested as appropriate. He may employ these or similar forms, using his own liberty and godly wisdom as he deems best for the edification of the people.
+<span id="dpw-4-a-4"></span>4. In the public reception of church members, the minister shall follow the directions prescribed in this chapter, but he is not required to use the exact language of the indented forms (below), which are suggested as appropriate. He may employ these or similar forms, using his own liberty and godly wisdom as he deems best for the edification of the people.
 
-5. The session shall always take special care to preserve the full meaning of membership vows. If the session modifies the vows, it shall record those vows and its rationale in its minutes and report it to the next stated meeting of the presbytery.
+<span id="dpw-4-a-5"></span>5. The session shall always take special care to preserve the full meaning of membership vows. If the session modifies the vows, it shall record those vows and its rationale in its minutes and report it to the next stated meeting of the presbytery.
 
-6. Unbaptized covenant children whose parent(s) are communicant members of the congregation may be received only by baptism.
+<span id="dpw-4-a-6"></span>6. Unbaptized covenant children whose parent(s) are communicant members of the congregation may be received only by baptism.
 
-7. Baptized children ordinarily shall be received as noncommunicant members when their parents are received as communicant members.
+<span id="dpw-4-a-7"></span>7. Baptized children ordinarily shall be received as noncommunicant members when their parents are received as communicant members.
 
-8. Noncommunicant members of the congregation may be received into communicant membership only by confession of faith.
+<span id="dpw-4-a-8"></span>8. Noncommunicant members of the congregation may be received into communicant membership only by confession of faith.
 
-9. The following provisions are designed to assist ministers and sessions to receive members in accordance with the Book of Discipline, [Chapter II](/pages/bd/#chapter-ii-jurisdiction), Section B.2, which provisions should always be followed.
+<span id="dpw-4-a-9"></span>9. The following provisions are designed to assist ministers and sessions to receive members in accordance with the Book of Discipline, [Chapter II](/pages/bd/#chapter-ii-jurisdiction), Section B.2, which provisions should always be followed.
 
+<span id="dpw-4-b"></span>
 ### B. Reception into Full Communion of Noncommunicant Members by Profession of Faith
-1. When a noncommunicant member is received into full communion, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, it is highly advisable that the minister remind the people that he is already a member of the church, albeit a noncommunicant member, and has been receiving the blessings of Christ as a member of the church, and that those blessings have resulted in this day wherein, having given evidence of conscious saving faith in Christ, he is now about to confess that faith and become a communicant member of the congregation. The minister may then address him in these or like words:
+<span id="dpw-4-b-1"></span>1. When a noncommunicant member is received into full communion, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, it is highly advisable that the minister remind the people that he is already a member of the church, albeit a noncommunicant member, and has been receiving the blessings of Christ as a member of the church, and that those blessings have resulted in this day wherein, having given evidence of conscious saving faith in Christ, he is now about to confess that faith and become a communicant member of the congregation. The minister may then address him in these or like words:
 
 Beloved in the Lord Jesus Christ, we thank our God for the grace that was given you, in that you have accepted God's covenant promise that was signified and sealed unto you in your infancy by holy baptism. We ask you now to profess your faith publicly.
 
-2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
+<span id="dpw-4-b-2"></span>2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
 
 (1) Do you believe the Bible, consisting of the Old and New Testaments, to be the Word of God, and its doctrine of salvation to be the perfect and only true doctrine of salvation?
 
@@ -535,11 +555,11 @@ Beloved in the Lord Jesus Christ, we thank our God for the grace that was given 
 
 If the session deems it appropriate, it may also ask him to bear brief testimony to his faith in his own words.
 
-3. It is appropriate that the minister exhort the congregation in these or like words:
+<span id="dpw-4-b-3"></span>3. It is appropriate that the minister exhort the congregation in these or like words:
 
 From the time [name] was baptized, the whole congregation has been obligated to love and receive (him/her) as a member of the church. As (he/she) is received into full communion, the congregation is reminded of these obligations. For in Christ we are members of one another. Christ claims this (brother/sister) as his own and calls you to receive (him/her) in love and commitment. Therefore, you ought to commit yourself before God to assist [name] in (his/her) Christian nurture by godly example, prayer, and encouragement in our most precious faith and in the fellowship of believers.
 
-4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or similar words:
+<span id="dpw-4-b-4"></span>4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or similar words:
 
 Beloved, in the name of the Lord Jesus Christ I welcome you to all the privileges of full communion with God's people, and in particular to participation in the sacrament of the Holy Supper.
 
@@ -551,15 +571,17 @@ May the God of all grace, who called you unto his eternal glory in Christ, after
 
 This part of the service shall be concluded with prayer.
 
+<span id="dpw-4-c"></span>
 ### C. Reception by Letter of Transfer from Another Orthodox Presbyterian Church
 When a person is received into membership on letter of transfer from another Orthodox Presbyterian congregation, that reception is effective at the time of the action of the session to receive him. Nevertheless, a session may deem it appropriate to welcome that person publicly into the congregation and allow him to give public expression to his faith. If this is done, it shall be made clear to the congregation that the person has already been received by action of the session. Nevertheless, the minister may address him in appropriate words similar to those found below in Section D.4.
 
+<span id="dpw-4-d"></span>
 ### D. Reception by Letter of Transfer from Another Church of Like Faith and Practice
-1. When a person is received into membership on letter of transfer from another church of like faith and practice approved by the session, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
+<span id="dpw-4-d-1"></span>1. When a person is received into membership on letter of transfer from another church of like faith and practice approved by the session, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
 
 Beloved in the Lord Jesus Christ, we thank our God for the grace that was given you, in that you have accepted God's promise of salvation and publicly confessed your faith in the Savior, Jesus Christ. We praise him that he brought you into communicant membership in a church of like faith and practice with this congregation. We rejoice that God, in his gracious providence, has now brought you here and given you a desire to unite with us, and that your former church has committed you to our fellowship and oversight. We ask that you testify before us to the faith that you profess by giving assent to the following questions.
 
-2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
+<span id="dpw-4-d-2"></span>2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
 
 (1) Do you believe the Bible, consisting of the Old and New Testaments, to be the Word of God, and its doctrine of salvation to be the perfect and only true doctrine of salvation?
 
@@ -573,11 +595,11 @@ Beloved in the Lord Jesus Christ, we thank our God for the grace that was given 
 
 If the session deems it appropriate, it may also ask him to bear brief testimony to his faith in his own words.
 
-3. The minister may exhort the congregation in these or like words:
+<span id="dpw-4-d-3"></span>3. The minister may exhort the congregation in these or like words:
 
 As [name] is received into full communion in the church, the whole congregation is obligated to receive (him/her), for in Christ we are members of one another. Christ claims this (brother/sister) as his own and calls you to serve (him/her) in love. Therefore, you ought to commit yourself before God to assist [name] in (his/her) Christian nurture by godly example, prayer, and encouragement in our most precious faith and in the fellowship of believers.
 
-4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or like words:
+<span id="dpw-4-d-4"></span>4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or like words:
 
 Beloved, in the name of the Lord Jesus Christ I welcome you to all the privileges of full communion with this congregation of God's people.
 
@@ -589,12 +611,13 @@ May the God of all grace, who called you unto his eternal glory in Christ, after
 
 This part of the service shall be concluded with prayer.
 
+<span id="dpw-4-e"></span>
 ### E. Reception by Reaffirmation of Faith
-1. When a person is received into membership by reaffirmation of faith, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
+<span id="dpw-4-e-1"></span>1. When a person is received into membership by reaffirmation of faith, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
 
 Beloved in the Lord Jesus Christ, we thank our God for the grace that was given you, in that you have accepted God's promise of salvation and publicly confessed your faith in the Savior, Jesus Christ. We rejoice that God, in his gracious providence, has brought you into this congregation and given you a desire to reaffirm the faith that you have previously professed, and to unite with us. We ask that you testify before us to the faith that you profess by giving assent to the following questions.
 
-2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
+<span id="dpw-4-e-2"></span>2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
 
 (1) Do you believe the Bible, consisting of the Old and New Testaments, to be the Word of God, and its doctrine of salvation to be the perfect and only true doctrine of salvation?
 
@@ -608,11 +631,11 @@ Beloved in the Lord Jesus Christ, we thank our God for the grace that was given 
 
 If the session deems it appropriate, it may also ask him to bear brief testimony to his faith in his own words.
 
-3. It is appropriate that the minister exhort the congregation in these or like words:
+<span id="dpw-4-e-3"></span>3. It is appropriate that the minister exhort the congregation in these or like words:
 
 As [name] is received into full communion in the church, the whole congregation is obligated to receive (him/her), for in Christ we are members of one another. Christ claims this (brother/sister) as his own and calls you to serve (him/her) in love. Therefore, you ought to commit yourself before God to assist [name] in (his/her) Christian nurture by godly example, prayer, and encouragement in our most precious faith and in the fellowship of believers.
 
-4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or like words:
+<span id="dpw-4-e-4"></span>4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or like words:
 
 Beloved, in the name of the Lord Jesus Christ I welcome you to all the privileges of full communion with this congregation of God's people.
 
@@ -624,12 +647,13 @@ May the God of all grace, who called you unto his eternal glory in Christ, after
 
 This part of the service shall be concluded with prayer.
 
+<span id="dpw-4-f"></span>
 ### F. Reception of New Members by Public Profession of Faith
-1. When an unbaptized person is received into membership by profession of faith, that reception is effective at the time of his public profession of faith and baptism. He shall be received in accord with [Chapter III](/pages/dpw/#chapter-iii-the-administration-of-the-sacraments), Section B.2, of this Directory. When a previously baptized person who is not a member of the congregation and has not previously made a confession of his faith is received into membership by profession of faith, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
+<span id="dpw-4-f-1"></span>1. When an unbaptized person is received into membership by profession of faith, that reception is effective at the time of his public profession of faith and baptism. He shall be received in accord with [Chapter III](/pages/dpw/#chapter-iii-the-administration-of-the-sacraments), Section B.2, of this Directory. When a previously baptized person who is not a member of the congregation and has not previously made a confession of his faith is received into membership by profession of faith, that reception is effective at the time of his public profession of faith. On the occasion of that person's public reception, the minister shall address him in these or like words:
 
 Beloved in the Lord Jesus Christ, we thank our God for the grace that was given you, in that our Savior has sought and found you and through faith you have become a partaker of the covenant of grace. We rejoice that in his grace he has brought you to this congregation and given you the desire to profess your faith before us and to unite with us. We ask that you testify before us to the faith that you profess by giving assent to the following questions.
 
-2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
+<span id="dpw-4-f-2"></span>2. The minister shall then require the person to profess publicly his Christian faith by giving assent to these or equivalent questions:
 
 (1) Do you believe the Bible, consisting of the Old and New Testaments, to be the Word of God, and its doctrine of salvation to be the perfect and only true doctrine of salvation?
 
@@ -643,11 +667,11 @@ Beloved in the Lord Jesus Christ, we thank our God for the grace that was given 
 
 If the session deems it appropriate, it may also ask him to bear brief testimony to his faith in his own words.
 
-3. It is appropriate that the minister exhort the congregation in these or like words:
+<span id="dpw-4-f-3"></span>3. It is appropriate that the minister exhort the congregation in these or like words:
 
 As [name] is received into full communion in the church, the whole congregation is obligated to receive (him/her), for in Christ we are members of one another. Christ claims this (brother/sister) as his own and calls you to serve (him/her) in love. Therefore, you ought to commit yourself before God to assist [name] in (his/her) Christian nurture by godly example, prayer, and encouragement in our most precious faith and in the fellowship of believers.
 
-4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or like words:
+<span id="dpw-4-f-4"></span>4. When anyone has publicly professed his faith in this way, it is fitting that the minister address him in the following or like words:
 
 Beloved, in the name of the Lord Jesus Christ I welcome you to all the privileges of full communion with God's people, and in particular to participation in the sacrament of the Holy Supper.
 
@@ -659,23 +683,26 @@ May the God of all grace, who called you unto his eternal glory in Christ, after
 
 This part of the service shall be concluded with prayer.
 
+<span id="dpw-5"></span>
 ## Chapter V: Special Occasions of Public Worship
 Under the gospel, we are commanded to keep no other particular day holy, except the Lord's Day. Nevertheless, God's people may observe special occasions as the dispensations of God's providence administer cause and opportunity. Such observance is both consonant with Scripture and pastorally appropriate.
 
+<span id="dpw-5-a"></span>
 ### A. Prayer and Fasting
-1. When great and notable calamities come upon or threaten the church, community, or nation, when judgment is deserved because of sin, when the people seek some special blessing from the Lord, or when a pastor is to be ordained or installed ([Form of Government, Chapter XXIII](/pages/fg/#chapter-xxiii-ordaining-and-installing-ministers), Section 7), it is fitting that the people of God engage in times of solemn prayer and fasting.
+<span id="dpw-5-a-1"></span>1. When great and notable calamities come upon or threaten the church, community, or nation, when judgment is deserved because of sin, when the people seek some special blessing from the Lord, or when a pastor is to be ordained or installed ([Form of Government, Chapter XXIII](/pages/fg/#chapter-xxiii-ordaining-and-installing-ministers), Section 7), it is fitting that the people of God engage in times of solemn prayer and fasting.
 
-2. Prayer and fasting may be observed by private individuals and families at their discretion or by the Church at the discretion of the appropriate judicatory. If the civil authority calls for a time of prayer and fasting that the judicatories of the Church deem to be in harmony with the Scriptures, they should consider issuing such a call to their members.
+<span id="dpw-5-a-2"></span>2. Prayer and fasting may be observed by private individuals and families at their discretion or by the Church at the discretion of the appropriate judicatory. If the civil authority calls for a time of prayer and fasting that the judicatories of the Church deem to be in harmony with the Scriptures, they should consider issuing such a call to their members.
 
-3. Public notice is to be given before the time of prayer and fasting comes, to enable persons to order their temporal affairs so that they can participate.
+<span id="dpw-5-a-3"></span>3. Public notice is to be given before the time of prayer and fasting comes, to enable persons to order their temporal affairs so that they can participate.
 
-4. It is especially appropriate on days of prayer and fasting called by the Church that the people of God gather for a time of prayer, the singing of psalms and hymns, and the reading and preaching of the Word of God. Let them lament their distress or unworthiness before the Lord, confess their sins, humbly implore the Lord for deliverance from the judgment present or imminent or for the blessing sought, and commit themselves anew to the faithful service of the Lord their God. It is fitting on such days that God's people abstain from food and from such activities as may distract from their solemn engagement in prayer.
+<span id="dpw-5-a-4"></span>4. It is especially appropriate on days of prayer and fasting called by the Church that the people of God gather for a time of prayer, the singing of psalms and hymns, and the reading and preaching of the Word of God. Let them lament their distress or unworthiness before the Lord, confess their sins, humbly implore the Lord for deliverance from the judgment present or imminent or for the blessing sought, and commit themselves anew to the faithful service of the Lord their God. It is fitting on such days that God's people abstain from food and from such activities as may distract from their solemn engagement in prayer.
 
+<span id="dpw-5-b"></span>
 ### B. Thanksgiving
-1. When God's blessings on the church, community, or nation are particularly evident, it is fitting that the people of God engage in special times of thanksgiving.
+<span id="dpw-5-b-1"></span>1. When God's blessings on the church, community, or nation are particularly evident, it is fitting that the people of God engage in special times of thanksgiving.
 
-2. Special times of thanksgiving may be observed by private individuals and families at their discretion or by the Church as called by the appropriate judicatory. If the civil authority calls for a time of thanksgiving that the judicatories of the Church deem to be in harmony with the Scriptures, they should consider issuing such a call to their members.
+<span id="dpw-5-b-2"></span>2. Special times of thanksgiving may be observed by private individuals and families at their discretion or by the Church as called by the appropriate judicatory. If the civil authority calls for a time of thanksgiving that the judicatories of the Church deem to be in harmony with the Scriptures, they should consider issuing such a call to their members.
 
-3. Public notice is to be given before the day of thanksgiving comes, to enable persons to order their temporal affairs so that they can participate.
+<span id="dpw-5-b-3"></span>3. Public notice is to be given before the day of thanksgiving comes, to enable persons to order their temporal affairs so that they can participate.
 
-4. It is especially appropriate on special days of thanksgiving called by the Church that the people of God gather for prayer, testimony to God's blessings, joyful singing of psalms and hymns, and the reading and preaching of the Word of God. Let them give thanks to God for his goodness to his people and especially for the greatness of his mercies to them in Christ. And let them commit themselves anew to the faithful service of the Lord their God in gratitude for his blessings. It is fitting on such days that God's people spend the day in expressions of Christian love and charity toward one another, rejoicing more and more in the Lord, as becomes those who make the joy of the Lord their strength. Also, they may feast together before the Lord with joy and thanksgiving.
+<span id="dpw-5-b-4"></span>4. It is especially appropriate on special days of thanksgiving called by the Church that the people of God gather for prayer, testimony to God's blessings, joyful singing of psalms and hymns, and the reading and preaching of the Word of God. Let them give thanks to God for his goodness to his people and especially for the greatness of his mercies to them in Christ. And let them commit themselves anew to the faithful service of the Lord their God in gratitude for his blessings. It is fitting on such days that God's people spend the day in expressions of Christian love and charity toward one another, rejoicing more and more in the Lord, as becomes those who make the joy of the Lord their strength. Also, they may feast together before the Lord with joy and thanksgiving.

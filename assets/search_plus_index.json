@@ -104,6 +104,22 @@ layout: null
       {%- assign securl = document.url | append: '#' | append: secid -%}
       {%- assign idparts = secid | split: '-' -%}
       {%- assign keywords = doctitle -%}
+      {%- assign label = "" -%}
+      {%- comment -%}
+        A span alone in its own paragraph anchors the heading that follows it
+        (catechism questions, confession articles, church-order chapters); a
+        span leading a paragraph anchors that paragraph. For the former the
+        heading text is taken as `htext`.
+      {%- endcomment -%}
+      {%- assign htext = "" -%}
+      {%- assign opening = section | slice: 0, 4 -%}
+      {%- if opening == '</p>' and section contains '</h' -%}
+        {%- assign htext = section | split: '</h' | first | split: '>' | last | strip_html | normalize_whitespace | strip -%}
+      {%- endif -%}
+      {%- comment -%}
+        References mirror referenceFor() in assets/gitbook/custom.js, which
+        builds the same strings for the copy-link control. Keep the two in sync.
+      {%- endcomment -%}
       {%- if idparts[0] == 'wcf' -%}
         {%- assign seclabel = 'Chapter ' | append: idparts[1] | append: '.' | append: idparts[2] -%}
         {%- assign reference = 'WCF ' | append: idparts[1] | append: '.' | append: idparts[2] -%}
@@ -112,22 +128,80 @@ layout: null
         {%- assign seclabel = 'Question ' | append: qnum -%}
         {%- assign acronym = idparts[0] | upcase -%}
         {%- assign reference = acronym | append: ' ' | append: qnum -%}
+      {%- elsif idparts[0] == 'hc' -%}
+        {%- assign qnum = idparts[1] | remove: 'q' -%}
+        {%- assign reference = 'Heidelberg ' | append: qnum -%}
+      {%- elsif idparts[0] == 'belgic' -%}
+        {%- assign reference = 'Belgic ' | append: idparts[1] -%}
+      {%- elsif idparts[0] == 'dort' -%}
+        {%- comment -%}
+          dort-1, dort-1-2, dort-1-rej, dort-1-rej-2, dort-conclusion. The third
+          and fourth heads are one unit, "3-4", which prints as "3/4".
+        {%- endcomment -%}
+        {%- assign rest = secid | remove_first: 'dort-' -%}
+        {%- if rest == 'conclusion' -%}
+          {%- assign reference = 'Dort Conclusion' -%}
+        {%- else -%}
+          {%- assign head = idparts[1] -%}
+          {%- assign headlabel = head -%}
+          {%- if head == '3' and idparts[2] == '4' -%}
+            {%- assign head = '3-4' -%}
+            {%- assign headlabel = '3/4' -%}
+          {%- endif -%}
+          {%- assign tail = rest | remove_first: head -%}
+          {%- if tail == '' -%}
+            {%- assign reference = 'Dort ' | append: headlabel -%}
+          {%- elsif tail contains '-rej' -%}
+            {%- assign error = tail | remove_first: '-rej' | remove_first: '-' -%}
+            {%- assign reference = 'Dort ' | append: headlabel | append: ' RE' -%}
+            {%- if error != '' -%}{%- assign reference = reference | append: ' ' | append: error -%}{%- endif -%}
+          {%- else -%}
+            {%- assign reference = 'Dort ' | append: headlabel | append: '.' | append: idparts.last -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- elsif idparts[0] == 'fg' or idparts[0] == 'bd' or idparts[0] == 'dpw' -%}
+        {%- comment -%}
+          fg-3, fg-3-3, bd-2-b, bd-2-b-3, dpw-preface-1 -> "FG 3.3", "BD 2.B.3",
+          "DPW Preface 1".
+        {%- endcomment -%}
+        {%- assign acronym = idparts[0] | upcase -%}
+        {%- assign rest = secid | remove_first: idparts[0] | remove_first: '-' -%}
+        {%- if idparts[1] == 'preface' -%}
+          {%- assign unit = rest | replace_first: 'preface', 'Preface' | replace: '-', ' ' -%}
+        {%- else -%}
+          {%- assign unit = rest | replace: '-', '.' | upcase -%}
+        {%- endif -%}
+        {%- assign reference = acronym | append: ' ' | append: unit -%}
       {%- else -%}
         {%- comment -%}
-          An anchor slug is not a citable reference, so leave the badge empty
-          rather than printing the raw id.
+          An anchor with no citable short form (the Nicene Creed's two forms)
+          leaves the badge empty rather than printing the raw id.
         {%- endcomment -%}
-        {%- assign seclabel = secid -%}
         {%- assign reference = "" -%}
+      {%- endif -%}
+      {%- if idparts[0] == 'wcf' or idparts[0] == 'wsc' or idparts[0] == 'wlc' -%}
+        {%- comment -%}
+          `label` is the extra heading a result row shows beside its reference
+          badge. The badge ("WCF 1.1", "WSC 33") already says everything seclabel
+          would ("Chapter 1.1", "Question 33"), so leave it empty rather than
+          print both.
+        {%- endcomment -%}
+      {%- else -%}
+        {%- comment -%}
+          Elsewhere the heading says more than the badge ("Heidelberg 1" /
+          "1. Question: What is your only comfort…"), so show it; a church-order
+          paragraph has only its badge.
+        {%- endcomment -%}
+        {%- assign label = htext -%}
+        {%- if htext != '' -%}
+          {%- assign seclabel = htext -%}
+          {%- assign keywords = keywords | append: ' ' | append: htext -%}
+        {%- else -%}
+          {%- assign seclabel = reference -%}
+        {%- endif -%}
       {%- endif -%}
       {%- assign keywords = keywords | append: ' ' | append: reference -%}
       {%- assign sectitle = doctitle | append: ' — ' | append: seclabel -%}
-      {%- comment -%}
-        `label` is the extra heading a result row shows beside its reference badge.
-        Here the badge ("WCF 1.1", "WSC 33") already says everything seclabel would
-        ("Chapter 1.1", "Question 33"), so leave it empty rather than print both.
-      {%- endcomment -%}
-      {%- assign label = "" -%}
       {%- capture entry -%}{{ securl | relative_url | jsonify }}: {"title": {{ sectitle | jsonify }}, "document": {{ doctitle | jsonify }}, "collection": {{ collection | jsonify }}, "order": {{ document.nav_order | default: 99 }}, "reference": {{ reference | jsonify }}, "label": {{ label | jsonify }}, "keywords": {{ keywords | jsonify }}, "url": {{ securl | relative_url | jsonify }}, "body": {{ body | jsonify }}, "proofs": {{ proofs | jsonify }}}{%- endcapture -%}
       {%- assign entries = entries | push: entry -%}
     {%- endfor -%}
