@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: westminster-standards
 nav_order: 6
+card_meta: "196 questions"
 description: "The Westminster Larger Catechism, all 196 questions with OPC scripture proofs and the 2025 Modern English Study Version."
 edition_label: OPC received text (1936) with 2025 Modern English Study Version
 source_organization: Orthodox Presbyterian Church — Confession and Catechisms

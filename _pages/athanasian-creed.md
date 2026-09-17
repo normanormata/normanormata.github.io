@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: ecumenical-creeds
 nav_order: 3
+card_meta: "Quicunque Vult"
 description: "The Athanasian Creed (Quicunque Vult) — the fullest of the ecumenical creeds on the Trinity and the incarnation."
 edition_label: Received English text (Quicunque Vult)
 source_organization: Christian Reformed Church in North America — Ecumenical Creeds

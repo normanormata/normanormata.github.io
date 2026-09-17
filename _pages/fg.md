@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: book-of-church-order
 nav_order: 10
+card_meta: "32 chapters"
 description: "The Form of Government of the Orthodox Presbyterian Church."
 edition_label: Orthodox Presbyterian Church Form of Government
 source_organization: Orthodox Presbyterian Church — Book of Church Order

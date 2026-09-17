@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: book-of-church-order
 nav_order: 12
+card_meta: "Preface and 5 chapters"
 description: "The Directory for the Public Worship of God of the Orthodox Presbyterian Church."
 edition_label: Orthodox Presbyterian Church Directory for the Public Worship of God
 source_organization: Orthodox Presbyterian Church — Book of Church Order

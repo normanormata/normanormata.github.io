@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: book-of-church-order
 nav_order: 11
+card_meta: "9 chapters"
 description: "The Book of Discipline of the Orthodox Presbyterian Church."
 edition_label: Orthodox Presbyterian Church Book of Discipline
 source_organization: Orthodox Presbyterian Church — Book of Church Order

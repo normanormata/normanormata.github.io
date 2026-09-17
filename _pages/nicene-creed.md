@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: ecumenical-creeds
 nav_order: 2
+card_meta: "Nicaea 325 · Constantinople 381"
 description: "The Nicene Creed — the confession of the Councils of Nicaea (325) and Constantinople (381) on the Trinity and the person of Christ."
 edition_label: Historical English translations of the 325 and 381 forms
 source_organization: Christian Reformed Church in North America — Ecumenical Creeds

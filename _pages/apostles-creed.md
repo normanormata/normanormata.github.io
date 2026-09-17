@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: ecumenical-creeds
 nav_order: 1
+card_meta: "The ancient baptismal confession"
 description: "The Apostles' Creed — the ancient baptismal confession of the Western church, in its received English text."
 edition_label: Received English text
 source_organization: Christian Reformed Church in North America — Ecumenical Creeds

@@ -20,19 +20,11 @@ Searchable creeds, confessions, and catechisms of the church.
 
 ## The Ecumenical Creeds
 
-<ul class="doc-grid">
-  <li><a href="{{ site.baseurl }}/pages/apostles-creed/"><span class="doc-grid__title">The Apostles’ Creed</span><span class="doc-grid__meta">The ancient baptismal confession</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/nicene-creed/"><span class="doc-grid__title">The Nicene Creed</span><span class="doc-grid__meta">Nicaea 325 · Constantinople 381</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/athanasian-creed/"><span class="doc-grid__title">The Athanasian Creed</span><span class="doc-grid__meta">Quicunque Vult</span></a></li>
-</ul>
+{% include document-grid.html category="ecumenical-creeds" %}
 
 ## The Westminster Standards
 
-<ul class="doc-grid">
-  <li><a href="{{ site.baseurl }}/pages/wcf/"><span class="doc-grid__title">The Westminster Confession of Faith</span><span class="doc-grid__meta">33 chapters</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/wsc/"><span class="doc-grid__title">The Westminster Shorter Catechism</span><span class="doc-grid__meta">107 questions</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/wlc/"><span class="doc-grid__title">The Westminster Larger Catechism</span><span class="doc-grid__meta">196 questions</span></a></li>
-</ul>
+{% include document-grid.html category="westminster-standards" %}
 
 Each of these carries the OPC lettered scripture proofs in collapsible callouts, and can
 be read either in the constitutional text or in the 2025 Modern English Study Version —
@@ -41,19 +33,11 @@ is for study only and carries no constitutional authority.
 
 ## The Three Forms of Unity
 
-<ul class="doc-grid">
-  <li><a href="{{ site.baseurl }}/pages/belgic/"><span class="doc-grid__title">The Belgic Confession</span><span class="doc-grid__meta">1561 · 37 articles</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/heidelberg/"><span class="doc-grid__title">The Heidelberg Catechism</span><span class="doc-grid__meta">1563 · 129 questions</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/canons-of-dort/"><span class="doc-grid__title">The Canons of Dort</span><span class="doc-grid__meta">1619 · Five main points of doctrine</span></a></li>
-</ul>
+{% include document-grid.html category="three-forms-of-unity" %}
 
 ## The OPC Book of Church Order
 
-<ul class="doc-grid">
-  <li><a href="{{ site.baseurl }}/pages/fg/"><span class="doc-grid__title">The Form of Government</span><span class="doc-grid__meta">32 chapters</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/bd/"><span class="doc-grid__title">The Book of Discipline</span><span class="doc-grid__meta">9 chapters</span></a></li>
-  <li><a href="{{ site.baseurl }}/pages/dpw/"><span class="doc-grid__title">The Directory for the Public Worship of God</span><span class="doc-grid__meta">Preface and 5 chapters</span></a></li>
-</ul>
+{% include document-grid.html category="book-of-church-order" %}
 
 ## Scripture Index
 

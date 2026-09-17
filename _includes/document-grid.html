@@ -1,0 +1,17 @@
+{%- comment -%}
+  One card per document in a sidebar group, for the homepage and the 404 page,
+  which used to carry hand-written copies of the document list. Pass the group's
+  `category` (the keys of nav_group_titles in _config.yml). Titles and order come
+  from the same front matter the sidebar uses (see _includes/toc-date.html, and
+  its note on site.pages being the _pages collection); the line under each title
+  is the page's `card_meta`.
+
+  No output line may start with four spaces: index.md is Markdown, and kramdown
+  reads an indented line as a code block.
+{%- endcomment -%}
+{%- assign docs = site.pages | sort: "nav_order" | where: "category", include.category -%}
+<ul class="doc-grid">
+{%- for doc in docs %}
+<li><a href="{{ site.baseurl }}{{ doc.url }}"><span class="doc-grid__title">{{ doc.title | smartify }}</span>{% if doc.card_meta %}<span class="doc-grid__meta">{{ doc.card_meta | escape }}</span>{% endif %}</a></li>
+{%- endfor %}
+</ul>
