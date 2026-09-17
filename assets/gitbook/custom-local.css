@@ -1330,19 +1330,29 @@ mark.search-highlight-keyword {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
-    width: min(70ch, calc(100% - 32px));
-    margin: 32px auto 48px;
+    /* Same box as .page-inner — 17px so 70ch is the same length, and the same
+       side padding — so the cards line up with the text above them. At the
+       inherited size they were ~90px narrower and off-centre. */
+    font-size: 17px;
+    width: min(70ch, 100%);
+    padding: 0 15px;
+    /* Room below for the back-to-top button, which otherwise covers the Next
+       card once the page is scrolled to the end. */
+    margin: 32px auto 80px;
 }
 
-.document-pagination .navigation {
+/* Long enough to outrank custom.css's `.book-body .body-inner .navigation`
+   below 1240px, whose `width: calc(50% - 3px)` halves each card in its cell. */
+.book-body .body-inner .document-pagination .navigation {
     position: static;
     display: flex;
     flex-direction: column;
     width: auto;
     max-width: none;
+    margin: 0;
     min-height: 64px;
     padding: 11px 14px;
-    border: 1px solid #d8dde5;
+    border: 1px solid var(--cc-border-soft);
     border-radius: 6px;
     color: inherit;
     line-height: 1.25;
@@ -1351,10 +1361,14 @@ mark.search-highlight-keyword {
 .document-pagination .navigation-next {
     align-items: flex-end;
     text-align: right;
+    /* theme.js writes an inline margin-right on .navigation-next to clear a
+       scrollbar for the theme's floated arrows; in this grid it only makes the
+       Next card 5px narrower than Previous. */
+    margin-right: 0 !important;
 }
 
 .navigation-direction {
-    color: #667483;
+    color: var(--cc-muted);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -1364,6 +1378,46 @@ mark.search-highlight-keyword {
 .navigation-title {
     margin-top: 4px;
     font-size: 14px;
+}
+
+/* ── Back to top ──────────────────────────────────────────────────────── */
+
+/* The plugin's 50px half-opaque disc sat over the reading column on phones and
+   over the Next card at the end of every page. Smaller and fainter until it is
+   pointed at. `display` is left alone: plugin.js fades it in and out. */
+.book .back-to-top {
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.28);
+}
+
+.book .back-to-top:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.book .back-to-top i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 17px;
+    transform: translate(-50%, -50%);
+}
+
+.book.color-theme-1 .back-to-top {
+    background: rgba(112, 66, 20, 0.3);
+}
+
+.book.color-theme-1 .back-to-top:hover {
+    background: rgba(112, 66, 20, 0.75);
+}
+
+.book.color-theme-2 .back-to-top {
+    background: rgba(189, 202, 219, 0.3);
+}
+
+.book.color-theme-2 .back-to-top:hover {
+    background: rgba(189, 202, 219, 0.75);
 }
 
 /* ── Scripture index ──────────────────────────────────────────────────── */
@@ -1609,6 +1663,7 @@ mark.search-highlight-keyword {
 
     .document-pagination {
         grid-template-columns: 1fr;
+        padding: 0 18px;
     }
 
     /* Stack the controls row so the count sits under the select. */
