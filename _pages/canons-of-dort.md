@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: three-forms-of-unity
 nav_order: 9
+card_meta: "1619 · Five main points of doctrine"
 description: "The Canons of Dort (1619) — the decision of the Synod of Dordt on the five main points of doctrine in dispute in the Netherlands."
 edition_label: Received English translation of the 1619 text
 source_organization: Christian Reformed Church in North America — Confessions

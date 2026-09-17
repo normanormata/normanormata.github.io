@@ -5,6 +5,7 @@ date: 2022-05-02
 layout: post
 category: westminster-standards
 nav_order: 4
+card_meta: "33 chapters"
 description: "The Westminster Confession of Faith, OPC constitutional text with lettered scripture proofs and the 2025 Modern English Study Version."
 edition_label: OPC constitutional text (1956) with 2025 Modern English Study Version
 source_organization: Orthodox Presbyterian Church — Confession and Catechisms

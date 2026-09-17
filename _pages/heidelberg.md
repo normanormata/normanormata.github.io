@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: three-forms-of-unity
 nav_order: 8
+card_meta: "1563 · 129 questions"
 description: "The Heidelberg Catechism (1563) — 129 questions on the Christian's only comfort, arranged in fifty-two Lord's Days."
 edition_label: Received English translation, 129 questions
 source_organization: Christian Reformed Church in North America — Confessions

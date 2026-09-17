@@ -5,6 +5,7 @@ date: 2023-08-30
 layout: post
 category: three-forms-of-unity
 nav_order: 7
+card_meta: "1561 · 37 articles"
 description: "The Belgic Confession (1561) — the first of the Three Forms of Unity, in thirty-seven articles."
 edition_label: Received English translation, 37 articles
 source_organization: Christian Reformed Church in North America — Confessions

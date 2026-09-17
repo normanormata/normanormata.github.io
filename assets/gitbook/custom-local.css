@@ -587,12 +587,15 @@ details.scripture-proofs.proof-target {
 }
 
 /* The reading column is a 70ch measure, but a result list is scanned rather than
-   read, so give the search page more room. */
-body.is-search-page .page-inner {
+   read, so give the search page more room. The class is on .page-inner, not
+   <body>: GitBook's AJAX navigation swaps .book and keeps the original <body>,
+   so a body class followed the reader from a search result into the document
+   and set the Confession at 860px until a reload. */
+.page-inner.page-inner--search {
     max-width: 860px;
 }
 
-body.is-search-page .search-page > h1 {
+.page-inner--search .search-page > h1 {
     margin-bottom: 4px !important;
     font-size: 30px;
 }
@@ -613,6 +616,20 @@ body.is-search-page .search-page > h1 {
        words. Named container so the toolbar can drop its labels when the
        header, not the viewport, gets narrow (the sidebar takes 300px of it). */
     container: book-header / inline-size;
+}
+
+/* custom.css hides the header's overflow below 1240px while the sidebar is
+   open. That clipped everything hanging below the 50px row — the Display panel
+   and the whole Reader tools popover opened invisibly, so on a tablet or small
+   laptop with the sidebar open none of the reader tools could be used. The rule
+   predates the flex row above; with the toolbar in flow and the title
+   ellipsising, nothing in the row can overflow sideways any more. Not on
+   phones: there the open sidebar leaves the header ~20px wide and slides it
+   off-screen, and the tools would only spill out past it. */
+@media (min-width: 601px) and (max-width: 1240px) {
+    .book.with-summary .book-body .book-header {
+        overflow: visible;
+    }
 }
 
 /* The theme's #7e888b header text is 3.6:1 at 12px. */
@@ -1494,14 +1511,16 @@ mark.search-highlight-keyword {
 /* Section entries under the open document wrap to a second line instead of
    cutting off after ~25 characters, which on the catechisms left little more
    than "1. Question: What is your only co…". Clamped at two lines so the list
-   stays scannable. The vertical spacing sits on the <li>: the theme's
-   overflow: hidden clips the link at its padding edge, so padding there left
-   the top of the clamped third line showing beneath the second. */
-.book-summary ul.summary li.chapter > ul > li {
+   stays scannable. Every nesting level, not just the first: the Canons of
+   Dort list their articles a level down. The vertical spacing sits on the
+   <li>: the theme's overflow: hidden clips the link at its padding edge, so
+   padding there left the top of the clamped third line showing beneath the
+   second. */
+.book-summary ul.summary li.chapter ul li {
     padding: 5px 0;
 }
 
-.book-summary ul.summary li.chapter > ul > li > a {
+.book-summary ul.summary li.chapter ul li > a {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -1552,6 +1571,9 @@ mark.search-highlight-keyword {
        scrollbar for the theme's floated arrows; in this grid it only makes the
        Next card 5px narrower than Previous. */
     margin-right: 0 !important;
+    /* The homepage has no Previous card, and a lone Next card would otherwise
+       take the left-hand cell with its text pushed to the right. */
+    grid-column: 2;
 }
 
 .navigation-direction {
@@ -1889,6 +1911,7 @@ mark.search-highlight-keyword {
     }
 
     .document-pagination .navigation-next {
+        grid-column: auto;
         align-items: flex-start;
         text-align: left;
     }
