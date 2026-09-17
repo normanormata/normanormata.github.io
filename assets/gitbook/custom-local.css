@@ -1571,6 +1571,9 @@ mark.search-highlight-keyword {
        scrollbar for the theme's floated arrows; in this grid it only makes the
        Next card 5px narrower than Previous. */
     margin-right: 0 !important;
+    /* The homepage has no Previous card, and a lone Next card would otherwise
+       take the left-hand cell with its text pushed to the right. */
+    grid-column: 2;
 }
 
 .navigation-direction {
@@ -1908,6 +1911,7 @@ mark.search-highlight-keyword {
     }
 
     .document-pagination .navigation-next {
+        grid-column: auto;
         align-items: flex-start;
         text-align: left;
     }

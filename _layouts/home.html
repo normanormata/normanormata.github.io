@@ -39,10 +39,16 @@
                     {%- include body.html -%}
 
                     <nav class="document-pagination" aria-label="Document pagination">
+                        {%- comment -%}
+                          This layout also serves the 404 page, where Home is the
+                          way back. On the homepage itself it linked to itself.
+                        {%- endcomment -%}
+                        {% if page.url != "/" %}
                         <a href="{{site.baseurl}}/" class="navigation navigation-prev navigation-unique">
                             <span class="navigation-direction">Home</span>
                             <span class="navigation-title">{{ site.title | escape }}</span>
                         </a>
+                        {% endif %}
 
                         {% if first_doc %}
                             <a href="{{site.baseurl}}{{first_doc.url}}" class="navigation navigation-next navigation-unique">
