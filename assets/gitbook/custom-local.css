@@ -200,12 +200,15 @@ details.scripture-proofs .proofs-body a:focus-visible {
    Quiet until the section is hovered or the control is focused, so it never
    competes with the lettered proof markers. */
 .section-permalink {
-    /* `inline`, not `inline-block`: an inline-block is an atomic box, and as a
-       plain inline the control sits on the text baseline with the words it
-       precedes. The glyph occupies its space whether or not it is transparent,
-       so revealing it never reflows the confessional text. */
-    display: inline;
-    margin-right: 0.3em;
+    /* Hung in the left gutter: a fixed-width box pulled back by its own width,
+       so the heading or paragraph text starts flush with the column exactly as
+       if the control were not there. As an ordinary inline it took ~18px at the
+       start of every heading and numbered paragraph, and nothing lined up with
+       the text around it. Revealing it still never reflows the text. 18px is
+       the narrowest page gutter (see the 600px breakpoint below). */
+    display: inline-block;
+    width: 18px;
+    margin-left: -18px;
     color: var(--permalink-color) !important;
     font-size: 0.72em;
     font-weight: 700;
@@ -236,9 +239,9 @@ li:hover > .section-permalink,
 }
 
 /* Touch devices get no hover, so keep the control permanently visible there
-   rather than unreachable. */
+   rather than unreachable — but faint, since it leads every paragraph. */
 @media (hover: none) {
-    .section-permalink { opacity: 0.55; }
+    .section-permalink { opacity: 0.35; }
 }
 
 @media (prefers-reduced-motion: reduce) {
