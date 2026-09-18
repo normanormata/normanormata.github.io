@@ -256,6 +256,26 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             element.classList.contains('scripture-proofs')) retagReferences();
     }, true);
 
+    // ── Printing ────────────────────────────────────────────────────────────
+    // The proof and commentary callouts are <details>, and a closed <details>
+    // keeps its content out of the render tree — no stylesheet can show it, so
+    // the print stylesheet's attempt to expand them printed only their
+    // "Scripture Proofs" labels. Open them for the print and close them again
+    // afterwards, leaving any the reader had opened as they were.
+    var closedForPrint = [];
+
+    window.addEventListener('beforeprint', function() {
+        closedForPrint = $('details.scripture-proofs, details.commentary')
+            .filter(function() { return !this.open; })
+            .each(function() { this.open = true; })
+            .get();
+    });
+
+    window.addEventListener('afterprint', function() {
+        closedForPrint.forEach(function(element) { element.open = false; });
+        closedForPrint = [];
+    });
+
     document.addEventListener('click', function(event) {
         var marker = event.target && event.target.closest
             ? event.target.closest('sup.proof-marker > a[href^="#"]')

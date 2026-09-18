@@ -360,15 +360,22 @@ details.scripture-proofs.proof-target {
 
 /* ── Print / PDF ───────────────────────────────────────────────────────── */
 @media print {
-    /* Hide site chrome: sidebar, header, toolbar, search, toasts */
+    /* Hide the site chrome — sidebar, header, toolbar, search, toasts — and
+       every fixed control, which prints on each page: the skip link had been
+       sitting at the foot of all 24 pages of the Shorter Catechism. */
     .book-summary,
     .book-header,
+    .skip-link,
+    .back-to-top,
     #book-search-input,
     #book-search-input-link,
     #book-search-results .cc-search,
+    .home-search,
+    .search-page-form,
     .navigation,
     #copy-toast,
     .section-permalink,
+    .mobile-section-nav,
     .scripture-nav,
     #mesv-version-indicator {
         display: none !important;
@@ -386,62 +393,66 @@ details.scripture-proofs.proof-target {
         overflow: visible !important;
     }
 
-    /* Expand every collapsible callout so its content prints */
+    /* Black on white whichever theme is on screen. Readers on a dark system
+       now land on Night, whose #bdcadb text and near-white headings came out
+       pale on paper. The theme colours the text elements themselves, not just
+       their ancestors, so every content colour is forced. */
+    body,
+    .book,
+    .book-body,
+    .body-inner,
+    .page-wrapper,
+    .page-inner,
+    .page-inner section.normal {
+        background: #fff !important;
+    }
+
+    .page-inner,
+    .page-inner * {
+        color: #000 !important;
+    }
+
+    /* Every tinted surface inside the page — callouts, homepage cards, index
+       chips, table stripes, code — is screen furniture; on paper it is a grey
+       or, from Night, a dark box around black text. The two exceptions carry
+       meaning the reader chose: the MESV change highlight and the search-term
+       marks on a page opened from a result. */
+    .page-inner *:not(mark):not(.text-variant) {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
     details.scripture-proofs,
     details.commentary {
+        border-left-color: #999 !important;
         break-inside: avoid;
     }
-    details.scripture-proofs > *,
-    details.commentary > * {
-        display: block !important;
+
+    details.scripture-proofs .proofs-body a {
+        border-bottom: 0 !important;
     }
+
+    .doc-grid a,
+    .scripture-chapters a,
+    .scripture-index__cites a {
+        border-color: #999 !important;
+    }
+
+    /* custom.js opens every callout for the print and closes it again after —
+       a closed <details> renders nothing, whatever a stylesheet says — so only
+       the disclosure markers need hiding here. */
     details.scripture-proofs summary::before,
-    details.commentary summary::before {
+    details.commentary summary::before,
+    .edition-panel__label::after {
         content: '' !important;
     }
 
-    /* Readable ink-friendly colors */
-    body,
-    .book.color-theme-1,
-    .book.color-theme-2 {
-        background: #fff !important;
-        color: #000 !important;
-    }
-    a { text-decoration: none; color: #000 !important; }
-
     /* Avoid orphaned headings */
     h1, h2, h3 { break-after: avoid; }
-}
-
-/* ── Linked section ───────────────────────────────────────────────────── */
-
-/* A shared link lands with a little room below the fixed 50px header, rather
-   than with its first line touching it. */
-.markdown-section [id],
-.markdown-section .section-target {
-    scroll-margin-top: 16px;
-}
-
-/* The unit a link points at (custom.js adds the class): a gold wash, the gold
-   of the site's icon and social card, carried 10px past the text on each side
-   by box-shadow so nothing moves. .markdown-section's clipping box is widened
-   to make room (see Reading typography). */
-.book {
-    --section-target-bg: rgba(201, 168, 76, 0.2);
-}
-
-.book.color-theme-1 {
-    --section-target-bg: rgba(160, 118, 38, 0.2);
-}
-
-.book.color-theme-2 {
-    --section-target-bg: rgba(201, 168, 76, 0.16);
-}
-
-.markdown-section .section-target {
-    border-radius: 4px;
-    background-color: var(--section-target-bg);
-    box-shadow: -10px 0 0 var(--section-target-bg), 10px 0 0 var(--section-target-bg);
 }
 
 /* ── Reading layout and accessibility ─────────────────────────────────── */
