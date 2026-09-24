@@ -2,6 +2,7 @@
 // ALLOW_MODEL_OVERRIDE is "true" (set in .dev.vars, never in production).
 //   mock/echo  answers by citing the first sections it was given
 //   mock/fail  fails like a provider at its rate limit, to exercise the backup
+//   mock/hang  accepts the request and never replies, like a stalled provider
 
 import { NO_USAGE, ProviderError, type Provider } from './types.ts';
 
@@ -13,6 +14,10 @@ export function mockProvider(id: string, model: string): Provider {
       throw new ProviderError('Mock: rate limited', 429, true);
     };
     return { id, plan: fail, answer: fail };
+  }
+  if (model === 'hang') {
+    const hang = () => new Promise<never>(() => {});
+    return { id, plan: hang, answer: hang };
   }
   if (model !== 'echo') throw new ProviderError(`Unknown mock model "${model}"`);
 

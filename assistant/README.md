@@ -16,7 +16,9 @@ the site's own text, and every section an answer cites links back to it.
    citation stays plain text.
 
 If a model fails before it has written anything, whether from a limit, a quota or an outage, the
-**backup model** takes over. If the backup fails too, the page asks the reader to try again soon.
+**backup model** takes over. So does a model that stalls: one that hasn't planned within 12
+seconds (the backup then writes the answer too), or hasn't started its answer within 15. If the
+backup fails too, the page asks the reader to try again soon.
 
 The section index is the one the site's own search uses, and CI validates it. The Worker fetches
 the live copy and caches it for an hour, so the assistant always answers from what the site
@@ -126,7 +128,8 @@ npx wrangler dev --local --var MODEL:mock/echo --var PLAN_MODEL:mock/echo --var 
 ```
 
 `mock/echo` answers by citing the sections it was given. `mock/fail` fails like a provider at
-its limit, which is how to see the backup take over.
+its limit, and `mock/hang` never replies, like a stalled provider; both show the backup taking
+over.
 
 Checks, which CI also runs after building the site:
 

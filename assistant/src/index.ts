@@ -32,6 +32,25 @@ const MAX_SECTIONS = 10;
 const MAX_PLANNED_SECTIONS = 7;
 const MAX_CONTEXT_CHARS = 20000;
 
+// A provider can stall without failing: a request that is accepted and then never
+// answered. Past these limits the call counts as failed and is ignored from then on,
+// so the backup answers instead of the reader waiting until the Worker is cancelled.
+const PLAN_TIMEOUT_MS = 12_000;
+const FIRST_TEXT_TIMEOUT_MS = 15_000; // while a backup is still available
+const LAST_MODEL_FIRST_TEXT_TIMEOUT_MS = 60_000;
+const STALL_TIMEOUT_MS = 30_000; // between pieces of text, once writing has started
+
+class Stalled extends Error {}
+
+/** Rejects if `promise` hasn't settled within `ms`; the call itself is left to run, ignored. */
+function within<T>(promise: Promise<T>, ms: number): Promise<T> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const timeout = new Promise<never>((_, reject) => {
+    timer = setTimeout(() => reject(new Stalled(`no reply within ${ms / 1000}s`)), ms);
+  });
+  return Promise.race([promise, timeout]).finally(() => clearTimeout(timer));
+}
+
 interface Question {
   question: string;
   history: Turn[];
@@ -173,6 +192,8 @@ async function answer(input: Question, models: Models, env: AppEnv, send: Send):
     usage[id] = { inputTokens: before.inputTokens + u.inputTokens, outputTokens: before.outputTokens + u.outputTokens };
   };
   const failures: string[] = [];
+  // A model that stalled while planning is likely to stall again, so the backup answers.
+  const stalled = new Set<string>();
 
   send('status', { message: 'Finding the sections that bear on your question…' });
   const corpus = await loadCorpus(String(env.CORPUS_URL));
@@ -184,16 +205,20 @@ async function answer(input: Question, models: Models, env: AppEnv, send: Send):
   for (const id of [models.plan, models.fallback]) {
     if (!id) continue;
     try {
-      const result = await providerFor(id, env, dev).plan({
-        system: PLANNER_SYSTEM,
-        prompt: planPrompt(input.question, input.about, previousQuestion),
-        schema: PLAN_SCHEMA,
-      });
+      const result = await within(
+        providerFor(id, env, dev).plan({
+          system: PLANNER_SYSTEM,
+          prompt: planPrompt(input.question, input.about, previousQuestion),
+          schema: PLAN_SCHEMA,
+        }),
+        PLAN_TIMEOUT_MS,
+      );
       add(id, result.usage);
       plan = parsePlan(result.text);
       planModel = id;
       break;
     } catch (error) {
+      if (error instanceof Stalled) stalled.add(id);
       failures.push(`plan ${id}: ${error instanceof Error ? error.message : String(error)}`);
     }
   }
@@ -211,24 +236,43 @@ async function answer(input: Question, models: Models, env: AppEnv, send: Send):
   const turns: Turn[] = [...input.history, { role: 'user', text: answerPrompt(input.question, sections, input.about) }];
   let answeredBy: string | null = null;
   let wrote = false;
-  for (const id of [models.main, models.fallback]) {
-    if (!id) continue;
+  const answerModels = models.fallback
+    ? [...(stalled.has(models.main) ? [] : [models.main]), models.fallback]
+    : [models.main];
+  for (const [i, id] of answerModels.entries()) {
+    const firstTextMs = i < answerModels.length - 1 ? FIRST_TEXT_TIMEOUT_MS : LAST_MODEL_FIRST_TEXT_TIMEOUT_MS;
+    let abandoned = false;
+    let timer: ReturnType<typeof setTimeout> | undefined;
     try {
-      const result = await providerFor(id, env, dev).answer({
-        system: ANSWER_SYSTEM,
-        turns,
-        onText: (delta) => {
-          wrote = true;
-          // gpt-oss writes citations as 【WCF 1.1】; the page and the history expect [WCF 1.1].
-          send('text', { delta: delta.replace(/【/g, '[').replace(/】/g, ']') });
-        },
+      const result = await new Promise<{ usage: Usage }>((resolve, reject) => {
+        const wait = (ms: number) => {
+          clearTimeout(timer);
+          timer = setTimeout(() => reject(new Stalled(`no text within ${ms / 1000}s`)), ms);
+        };
+        wait(firstTextMs);
+        providerFor(id, env, dev)
+          .answer({
+            system: ANSWER_SYSTEM,
+            turns,
+            onText: (delta) => {
+              if (abandoned) return;
+              wait(STALL_TIMEOUT_MS);
+              wrote = true;
+              // gpt-oss writes citations as 【WCF 1.1】; the page and the history expect [WCF 1.1].
+              send('text', { delta: delta.replace(/【/g, '[').replace(/】/g, ']') });
+            },
+          })
+          .then(resolve, reject);
       });
       add(id, result.usage);
       answeredBy = id;
       break;
     } catch (error) {
+      abandoned = true;
       failures.push(`answer ${id}: ${error instanceof Error ? error.message : String(error)}`);
       if (wrote) break;
+    } finally {
+      clearTimeout(timer);
     }
   }
 
