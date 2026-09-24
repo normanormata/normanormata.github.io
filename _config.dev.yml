@@ -1,0 +1,3 @@
+# Local overrides for trying the Ask assistant against `npm run dev` in assistant/:
+#   bundle exec jekyll serve --config _config.yml,_config.dev.yml
+assistant_url: 'http://127.0.0.1:8787'

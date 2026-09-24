@@ -23,6 +23,10 @@ edition of the creeds, confessions, and catechisms of the church.
 - **Edition provenance** on every document — organization, edition, authoritative
   source, verification date, and independent-site notice.
 - **Scripture reference tooltips** via [RefTagger](https://faithlife.com/products/reftagger).
+- **Ask** at `/ask/`: questions in plain words, answered by an AI model from this site's
+  own text only, with every cited section linked. It runs as a separate Cloudflare Worker
+  (`assistant/`), and stays hidden until `assistant_url` is set in `_config.yml`. See
+  [assistant/README.md](assistant/README.md).
 
 ## Building locally
 
@@ -47,7 +51,9 @@ To match what GitHub Pages actually builds, keep `Gemfile.lock` committed and ru
 | `_layouts/`, `_includes/` | Local overrides of the `jekyll-gitbook` remote theme |
 | `assets/gitbook/custom-local.css` | All site-specific CSS (callouts, version toggle, print) |
 | `assets/gitbook/custom.js` | Accessible reader controls, version toggle, mobile section selector, RefTagger re-tagging |
-| `assets/search_plus_index.json` | Liquid template that builds the section-level search index |
+| `assets/search_plus_index.json` | Liquid template that builds the section-level search index (also the Ask assistant's only source) |
+| `ask.md`, `assets/gitbook/ask.js` | The Ask page |
+| `assistant/` | The Ask assistant's Worker, tests and model test; excluded from the Jekyll build |
 | `test/fixtures/westminster-text.json` | Constitutional and 2025 MESV passages extracted from the OPC comparison PDFs |
 
 ### Notes for editors
@@ -114,6 +120,12 @@ proof-marker anchors and all 826 search-index deep links. Run a build first.
 The site loads [RefTagger](https://faithlife.com/products/reftagger) from
 `api.reftagger.com` to turn scripture references into tooltips. If that service goes
 away, references degrade to plain text — nothing else breaks.
+
+With `assistant_url` set, the Ask page, the toolbar's Ask button, and the search page's
+"Ask this as a question" link call the assistant Worker, which calls an AI provider. The
+page names the provider and says how it treats questions. If the Worker or the provider is
+unavailable, a backup model answers; if both are down, the Ask page says so and points to
+search. Nothing else on the site depends on it.
 
 ## License
 

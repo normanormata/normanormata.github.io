@@ -44,6 +44,23 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             .replace(/\b\w/g, function(letter) { return letter.toUpperCase(); });
     }
 
+    function assistantEnabled() {
+        var meta = document.querySelector('meta[name="assistant-url"]');
+        return !!(meta && meta.getAttribute('content'));
+    }
+
+    function askUrl(query) {
+        return state.basePath + '/ask/?question=' + encodeURIComponent(query);
+    }
+
+    // "can I lose my salvation?", "what is justification" — but not
+    // "justification" or "WCF 3.1", which search answers better.
+    function looksLikeQuestion(query) {
+        return /\?\s*$/.test(query) ||
+            (/^(who|what|when|where|why|how|is|are|was|were|can|could|does|do|did|should|will|would|may|must)\b/i.test(query) &&
+             query.trim().split(/\s+/).length >= 3);
+    }
+
     function isSearchPage() {
         return /\/search\/(?:index\.html)?$/.test(location.pathname) ||
             /\/assets\/search\.html$/.test(location.pathname);
@@ -288,6 +305,13 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         $results.find('.search-results-count').text(results.length);
         $results.find('.search-query').text(query);
         $list.empty();
+
+        // Offer the query to the Ask assistant: whenever nothing matched, and
+        // above the results when it reads like a question.
+        var askable = assistantEnabled();
+        $results.find('.cc-search__ask-link').attr('href', askUrl(query));
+        $results.find('.cc-search__none .cc-search__ask').prop('hidden', !askable);
+        $results.find('.cc-search__ask--question').prop('hidden', !askable || !looksLikeQuestion(query));
 
         var total = documentCounts.reduce(function(sum, entry) {
             return sum + entry.count;

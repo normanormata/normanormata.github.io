@@ -372,6 +372,12 @@ details.scripture-proofs.proof-target {
     #book-search-results .cc-search,
     .home-search,
     .search-page-form,
+    .home-ask,
+    .cc-search__ask,
+    .ask__form,
+    .ask__status,
+    .ask__examples,
+    .ask__reset,
     .navigation,
     #copy-toast,
     .section-permalink,
@@ -1312,6 +1318,296 @@ mark.search-highlight-keyword {
 #book-search-results.no-results .cc-search__has,
 #book-search-results:not(.no-results) .cc-search__none {
     display: none;
+}
+
+
+/* ── Ask ──────────────────────────────────────────────────────────────── */
+
+/* The Ask page (ask.md, assets/gitbook/ask.js). Answers are prose, so they keep
+   the reader's chosen face and stay near the reading measure; the controls
+   around them use the UI face, like search. Colours come from the search
+   palette above, so the page follows the light, sepia and night themes. */
+.book {
+    --ask-error: #a3261b;
+}
+
+.book.color-theme-1 {
+    --ask-error: #8a2a14;
+}
+
+.book.color-theme-2 {
+    --ask-error: #f2998f;
+}
+
+.page-inner.page-inner--ask {
+    max-width: 760px;
+}
+
+.ask-page > h1 {
+    margin-bottom: 4px !important;
+    font-size: 30px;
+}
+
+/* Components below set display, which would override the hidden attribute. */
+.ask [hidden],
+.cc-search__ask[hidden] {
+    display: none !important;
+}
+
+.ask__intro,
+.ask__notice,
+.ask__form,
+.ask__status,
+.ask__examples,
+.ask__question,
+.ask__about-note,
+.ask__sources,
+.ask__meta,
+.ask__reset,
+.ask__unavailable,
+.home-ask,
+.cc-search__ask {
+    font-family: var(--ui-font);
+}
+
+.ask__intro {
+    margin: 12px 0 14px;
+    color: var(--cc-muted);
+    font-size: 16px;
+}
+
+.ask__notice {
+    margin: 0 0 22px;
+    padding: 10px 14px;
+    border-left: 3px solid var(--commentary-border);
+    border-radius: 0 6px 6px 0;
+    background: var(--commentary-bg);
+    color: var(--commentary-text);
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.ask__notice p {
+    margin: 0;
+}
+
+.ask__form {
+    margin: 8px 0 6px;
+}
+
+.ask__form > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.ask__about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 12px;
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.ask__about > span {
+    padding: 2px 10px;
+    border-radius: 999px;
+    background: var(--cc-ref-bg);
+    color: var(--cc-ref-text);
+    font-weight: 600;
+}
+
+.ask__about-clear,
+.ask__reset {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--cc-link);
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ask__form .home-search__field input:disabled {
+    opacity: 0.7;
+}
+
+.ask__form .home-search__field button:disabled {
+    background: var(--cc-muted-2);
+    cursor: progress;
+}
+
+.ask__status {
+    min-height: 1.4em;
+    margin: 6px 0 18px;
+    color: var(--cc-muted);
+    font-size: 14px;
+}
+
+.ask__examples {
+    margin: 0 0 24px;
+}
+
+.ask__examples-title {
+    margin: 0 0 8px;
+    color: var(--cc-muted);
+    font-size: 14px;
+}
+
+.ask__examples ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ask__examples button {
+    padding: 6px 12px;
+    border: 1px solid var(--cc-chip-border);
+    border-radius: 999px;
+    background: var(--cc-chip-bg);
+    color: var(--cc-text);
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ask__examples button:hover {
+    border-color: var(--cc-chip-hover-border);
+    background: var(--cc-chip-hover-bg);
+}
+
+.ask__exchange {
+    margin: 0 0 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--cc-border-soft);
+}
+
+.markdown-section .ask__question {
+    margin: 0 0 6px;
+    padding: 0;
+    border: 0;
+    color: var(--cc-text);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.ask__about-note {
+    margin: 0 0 8px !important;
+    color: var(--cc-muted);
+    font-size: 13px;
+}
+
+.ask__answer {
+    min-height: 1.5em;
+}
+
+.ask__answer p {
+    margin: 0 0 0.85em;
+}
+
+/* Citations are the point of an answer, so they stay visibly links in every
+   theme: sepia's link colour alone is close to its text colour. */
+.markdown-section .ask__cite {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+/* Something to look at between asking and the first words arriving. */
+.ask__answer[aria-busy="true"]:empty::before {
+    content: "…";
+    color: var(--cc-muted);
+    font-size: 24px;
+    line-height: 1;
+}
+
+.ask__error {
+    color: var(--ask-error);
+    font-family: var(--ui-font);
+    font-size: 15px;
+}
+
+.ask__sources {
+    font-size: 14px;
+}
+
+.markdown-section .ask__sources-title {
+    margin: 12px 0 4px;
+    padding: 0;
+    border: 0;
+    color: var(--cc-muted);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.markdown-section .ask__source-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.markdown-section .ask__source-list li {
+    margin: 2px 0;
+}
+
+.ask__source-list a {
+    font-weight: 600;
+}
+
+.ask__source-doc {
+    color: var(--cc-muted);
+}
+
+.ask__consulted {
+    margin-top: 8px;
+}
+
+.ask__consulted > summary {
+    color: var(--cc-muted);
+    cursor: pointer;
+}
+
+.ask__meta {
+    margin: 10px 0 0 !important;
+    color: var(--cc-muted-2);
+    font-size: 12px;
+}
+
+.ask__unavailable {
+    color: var(--cc-muted);
+}
+
+.home-ask {
+    margin: 4px 0 24px;
+    color: var(--cc-muted);
+    font-size: 15px;
+}
+
+.home-ask i,
+.cc-search__ask i {
+    margin-right: 4px;
+    color: var(--cc-icon);
+}
+
+.cc-search__ask {
+    margin: 10px 0 0;
+    color: var(--cc-muted);
+    font-size: 15px;
+}
+
+.cc-search__ask--question {
+    margin: 0 0 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--cc-border-soft);
+    border-radius: 8px;
+    background: var(--cc-chip-bg);
 }
 
 

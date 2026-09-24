@@ -65,12 +65,24 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             .attr('aria-pressed', highlightOn ? 'true' : 'false');
         // On the search page the toolbar's own Search button goes nowhere useful.
         $('.reader-action-search').prop('hidden', isSearchPage());
+        // Ask needs the assistant switched on (site.assistant_url), and likewise
+        // goes nowhere useful from the Ask page itself.
+        $('.reader-action-ask').prop('hidden', !assistantEnabled() || isAskPage());
         updateDisplayMenu();
     }
 
     function isSearchPage() {
         return /\/search\/(?:index\.html)?$/.test(location.pathname) ||
             /\/assets\/search\.html$/.test(location.pathname);
+    }
+
+    function isAskPage() {
+        return /\/ask\/(?:index\.html)?$/.test(location.pathname);
+    }
+
+    function assistantEnabled() {
+        var meta = document.querySelector('meta[name="assistant-url"]');
+        return !!(meta && meta.getAttribute('content'));
     }
 
     function updateIndicator() {
@@ -530,6 +542,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     function toolButtons() {
         return $('<div class="reader-actions"></div>')
             .append(button('search', 'fa-search', 'Search'))
+            .append(button('ask', 'fa-comments', 'Ask'))
             .append(button('version', 'fa-language', 'Text: Constitutional', true))
             .append(button('highlight', 'fa-paint-brush', 'Highlight changes', true))
             .append(displayMenu())
@@ -616,6 +629,13 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     $('body').on('click', '.reader-action-search', function() {
         location.href = gitbook.state.basePath + '/search/';
+    });
+    // Ask carries the section in view, so a question can be about "this".
+    $('body').on('click', '.reader-action-ask', function() {
+        var link = currentSectionLink();
+        var reference = link && link.getAttribute('data-reference');
+        location.href = gitbook.state.basePath + '/ask/' +
+            (reference ? '?about=' + encodeURIComponent(reference) : '');
     });
     $('body').on('click', '.reader-action-version', function() {
         if (!isStandardsPage()) return;

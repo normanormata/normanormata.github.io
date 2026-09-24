@@ -1,0 +1,23 @@
+{
+  "name": "creeds-assistant",
+  "private": true,
+  "type": "module",
+  "description": "The Ask assistant for creedsandconfessions.com: a Cloudflare Worker that answers from the site's own section index.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types",
+    "check": "wrangler types && tsc --noEmit",
+    "test": "node --test 'test/*.test.ts'",
+    "compare": "node scripts/compare-models.mjs",
+    "models": "node scripts/list-models.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "openai": "^7.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "wrangler": "^4.136.3"
+  }
+}

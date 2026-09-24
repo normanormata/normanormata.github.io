@@ -32,6 +32,14 @@
     <meta name="repository-url" content="{{ site.repository_url | escape }}">
 {%- endif -%}
 
+{%- comment -%}
+  The same for the Ask assistant's Worker URL, read by ask.js (the /ask/ page),
+  custom.js (the toolbar's Ask button) and search.js ("Ask this as a question").
+{%- endcomment -%}
+{%- if site.assistant_url and site.assistant_url != '' -%}
+    <meta name="assistant-url" content="{{ site.assistant_url | escape }}">
+{%- endif -%}
+
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/style.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
 <link rel="stylesheet" href="{{site.baseurl}}/assets/gitbook/gitbook-plugin-expandable-chapters-small2/expandable-chapters-small.css">

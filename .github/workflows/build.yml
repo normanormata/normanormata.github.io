@@ -77,7 +77,7 @@ jobs:
 
           # Every document, plus the pages that are easy to break.
           for path in index.html 404.html sitemap.xml robots.txt \
-                      search assets/search.html assets/search_plus_index.json \
+                      search ask assets/search.html assets/search_plus_index.json \
                       pages/apostles-creed pages/nicene-creed pages/athanasian-creed \
                       pages/wcf pages/wsc pages/wlc \
                       pages/belgic pages/heidelberg pages/canons-of-dort \
@@ -96,8 +96,30 @@ jobs:
           fi
           echo "no links to the github.io mirror"
 
+          # The assistant's source must never be published as part of the site.
+          if [ -e _site/assistant ]; then
+            echo "assistant/ was copied into the built site"
+            exit 1
+          fi
+
       - name: Check semantics and accessible names
         run: python3 script/check-generated-html.py _site
 
       - name: Check internal links and fragments
         run: python3 script/check-links.py _site
+
+      # The Ask assistant (a Cloudflare Worker in assistant/). Type-check it, and
+      # test its citation lookup and search against the index just built, so a
+      # change to the index template can't silently break the assistant.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: assistant/package-lock.json
+
+      - name: Check the assistant
+        working-directory: assistant
+        run: |
+          npm ci
+          npm run check
+          npm test
