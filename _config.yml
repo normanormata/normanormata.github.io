@@ -10,7 +10,7 @@ description: >
 
 version:          1.0
 gitbook_version:  3.2.3
-assets_version:   "20260917-4"
+assets_version:   "20260923-1"
 
 lang:             en
 
@@ -24,6 +24,12 @@ rss:              RSS
 # by custom.js, which puts a GitHub link in the reader toolbar. Leave blank to
 # drop the link entirely.
 repository_url:   'https://github.com/normanormata/normanormata.github.io'
+
+# The Ask assistant (assistant/ in this repository, deployed as a Cloudflare
+# Worker). Emitted as a meta tag by _includes/head.html and read by ask.js,
+# custom.js and search.js. Leave blank to hide every assistant control: the Ask
+# button, the search page's "Ask this as a question" link, and the /ask/ form.
+assistant_url:    'https://creeds-assistant.tyler-teschon.workers.dev'
 
 # bootstrap: use the remote theme for the site itself.
 # Pinned by SHA: upstream publishes no tags, and an unpinned remote_theme lets an
@@ -91,6 +97,9 @@ exclude:
   # _layouts/scripture.html and every page asking for that layout silently lost
   # its chrome. Match the directory's contents instead of the prefix.
   - script/*
+  # The assistant Worker's source, dependencies and model-test reports. Pattern
+  # form for the same reason as script/* above.
+  - assistant/*
   - README.md
   - LICENSE
 

@@ -67,6 +67,7 @@ def main() -> int:
     expected = [
         site / "index.html",
         site / "search" / "index.html",
+        site / "ask" / "index.html",
         *sorted((site / "pages").glob("*/index.html")),
         # The generated scripture index uses its own layout, so it needs the same
         # heading/landmark audit rather than inheriting the post layout's.
@@ -130,6 +131,7 @@ def main() -> int:
             problems.append("custom.js still creates empty href toolbar links")
         for label in (
             "Search",
+            "Ask",
             "Text: Constitutional",
             "Highlight changes",
             "Copy link",

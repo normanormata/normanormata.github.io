@@ -10,6 +10,16 @@
 {%- endcomment -%}
 <section class="cc-search" aria-busy="false">
     <div class="cc-search__has">
+        {%- comment -%}
+          The Ask links are hidden until search.js finds an assistant-url meta
+          tag (site.assistant_url): this one when the query reads like a
+          question, the one below whenever nothing matched.
+        {%- endcomment %}
+        <p class="cc-search__ask cc-search__ask--question" hidden>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <a class="cc-search__ask-link" href="{{ site.baseurl }}/ask/">Ask “<span class="search-query"></span>” as a question</a>
+            for an answer drawn from these documents
+        </p>
         <div class="cc-search__controls">
             <label class="cc-search__collection" for="search-collection-filter">
                 <span>Collection</span>
@@ -35,6 +45,11 @@
         <p class="cc-search__hint">
             Try a shorter phrase, or a reference such as <code>WCF 3.1</code>,
             <code>WSC 1</code>, <code>Heidelberg 21</code>, or <code>FG 3.3</code>.
+        </p>
+        <p class="cc-search__ask" hidden>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            Or <a class="cc-search__ask-link" href="{{ site.baseurl }}/ask/">ask it as a question</a>
+            and get an answer drawn from the documents.
         </p>
     </div>
 </section>

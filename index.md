@@ -18,6 +18,16 @@ Searchable creeds, confessions, and catechisms of the church.
   </div>
 </form>
 
+{%- comment -%}
+  Shown only when the Ask assistant is switched on (site.assistant_url).
+{%- endcomment %}
+{% if site.assistant_url and site.assistant_url != '' %}
+<p class="home-ask">
+  <i class="fa fa-comments" aria-hidden="true"></i>
+  Or <a href="{{ site.baseurl }}/ask/">ask a question in your own words</a> and get an answer drawn from the documents.
+</p>
+{% endif %}
+
 ## The Ecumenical Creeds
 
 {% include document-grid.html category="ecumenical-creeds" %}
