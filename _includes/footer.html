@@ -1,3 +1,11 @@
+{%- comment -%}
+  The Ask side panel's template, outside .book so page swaps leave the panel
+  open. Only when the assistant is switched on.
+{%- endcomment -%}
+{%- if site.assistant_url and site.assistant_url != '' -%}
+{% include ask-panel.html %}
+{%- endif %}
+
 <script src="{{site.baseurl}}/assets/gitbook/gitbook.js"></script>
 <script src="{{site.baseurl}}/assets/gitbook/theme.js"></script>
 

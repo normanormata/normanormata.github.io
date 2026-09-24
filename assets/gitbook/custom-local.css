@@ -21,7 +21,8 @@
  */
 
 /* Commentary callout theme tokens — set on .book so they cascade to all descendants */
-.book {
+.book,
+.ask-panel {
     --commentary-border:    #8b6914;
     --commentary-bg:        #fdf8ee;
     --commentary-summary:   #6b4f10;
@@ -30,7 +31,8 @@
 }
 
 /* Sepia (color-theme-1) */
-.book.color-theme-1 {
+.book.color-theme-1,
+.ask-panel.color-theme-1 {
     --commentary-border:    #8b5e1a;
     --commentary-bg:        #ede3c4;
     --commentary-summary:   #6b3c10;
@@ -39,7 +41,8 @@
 }
 
 /* Night (color-theme-2) */
-.book.color-theme-2 {
+.book.color-theme-2,
+.ask-panel.color-theme-2 {
     --commentary-border:    #a08040;
     --commentary-bg:        #242738;
     --commentary-summary:   #c9a84c;
@@ -378,6 +381,7 @@ details.scripture-proofs.proof-target {
     .ask__status,
     .ask__examples,
     .ask__reset,
+    .ask-panel,
     .navigation,
     #copy-toast,
     .section-permalink,
@@ -483,7 +487,8 @@ details.scripture-proofs.proof-target {
 
 /* ── Reading typography ───────────────────────────────────────────────── */
 
-.book {
+.book,
+.ask-panel {
     /* Charter and Iowan Old Style ship with macOS and iOS, Palatino Linotype
        with Windows, Georgia everywhere else. All system faces, so the reading
        column changes character without costing a web-font fetch. */
@@ -925,7 +930,8 @@ input:focus-visible {
 /* ── Search ───────────────────────────────────────────────────────────── */
 
 /* Search palette, themed below for sepia and night like the other components. */
-.book {
+.book,
+.ask-panel {
     --cc-surface:            #fff;
     --cc-border:             #b6c0cc;
     --cc-border-soft:        #e2e7ee;
@@ -957,7 +963,8 @@ input:focus-visible {
 }
 
 /* Sepia */
-.book.color-theme-1 {
+.book.color-theme-1,
+.ask-panel.color-theme-1 {
     --cc-surface:            #f6efd9;
     --cc-border:             #c9bc98;
     --cc-border-soft:        #ddd0ad;
@@ -986,7 +993,8 @@ input:focus-visible {
 }
 
 /* Night */
-.book.color-theme-2 {
+.book.color-theme-2,
+.ask-panel.color-theme-2 {
     --cc-surface:            #1e222e;
     --cc-border:             #3d4658;
     --cc-border-soft:        #333a4a;
@@ -1057,6 +1065,18 @@ input:focus-visible {
 .home-search__field:focus-within {
     border-color: #2a78b8;
     box-shadow: 0 0 0 3px rgba(42, 120, 184, 0.18);
+}
+
+/* The field's own ring above shows focus. The global input outline would be
+   clipped by the field's overflow, leaving only its left edge drawn across the
+   icon. */
+.home-search__field input:focus-visible {
+    outline: none !important;
+}
+
+/* The button's outline would be clipped the same way; draw it inside. */
+.home-search__field button:focus-visible {
+    outline-offset: -4px;
 }
 
 .home-search__field > i {
@@ -1327,15 +1347,18 @@ mark.search-highlight-keyword {
    the reader's chosen face and stay near the reading measure; the controls
    around them use the UI face, like search. Colours come from the search
    palette above, so the page follows the light, sepia and night themes. */
-.book {
+.book,
+.ask-panel {
     --ask-error: #a3261b;
 }
 
-.book.color-theme-1 {
+.book.color-theme-1,
+.ask-panel.color-theme-1 {
     --ask-error: #8a2a14;
 }
 
-.book.color-theme-2 {
+.book.color-theme-2,
+.ask-panel.color-theme-2 {
     --ask-error: #f2998f;
 }
 
@@ -1610,6 +1633,232 @@ mark.search-highlight-keyword {
     background: var(--cc-chip-bg);
 }
 
+
+/* ── Ask panel ────────────────────────────────────────────────────────── */
+
+/* The side panel the toolbar's Ask button opens (_includes/ask-panel.html,
+   cloned into <body> by ask.js). It lives outside .book so GitBook's page swaps
+   leave it open; ask.js copies .book's theme and font classes onto it, which
+   is why the variable blocks above name .ask-panel beside .book. */
+body {
+    --ask-panel-width: 400px;
+}
+
+.ask-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    width: var(--ask-panel-width);
+    max-width: 100%;
+    border-left: 1px solid var(--cc-border-soft);
+    background: var(--cc-surface);
+    color: var(--cc-text);
+    font-family: var(--ui-font);
+    box-shadow: -6px 0 18px rgba(16, 32, 48, 0.14);
+}
+
+.ask-panel[hidden] {
+    display: none;
+}
+
+/* Same height and colour as the page's own header (custom.css). */
+.ask-panel__header {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    gap: 10px;
+    padding: 0 6px 0 16px;
+    border-bottom: 1px solid var(--cc-border-soft);
+    background: #fff;
+}
+
+.ask-panel.color-theme-1 .ask-panel__header {
+    background: #f3eacb;
+}
+
+.ask-panel.color-theme-2 .ask-panel__header {
+    background: #1c1f2b;
+}
+
+.ask-panel__title {
+    flex: 1 1 auto;
+    margin: 0;
+    color: var(--cc-text);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ask-panel__full {
+    color: var(--cc-link);
+    font-size: 13px;
+}
+
+.ask-panel__close {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    background: none;
+    color: var(--cc-icon);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.ask-panel__close:hover {
+    background: var(--cc-chip-hover-bg);
+    color: var(--cc-text);
+}
+
+.ask-panel__body {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 4px 16px 24px;
+}
+
+/* Outside .markdown-section, so the pieces styled through it on the Ask page
+   get their styles here. */
+.ask-panel a {
+    color: var(--cc-link);
+}
+
+.ask-panel .ask__intro {
+    font-size: 14px;
+}
+
+.ask-panel .ask__question {
+    margin: 0 0 6px;
+    color: var(--cc-text);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.ask-panel .ask__answer {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.ask-panel .ask__answer p {
+    margin: 0 0 0.8em;
+}
+
+.ask-panel.font-family-0 .ask__answer {
+    font-family: var(--reading-font);
+}
+
+/* Follow the Display menu's text size. */
+.ask-panel.font-size-0 .ask__answer { font-size: 14px; }
+.ask-panel.font-size-1 .ask__answer { font-size: 15px; }
+.ask-panel.font-size-3 .ask__answer { font-size: 18px; }
+.ask-panel.font-size-4 .ask__answer { font-size: 20px; }
+
+.ask-panel .ask__cite {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.ask-panel .ask__sources-title {
+    margin: 12px 0 4px;
+    color: var(--cc-muted);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.ask-panel .ask__source-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ask-panel .ask__source-list li {
+    margin: 2px 0;
+}
+
+.ask-panel .ask__examples button {
+    font-size: 13px;
+}
+
+.ask-panel .ask__about {
+    margin-top: 0;
+}
+
+/* Room for the panel. Where the reading column still fits beside it, push the
+   page aside, header included (it is fixed, so it is narrowed separately), and
+   move the back-to-top button out from under it. Elsewhere the panel lies over
+   the page, below the header so the reader tools stay in reach; on a phone it
+   takes the screen. */
+@media (min-width: 601px) {
+    .book-body {
+        transition: left 250ms ease, right 250ms ease;
+    }
+}
+
+@media (min-width: 1260px) {
+    body.ask-panel-open .book-body {
+        right: var(--ask-panel-width);
+    }
+
+    body.ask-panel-open .book-body .book-header {
+        width: calc(100% - var(--ask-panel-width));
+    }
+
+    body.ask-panel-open .book.with-summary .book-body .book-header {
+        width: calc(100% - 300px - var(--ask-panel-width));
+    }
+
+    body.ask-panel-open .back-to-top {
+        right: calc(var(--ask-panel-width) + 24px);
+    }
+
+    .ask-panel {
+        box-shadow: none;
+    }
+}
+
+/* A narrow desktop fits the column beside the panel only with the sidebar
+   closed. The panel follows .book in <body>, so it can see the sidebar state. */
+@media (min-width: 960px) and (max-width: 1259px) {
+    body.ask-panel-open .book:not(.with-summary) .book-body {
+        right: var(--ask-panel-width);
+    }
+
+    body.ask-panel-open .book:not(.with-summary) .book-body .book-header {
+        width: calc(100% - var(--ask-panel-width));
+    }
+
+    body.ask-panel-open .book:not(.with-summary) .back-to-top {
+        right: calc(var(--ask-panel-width) + 24px);
+    }
+
+    .book:not(.with-summary) ~ .ask-panel {
+        box-shadow: none;
+    }
+
+    .book.with-summary ~ .ask-panel {
+        top: 50px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 959px) {
+    .ask-panel {
+        top: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ask-panel {
+        width: 100%;
+        border-left: 0;
+    }
+}
 
 /* ── Reader tools ─────────────────────────────────────────────────────── */
 

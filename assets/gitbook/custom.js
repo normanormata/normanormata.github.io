@@ -66,8 +66,14 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         // On the search page the toolbar's own Search button goes nowhere useful.
         $('.reader-action-search').prop('hidden', isSearchPage());
         // Ask needs the assistant switched on (site.assistant_url), and likewise
-        // goes nowhere useful from the Ask page itself.
-        $('.reader-action-ask').prop('hidden', !assistantEnabled() || isAskPage());
+        // goes nowhere useful from the Ask page itself. It opens the side panel
+        // (ask.js), and says whether that panel is open.
+        $('.reader-action-ask')
+            .prop('hidden', !assistantEnabled() || isAskPage())
+            .attr({
+                'aria-controls': 'ask-panel',
+                'aria-expanded': document.body.classList.contains('ask-panel-open') ? 'true' : 'false'
+            });
         updateDisplayMenu();
     }
 
@@ -630,10 +636,16 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     $('body').on('click', '.reader-action-search', function() {
         location.href = gitbook.state.basePath + '/search/';
     });
-    // Ask carries the section in view, so a question can be about "this".
+    // Ask carries the section in view, so a question can be about "this". It
+    // opens the side panel beside the page (ask.js); without it, the Ask page.
     $('body').on('click', '.reader-action-ask', function() {
         var link = currentSectionLink();
-        var reference = link && link.getAttribute('data-reference');
+        var reference = (link && link.getAttribute('data-reference')) || null;
+        if (window.ccAsk && window.ccAsk.available()) {
+            $('.mobile-tools').removeAttr('open');
+            window.ccAsk.open({ about: reference });
+            return;
+        }
         location.href = gitbook.state.basePath + '/ask/' +
             (reference ? '?about=' + encodeURIComponent(reference) : '');
     });
