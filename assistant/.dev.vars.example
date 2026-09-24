@@ -1,0 +1,17 @@
+# Copy to .dev.vars (which git ignores) for `npm run dev` and the model test.
+
+# Your keys. The Gemini key comes from Google AI Studio: use a Google project
+# with billing turned off, so it stays on the free tier. The Fireworks key comes
+# from fireworks.ai; new accounts start with $1 of credit.
+GEMINI_API_KEY=
+FIREWORKS_API_KEY=
+
+# Development only: lets the model test choose models per request, and enables
+# the mock models (mock/echo, mock/fail). Never set this in production.
+ALLOW_MODEL_OVERRIDE=true
+
+# The Jekyll dev server, so the Ask page on localhost can call this Worker.
+ALLOWED_ORIGINS=http://localhost:4000,http://127.0.0.1:4000
+
+# Answer from the local build instead of the live site (needs `jekyll serve`).
+# CORPUS_URL=http://localhost:4000/assets/search_plus_index.json

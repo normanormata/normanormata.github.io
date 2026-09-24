@@ -1,0 +1,44 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "creeds-assistant",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+
+  // Workers AI runs the backup model. On the Workers Free plan it stops at the
+  // daily allowance (10,000 Neurons) instead of billing.
+  "ai": { "binding": "AI", "remote": true },
+
+  // Per-visitor limit. namespace_id is any integer string unique to this account.
+  "ratelimits": [
+    { "name": "ASK_LIMITER", "namespace_id": "1001", "simple": { "limit": 6, "period": 60 } }
+  ],
+
+  // Site-wide daily question cap. SQLite-backed Durable Objects are available on
+  // the Free plan.
+  "durable_objects": {
+    "bindings": [{ "name": "DAILY_COUNTER", "class_name": "DailyCounter" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["DailyCounter"] }],
+
+  "vars": {
+    // The site's own section index: the only thing the assistant answers from.
+    "CORPUS_URL": "https://creedsandconfessions.com/assets/search_plus_index.json",
+    "ALLOWED_ORIGINS": "https://creedsandconfessions.com",
+
+    // Models are "provider/model-id". Providers: google, fireworks, workers-ai.
+    // Chosen with the model test (scripts/compare-models.mjs) on 2026-09-23:
+    // Gemini 3.5 Flash-Lite on Google's free tier cited 37 of 47 expected sections
+    // with none invented, median 4.4 s. Gemini 3.8 Flash ran out of free quota
+    // within a day. The backup is free within Cloudflare's daily allowance.
+    "MODEL": "google/gemini-3.5-flash-lite",
+    "PLAN_MODEL": "google/gemini-3.5-flash-lite",
+    "FALLBACK_MODEL": "workers-ai/@cf/openai/gpt-oss-120b",
+
+    "DAILY_LIMIT": "200",
+
+    // Shown on the Ask page. Must match the provider behind MODEL.
+    "DATA_NOTICE": "Questions are answered by Google Gemini’s free tier, or by an open model on Cloudflare when Gemini is busy. Google may use questions and answers to improve its products, and people at Google may read them. Please don’t include personal details."
+  }
+}
