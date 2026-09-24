@@ -1,0 +1,20 @@
+{%- comment -%}
+  The Ask side panel. assets/gitbook/ask.js clones this template into <body>,
+  outside .book, so GitBook's in-place page swaps (which replace only .book)
+  leave it open, conversation and all. A <template> is inert: nothing in it is
+  rendered or in the accessibility tree until it is cloned.
+{%- endcomment %}
+<template id="ask-panel-template">
+  <aside class="ask-panel" id="ask-panel" aria-labelledby="ask-panel-title" hidden>
+    <div class="ask-panel__header">
+      <h2 class="ask-panel__title" id="ask-panel-title">Ask a question</h2>
+      <a class="ask-panel__full" href="{{ site.baseurl }}/ask/">Full page</a>
+      <button type="button" class="ask-panel__close" aria-label="Close Ask" title="Close Ask">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="ask-panel__body">
+      {% include ask-ui.html input_id="ask-panel-input" compact=true %}
+    </div>
+  </aside>
+</template>

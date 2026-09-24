@@ -23,8 +23,10 @@ edition of the creeds, confessions, and catechisms of the church.
 - **Edition provenance** on every document — organization, edition, authoritative
   source, verification date, and independent-site notice.
 - **Scripture reference tooltips** via [RefTagger](https://faithlife.com/products/reftagger).
-- **Ask** at `/ask/`: questions in plain words, answered by an AI model from this site's
-  own text only, with every cited section linked. It runs as a separate Cloudflare Worker
+- **Ask**: questions in plain words, answered by an AI model from this site's own text
+  only, with every cited section linked. The toolbar's Ask button opens it in a side panel
+  beside the page being read (citations open in place, and the panel stays open across
+  pages); `/ask/` is the full-page version. It runs as a separate Cloudflare Worker
   (`assistant/`), and stays hidden until `assistant_url` is set in `_config.yml`. See
   [assistant/README.md](assistant/README.md).
 
@@ -52,7 +54,7 @@ To match what GitHub Pages actually builds, keep `Gemfile.lock` committed and ru
 | `assets/gitbook/custom-local.css` | All site-specific CSS (callouts, version toggle, print) |
 | `assets/gitbook/custom.js` | Accessible reader controls, version toggle, mobile section selector, RefTagger re-tagging |
 | `assets/search_plus_index.json` | Liquid template that builds the section-level search index (also the Ask assistant's only source) |
-| `ask.md`, `assets/gitbook/ask.js` | The Ask page |
+| `ask.md`, `_includes/ask-ui.html`, `_includes/ask-panel.html`, `assets/gitbook/ask.js` | Ask: the full page and the side panel, which share one interface |
 | `assistant/` | The Ask assistant's Worker, tests and model test; excluded from the Jekyll build |
 | `test/fixtures/westminster-text.json` | Constitutional and 2025 MESV passages extracted from the OPC comparison PDFs |
 
