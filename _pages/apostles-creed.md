@@ -1,6 +1,5 @@
 ---
 title: The Apostles' Creed
-author: Tyler Teschon
 date: 2023-08-30
 layout: post
 category: ecumenical-creeds

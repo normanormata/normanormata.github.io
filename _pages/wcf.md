@@ -1,6 +1,5 @@
 ---
 title: Westminster Confession of Faith
-author: Tyler Teschon
 date: 2022-05-02
 layout: post
 category: westminster-standards

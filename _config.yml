@@ -1,7 +1,6 @@
 # Configurations
 title:            Creeds & Confessions
 longtitle:        Creeds & Confessions
-author:           Tyler
 email:            heidelbergbot@gmail.com
 description: >
   Searchable creeds, confessions, and catechisms of the church — the ecumenical
@@ -10,7 +9,7 @@ description: >
 
 version:          1.0
 gitbook_version:  3.2.3
-assets_version:   "20260924-1"
+assets_version:   "20261113-1"
 
 lang:             en
 
@@ -62,6 +61,22 @@ defaults:
       path: ""
     values:
       image: /assets/og-card.png
+  # The documents are historic texts, not blog posts. Jekyll gives every
+  # collection document a date, and jekyll-seo-tag calls anything dated a
+  # BlogPosting, so name the type here. Scoped by path because `type: pages`
+  # would also match ordinary pages such as the homepage. For the same reason
+  # there is no site `author`: the plugin would credit it as the author of
+  # each creed.
+  - scope:
+      path: "_pages"
+    values:
+      seo:
+        type: WebPage
+  - scope:
+      path: "_scripture"
+    values:
+      seo:
+        type: WebPage
 
 # markdown render engine.
 markdown:         kramdown
@@ -131,7 +146,6 @@ destination:      ./_site
 incremental:      false
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
