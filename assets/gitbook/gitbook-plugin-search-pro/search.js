@@ -364,6 +364,13 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     function bindEvents() {
         var timer;
         $('body').off('.creedsSearch');
+        // The index is 1.2 MB of JSON, many times the size of the page being
+        // read, so reading pages don't fetch it up front. Focusing a search box
+        // starts the download, which is then cached for the search page that
+        // Enter leads to.
+        $('body').on('focusin.creedsSearch', INPUTS, function() {
+            loadIndex();
+        });
         $('body').on('input.creedsSearch', INPUTS, function() {
             var input = this;
             // On reading pages every search box is just a launcher: typing keeps
@@ -472,6 +479,8 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
     function restoreFromUrl() {
         var query = parameter('q');
         var highlight = parameter('h');
+        // The search page needs the index at once, to fill its filters.
+        if (isSearchPage()) loadIndex();
         if (query) {
             $(INPUTS).val(query);
             search(query);
@@ -483,7 +492,6 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     gitbook.events.on('start', function() {
         bindEvents();
-        loadIndex();
         restoreFromUrl();
     });
     gitbook.events.on('page.change', restoreFromUrl);

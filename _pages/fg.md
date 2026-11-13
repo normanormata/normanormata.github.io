@@ -1,6 +1,5 @@
 ---
 title: The Form of Government
-author: Tyler Teschon
 date: 2023-08-30
 layout: post
 category: book-of-church-order

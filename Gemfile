@@ -17,7 +17,6 @@ gem "github-pages", group: :jekyll_plugins
 # All of these are on the GitHub Pages plugin allow-list, so the built-in Pages
 # build honours them. They are declared explicitly for local and CI builds.
 group :jekyll_plugins do
-  gem "jekyll-feed"
   gem "jekyll-remote-theme"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"

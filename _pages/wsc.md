@@ -1,6 +1,5 @@
 ---
 title: Westminster Shorter Catechism
-author: Tyler Teschon
 date: 2023-08-30
 layout: post
 category: westminster-standards

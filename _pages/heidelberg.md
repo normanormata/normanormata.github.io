@@ -1,6 +1,5 @@
 ---
 title: The Heidelberg Catechism
-author: Tyler Teschon
 date: 2023-08-30
 layout: post
 category: three-forms-of-unity
